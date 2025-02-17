@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>上級編コーディング（古内）</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- ヘッダー -->
+      <header>
+        <div class="l-header">
+          <!-- lはlayoutの略 -->
+          <div class="l-header__inner">
+            <h1 class="c-logo">
+              <span>きたむら</span><br />ミュージックスクール
+            </h1>
+            <!-- ナビゲーション -->
+            <!-- cはcomponent（再利用）の略 -->
+            <nav class="c-nav">
+              <ul class="c-nav__list">
+                <li class="c-nav__item">
+                  <a class="c-nav__link" href="#">料金</a>
+                </li>
+                <li class="c-nav__item">
+                  <a class="c-nav__link" href="#">ブログ</a>
+                </li>
+                <li class="c-nav__item">
+                  <a class="c-nav__link" href="#">卒業実績</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- お問い合わせボタン -->
+            <div class="c-button c-button--red">
+              <a class="c-button__link" href="#">お問い合わせ</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- ここで一度精査する -->
+
+      <!-- メイン部分 -->
+      <main>
+        <div class="main">
+          <section></section>
+        </div>
+      </main>
+      <footer></footer>
+      <!-- jQuery部分の読み込み -->
+      <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"
+      ></script>
+      <!-- slick部分を追加 -->
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <!-- AOSアニメーション -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="js/main.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    </div>
+  </body>
+</html>
