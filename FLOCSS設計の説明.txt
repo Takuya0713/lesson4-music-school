@@ -1,0 +1,22 @@
+＜ソース＞
+https://chatgpt.com/c/6798a951-f3a4-8010-bf7d-e220f9c04bfe
+
+https://kitashooo.teachable.com/courses/1672360/lectures/38913906
+
+1.Layout（レイアウト）
+
+l-header: ヘッダー全体をレイアウトするクラス。
+l-header__inner: 内部要素を横並びに配置するためのクラス。
+
+2.Component（コンポーネント）
+c-logo: ロゴのスタイルを定義。
+c-nav: ナビゲーションの親コンポーネント。
+c-nav__list: ナビゲーションリスト。
+c-nav__item: ナビゲーションリストの項目。
+c-nav__link: リンク専用のスタイル。
+c-button: ボタン全般の基本スタイル。
+c-button--red: ボタンのバリエーション（Modifier）。
+
+3.Utility（ユーティリティ）
+
+必要に応じて u-mt-16（margin-top: 16px）や u-text-right（テキスト右寄せ）などを追加。
