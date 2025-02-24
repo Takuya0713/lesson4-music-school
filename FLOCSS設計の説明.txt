@@ -20,3 +20,9 @@ c-button--red: ボタンのバリエーション（Modifier）。
 3.Utility（ユーティリティ）
 
 必要に応じて u-mt-16（margin-top: 16px）や u-text-right（テキスト右寄せ）などを追加。
+
+【0224～0225やりたいこと】
+1.gulpの再インストール
+2.SCSSの再構成
+3.javascriptの構成
+4.HTML記述（FLOCSSにて）

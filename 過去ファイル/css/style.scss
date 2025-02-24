@@ -1,15 +1,32 @@
-// commonフォルダ内を読み込む
-// reset リセット用CSS
-@use '../scss/common/reset';
-// base 元となる部分のCSS
-@use '../scss/common/base';
+$red : #dc143c;
 
-// componentフォルダ内を読み込む
-// 各セクションごとのSCSSを読み込む
-@use '../scss/common/component';
+.content {
+  div {
+    width: 100%;
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      color: $red;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+  &-img-area {
+    width: 100%;
+    background: rgba($red, 0.2);
+  }
+}
 
-// 名前空間部分の読み込み→topとabout部分も読み込む
-@use '../scss/page/index';
+p {
+  font-size: 24px;
+  box-sizing: border-box;
+  //追記
+  display: flex;
+  flex-direction: row;
+}
 
-// AOS読み込み
-@use '../scss/aos/aos.scss';
+div{
+  display: flex;
+  display: none;
+}
