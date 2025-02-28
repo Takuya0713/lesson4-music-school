@@ -1,0 +1,21 @@
+$red: #dc143c;
+
+.content {
+  div {
+    width: 100%;
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      color: $red;
+    }
+    p {
+      font-size: 24px;
+      // 追記
+      box-sizing: border-box;
+    }
+  }
+  &-img-area {
+    width: 100%;
+    background: rgba($red, 0.2);
+  }
+}
