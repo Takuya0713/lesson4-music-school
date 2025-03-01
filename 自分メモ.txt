@@ -46,3 +46,9 @@ https://portfolio.aoide-production.jp/musicschool/result_list.html
 
 <result_details>
 https://portfolio.aoide-production.jp/musicschool/result_details.html
+
+【gulp scssのコマンド】
+常時コンパイル
+npx gulp sass:watch
+1回だけコンパイル
+npx gulp sass
