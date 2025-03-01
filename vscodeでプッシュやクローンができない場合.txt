@@ -1,0 +1,14 @@
+【git tokenキー（3/1から30日間有効→失効したら再発行する）】
+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
+
+https://github.com/Takuya0713/lesson3-real-estate.git
+
+https://Takuya0713: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@github.com/Takuya0713/lesson3-real-estate.git
+
+git clone https://Takuya0713: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@github.com/Takuya0713/lesson3-real-estate.git
+
+git clone https://Takuya0713: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@github.com/Takuya0713/lesson4-music-school.git
+
+【コマンドで入力する内容】
+git clone https://（名前）:（git tokenキー）@github.com/Takuya0713/lesson4-music-school.git
+
