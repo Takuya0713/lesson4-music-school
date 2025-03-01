@@ -48,7 +48,7 @@ https://portfolio.aoide-production.jp/musicschool/result_list.html
 https://portfolio.aoide-production.jp/musicschool/result_details.html
 
 【gulp scssのコマンド】
-常時コンパイル
+＜常時コンパイル＞
 npx gulp sass:watch
-1回だけコンパイル
+＜1回だけコンパイル＞
 npx gulp sass
