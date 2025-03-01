@@ -9,8 +9,10 @@
 .content div p {
   font-size: 24px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
 }
 .content-img-area {
   width: 100%;
   background: rgba(220, 20, 60, 0.2);
-}/*# sourceMappingURL=style.css.map */
+}

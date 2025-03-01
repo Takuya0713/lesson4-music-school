@@ -1,0 +1,27 @@
+{
+  "name": "lesson4-music-school",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Takuya0713/lesson4-music-school.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Takuya0713/lesson4-music-school/issues"
+  },
+  "homepage": "https://github.com/Takuya0713/lesson4-music-school#readme",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "gulp": "^5.0.0",
+    "gulp-dart-sass": "^1.1.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^6.0.0"
+  }
+}

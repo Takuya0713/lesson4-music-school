@@ -10,8 +10,10 @@ $red: #dc143c;
     }
     p {
       font-size: 24px;
-      // 追記
       box-sizing: border-box;
+      //追記
+      display: flex;
+      flex-direction: row;
     }
   }
   &-img-area {
