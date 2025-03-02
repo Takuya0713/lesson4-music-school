@@ -1,0 +1,5 @@
+// エントリーポイント（連携）
+@use"./base"; // 初期基本設定
+@use"./mixins"; // SPとPCでの表示。include sp@{}でSP表示となる。
+@use"./reset"; // リセットCSS
+@use"./variables"; // 変数（セクションごとの色設定と表示幅）
