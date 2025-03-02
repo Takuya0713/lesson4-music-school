@@ -35,7 +35,7 @@ https://portfolio.aoide-production.jp/musicschool/contact_form.html
 <contact_send>
 https://portfolio.aoide-production.jp/musicschool/contact_send.html
 
-<404>
+<404_error>
 https://portfolio.aoide-production.jp/musicschool/404.html
 
 <search>
