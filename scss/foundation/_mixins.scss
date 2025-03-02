@@ -1,11 +1,13 @@
-// SPサイトで表示
+// ここではよく使うスタイルを関数化して再利用しやすくする
+
+// SPサイトで表示する時のCSS設定用関数
 @mixin sp {
   @media (max-width: 767px) {
     @content;
   }
 }
 
-// PCサイトで表示
+// PCサイトで表示する時のCSS設定用関数
 @mixin pc {
   @media (min-width: 768px) {
     @content;

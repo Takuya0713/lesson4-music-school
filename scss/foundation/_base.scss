@@ -1,5 +1,5 @@
-@use '../grobal/_mixin' as *;
-@use '../grobal/_variable' as *;
+@use "../grobal/_mixin" as *;
+@use "../grobal/_variable" as *;
 
 html {
   -webkit-appearance: none;
@@ -13,17 +13,18 @@ html {
   font-size: 10px;
   @media (min-width: 768px) and (max-width: 980px) {
     font-size: vw(10, 980);
+    // フォントサイズは10pxで最大幅980px内に収まるように設定
   }
   @include sp {
     font-size: vw(10, 375);
+    // フォントサイズは10pxで最大幅375px内に収まるように設定
   }
 }
 
 body {
   color: #000000;
-  // font-family: 'YuMincho', 'Hiragino Mincho ProN', serif;
-  font-family: 'YuMincho', 'Yu Mincho', '游明朝体', '游明朝',
-    'ヒラギノ明朝 ProN', 'Hiragino Mincho ProN', 'MS Mincho', 'ＭＳ 明朝', serif;
+  font-family: "YuMincho", "Yu Mincho", "游明朝体", "游明朝",
+    "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "MS Mincho", "ＭＳ 明朝", serif;
   // ★↑フォントは確認する
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
   font-size: 1.6rem;
@@ -37,11 +38,13 @@ body {
 @include sp {
   .pc {
     display: none !important;
+    // spの関数を使用するときは必ずpc部分は絶対に非表示
   }
 }
 @include pc {
   .sp {
     display: none !important;
+    // spの関数を使用するときは必ずpc部分は絶対に非表示
   }
 }
 
