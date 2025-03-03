@@ -1,18 +1,9 @@
-.content div {
-  width: 100%;
+.l-header {
+  background: red;
 }
-.content div h1 {
-  font-size: 36px;
-  font-weight: bold;
-  color: #dc143c;
-}
-.content div p {
-  font-size: 24px;
-  box-sizing: border-box;
+.l-header .inner {
   display: flex;
-  flex-direction: row;
-}
-.content-img-area {
+  align-items: center;
   width: 100%;
-  background: rgba(220, 20, 60, 0.2);
+  display: none;
 }

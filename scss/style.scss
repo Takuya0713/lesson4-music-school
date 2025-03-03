@@ -1,23 +1,24 @@
-$red: #dc143c;
+// // commonフォルダ内を読み込む
+// // reset リセット用CSS
+// @use '../scss/common/reset';
+// // base 元となる部分のCSS
+// @use '../scss/common/base';
 
-.content {
-  div {
-    width: 100%;
-    h1 {
-      font-size: 36px;
-      font-weight: bold;
-      color: $red;
-    }
-    p {
-      font-size: 24px;
-      box-sizing: border-box;
-      //追記
-      display: flex;
-      flex-direction: row;
-    }
-  }
-  &-img-area {
-    width: 100%;
-    background: rgba($red, 0.2);
-  }
-}
+// // componentフォルダ内を読み込む
+// // 各セクションごとのSCSSを読み込む
+// @use '../scss/common/component';
+
+// // 名前空間部分の読み込み→topとabout部分も読み込む
+// @use '../scss/page/index';
+
+// // AOS読み込み
+// @use '../scss/aos/aos.scss';
+
+// foundation
+// @use "../scss/foundation/index";
+// layout
+@use "../scss/layout/l-index";
+// object-project
+@use "../scss/object/project/p-index";
+// object-utility
+@use "../scss/object/utility/utility";

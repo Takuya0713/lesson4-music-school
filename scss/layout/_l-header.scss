@@ -2,11 +2,12 @@
 @use "../foundation/variables" as *; //min関数を読み込む
 
 .l-header {
-    .inner{
-        display: flex;
-        // justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
+  background: red;
+  .inner {
     display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: none;
+  }
 }
