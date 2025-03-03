@@ -1,1 +1,4 @@
+@use "../foundation/mixins" as *; //spやpcでの表示サイズを読み込む
+@use "../foundation/variables" as *; //min関数を読み込む
+
 // FVはWebページの画面領域、MVはFV内の大きな画像

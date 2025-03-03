@@ -1,2 +1,2 @@
-@use '../grobal/variable' as *;
-@use '../grobal/mixin' as *;
+@use "../foundation/mixins" as *; //spやpcでの表示サイズを読み込む
+@use "../foundation/variables" as *; //min関数を読み込む
