@@ -1,13 +1,6 @@
 @use "../foundation/mixins" as *; //spやpcでの表示サイズを読み込む
 @use "../foundation/variables" as *; //min関数を読み込む
 
-.l-header {
-  background: red;
-  .inner {
-    display: flex;
-    // justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    display: none;
-  }
+.l-header{
+  background-color: red;
 }
