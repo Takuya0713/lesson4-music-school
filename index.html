@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div id="container">
+  <div id="l-container">
     <!-- ヘッダー -->
     <header>
       <div class="l-header scroll-bg" id="header">
@@ -21,7 +21,7 @@
             <h1 class="c-logo"><a href="#">
               <span class="ib-span">きたむら</span><br  class="pc" />ミュージックスクール
             </a>
-               </h1>
+              </h1>
           </div>
           <!-- ナビゲーション -->
           <!-- cはcomponent（再利用）の略 -->
@@ -51,43 +51,55 @@
         </div>
       </div>
     </header>
-    <!-- ここで一度精査する -->
 
-    <!-- メイン部分 -->
     <main>
-      <div class="main">
-        <!-- container→全体のサイズ幅を決める -->
-        <div class="container">
-          <section>
-            <div class="inner">
-              <div class="fv">
-                <div class="fv__image">
-                  <picture>
-                    <source srcset="images/pc/1.top/2.FV/FV.jpg" media="(min-width: 768px)" />
-                    <img src="images/sp/1.top/2.FV/FV-sp.jpg" alt="FV" />
-                  </picture>
-                </div>
+      <div class="l-main">
+        <!-- FVとMV -->
+        <section>
+          <div class="p-fv">
+            <div class="p-fv-wrapper">
+              <div class="p-fv__title">
+                <h2 class="p-fv__titleInner">「音楽で生きる」<br class="sp">を叶える<br class="sp">ミュージックスクール</h2>
+                <!-- pはプロジェクトの略 -->
+                <!-- FLOCSSとBEMを使ってp-fv__titleInnerと命名 -->
+                <!-- https://chatgpt.com/c/67c78ebc-f148-8010-99d2-fa7b17657cac -->
+              </div>
+              <div class="p-fv__image">
+                <picture>
+                  <source srcset="images/pc/1.top/2.FV/FV.jpg" media="(min-width: 768px)" />
+                  <img src="images/sp/1.top/2.FV/FV-sp.jpg" alt="FV" />
+                </picture>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
+        <!-- 全人類ミュージシャン計画 -->
+        <section>
+          <div class="p-fv__concept">
+            <div class="p-concept__title">
+              <h2>全人類、
+              ミュージシャン計画。</h2>
+              <p>私たちは音楽を愛するすべての人が、音楽に熱狂できる世界を目指しています。</p>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
     <footer></footer>
-    <!-- jQuery部分の読み込み -->
-    <!-- <script
+  </div>
+  <!-- jQuery部分の読み込み -->
+  <!-- <script
         src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"
       ></script> -->
-    <!-- slick部分を追加 -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
-    <!-- AOSアニメーション -->
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-    <!-- <script src="js/main.js"></script> -->
-    <script>
-      AOS.init();
-    </script>
-  </div>
+  <!-- slick部分を追加 -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+  <!-- AOSアニメーション -->
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  <!-- <script src="js/main.js"></script> -->
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
