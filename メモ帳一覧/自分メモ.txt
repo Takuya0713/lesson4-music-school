@@ -6,6 +6,10 @@ FLOCSSを使ったコーディングができるようになること
 https://www.google.com/search?q=FLOCSS+%E3%82%AF%E3%83%A9%E3%82%B9%E5%90%8D%E4%B8%80%E8%A6%A7&rlz=1C1JCYX_jaJP1079JP1079&oq=FLOCSS%E3%80%80%E3%82%AF%E3%83%A9%E3%82%B9%E5%90%8D%E4%B8%80%E8%A6%A7&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORigAdIBCTcwNjNqMGoxNagCCLACAfEFO5cIw-iNBxQ&sourceid=chrome&ie=UTF-8
 
 https://qiita.com/super-mana-chan/items/644c6827be954c8db2c0
+
+【0311アコーディオン部分の命名について・GPT】
+https://chatgpt.com/c/67cf64e7-0030-8010-bbbd-05eeaa18b8c5
+
 【デザインカンプからの共通箇所】
 ＜ヘッダー部分とフッター部分＞
 どのページでも同じものを使いまわすので、一つ作って何回も使用する。
