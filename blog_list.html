@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ブログ</title>
-</head>
-<body>
-  <!-- ヘッダーを読み込む -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ブログ</title>
+  </head>
+  <body>
+    <!-- ヘッダーを読み込む -->
+    <!-- パンくずリストを追加 -->
+    <!-- 矢印はbefore::li要素で作成する -->
+    <nav>
+      <div class="nav breadcrumb">
+        <ol>
+          <li>
+            <a href=""><span>ホーム</span></a>
+          </li>
+          <li>
+            <a href=""><span>ブログ</span></a>
+          </li>
+        </ol>
+      </div>
+    </nav>
 
-  <!-- フッターを読み込む -->
+    <section>
+      <div class="blog-list__wrapper">
+        <div class="p-blog-list__title">
+          <h2>ブログ一覧</h2>
+        </div>
+      </div>
+    </section>
 
-  <!-- TOPへ戻るボタンを読み込む -->
+    <!-- フッターを読み込む -->
 
-  <!-- お問い合わせボタンを読み込む -->
-</body>
+    <!-- TOPへ戻るボタンを読み込む -->
+
+    <!-- お問い合わせボタンを読み込む -->
+  </body>
 </html>
