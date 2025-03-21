@@ -17,3 +17,7 @@ https://chatgpt.com/c/67db765a-2bc8-8010-85e4-8f3e9d4f0084
 https://webukatu.com/wordpress/blog/27994/
 【注意書き部分のクラス名・GPT】
 https://chatgpt.com/c/67dbc85e-3ce4-8010-9dd4-1a11f587d30d
+
+3/21追加
+【divタグのつけ方、HTMLの組み立て方】
+https://chatgpt.com/c/67dd06ec-d330-8010-a2cb-ed56127431ba
