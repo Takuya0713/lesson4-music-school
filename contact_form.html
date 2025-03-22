@@ -1,17 +1,88 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <!-- ヘッダーを読み込む -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact_form</title>
+  </head>
+  <body>
+    <!-- ヘッダーを読み込む -->
 
-  <!-- フッターを読み込む -->
+    <main>
+      <section id="contact">
+        <div class="contact section">
+          <div class="inner">
+            <div class="contact__contents">
+              <div class="contact__description">
+                <p class="contact__announce">
+                  当校に関するご質問・ご相談・資料請求は下記のフォームからお気軽にお問い合わせください。
+                  通常３営業日以内にメールにてご連絡させていただきます。
+                </p>
+              </div>
+              <form action="">
+                <!-- 会社名 -->
+                <dl>
+                  <dt><label>会社名</label></dt>
+                  <dd class="section-item company"></dd>
+                </dl>
+                <!-- お名前 -->
+                <dl>
+                  <dt><label>お名前</label></dt>
+                  <dd class="section-item company name"></dd>
+                </dl>
+                <!-- メールアドレス -->
+                <dl>
+                  <dt><label>メールアドレス</label></dt>
+                  <dd class="section-item mail"></dd>
+                </dl>
+                <!-- 電話番号 -->
+                <dl>
+                  <dt><label>電話番号</label></dt>
+                  <dd class="section-item tel"></dd>
+                </dl>
+                <!-- 目的 -->
+                <dl>
+                  <dt><label>目　的 (複数選択可)</label></dt>
+                  <dd class="check-box__check"></dd>
+                  <!-- <dd class="section-item purpose"></dd> -->
+                  <div class="check-item-wrap">
+                    <label for="checkbox-01"
+                      ><input
+                        type="checkbox"
+                        name="purpose"
+                        class="check-item"
+                        value="項目名"
+                        id="checkbox-01"
+                    /></label>
+                  </div>
+                </dl>
+                <!-- 内容 -->
+                <dl class="section-item comment-label">
+                  <dt><label>内　容</label></dt>
+                  <dd class="section-item comment-form">
+                    <textarea></textarea>
+                  </dd>
+                </dl>
+                <!-- 赤いボタンは使いまわせる -->
+                <div class="form-btn">
+                  <input
+                    type="submit"
+                    value="送　信"
+                    class="form-submit"
+                    onclick="redirectPage()"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  <!-- TOPへ戻るボタンを読み込む -->
+    <!-- フッターを読み込む -->
 
-  <!-- お問い合わせボタンを読み込む -->
-</body>
+    <!-- TOPへ戻るボタンを読み込む -->
+
+    <!-- お問い合わせボタンを読み込む -->
+  </body>
 </html>
