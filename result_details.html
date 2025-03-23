@@ -1,36 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>result_details</title>
-  </head>
-  <body>
-    <!-- ヘッダーを読み込む -->
-    <main>
-      <section id="result-details">
-        <div class="result-details__wrapper">
-          <div class="result-details__fv">
-            <!-- <img src="" alt="" /> -->
-          </div>
-          <div class="result-details__title">
-            <h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>result_details</title>
+</head>
+<body>
+  <!-- ヘッダーを読み込む -->
+  <main>
+    <section id="result-details">
+      <div class="result-details__wrapper">
+        <div class="result-details__fv">
+          <!-- <img src="" alt="" /> -->
+        </div>
+        <div class="result-details__title">
+          <h2>
               タイトルが入ります。タイトルが入ります。タイトルが入ります。
             </h2>
+        </div>
+        <div class="result-details__date">
+          <time datetime="0000.00.00">0000.00.00</time>
+        </div>
+        <div class="result-details__profile-inner">
+          <!-- プロフィール表を作成する -->
+          <div class="result-details__profile-data">
+            <table>
+              <tbody>
+                <tr>
+                  <td>名前</td>
+                  <td>職業</td>
+                  <td>ジャンル</td>
+                  <td>実績</td>
+                  <td>SNS</td>
+                </tr>
+                <tr>
+                  <td>丸山</td>
+                  <td>証券会社勤務</td>
+                  <td>入力欄</td>
+                  <td>入力欄</td>
+                  <td>入力欄</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="result-details__date">
-            <time datetime="0000.00.00">0000.00.00</time>
-          </div>
-          <div class="result-details__profile-inner">
-            <!-- プロフィール表を作成する -->
+          <div class="result-details__profile-comment">
+            <p>昔やっていた音楽活動で、副収入が得られるようになったので、毎日充実するようになりました。</p>
           </div>
         </div>
-      </section>
-    </main>
-    <!-- フッターを読み込む -->
+        <!-- 以下のタイトル部分のデザインと文字は共通なので、同じクラス名が使用できる -->
+        <div class="pagenation">
+          <!-- 前の記事 page-previous -->
+          <div class="page-previous"></div>
+          <!-- 後の記事 page-next -->
+          <div class="page-next"></div>
+        </div>
+        <!-- 関連記事 page-relation→Webページを分割して読みやすくする機能や仕組みの事 -->
+        <div class="page-relation">
+          <div class="page-relation__title">
+            <h4>関連記事</h4>
+          </div>
+          <div class="page-relation__items">
+            <div class="page-relation__item">
+              <div class="page-relation__image">
+                <!-- <img src="" alt="" /> -->
+              </div>
+              <div class="page-relation__sub-title">
+                <p>タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
+              </div>
+              <div class="c-blog__date">
+                <time datetime="0000.00.00">0000.00.00</time>
+              </div>
+            </div>
+            <div class="page-relation__item">
+              <div class="page-relation__image">
+                <!-- <img src="" alt="" /> -->
+              </div>
+              <div class="page-relation__sub-title">
+                <p>タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
+              </div>
+              <div class="c-blog__date">
+                <time datetime="0000.00.00">0000.00.00</time>
+              </div>
+            </div>
+            <div class="page-relation__item">
+              <div class="page-relation__image">
+                <!-- <img src="" alt="" /> -->
+              </div>
+              <div class="page-relation__sub-title">
+                <p>タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
+              </div>
+              <div class="c-blog__date">
+                <time datetime="0000.00.00">0000.00.00</time>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <!-- TOPへ戻るボタンを読み込む -->
+      </div>
+    </section>
+  </main>
+  <!-- フッターを読み込む -->
 
-    <!-- お問い合わせボタンを読み込む -->
-  </body>
+  <!-- TOPへ戻るボタンを読み込む -->
+
+  <!-- お問い合わせボタンを読み込む -->
+</body>
 </html>
