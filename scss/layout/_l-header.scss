@@ -1,7 +1,10 @@
 @use "../foundation/mixins" as *; //spやpcでの表示サイズを読み込む
 @use "../foundation/variables" as *; //min関数を読み込む
 
-.l-header .inner{
-    display: flex;
-    // text-align: center;
+.l-header {
+  //   display: flex;
+  // text-align: center;
+}
+.l-header__wrapper {
+  display: flex;
 }

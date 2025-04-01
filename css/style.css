@@ -185,6 +185,6 @@ input {
           appearance: revert;
 }
 
-.l-header .inner {
+.l-header__wrapper {
   display: flex;
 }
