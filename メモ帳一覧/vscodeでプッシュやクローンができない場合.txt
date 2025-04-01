@@ -11,4 +11,9 @@ git clone https://Takuya0713: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@github.com
 
 【コマンドで入力する内容】
 git clone https://（名前）:（git tokenキー）@github.com/Takuya0713/lesson4-music-school.git
+git clone https://（名前）:（git tokenキー）@github.com/Takuya0713/lesson4-music-school.git
 
+【4/1～新しいトークン】
+git clone https://Takuya0713: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@github.com/Takuya0713/lesson4-music-school.git
+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
+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
