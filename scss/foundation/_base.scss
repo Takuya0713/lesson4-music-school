@@ -61,10 +61,9 @@ img {
 
 // 各セクション部分の全体幅設定
 .inner {
-  width: 92rem;
-  // max-width: calc(1080px - 80px * 2);
-  // max-widthからwidthに変更（ケンタローさんレクチャー）
-  margin: 0 auto;
+  width: 88rem;
+  // 1080-(100*2)
+margin: 0 auto;
   @include sp {
     width: 31.5rem;
     // SPの時の横幅は315pxで固定。

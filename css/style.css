@@ -51,7 +51,7 @@ img {
 }
 
 .inner {
-  width: 92rem;
+  width: 88rem;
   margin: 0 auto;
 }
 @media (max-width: 767px) {
@@ -183,4 +183,8 @@ input {
   -webkit-appearance: revert;
      -moz-appearance: revert;
           appearance: revert;
+}
+
+.l-header .inner {
+  display: flex;
 }
