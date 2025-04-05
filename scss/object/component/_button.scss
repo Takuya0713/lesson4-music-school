@@ -1,9 +1,9 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
 
-// 赤いボタン
+// 赤いボタン→ボタンの色部分
 .c-button {
-  // お問い合わせボタン部分に対するCSS記述
+  // お問い合わせボタン部分→サイズを変更する
   &--fixed {
     
   }
