@@ -2,9 +2,16 @@
 @use "../foundation/variables" as *; //min関数を読み込む
 
 .l-header {
-  //   display: flex;
-  // text-align: center;
-}
-.l-header__wrapper {
-  display: flex;
+  // display: flex;
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__items {
+    display: flex;
+  }
+  &__nav ul {
+    display: flex;
+  }
 }
