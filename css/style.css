@@ -185,6 +185,34 @@ img {
   }
 }
 
+.p-top-mv {
+  position: relative;
+}
+.p-top-mv__title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-content: center;
+}
+.p-top-mv__titleInner {
+  text-align: center;
+  z-index: 99;
+  color: #ffffff;
+  font-size: 4rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.l-header {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .l-header .inner {
   display: flex;
   align-items: center;
@@ -195,6 +223,8 @@ img {
 }
 .l-header__nav ul {
   display: flex;
+  -moz-column-gap: 3.3rem;
+       column-gap: 3.3rem;
 }
 
 .u-bg-red {

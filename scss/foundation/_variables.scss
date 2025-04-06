@@ -1,17 +1,17 @@
 // 変数一覧
 // 色
-$section-color-red: rgba(203, 0, 0, 1);
-$section-color-white: #ffffff;
-$button-color: rgba(0, 0, 0, 0.502); 
+$color-red: rgba(203, 0, 0, 1);
+$color-white: #ffffff;
+$button-color: rgba(0, 0, 0, 0.502);
 
 // min関数を使用した可変表示（vw）
-@function vw($pixelSize , $baseWidth: 1080){
+@function vw($pixelSize, $baseWidth: 1080) {
   @return calc($pixelSize / $baseWidth * 100vw);
   // min(calc(80 / 1080 * 100vw))
 }
 
 // min関数を使用した可変表示（px）
-@function vwM($pixelSize , $baseWidth: 1080){
-  @return min(vw($pixelSize) , $pixelSize * 1px);
+@function vwM($pixelSize, $baseWidth: 1080) {
+  @return min(vw($pixelSize), $pixelSize * 1px);
   // min(calc(80 / 1080 * 100vw))
 }
