@@ -2,6 +2,23 @@
 @use "../../foundation/variables" as *;
 
 // ナビゲーション部分の記述
-.c-header-nav{
+.c-header-nav {
+}
 
+.l-header {
+  &__item {
+    margin-right: 1rem;
+  }
+  &__nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 3.3rem;
+  }
+
+  &__button {
+    width: 15rem;
+    height: 4.5rem;
+    display: flex;
+  }
 }

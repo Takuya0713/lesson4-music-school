@@ -23,7 +23,8 @@ html {
 
 body {
   color: #000000;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
   font-size: 1.6rem;
 }
 
@@ -63,7 +64,8 @@ img {
 .inner {
   width: 88rem;
   // 1080-(100*2)
-margin: 0 auto;
+  margin: 0 auto;
+  height: 100%;
   @include sp {
     width: 31.5rem;
     // SPの時の横幅は315pxで固定。
