@@ -207,6 +207,22 @@ img {
   font-weight: bold;
 }
 
+.p-concept .inner {
+  padding: 6.6rem 0 5.5rem;
+}
+.p-concept__title h2 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+.p-concept__title p {
+  font-size: 1.8rem;
+  margin-top: 1.7rem;
+  text-align: center;
+}
+.p-concept__topIcon {
+  margin-top: 3.4rem;
+}
+
 .l-header {
   width: 100%;
   height: 8rem;
