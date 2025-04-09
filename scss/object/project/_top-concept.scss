@@ -2,3 +2,44 @@
 @use "../../foundation/variables" as *;
 
 // 0409記述予定
+// FVはWebページの画面領域、MVはFV内の大きな画像
+.p-top-mv {
+  position: relative;
+  &__title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-content: center;
+  }
+  &__titleInner {
+    text-align: center;
+    z-index: 99;
+    color: $color-white;
+    font-size: 4rem;
+    line-height: calc(60 / 40);
+    font-weight: bold;
+  }
+}
+
+.p-concept {
+  .inner {
+    padding: 6.6rem 0 5.5rem;
+  }
+  &__title {
+    h2 {
+      font-size: 3.5rem;
+      text-align: center;
+    }
+    p {
+      font-size: 1.8rem;
+      margin-top: 1.7rem;
+      text-align: center;
+    }
+  }
+  &__topIcon {
+    margin-top: 3.4rem;
+  }
+}

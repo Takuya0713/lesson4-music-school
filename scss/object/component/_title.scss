@@ -1,2 +1,13 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
+// 赤いテキストと太字の表記
+.c-text{
+    color: $color-red;
+    font-weight: bold;
+}
+// <h2>セクションタイトル
+.c-sectionTitle{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
