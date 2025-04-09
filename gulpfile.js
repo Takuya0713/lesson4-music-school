@@ -12,8 +12,7 @@ gulp.task("sass", function () {
       .src("./scss/**/*.scss")
       //コンパイル時のアウトプットスタイルを「expanded」に指定
       .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
-      .pipe(postcss([autoprefixer()]))
-      // コンパイル先のディレクトリを指定
+      .pipe(postcss([autoprefixer()])) // コンパイル先のディレクトリを指定
       .pipe(gulp.dest("./css"))
   );
 });

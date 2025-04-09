@@ -9,7 +9,8 @@
   align-items: center;
 
   // ロゴとアイコン部分
-  &__wrapper , &__logo {
+  &__wrapper,
+  &__logo {
     display: flex;
     align-items: center;
     height: 100%;

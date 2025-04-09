@@ -18,7 +18,7 @@
   "homepage": "https://github.com/Takuya0713/lesson4-music-school#readme",
   "description": "",
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
+    "autoprefixer": "^10.4.21",
     "gulp": "^5.0.0",
     "gulp-dart-sass": "^1.1.0",
     "gulp-postcss": "^10.0.0",
