@@ -1,2 +1,19 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
+
+.p-massage {
+  .inner {
+    padding: 7rem 0 6rem;
+  }
+  &__title {
+    font-size: 3rem;
+    text-align: center;
+    color: $color-white;
+    font-weight: bold;
+  }
+  &__contents {
+    text-align: center;
+    color: $color-white;
+    margin-top: 3rem;
+  }
+}

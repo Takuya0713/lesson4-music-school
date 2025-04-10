@@ -283,6 +283,26 @@ img {
   margin-top: 3.4rem;
 }
 
+.p-reason .inner {
+  padding: 6.5rem 0 7rem;
+}
+
+.p-massage .inner {
+  padding: 7rem 0 6rem;
+}
+.p-massage__title {
+  font-size: 3rem;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+.p-massage__contents {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 3rem;
+}
+
 .u-bg-red {
   background-color: rgb(203, 0, 0);
 }
+/*# sourceMappingURL=style.css.map */
