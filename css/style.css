@@ -286,6 +286,47 @@ img {
 .p-reason .inner {
   padding: 6.5rem 0 7rem;
 }
+.p-reason__items {
+  margin-top: 2.8rem;
+}
+.p-reason__item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+.p-voice {
+  padding: 6.5rem 0 6rem;
+}
+.p-voice__wrapper {
+  margin-top: 3.6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 3.5rem;
+       column-gap: 3.5rem;
+}
+.p-voice__name {
+  margin-top: 1.7rem;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.p-voice__comment {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+  font-size: medium;
+}
+
+.p-use {
+  padding: 5.4rem 0 0 0;
+}
+
+.p-faq {
+  padding: 5.4rem 0 0 0;
+}
 
 .p-massage .inner {
   padding: 7rem 0 6rem;
@@ -304,5 +345,6 @@ img {
 
 .u-bg-red {
   background-color: rgb(203, 0, 0);
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
