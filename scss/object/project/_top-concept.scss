@@ -42,6 +42,23 @@
   &__topIcon {
     margin-top: 3.4rem;
   }
+  &__centerIcon {
+    display: grid;
+    row-gap: 5rem;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+  }
+  &__comments {
+  }
+  &__comment {
+    font-size: 2.5rem;
+    line-height: calc(50 / 25);
+  }
 }
 
 .p-reason {
@@ -67,13 +84,13 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 3.5rem;
   }
-  &__name{
+  &__name {
     margin-top: 1.7rem;
     text-align: center;
     font-size: 2.2rem;
     font-weight: bold;
   }
-  &__comment{
+  &__comment {
     margin-top: 1rem;
     text-align: center;
     font-size: 1.8rem;
@@ -83,11 +100,11 @@
 }
 
 // ご利用の流れ
-.p-use{
+.p-use {
   padding: 5.4rem 0 0 0;
 }
 
 // よくあるご質問
-.p-faq{
+.p-faq {
   padding: 5.4rem 0 0 0;
 }

@@ -199,6 +199,8 @@ img {
   height: 100%;
 }
 .l-header__item {
+  display: flex;
+  align-items: center;
   margin-right: 1rem;
 }
 .l-header__nav-wrapper {
@@ -281,6 +283,21 @@ img {
 }
 .p-concept__topIcon {
   margin-top: 3.4rem;
+}
+.p-concept__centerIcon {
+  display: grid;
+  row-gap: 5rem;
+}
+.p-concept__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+.p-concept__comment {
+  font-size: 2.5rem;
+  line-height: 2;
 }
 
 .p-reason .inner {
