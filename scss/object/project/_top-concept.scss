@@ -74,6 +74,15 @@
     font-size: 2.5rem;
     line-height: calc(50 / 25);
   }
+
+  // 0412疑似要素で矢印を作る
+  // https://125naroom.com/web/2864
+  &__arrow {
+    &::before {
+      // content: "★";
+      content: "";
+    }
+  }
   // ●型アイコン
   &__centerIcon {
     display: grid;

@@ -315,6 +315,9 @@ img {
   font-size: 2.5rem;
   line-height: 2;
 }
+.p-concept__arrow::before {
+  content: "";
+}
 .p-concept__centerIcon {
   display: grid;
   row-gap: 8rem;
