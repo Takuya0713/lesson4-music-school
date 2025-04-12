@@ -269,6 +269,9 @@ img {
   font-weight: bold;
 }
 
+.p-concept {
+  position: relative;
+}
 .p-concept .inner {
   padding: 6.6rem 0 5.5rem;
 }
@@ -284,20 +287,46 @@ img {
 .p-concept__topIcon {
   margin-top: 3.4rem;
 }
-.p-concept__centerIcon {
-  display: grid;
-  row-gap: 5rem;
-}
 .p-concept__item {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   -moz-column-gap: 3rem;
        column-gap: 3rem;
 }
+.p-concept__arrow-top {
+  position: absolute;
+  left: 43rem;
+  top: 0;
+}
+.p-concept__arrow-straight {
+  position: absolute;
+  left: 44.8rem;
+  top: 0;
+  bottom: 3rem;
+}
+.p-concept__comments {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+}
 .p-concept__comment {
   font-size: 2.5rem;
   line-height: 2;
+}
+.p-concept__centerIcon {
+  display: grid;
+  row-gap: 8rem;
+}
+.p-concept__centerIcon picture {
+  height: 2rem;
+}
+.p-concept__description {
+  font-size: 2.3rem;
+  line-height: 2.1739130435;
+  row-gap: 5rem;
+  display: grid;
 }
 
 .p-reason .inner {

@@ -25,9 +25,11 @@
 }
 
 .p-concept {
+  position: relative;
   .inner {
     padding: 6.6rem 0 5.5rem;
   }
+  // 全人類、 ミュージシャン計画。
   &__title {
     h2 {
       font-size: 3.5rem;
@@ -39,25 +41,53 @@
       text-align: center;
     }
   }
+  // アーチ型アイコン
   &__topIcon {
     margin-top: 3.4rem;
   }
-  &__centerIcon {
-    display: grid;
-    row-gap: 5rem;
-  }
-
+  // 赤文字英語部分
   &__item {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 3rem;
   }
+  &__arrow-top {
+    position: absolute;
+    left: 43rem;
+    top: 0;
+  }
+  &__arrow-straight {
+    position: absolute;
+    left: 44.8rem;
+    top: 0;
+    bottom: 3rem;
+  }
+
   &__comments {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
   }
   &__comment {
     font-size: 2.5rem;
     line-height: calc(50 / 25);
+  }
+  // ●型アイコン
+  &__centerIcon {
+    display: grid;
+    row-gap: 8rem;
+    & picture {
+      height: 2rem;
+    }
+  }
+  // 説明部分
+  &__description {
+    font-size: 2.3rem;
+    line-height: calc(50 / 23);
+    row-gap: 5rem;
+    display: grid;
   }
 }
 

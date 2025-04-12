@@ -1,0 +1,10 @@
+【display: grid;などのグリッドレイアウトについて】
+https://developer.mozilla.org/ja/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout
+
+gridにすると子要素がコンテナ化される。
+コンテナの要素に対してCSSで間隔をあけたり、カラム数を指定できたりする。
+
+【CSSでspanタグを使った縦並びの方法】
+https://www.genspark.ai/spark/css%E3%81%A7span%E3%82%BF%E3%82%B0%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E7%B8%A6%E4%B8%A6%E3%81%B3%E3%81%AE%E6%96%B9%E6%B3%95/0ca18345-e993-4232-8084-e643f970e440
+
+display: flex;とflex-direction: column;を組み合わせて使用する。
