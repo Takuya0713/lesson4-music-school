@@ -359,6 +359,15 @@ img {
   -moz-column-gap: 5rem;
        column-gap: 5rem;
 }
+.p-reason__title {
+  position: relative;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.p-reason__title__commonLine {
+  position: absolute;
+  border-bottom: 1px solid rgb(203, 0, 0);
+}
 
 .p-voice {
   padding: 6.5rem 0 6rem;

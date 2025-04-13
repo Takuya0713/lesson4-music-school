@@ -76,7 +76,11 @@
     text-align: right;
   }
 
-  // 0412疑似要素で矢印を作る　https://125naroom.com/web/2864
+  // 0412疑似要素で矢印を作る
+  // 参考サイト
+  // https://125naroom.com/web/2864
+  // https://chatgpt.com/c/67fa1fbf-0420-8010-9ed8-73aba8530a91
+
   // 矢印の上部
   &__arrow {
     position: relative;
@@ -128,7 +132,7 @@
     display: grid;
   }
 }
-
+// スクールが選ばれる理由
 .p-reason {
   .inner {
     padding: 6.5rem 0 7rem;
@@ -140,6 +144,16 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 5rem;
+  }
+  &__title{
+    position: relative;
+    font-size: 2.2rem;
+    font-weight: bold;
+
+    &__commonLine{
+      position: absolute;
+      border-bottom: 1px solid $color-red;
+    }
   }
 }
 
