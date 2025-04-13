@@ -26,25 +26,25 @@
 
 .p-concept {
   position: relative;
-  .inner {
-    padding: 6.6rem 0 5.5rem;
-  }
+  // padding: 6.6rem 0 5.5rem;
+  padding: 6.6rem 0 0;
   // 全人類、 ミュージシャン計画。
   &__title {
     h2 {
       font-size: 3.5rem;
       text-align: center;
+      line-height: calc(50 / 35);
     }
     p {
       font-size: 1.8rem;
       margin-top: 1.7rem;
       text-align: center;
+      line-height: calc(30 / 18);
     }
   }
-  // アーチ型アイコン
-  &__topIcon {
-    margin-top: 3.4rem;
-  }
+  // &__contents {
+  //   margin: 3.4rem 0 0 0;
+  // }
   // 赤文字英語部分
   &__item {
     position: relative;
@@ -95,12 +95,11 @@
       content: "";
       position: absolute;
       top: 1.5rem;
-      left: 50%;
+      // left: 50%;
       transform: translateX(-50%);
-      width: 1rem;
+      width: 0.3rem;
       height: 19rem;
       background-color: $color-red;
-      border-radius: 3px solid $color-red;
     }
   }
   // ●型アイコン
@@ -121,18 +120,24 @@
     display: grid;
   }
 }
+
 // スクールが選ばれる理由
 .p-reason {
   padding: 6.5rem 0 7rem;
   &__contents {
     margin: 2.8rem 0 0 0;
   }
-  &__item {
-    display: flex;
+  &__items {
+    display: grid;
+    row-gap: 5rem;
   }
 
-  &__comments {
-    display: inline-block;
+  &__item {
+    display: flex;
+    row-gap: 5rem;
+  }
+  &__image {
+    row-gap: 5rem;
   }
 
   &__title {
@@ -143,16 +148,12 @@
       padding: 0 8.5rem 0 5rem;
       white-space: nowrap;
     }
-
-    // &__commonLine {
-    //   position: absolute;
-    //   border-bottom: 1px solid $color-red;
-    // }
   }
   &__comment {
     padding: 0 8.5rem 0 5rem;
     & p {
       margin: 3.7rem 0 0;
+      width: 49rem;
     }
   }
 }
@@ -184,6 +185,31 @@
 // ご利用の流れ
 .p-use {
   padding: 5.4rem 0 0 0;
+  &__item {
+    display: flex;
+    margin: 5.3rem 0 0;
+  }
+  &__Icon {
+    display: flex;
+    align-items: center;
+    margin: 0 4.3rem 0 0;
+  }
+  &__subTitle {
+    display: flex;
+    align-items: center;
+    width: 15.4rem;
+    font-size: 2.2rem;
+    line-height: calc(33 / 22);
+    margin: 0 3.8rem 0 0;
+  }
+  &__comment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56.7rem;
+    font-size: 1.8rem;
+    line-height: calc(30 / 18);
+  }
 }
 
 // よくあるご質問
