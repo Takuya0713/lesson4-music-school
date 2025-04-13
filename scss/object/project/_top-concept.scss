@@ -51,19 +51,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 3rem;
+    // column-gap: 3rem;
   }
-  &__arrow-top {
-    position: absolute;
-    left: 43rem;
-    top: 0;
-  }
-  &__arrow-straight {
-    position: absolute;
-    left: 44.8rem;
-    top: 0;
-    bottom: 3rem;
-  }
+  // &__arrow-top {
+  //   position: absolute;
+  //   left: 43rem;
+  //   top: 0;
+  // }
+  // &__arrow-straight {
+  //   position: absolute;
+  //   left: 44.8rem;
+  //   top: 0;
+  //   bottom: 3rem;
+  // }
 
   &__comments {
     display: flex;
@@ -73,20 +73,49 @@
   &__comment {
     font-size: 2.5rem;
     line-height: calc(50 / 25);
+    text-align: right;
   }
 
-  // 0412疑似要素で矢印を作る
-  // https://125naroom.com/web/2864
+  // 0412疑似要素で矢印を作る　https://125naroom.com/web/2864
+  // 矢印の上部
   &__arrow {
+    position: relative;
+    display: inline-block;
+    height: 20.5rem;
+    // width: 3rem;
     &::before {
-      // content: "★";
       content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      // transform: translateX(-50%);
+      transform: rotate(-45deg);
+      width: 0;
+      width: 3rem;
+      height: 0;
+      border-top: 1.5rem solid $color-red;
+      // border-right: 1.5rem solid $color-red;
+      border-bottom: 1.5rem solid $color-red;
+    }
+    // 縦線部分
+    &::after {
+      content: "";
+      position: absolute;
+      top: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1rem;
+      height: 19rem;
+      background-color: $color-red;
+      border-radius: 3px solid $color-red;
     }
   }
   // ●型アイコン
   &__centerIcon {
     display: grid;
     row-gap: 8rem;
+    margin-inline: 5rem;
+    margin: 0 5rem 0;
     & picture {
       height: 2rem;
     }
