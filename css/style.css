@@ -347,26 +347,32 @@ img {
   display: grid;
 }
 
-.p-reason .inner {
+.p-reason {
   padding: 6.5rem 0 7rem;
 }
-.p-reason__items {
-  margin-top: 2.8rem;
+.p-reason__contents {
+  margin: 2.8rem 0 0 0;
 }
 .p-reason__item {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  -moz-column-gap: 5rem;
-       column-gap: 5rem;
+  display: flex;
+}
+.p-reason__comments {
+  display: inline-block;
 }
 .p-reason__title {
-  position: relative;
   font-size: 2.2rem;
   font-weight: bold;
 }
-.p-reason__title__commonLine {
-  position: absolute;
-  border-bottom: 1px solid rgb(203, 0, 0);
+.p-reason__title h3 {
+  border-bottom: 2px solid rgb(203, 0, 0);
+  padding: 0 8.5rem 0 5rem;
+  white-space: nowrap;
+}
+.p-reason__comment {
+  padding: 0 8.5rem 0 5rem;
+}
+.p-reason__comment p {
+  margin: 3.7rem 0 0;
 }
 
 .p-voice {

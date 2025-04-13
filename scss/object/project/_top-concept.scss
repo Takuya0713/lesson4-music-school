@@ -53,17 +53,6 @@
     align-items: center;
     // column-gap: 3rem;
   }
-  // &__arrow-top {
-  //   position: absolute;
-  //   left: 43rem;
-  //   top: 0;
-  // }
-  // &__arrow-straight {
-  //   position: absolute;
-  //   left: 44.8rem;
-  //   top: 0;
-  //   bottom: 3rem;
-  // }
 
   &__comments {
     display: flex;
@@ -134,25 +123,36 @@
 }
 // スクールが選ばれる理由
 .p-reason {
-  .inner {
-    padding: 6.5rem 0 7rem;
-  }
-  &__items {
-    margin-top: 2.8rem;
+  padding: 6.5rem 0 7rem;
+  &__contents {
+    margin: 2.8rem 0 0 0;
   }
   &__item {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 5rem;
+    display: flex;
   }
-  &__title{
-    position: relative;
+
+  &__comments {
+    display: inline-block;
+  }
+
+  &__title {
     font-size: 2.2rem;
     font-weight: bold;
+    & h3 {
+      border-bottom: 2px solid $color-red;
+      padding: 0 8.5rem 0 5rem;
+      white-space: nowrap;
+    }
 
-    &__commonLine{
-      position: absolute;
-      border-bottom: 1px solid $color-red;
+    // &__commonLine {
+    //   position: absolute;
+    //   border-bottom: 1px solid $color-red;
+    // }
+  }
+  &__comment {
+    padding: 0 8.5rem 0 5rem;
+    & p {
+      margin: 3.7rem 0 0;
     }
   }
 }
