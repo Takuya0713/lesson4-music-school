@@ -1,29 +1,6 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
 
-// 0409記述予定
-// FVはWebページの画面領域、MVはFV内の大きな画像
-.p-top-mv {
-  position: relative;
-  &__title {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: grid;
-    place-content: center;
-  }
-  &__titleInner {
-    text-align: center;
-    z-index: 99;
-    color: $color-white;
-    font-size: 4rem;
-    line-height: calc(60 / 40);
-    font-weight: bold;
-  }
-}
-
 .p-concept {
   position: relative;
   // padding: 6.6rem 0 5.5rem;
@@ -121,98 +98,6 @@
   }
 }
 
-// スクールが選ばれる理由
-.p-reason {
-  padding: 6.5rem 0 7rem;
-  &__contents {
-    margin: 2.8rem 0 0 0;
-  }
-  &__items {
-    display: grid;
-    row-gap: 5rem;
-  }
 
-  &__item {
-    display: flex;
-    row-gap: 5rem;
-  }
-  &__image {
-    row-gap: 5rem;
-  }
 
-  &__title {
-    font-size: 2.2rem;
-    font-weight: bold;
-    & h3 {
-      border-bottom: 2px solid $color-red;
-      padding: 0 8.5rem 0 5rem;
-      white-space: nowrap;
-    }
-  }
-  &__comment {
-    padding: 0 8.5rem 0 5rem;
-    & p {
-      margin: 3.7rem 0 0;
-      width: 49rem;
-    }
-  }
-}
 
-// 生徒さんたちの声
-.p-voice {
-  padding: 6.5rem 0 6rem;
-  &__wrapper {
-    margin-top: 3.6rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 3.5rem;
-  }
-  &__name {
-    margin-top: 1.7rem;
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: bold;
-  }
-  &__comment {
-    margin-top: 1rem;
-    text-align: center;
-    font-size: 1.8rem;
-    line-height: calc(30 / 18);
-    font-size: medium;
-  }
-}
-
-// ご利用の流れ
-.p-use {
-  padding: 5.4rem 0 0 0;
-  &__item {
-    display: flex;
-    margin: 5.3rem 0 0;
-  }
-  &__Icon {
-    display: flex;
-    align-items: center;
-    margin: 0 4.3rem 0 0;
-  }
-  &__subTitle {
-    display: flex;
-    align-items: center;
-    width: 15.4rem;
-    font-size: 2.2rem;
-    line-height: calc(33 / 22);
-    margin: 0 3.8rem 0 0;
-  }
-  &__comment {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 56.7rem;
-    font-size: 1.8rem;
-    line-height: calc(30 / 18);
-  }
-}
-
-// よくあるご質問
-.p-faq {
-  padding: 5.4rem 0 0 0;
-}

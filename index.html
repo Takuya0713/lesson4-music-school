@@ -114,20 +114,11 @@
                   </div>
                   <!-- 縦の矢印部分　before要素で矢印の上部、after要素で縦線を作る -->
                   <div class="p-concept__arrow c-text"></div>
-                  <!-- 中間の●アイコン -->
+                  <!-- 中間の●アイコン、画像を使わない spanタグで●を作って、-->
+                  <!-- spanタグでLINEを作って、::afterで矢印 -->
+                   <!-- transform-origin left top;で中央の位置 -->
                   <div class="p-concept__centerIcon">
-                    <picture>
-                      <source src="images/common/1.top/2.FV/arrow-circle.svg" media="(max-width: 768px)" />
-                      <img src="images/common/1.top/2.FV/arrow-circle-sp.svg" alt="円形アイコン" />
-                    </picture>
-                    <picture>
-                      <source src="images/common/1.top/2.FV/arrow-circle.svg" media="(max-width: 768px)" />
-                      <img src="images/common/1.top/2.FV/arrow-circle-sp.svg" alt="円形アイコン" />
-                    </picture>
-                    <picture>
-                      <source src="images/common/1.top/2.FV/arrow-circle.svg" media="(max-width: 768px)" />
-                      <img src="images/common/1.top/2.FV/arrow-circle-sp.svg" alt="円形アイコン" />
-                    </picture>
+                    <span></span>
                   </div>
                   <!-- 説明 -->
                   <div class="p-concept__description">
@@ -169,7 +160,11 @@
                   スクールが選ばれる理由
                 </h2>
             </div>
-            <div class="p-reason__contents">
+            <!-- サイズ調整 -->
+             <!-- 画像と右横の要素は最初はピッタリくっつける -->
+             <!-- 疑似要素で線を作るときにはbottom 0 right 0 width100%または -->
+            <!-- p-reason__contentsはflex:1;画像のwidthは35rem -->
+             <div class="p-reason__contents">
               <div class="p-reason__items">
                 <div class="p-reason__item">
                   <div class="p-reason__image">
@@ -374,7 +369,7 @@
           </div>
         </section>
 
-        <!-- よくあるご質問 -->
+        <!-- よくあるご質問→全体の箱、中箱、小箱3つ -->
         <section class="p-faq">
           <div class="inner">
             <div class="p-faq__wrapper">
