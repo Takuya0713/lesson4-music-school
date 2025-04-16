@@ -1,3 +1,5 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
 // FVはWebページの画面領域、MVはFV内の大きな画像
 .p-top-mv {
   position: relative;

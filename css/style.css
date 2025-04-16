@@ -250,7 +250,7 @@ img {
 
 .p-concept {
   position: relative;
-  padding: 6.6rem 0 0;
+  padding: 6.6rem 0 5.5rem 0;
 }
 .p-concept__title h2 {
   font-size: 3.5rem;
@@ -267,12 +267,12 @@ img {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
 }
 .p-concept__comments {
   display: flex;
   flex-direction: column;
-  row-gap: 5rem;
 }
 .p-concept__comment {
   font-size: 2.5rem;
@@ -280,9 +280,10 @@ img {
   text-align: right;
 }
 .p-concept__arrow {
-  position: relative;
-  display: inline-block;
-  height: 20.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18.8rem;
 }
 .p-concept__arrow::before {
   content: "";
@@ -295,6 +296,7 @@ img {
   height: 0;
   border-top: 1.5rem solid rgb(203, 0, 0);
   border-bottom: 1.5rem solid rgb(203, 0, 0);
+  transform-origin: left top;
 }
 .p-concept__arrow::after {
   content: "";
@@ -302,23 +304,33 @@ img {
   top: 1.5rem;
   transform: translateX(-50%);
   width: 0.3rem;
-  height: 19rem;
+  height: 18.8rem;
   background-color: rgb(203, 0, 0);
 }
-.p-concept__centerIcon {
-  display: grid;
-  row-gap: 8rem;
-  margin-inline: 5rem;
-  margin: 0 5rem 0;
+.p-concept__Circle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 5rem;
 }
-.p-concept__centerIcon picture {
+.p-concept__Circle span {
+  background-color: rgb(203, 0, 0);
+  width: 2rem;
   height: 2rem;
+  border-radius: 50%;
+  display: block;
 }
 .p-concept__description {
+  display: flex;
+  flex-direction: column;
+}
+.p-concept__description p {
   font-size: 2.3rem;
   line-height: 2.1739130435;
-  row-gap: 5rem;
-  display: grid;
+}
+
+.p-faq {
+  padding: 5.4rem 0 0 0;
 }
 
 .p-massage {
@@ -334,6 +346,27 @@ img {
   text-align: center;
   color: #ffffff;
   margin-top: 3rem;
+}
+
+.p-top-mv {
+  position: relative;
+}
+.p-top-mv__title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-content: center;
+}
+.p-top-mv__titleInner {
+  text-align: center;
+  z-index: 99;
+  color: #ffffff;
+  font-size: 4rem;
+  line-height: 1.5;
+  font-weight: bold;
 }
 
 .p-reason {
@@ -431,10 +464,6 @@ img {
   font-size: 1.8rem;
   line-height: 1.6666666667;
   font-size: medium;
-}
-
-.p-faq {
-  padding: 5.4rem 0 0 0;
 }
 
 .u-bg-red {
