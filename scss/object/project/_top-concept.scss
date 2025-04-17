@@ -53,28 +53,30 @@
 
     // 矢印の上部（屋根部分）
     // 最初の子要素にbefore擬似要素
-    &:nth-of-type(1)::before {
+    .p-concept__flow-detail:nth-of-type(1) &::before {
+      top: -55%;
+      left: 50%;
       content: "";
       position: absolute;
-      top: 0;
-      left: 50%;
-      transform: rotate(-45deg);
-      width: 0;
-      width: 3rem;
-      height: 0;
-      border-top: 1.5rem solid $color-red;
-      border-bottom: 1.5rem solid $color-red;
+      transform: rotate(45deg);
+      width: 2.5rem;
+      height: 2.5rem;
+      border-top: 0.3rem solid rgb(203, 0, 0); //太さ3px
+      border-left: 0.3rem solid rgb(203, 0, 0); //太さ3px
       transform-origin: left top;
     }
+
     // 矢印の縦線部分
-    &:nth-of-type(1)::after {
+    .p-concept__flow-detail:nth-of-type(1) &::after {
       content: "";
       position: absolute;
-      top: -1.5rem;
+      top: -2.5rem;
       transform: translateX(-50%);
-      width: 0.3rem;
-      height: 18.8rem;
+      width: 0.3rem; //太さ3px
+      height: 15.8rem;
       background-color: $color-red;
+      transform-origin: left top;
+      left: 44rem;
     }
   }
 
