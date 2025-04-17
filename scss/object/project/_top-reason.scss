@@ -2,61 +2,62 @@
 @use "../../foundation/variables" as *;
 // スクールが選ばれる理由
 .p-reason {
-    padding: 6.5rem 0 7rem;
-    &__contents {
-      margin: 2.8rem 0 0 0;
+  padding: 6.5rem 0 7rem;
+  &__contents {
+    margin: 2.8rem 0 0 0;
+  }
+  &__items {
+    display: grid;
+    row-gap: 5rem;
+  }
+
+  &__item {
+    display: flex;
+    // column-gap: 5rem;
+  }
+  // 画像幅を35remに指定する
+  &__image {
+    // row-gap: 5rem;
+    width: 35rem;
+  }
+  // flex:1にする
+  &__comments {
+    flex: 1;
+  }
+  // 文字に対するプロパティはh3タグに記載する
+  &__title {
+    // border-bottom: 2px solid $color-red;
+    margin-top: 0.7rem;
+    padding-bottom: 1.2rem;
+    padding-left: 5rem;
+    // ↑疑似要素で位置を0で調整すればよいため、paddingで調整を掛ける
+    position: relative;
+    &::before {
+      content: "";
+      // width: calc(100% + 5rem);
+      width: calc(100%);
+      height: 0.3rem;
+      position: absolute;
+      background-color: $color-red;
+      bottom: 0;
+      right: 0;
     }
-    &__items {
-      display: grid;
-      row-gap: 5rem;
-    }
-  
-    &__item {
-      display: flex;
-      // column-gap: 5rem;
-    }
-    // 画像幅を35remに指定する
-    &__image {
-      // row-gap: 5rem;
-      width: 35rem;
-    }
-    // flex:1にする
-    &__comments {
-      flex: 1;
-    }
-    // 文字に対するプロパティはh3タグに記載する
-    &__title {
-      // border-bottom: 2px solid $color-red;
-      margin-top: 0.7rem;
-      padding-bottom: 1.2rem;
-      padding-left: 5rem;
-      // ↑疑似要素で位置を0で調整すればよいため、paddingで調整を掛ける
-      position: relative;
-      &::before {
-        content: "";
-        width: calc(100% + 5rem);
-        height: 0.3rem;
-        position: absolute;
-        background-color: $color-red;
-        bottom: 0;
-        right: 0;
-      }
-      & h3 {
-        font-size: 2.2rem;
-        font-weight: bold;
-        // padding: 0 8.5rem 0 5rem;
-        // white-space: nowrap;
-      }
-    }
-    &__comment {
+    & h3 {
+      font-size: 2.2rem;
+      font-weight: bold;
       // padding: 0 8.5rem 0 5rem;
-      & p {
-        // margin: 3.7rem 0 0;
-        // width: 49rem;
-        font-size: 1.8rem;
-        line-height: calc(33 / 18);
-        padding-left: 5rem;
-      }
+      // white-space: nowrap;
     }
   }
-  
+  &__comment {
+    // padding: 0 8.5rem 0 5rem;
+    & p {
+      // margin: 3.7rem 0 0;
+      // width: 49rem;
+      font-size: 1.8rem;
+      line-height: calc(33 / 18);
+      padding-left: 5rem;
+      margin-top: 3.7rem;
+    }
+  }
+}

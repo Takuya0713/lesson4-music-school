@@ -1,0 +1,11 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+
+// よくあるご質問
+.p-blog {
+  padding: 7rem 0 27.2rem 0;
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

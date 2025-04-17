@@ -3,6 +3,14 @@
 
 // よくあるご質問
 .p-faq {
-    padding: 5.4rem 0 0 0;
+  padding: 5.4rem 0 0 0;
+  &__question {
+    padding: 2rem 0 1.7rem 0;
+    border-top: 0.05rem solid #000000;
+    border-bottom: 0.05rem solid #000000;
   }
-  
+  &__answer {
+    padding: 1.9rem 0 1.5rem 0;
+    border-bottom: 0.05rem solid #000000;
+  }
+}
