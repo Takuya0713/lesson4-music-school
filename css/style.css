@@ -280,6 +280,29 @@ img {
   align-items: center;
   justify-content: center;
 }
+:nth-of-type(1) .p-concept__flow-detail::before {
+  top: -18%;
+  left: 50%;
+  content: "";
+  position: absolute;
+  transform: rotate(45deg);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-top: 0.3rem solid rgb(203, 0, 0);
+  border-left: 0.3rem solid rgb(203, 0, 0);
+  transform-origin: left top;
+}
+:nth-of-type(1) .p-concept__flow-detail::after {
+  content: "";
+  position: absolute;
+  top: -2.5rem;
+  transform: translateX(-50%);
+  width: 0.3rem;
+  height: 15.8rem;
+  background-color: rgb(203, 0, 0);
+  transform-origin: left top;
+  left: 44rem;
+}
 .p-concept-flow-detail__en {
   font-size: 2.5rem;
   line-height: 2;
@@ -295,29 +318,6 @@ img {
   height: 2rem;
   border-radius: 50%;
   margin: 0 3rem;
-}
-.p-concept__flow-detail:nth-of-type(1) .p-concept-flow-detail__circle::before {
-  top: -55%;
-  left: 50%;
-  content: "";
-  position: absolute;
-  transform: rotate(45deg);
-  width: 2.5rem;
-  height: 2.5rem;
-  border-top: 0.3rem solid rgb(203, 0, 0);
-  border-left: 0.3rem solid rgb(203, 0, 0);
-  transform-origin: left top;
-}
-.p-concept__flow-detail:nth-of-type(1) .p-concept-flow-detail__circle::after {
-  content: "";
-  position: absolute;
-  top: -2.5rem;
-  transform: translateX(-50%);
-  width: 0.3rem;
-  height: 15.8rem;
-  background-color: rgb(203, 0, 0);
-  transform-origin: left top;
-  left: 44rem;
 }
 .p-concept-flow-detail__ja {
   font-size: 2.3rem;

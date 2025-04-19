@@ -28,6 +28,32 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      // 矢印の上部（屋根部分）
+      // 最初の子要素にbefore擬似要素
+      :nth-of-type(1) &::before {
+        top: -18%;
+        left: 50%;
+        content: "";
+        position: absolute;
+        transform: rotate(45deg);
+        width: 2.5rem;
+        height: 2.5rem;
+        border-top: 0.3rem solid rgb(203, 0, 0); //太さ3px
+        border-left: 0.3rem solid rgb(203, 0, 0); //太さ3px
+        transform-origin: left top;
+      }
+      // 矢印の縦線部分
+      :nth-of-type(1) &::after {
+        content: "";
+        position: absolute;
+        top: -2.5rem;
+        transform: translateX(-50%);
+        width: 0.3rem; //太さ3px
+        height: 15.8rem;
+        background-color: $color-red;
+        transform-origin: left top;
+        left: 44rem;
+      }
     }
   }
 
@@ -50,34 +76,6 @@
     height: 2rem;
     border-radius: 50%;
     margin: 0 3rem;
-
-    // 矢印の上部（屋根部分）
-    // 最初の子要素にbefore擬似要素
-    .p-concept__flow-detail:nth-of-type(1) &::before {
-      top: -55%;
-      left: 50%;
-      content: "";
-      position: absolute;
-      transform: rotate(45deg);
-      width: 2.5rem;
-      height: 2.5rem;
-      border-top: 0.3rem solid rgb(203, 0, 0); //太さ3px
-      border-left: 0.3rem solid rgb(203, 0, 0); //太さ3px
-      transform-origin: left top;
-    }
-
-    // 矢印の縦線部分
-    .p-concept__flow-detail:nth-of-type(1) &::after {
-      content: "";
-      position: absolute;
-      top: -2.5rem;
-      transform: translateX(-50%);
-      width: 0.3rem; //太さ3px
-      height: 15.8rem;
-      background-color: $color-red;
-      transform-origin: left top;
-      left: 44rem;
-    }
   }
 
   // 説明部分
