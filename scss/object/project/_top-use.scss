@@ -3,29 +3,43 @@
 // ご利用の流れ
 .p-use {
   padding: 5.4rem 0 0 0;
-  &__item {
-    display: flex;
+  &__flow {
+    // row-gap適用するためにdisplay: gridを使用
+    display: grid;
+    row-gap: 5.8rem;
     margin: 5.3rem 0 0;
   }
-  &__Icon {
-    display: flex;
-    align-items: center;
-    margin: 0 4.3rem 0 0;
-  }
-  &__subTitle {
-    display: flex;
-    align-items: center;
-    width: 15.4rem;
-    font-size: 2.2rem;
-    line-height: calc(33 / 22);
-    margin: 0 3.8rem 0 0;
-  }
-  &__comment {
+  .p-use-flow-detail {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 56.7rem;
-    font-size: 1.8rem;
-    line-height: calc(30 / 18);
+
+    &__en {
+      display: flex;
+      align-items: center;
+      width: 15.4rem;
+      font-size: 2.2rem;
+      line-height: calc(33 / 22);
+      margin-right: 3.8rem;
+    }
+    &__circle {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: rgb(203, 0, 0);
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      margin-right: 4.3rem;
+    }
+
+    &__ja {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56.7rem;
+      font-size: 1.8rem;
+      line-height: calc(30 / 18);
+    }
   }
 }

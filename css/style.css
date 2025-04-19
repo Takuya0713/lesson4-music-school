@@ -422,24 +422,35 @@ img {
 .p-use {
   padding: 5.4rem 0 0 0;
 }
-.p-use__item {
-  display: flex;
+.p-use__flow {
+  display: grid;
+  row-gap: 5.8rem;
   margin: 5.3rem 0 0;
 }
-.p-use__Icon {
+.p-use .p-use-flow-detail {
   display: flex;
   align-items: center;
-  margin: 0 4.3rem 0 0;
+  justify-content: center;
 }
-.p-use__subTitle {
+.p-use .p-use-flow-detail__en {
   display: flex;
   align-items: center;
   width: 15.4rem;
   font-size: 2.2rem;
   line-height: 1.5;
-  margin: 0 3.8rem 0 0;
+  margin-right: 3.8rem;
 }
-.p-use__comment {
+.p-use .p-use-flow-detail__circle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(203, 0, 0);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-right: 4.3rem;
+}
+.p-use .p-use-flow-detail__ja {
   display: flex;
   align-items: center;
   justify-content: center;
