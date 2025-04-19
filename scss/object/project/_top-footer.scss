@@ -1,0 +1,28 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+
+.footer {
+  &__wrapper {
+    background-color: $color-red;
+    height: 27.4rem;
+    padding: 4.4rem 0 5rem 0;
+  }
+  &__nav {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 3.3rem;
+      li {
+        color: $color-white;
+      }
+    }
+  }
+  &__copyright {
+    p {
+      text-align: center;
+    }
+  }
+  &__logo {
+  }
+}

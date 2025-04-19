@@ -249,7 +249,7 @@ img {
 }
 
 .p-blog {
-  padding: 7rem 0 27.2rem 0;
+  padding: 7rem 0 20.5rem 0;
 }
 .p-blog__items {
   display: grid;
@@ -259,9 +259,6 @@ img {
 }
 .p-blog__image {
   width: 26rem;
-}
-.p-blog__title {
-  padding: 7rem 0 3.8rem 0;
 }
 .p-blog__comment {
   padding: 2rem 0 1.1rem 0;
@@ -278,9 +275,12 @@ img {
 .p-blog__date p {
   font-size: 1.7rem;
 }
-.p-blog__list.link {
+.p-blog__link {
   margin-top: 3.7rem;
   text-align: right;
+}
+.p-blog__link span {
+  border-bottom: 0.1rem solid #000;
 }
 
 .p-concept {
@@ -365,6 +365,24 @@ img {
   border-bottom: 0.05rem solid #000000;
 }
 
+.footer__wrapper {
+  background-color: rgb(203, 0, 0);
+  height: 27.4rem;
+  padding: 4.4rem 0 5rem 0;
+}
+.footer__nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 3.3rem;
+       column-gap: 3.3rem;
+}
+.footer__nav ul li {
+  color: #ffffff;
+}
+.footer__copyright p {
+  text-align: center;
+}
 .p-massage {
   padding: 6.8rem 0 6rem;
 }

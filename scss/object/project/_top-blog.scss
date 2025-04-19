@@ -3,7 +3,8 @@
 
 // よくあるご質問
 .p-blog {
-  padding: 7rem 0 27.2rem 0;
+  // padding: 7rem 0 27.2rem 0;
+  padding: 7rem 0 20.5rem 0;
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -15,7 +16,7 @@
     width: 26rem;
   }
   &__title {
-    padding: 7rem 0 3.8rem 0;
+    // padding: 7rem 0 3.8rem 0;
   }
   &__comment {
     padding: 2rem 0 1.1rem 0;
@@ -32,8 +33,11 @@
       font-size: 1.7rem;
     }
   }
-  &__list.link{
+  &__link {
     margin-top: 3.7rem;
     text-align: right;
+    span {
+      border-bottom: 0.1rem solid #000;
+    }
   }
 }
