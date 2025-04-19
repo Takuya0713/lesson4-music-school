@@ -10,6 +10,9 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 3.5rem;
   }
+  &__image{
+    width: 27rem;  
+  }
   &__name {
     margin-top: 1.7rem;
     text-align: center;

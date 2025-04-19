@@ -1,5 +1,4 @@
 【scssを常時実行する】
 npx gulp sass:watch
-
 【scssを1回だけ実行する】
 npx gulp sass
