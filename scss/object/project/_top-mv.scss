@@ -19,5 +19,10 @@
     font-size: 4rem;
     line-height: calc(60 / 40);
     font-weight: bold;
+    @include sp{
+      width: 30rem;
+      font-size: 3rem;
+      line-height: calc(50/30);
+    }
   }
 }

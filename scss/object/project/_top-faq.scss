@@ -5,13 +5,14 @@
 .p-faq {
   padding: 5.4rem 0 0 0;
   &__accordion {
-    position: relative;
+    padding: 5.3rem 0 0 0;
     // 質問
     &-question {
       padding: 2rem 2.8rem 1.7rem 1.9rem;
       border-bottom: 0.05rem solid #000000;
       display: flex;
       align-items: center;
+      position: relative;
       &::before {
         display: flex;
         align-items: center;
@@ -24,20 +25,29 @@
         background-color: #000;
         color: $color-white;
       }
+      &::after {
+        position: absolute;
+        content: "";
+        width: 1.36rem;
+        height: 1.36rem;
+        border-top: .1rem solid #000;
+        border-left: .1rem solid #000;
+        left: 97.5%;
+        transform: rotate(45deg);
+        transform-origin: left top;
+      }
       // 最初の要素のみ上に線を付ける
       &:first-of-type {
         border-top: 0.05rem solid #000000;
       }
       // 文字サイズ
       & span {
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding-left: 4.1rem;
         font-size: 1.7rem;
         line-height: calc(30 / 17);
-        &::before {
-          position: absolute;
-          content: "";
-        }
       }
     }
     // 回答
@@ -64,7 +74,7 @@
         padding-left: 4.1rem;
         font-size: 1.7rem;
         line-height: calc(30 / 17);
-    }
+      }
     }
   }
 }

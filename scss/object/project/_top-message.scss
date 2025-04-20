@@ -3,15 +3,24 @@
 // 音楽業界初！・・・
 .p-massage {
   padding: 6.8rem 0 6rem;
-  &__title {
+  &__title h2 {
+    color: $color-white;
     font-size: 3rem;
     text-align: center;
-    color: $color-white;
     font-weight: bold;
+    line-height: calc(50 / 30);
+    @include sp {
+      line-height: calc(40 / 25);
+      font-size: 2.5rem;
+    }
   }
-  &__contents {
-    text-align: center;
-    color: $color-white;
+  &__contents{
     margin-top: 3rem;
+    & p{
+      text-align: center;
+      color: $color-white;
+      line-height: calc(30/18);
+      font-size: 1.8rem;
+    }
   }
 }

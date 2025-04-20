@@ -13,7 +13,9 @@
 
   &__item {
     display: flex;
-    // column-gap: 5rem;
+    @include sp{
+      display: initial;
+    }
   }
   // 画像幅を35remに指定する
   &__image {

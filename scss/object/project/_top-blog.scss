@@ -9,6 +9,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 5rem;
+    @include sp{
+      grid-template-columns: initial;
+    }
   }
   &__image {
     // display: grid;

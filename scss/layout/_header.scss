@@ -40,6 +40,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include sp{
+      display: initial;
+    }
   }
 
   &__items {

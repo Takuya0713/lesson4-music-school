@@ -24,5 +24,16 @@
     }
   }
   &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.1rem 0 2.3rem 0;
+  }
+  &__sns-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.2rem;
+    margin: 3.2rem 0 0 0;
   }
 }

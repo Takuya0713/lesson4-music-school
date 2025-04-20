@@ -8,7 +8,10 @@
     // row-gap適用するためにdisplay: gridを使用
     display: grid;
     row-gap: 5.8rem;
-    margin: 5.3rem 0 0; // 矢印の屋根部分
+    margin: 5.3rem 0 0; 
+    @include sp{
+      display: initial;
+    }
     // 矢印の屋根部分
     // :last-of-type &::before {
     :nth-child(1) &::before {
