@@ -252,6 +252,12 @@ img {
   font-weight: bold;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .c-sectionTitle {
+    font-size: 2.5rem;
+    line-height: 1.6;
+  }
+}
 
 .p-blog {
   padding: 7rem 0 20.5rem 0;
@@ -561,6 +567,11 @@ img {
 .p-reason {
   padding: 6.5rem 0 7rem;
 }
+@media (max-width: 767px) {
+  .p-reason {
+    padding: 5rem 0 3.9rem 0;
+  }
+}
 .p-reason__contents {
   margin: 2.8rem 0 0 0;
 }
@@ -568,25 +579,43 @@ img {
   display: grid;
   row-gap: 5rem;
 }
+@media (max-width: 767px) {
+  .p-reason__items {
+    row-gap: 3.9rem;
+  }
+}
 .p-reason__item {
   display: flex;
+  row-gap: 0.7rem;
 }
 @media (max-width: 767px) {
   .p-reason__item {
     display: initial;
+    display: grid;
+    row-gap: 3rem;
   }
 }
 .p-reason__image {
   width: 35rem;
 }
+@media (max-width: 767px) {
+  .p-reason__image {
+    width: 100%;
+  }
+}
 .p-reason__comments {
   flex: 1;
 }
 .p-reason__title {
-  margin-top: 0.7rem;
+  position: relative;
   padding-bottom: 1.2rem;
   padding-left: 5rem;
-  position: relative;
+}
+@media (max-width: 767px) {
+  .p-reason__title {
+    padding-left: initial;
+    padding-bottom: 1rem;
+  }
 }
 .p-reason__title::before {
   content: "";
@@ -601,15 +630,40 @@ img {
   font-size: 2.2rem;
   font-weight: bold;
 }
+@media (max-width: 767px) {
+  .p-reason__title h3 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+.p-reason__comment {
+  padding-left: 5rem;
+  margin-top: 3.7rem;
+}
+@media (max-width: 767px) {
+  .p-reason__comment {
+    padding-left: initial;
+    margin-top: 1.7rem;
+  }
+}
 .p-reason__comment p {
   font-size: 1.8rem;
   line-height: 1.8333333333;
-  padding-left: 5rem;
-  margin-top: 3.7rem;
+}
+@media (max-width: 767px) {
+  .p-reason__comment p {
+    font-size: 1.6rem;
+    line-height: 1.875;
+  }
 }
 
 .p-use {
   padding: 5.4rem 0 0 0;
+}
+@media (max-width: 767px) {
+  .p-use {
+    padding: 4.6rem 0 0 0;
+  }
 }
 .p-use__flow {
   position: relative;
@@ -649,6 +703,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 767px) {
+  .p-use .p-use-flow-detail {
+    display: grid;
+  }
 }
 .p-use .p-use-flow-detail__en {
   display: flex;

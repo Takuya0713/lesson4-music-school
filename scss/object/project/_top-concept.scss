@@ -5,7 +5,7 @@
   position: relative;
   padding: 6.6rem 0 5.5rem 0;
   // 全人類、 ミュージシャン計画。
-  @include sp{
+  @include sp {
     padding: 3.4rem 0 4.6rem 0;
   }
   &__title {
@@ -13,9 +13,9 @@
       font-size: 3.5rem;
       text-align: center;
       line-height: calc(50 / 35);
-      @include sp{
+      @include sp {
         font-size: 2.5rem;
-        line-height: calc(40/25);
+        line-height: calc(40 / 25);
         font-weight: bold;
       }
     }
@@ -25,8 +25,8 @@
       margin-bottom: 3.4rem;
       text-align: center;
       line-height: calc(30 / 18);
-      @include sp{
-        margin-top: .7rem ;
+      @include sp {
+        margin-top: 0.7rem;
         margin-bottom: 2rem;
         font-size: 1.7rem;
       }
@@ -66,7 +66,7 @@
         background-color: $color-red;
         transform-origin: left top;
         left: 44rem;
-        @include sp{
+        @include sp {
           left: 50%;
         }
       }
@@ -80,9 +80,9 @@
     text-align: right;
     width: 18rem;
     font-weight: bold;
-    @include sp{
+    @include sp {
       font-size: 2rem;
-      line-height: calc(50/20);
+      line-height: calc(50 / 20);
     }
   }
 
@@ -104,9 +104,9 @@
     font-size: 2.3rem;
     line-height: calc(50 / 23);
     width: 18rem;
-    @include sp{
+    @include sp {
       font-size: 2rem;
-      line-height: calc(50/20);
+      line-height: calc(50 / 20);
     }
   }
 }

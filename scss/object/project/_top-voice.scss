@@ -9,12 +9,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 3.5rem;
-    @include sp{
+    @include sp {
       display: initial;
     }
   }
-  &__image{
-    width: 27rem;  
+  &__image {
+    width: 27rem;
   }
   &__name {
     margin-top: 1.7rem;

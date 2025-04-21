@@ -3,24 +3,37 @@
 // スクールが選ばれる理由
 .p-reason {
   padding: 6.5rem 0 7rem;
+  @include sp {
+    padding: 5rem 0 3.9rem 0;
+  }
   &__contents {
     margin: 2.8rem 0 0 0;
   }
   &__items {
     display: grid;
     row-gap: 5rem;
+    @include sp {
+      row-gap: 3.9rem;
+    }
   }
 
   &__item {
     display: flex;
-    @include sp{
+    row-gap: .7rem;
+
+    @include sp {
       display: initial;
+      display: grid;
+      row-gap: 3rem;
     }
   }
   // 画像幅を35remに指定する
   &__image {
     // row-gap: 5rem;
     width: 35rem;
+    @include sp {
+      width: 100%;
+    }
   }
   // flex:1にする
   &__comments {
@@ -29,11 +42,16 @@
   // 文字に対するプロパティはh3タグに記載する
   &__title {
     // border-bottom: 2px solid $color-red;
-    margin-top: 0.7rem;
+    position: relative;
+    // margin-top: 0.7rem;
     padding-bottom: 1.2rem;
     padding-left: 5rem;
     // ↑疑似要素で位置を0で調整すればよいため、paddingで調整を掛ける
-    position: relative;
+    @include sp {
+      padding-left: initial;
+      // margin-top: 3rem;
+      padding-bottom: 1rem;
+    }
     &::before {
       content: "";
       // width: calc(100% + 5rem);
@@ -47,19 +65,28 @@
     & h3 {
       font-size: 2.2rem;
       font-weight: bold;
-      // padding: 0 8.5rem 0 5rem;
-      // white-space: nowrap;
+      @include sp {
+        font-size: 2rem;
+        line-height: calc(30 / 20);
+      }
     }
   }
   &__comment {
-    // padding: 0 8.5rem 0 5rem;
+    padding-left: 5rem;
+    margin-top: 3.7rem;
+    @include sp {
+      padding-left: initial;
+      margin-top: 1.7rem;
+    }
     & p {
       // margin: 3.7rem 0 0;
       // width: 49rem;
       font-size: 1.8rem;
       line-height: calc(33 / 18);
-      padding-left: 5rem;
-      margin-top: 3.7rem;
+      @include sp {
+        font-size: 1.6rem;
+        line-height: calc(30 / 16);
+      }
     }
   }
 }
