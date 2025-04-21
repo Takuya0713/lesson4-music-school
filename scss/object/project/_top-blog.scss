@@ -9,13 +9,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 5rem;
-<<<<<<< Updated upstream
     @include sp{
       grid-template-columns: initial;
     }
-=======
-    margin-top: 3.8rem;
->>>>>>> Stashed changes
   }
   &__image {
     // display: grid;

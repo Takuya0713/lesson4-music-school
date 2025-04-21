@@ -1,0 +1,30 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+// ハンバーガーボタン
+.l-header {
+  @include sp {
+    &__hb-btn {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 7.2rem;
+      height: 5rem;
+      background-color: #fff;
+      cursor: pointer;
+      row-gap: 0.7rem;
+    }
+    &__hb-line{
+      @include sp{
+        transition: 0.3s;
+        display: block;
+        background-color: #4d9600;
+        border-radius: 0.2rem;
+        width: 3.2rem;
+        height: 0;
+        padding-block: 0.2rem;
+      }
+    }
+  }
+}

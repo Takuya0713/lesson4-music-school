@@ -267,7 +267,6 @@ img {
   grid-template-columns: repeat(3, 1fr);
   -moz-column-gap: 5rem;
        column-gap: 5rem;
-  margin-top: 3.8rem;
 }
 @media (max-width: 767px) {
   .p-blog__items {
@@ -407,12 +406,7 @@ img {
 }
 
 .p-faq__accordion {
-<<<<<<< Updated upstream
   padding: 5.3rem 0 0 0;
-=======
-  position: relative;
-  margin-top: 3.6rem;
->>>>>>> Stashed changes
 }
 .p-faq__accordion-question {
   padding: 2rem 2.8rem 1.7rem 1.9rem;
@@ -511,6 +505,32 @@ img {
   -moz-column-gap: 1.2rem;
        column-gap: 1.2rem;
   margin: 3.2rem 0 0 0;
+}
+
+@media (max-width: 767px) {
+  .l-header__hb-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 7.2rem;
+    height: 5rem;
+    background-color: #fff;
+    cursor: pointer;
+    row-gap: 0.7rem;
+  }
+}
+@media (max-width: 767px) and (max-width: 767px) {
+  .l-header__hb-line {
+    transition: 0.3s;
+    display: block;
+    background-color: #4d9600;
+    border-radius: 0.2rem;
+    width: 3.2rem;
+    height: 0;
+    padding-block: 0.2rem;
+  }
 }
 
 .p-massage {
@@ -661,7 +681,7 @@ img {
 }
 
 .p-use {
-  padding: 5.4rem 0 9.1rem 0;
+  padding: 5.4rem 0 0 0;
 }
 @media (max-width: 767px) {
   .p-use {
