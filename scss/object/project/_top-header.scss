@@ -2,21 +2,27 @@
 @use "../../foundation/variables" as *;
 // ハンバーガーボタン
 .p-header {
-  color: #ffffff;
-  position: fixed;
   z-index: 999;
   width: 100%;
   height: 8rem;
   left: 0;
   top: 0;
   transition: all 0.3s;
+  position: relative;
+  @include sp {
+    height: 5rem;
+  }
 
   &__wrapper {
+    position: fixed;
+    height: 8rem;
     width: 100%;
-    height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include sp {
+      height: 5rem;
+    }
   }
   // ロゴとアイコン部分
   &__wrapper,
@@ -25,11 +31,21 @@
     // align-items: center;
     // height: 100%;
   }
+  &__logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
 
   &__item {
     display: flex;
     align-items: center;
     margin-right: 1rem;
+  }
+
+  &__scroll-bg {
+    position: absolute;
+    top: 0;
   }
 
   &__nav-wrapper {
@@ -66,22 +82,22 @@
 
   @include sp {
     &__hb-btn {
-      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       width: 7.2rem;
       height: 5rem;
-      background-color: #fff;
-      cursor: pointer;
+      background-color: $color-red;
       row-gap: 0.7rem;
+      cursor: pointer;
+      position: absolute;
     }
     &__hb-line {
       @include sp {
         transition: 0.3s;
         display: block;
-        background-color: $color-red;
+        background-color: $color-white;
         border-radius: 0.2rem;
         width: 3.2rem;
         height: 0;
