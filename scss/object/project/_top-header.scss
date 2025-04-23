@@ -2,7 +2,7 @@
 @use "../../foundation/variables" as *;
 // ハンバーガーボタン
 .p-header {
-  z-index: 999;
+  z-index: 1000;
   width: 100%;
   height: 8rem;
   left: 0;
@@ -11,15 +11,15 @@
   position: fixed;
   @include sp {
     height: 5rem;
-    width: 100%;
     padding-left: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   .inner {
-    width: 100%;
-    // ヘッダー部分は外余白（margin）を付けない
+    // display: flex;
+    // align-items: center;
+    // height: 100%;
   }
 
   &__wrapper {
@@ -41,8 +41,10 @@
     }
   }
   &__scroll-bg {
-    display: flex;
-    justify-content: space-between;
+    @include sp {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__item {
@@ -53,9 +55,11 @@
 
   &__nav-wrapper {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    column-gap: 3.3rem;
+    -moz-column-gap: 3.3rem;
+    /* column-gap: 3.3rem; */
+    margin-left: auto;
     @include sp {
       display: none;
     }
