@@ -1,2 +1,56 @@
 @use "../foundation/mixins" as *; //spやpcでの表示サイズを読み込む
 @use "../foundation/variables" as *; //min関数を読み込む
+
+.l-header {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // ロゴとアイコン部分
+  &__wrapper,
+  &__logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
+
+  &__nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 3.3rem;
+  }
+
+  // ナビゲーション部分のお問い合わせボタン
+  &__button {
+    width: 15rem;
+    height: 4.5rem;
+    display: flex;
+  }
+
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include sp{
+      display: initial;
+    }
+  }
+
+  &__items {
+    display: flex;
+  }
+
+  &__nav ul {
+    display: flex;
+    column-gap: 3.3rem;
+  }
+}
