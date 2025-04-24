@@ -517,37 +517,34 @@ img {
   top: 0;
   transition: all 0.3s;
   position: fixed;
+  background-color: lightpink;
 }
 @media (max-width: 767px) {
   .p-header {
     height: 5rem;
-    padding-left: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
 }
 .p-header__wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 @media (max-width: 767px) {
   .p-header__wrapper {
     height: 5rem;
-    padding: 1rem 0 0.9rem 0;
   }
 }
 .p-header__logo {
   display: flex;
   align-items: center;
   height: 8rem;
+  background-color: lightblue;
 }
 @media (max-width: 767px) {
   .p-header__logo {
     height: 5rem;
-    padding: 1rem 0 0.9rem 0;
   }
+}
+.p-header__scroll-bg {
+  display: none;
 }
 @media (max-width: 767px) {
   .p-header__scroll-bg {
@@ -555,17 +552,13 @@ img {
     justify-content: space-between;
   }
 }
-.p-header__item {
-  display: flex;
-  align-items: center;
-  margin-right: 1rem;
-}
 .p-header__nav-wrapper {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
+  background-color: lightyellow;
+  height: 8rem;
   -moz-column-gap: 3.3rem;
-  /* column-gap: 3.3rem; */
+       column-gap: 3.3rem;
   margin-left: auto;
 }
 @media (max-width: 767px) {
@@ -573,17 +566,13 @@ img {
     display: none;
   }
 }
-.p-header__nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  -moz-column-gap: 3.3rem;
-       column-gap: 3.3rem;
-}
 .p-header__button {
-  width: 15rem;
   height: 4.5rem;
   display: flex;
+}
+.p-header__button a {
+  padding: 0.7rem 3rem 0.5rem 3rem;
+  height: 100%;
 }
 .p-header__items {
   display: flex;
@@ -592,6 +581,9 @@ img {
   display: flex;
   -moz-column-gap: 3.3rem;
        column-gap: 3.3rem;
+}
+.p-header__nav ul li {
+  height: 8rem;
 }
 .p-header__nav ul a {
   display: flex;
@@ -819,11 +811,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-@media (max-width: 767px) {
-  .p-use .p-use-flow-detail {
-    display: grid;
-  }
 }
 .p-use .p-use-flow-detail__en {
   display: flex;

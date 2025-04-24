@@ -9,73 +9,67 @@
   top: 0;
   transition: all 0.3s;
   position: fixed;
+  background-color: lightpink;
   @include sp {
     height: 5rem;
-    padding-left: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .inner {
+    // padding-left: 2rem;
     // display: flex;
     // align-items: center;
-    // height: 100%;
+    // justify-content: space-between;
   }
-
   &__wrapper {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    // align-items: center;
+    // height: 8rem;
     @include sp {
       height: 5rem;
-      padding: 1rem 0 0.9rem 0;
     }
   }
   &__logo {
     display: flex;
     align-items: center;
     height: 8rem;
+    background-color: lightblue;
     @include sp {
       height: 5rem;
-      padding: 1rem 0 0.9rem 0;
     }
   }
   &__scroll-bg {
+    display: none;
     @include sp {
       display: flex;
       justify-content: space-between;
     }
   }
+  // &__hb-btn {
+  //   display: none;
+  // }
 
   &__item {
-    display: flex;
-    align-items: center;
-    margin-right: 1rem;
+    // display: flex;
+    // align-items: center;
+    // margin-right: 1rem;
   }
 
   &__nav-wrapper {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
-    -moz-column-gap: 3.3rem;
-    /* column-gap: 3.3rem; */
+    background-color: lightyellow;
+    height: 8rem;
+    column-gap: 3.3rem;
     margin-left: auto;
     @include sp {
       display: none;
     }
   }
-  &__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 3.3rem;
-  }
-
   // ナビゲーション部分のお問い合わせボタン
   &__button {
-    width: 15rem;
+    // width: 15rem;
     height: 4.5rem;
     display: flex;
+    a{
+      padding: 0.7rem 3rem 0.5rem 3rem;
+      height: 100%;    }
   }
 
   &__items {
@@ -86,6 +80,10 @@
     ul {
       display: flex;
       column-gap: 3.3rem;
+      li {
+        height: 8rem;
+        // width: 100%;
+      }
       a {
         display: flex;
         align-items: center;
