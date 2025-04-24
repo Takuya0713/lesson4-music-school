@@ -12,6 +12,19 @@
       display: flex;
       align-items: center;
       position: relative;
+      background-color: lightblue;
+      @include sp {
+        padding: initial;
+      }
+      & span {
+        @include sp {
+          display: inline-block;
+          padding: 1.7rem 0 0.9rem 0;
+          font-size: 1.6rem;
+          font-weight: 400;
+          margin-left: 2rem;
+        }
+      }
       &::before {
         display: flex;
         align-items: center;
@@ -23,6 +36,9 @@
         border-radius: 50%;
         background-color: #000;
         color: $color-white;
+        @include sp{
+          // margin-right: 2rem;
+        }
       }
       &::after {
         position: absolute;
@@ -41,9 +57,9 @@
       }
       // 文字サイズ
       & span {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
         padding-left: 4.1rem;
         font-size: 1.7rem;
         line-height: calc(30 / 17);
@@ -55,6 +71,18 @@
       border-bottom: 0.05rem solid #000000;
       display: flex;
       align-items: center;
+      background-color: lightyellow;
+      @include sp {
+        padding: initial;
+      }
+      & span {
+        @include sp {
+          padding: 1.7rem 4.7rem 0.9rem 5.5rem;
+          font-size: 1.6rem;
+          font-weight: bold;
+        }
+      }
+
       // 文字サイズ
       &::before {
         display: flex;
@@ -65,7 +93,7 @@
         width: 3.5rem;
         height: 3.5rem;
         border-radius: 50%;
-        background-color: #000;
+        background-color: $color-red;
         color: $color-white;
       }
       & span {
