@@ -522,6 +522,18 @@ img {
 @media (max-width: 767px) {
   .p-header {
     height: 5rem;
+    padding-right: 0;
+  }
+}
+.p-header .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .p-header .inner {
+    width: 100%;
   }
 }
 .p-header__wrapper {
@@ -530,6 +542,9 @@ img {
 @media (max-width: 767px) {
   .p-header__wrapper {
     height: 5rem;
+    width: 100%;
+    padding-left: 2rem;
+    justify-content: space-between;
   }
 }
 .p-header__logo {
