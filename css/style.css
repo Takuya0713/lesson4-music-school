@@ -272,7 +272,8 @@ img {
 }
 @media (max-width: 767px) {
   .p-blog__items {
-    grid-template-columns: initial;
+    margin-top: 3.9rem;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .p-blog__image {
@@ -459,15 +460,12 @@ img {
 @media (max-width: 767px) {
   .p-faq__accordion-question span {
     display: inline-block;
-    padding: 1.7rem 0 0.9rem 0;
+    padding: 1rem 0;
     font-size: 1.6rem;
     font-weight: 400;
     margin-left: 5.5rem;
     width: 23.3rem;
   }
-}
-.p-faq__accordion-answer {
-  display: none;
 }
 .p-faq__accordion-answer {
   display: none;
@@ -505,7 +503,6 @@ img {
   font-size: 1.7rem;
   line-height: 1.7647058824;
 }
-
 .footer__wrapper {
   background-color: rgb(203, 0, 0);
   height: 27.4rem;
