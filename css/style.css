@@ -567,7 +567,6 @@ img {
 @media (max-width: 767px) {
   .p-header__wrapper {
     padding-left: 2rem;
-    justify-content: space-between;
     height: 5rem;
   }
 }
@@ -579,6 +578,7 @@ img {
 @media (max-width: 767px) {
   .p-header__logo {
     display: initial;
+    height: 5rem;
   }
 }
 .p-header__scroll-bg {
@@ -623,7 +623,6 @@ img {
 .p-header__nav-wrapper {
   display: flex;
   align-items: center;
-  height: 8rem;
   -moz-column-gap: 3.3rem;
        column-gap: 3.3rem;
   margin-left: auto;

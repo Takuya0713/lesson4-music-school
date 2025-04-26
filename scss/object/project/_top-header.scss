@@ -23,7 +23,6 @@
     display: flex;
     @include sp {
       padding-left: 2rem;
-      justify-content: space-between;
       height: 5rem;
     }
   }
@@ -33,6 +32,7 @@
     height: 8rem;
     @include sp {
       display: initial;
+      height: 5rem;
     }
   }
   &__scroll-bg {
@@ -76,7 +76,6 @@
   &__nav-wrapper {
     display: flex;
     align-items: center;
-    height: 8rem;
     column-gap: 3.3rem;
     margin-left: auto;
     @include sp {
