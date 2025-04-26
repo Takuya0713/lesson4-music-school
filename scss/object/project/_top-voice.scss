@@ -11,6 +11,8 @@
     column-gap: 3.5rem;
     @include sp {
       margin-top: 4rem;
+      display: initial;
+      // アニメーション化したら消す
     }
   }
   &__image {

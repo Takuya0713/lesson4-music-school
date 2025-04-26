@@ -13,6 +13,9 @@
   @include sp {
     height: 5rem;
     padding-right: 0;
+    @include sp {
+      // width: initial;
+    }
   }
   & .inner {
     @include sp {
@@ -24,6 +27,7 @@
     @include sp {
       padding-left: 2rem;
       height: 5rem;
+      justify-content: space-between;
     }
   }
   &__logo {
