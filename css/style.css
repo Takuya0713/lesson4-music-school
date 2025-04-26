@@ -274,10 +274,16 @@ img {
   .p-blog__items {
     margin-top: 3.9rem;
     grid-template-columns: repeat(1, 1fr);
+    row-gap: 4.1rem;
   }
 }
 .p-blog__image {
   width: 26rem;
+}
+@media (max-width: 767px) {
+  .p-blog__image {
+    width: initial;
+  }
 }
 .p-blog__comment {
   padding: 2rem 0 1.1rem 0;

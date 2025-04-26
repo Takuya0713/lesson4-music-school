@@ -12,12 +12,14 @@
     @include sp {
       margin-top: 3.9rem;
       grid-template-columns: repeat(1, 1fr);
+      row-gap: 4.1rem;
     }
   }
   &__image {
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
     width: 26rem;
+    @include sp {
+      width: initial;
+    }
   }
   &__title {
     // padding: 7rem 0 3.8rem 0;
