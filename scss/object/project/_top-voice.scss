@@ -10,7 +10,7 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 3.5rem;
     @include sp {
-      display: initial;
+      margin-top: 4rem;
     }
   }
   &__image {
