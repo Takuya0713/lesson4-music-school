@@ -41,6 +41,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @include sp {
+        column-gap: 3rem;
+      }
       // 矢印の上部（屋根部分）
       // 最初の子要素にbefore擬似要素
       :nth-of-type(1) &::before {
@@ -97,7 +100,7 @@
     height: 2rem;
     border-radius: 50%;
     margin: 0 3rem;
-    @include sp{
+    @include sp {
       margin: initial;
     }
   }
