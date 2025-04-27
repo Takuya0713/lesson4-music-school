@@ -42,12 +42,21 @@
       top: 5%;
     }
   }
-  .p-use-flow-detail {
+  &__detail-inner {
+    @include sp {
+      // display: flex;
+      // display: inline-block;
+      // flex-direction: column;
+      // width: 29rem;
+    }
+  }
+  // .p-use-flow-detail {
+  &-flow-detail {
     display: flex;
     align-items: center;
     justify-content: center;
     @include sp {
-      // display: grid;
+      display: initial;
     }
     &__en {
       display: flex;
@@ -75,6 +84,9 @@
       width: 56.7rem;
       font-size: 1.8rem;
       line-height: calc(30 / 18);
+      @include sp{
+        width: 28.7rem;
+      }
     }
   }
 }

@@ -4,6 +4,9 @@
 // 生徒さんたちの声
 .p-voice {
   padding: 6.5rem 0 6rem;
+  & .inner{
+    
+  }
   &__wrapper {
     margin-top: 3.6rem;
     display: grid;
@@ -11,8 +14,9 @@
     column-gap: 3.5rem;
     @include sp {
       margin-top: 4rem;
-      display: initial;
       // アニメーション化したら消す
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
   &__image {
@@ -21,8 +25,10 @@
   &__name {
     margin-top: 1.7rem;
     text-align: center;
-    font-size: 2.2rem;
-    font-weight: bold;
+    & span {
+      font-size: 2.2rem;
+      font-weight: bold;
+    }
   }
   &__comment {
     margin-top: 1rem;
@@ -30,5 +36,11 @@
     font-size: 1.8rem;
     line-height: calc(30 / 18);
     font-size: medium;
+    & p {
+      @include sp {
+        font-size: 1.8rem;
+        line-height: calc(30 / 18);
+      }
+    }
   }
 }

@@ -402,6 +402,11 @@ img {
   border-radius: 50%;
   margin: 0 3rem;
 }
+@media (max-width: 767px) {
+  .p-concept-flow-detail__circle {
+    margin: initial;
+  }
+}
 .p-concept-flow-detail__ja {
   font-size: 2.3rem;
   line-height: 2.1739130435;
@@ -883,12 +888,17 @@ img {
   left: 4.5%;
   top: 5%;
 }
-.p-use .p-use-flow-detail {
+.p-use-flow-detail {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.p-use .p-use-flow-detail__en {
+@media (max-width: 767px) {
+  .p-use-flow-detail {
+    display: initial;
+  }
+}
+.p-use-flow-detail__en {
   display: flex;
   align-items: center;
   width: 15.4rem;
@@ -896,7 +906,7 @@ img {
   line-height: 1.5;
   margin-right: 3.8rem;
 }
-.p-use .p-use-flow-detail__circle {
+.p-use-flow-detail__circle {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -906,13 +916,18 @@ img {
   border-radius: 50%;
   margin-right: 4.3rem;
 }
-.p-use .p-use-flow-detail__ja {
+.p-use-flow-detail__ja {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 56.7rem;
   font-size: 1.8rem;
   line-height: 1.6666666667;
+}
+@media (max-width: 767px) {
+  .p-use-flow-detail__ja {
+    width: 28.7rem;
+  }
 }
 
 .p-voice {
@@ -928,7 +943,8 @@ img {
 @media (max-width: 767px) {
   .p-voice__wrapper {
     margin-top: 4rem;
-    display: initial;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .p-voice__image {
@@ -937,6 +953,8 @@ img {
 .p-voice__name {
   margin-top: 1.7rem;
   text-align: center;
+}
+.p-voice__name span {
   font-size: 2.2rem;
   font-weight: bold;
 }
@@ -946,6 +964,12 @@ img {
   font-size: 1.8rem;
   line-height: 1.6666666667;
   font-size: medium;
+}
+@media (max-width: 767px) {
+  .p-voice__comment p {
+    font-size: 1.8rem;
+    line-height: 1.6666666667;
+  }
 }
 
 .u-bg-red {

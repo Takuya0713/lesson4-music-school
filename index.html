@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <title>中級編・上級コーディング（フルタク・HTML着手）</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -265,7 +270,7 @@
               <div class="p-voice__title">
                 <h2 class="c-sectionTitle">生徒さんたちの声</h2>
               </div>
-              <div class="p-voice__wrapper">
+              <div class="p-voice__wrapper slick-next slider">
                 <div class="p-voice__items">
                   <div class="p-voice__item">
                     <div class="p-voice__image">
@@ -351,11 +356,13 @@
                 <div class="p-use__flow">
                   <div class="p-use__flow-detail p-use-flow-detail">
                     <span class="p-use-flow-detail__circle"></span>
-                    <p class="c-text p-use-flow-detail__en">お問い合わせ</p>
-                    <p class="p-use-flow-detail__ja">
-                      まずはフォームまたはメールにてお問い合わせください。
-                      ヒアリングの日程を調整します。
-                    </p>
+                    <div class="p-use__detail-inner">
+                      <p class="c-text p-use-flow-detail__en">お問い合わせ</p>
+                      <p class="p-use-flow-detail__ja">
+                        まずはフォームまたはメールにてお問い合わせください。
+                        ヒアリングの日程を調整します。
+                      </p>
+                    </div>
                   </div>
                   <div class="p-use__flow-detail p-use-flow-detail">
                     <span class="p-use-flow-detail__circle"></span>
@@ -397,7 +404,9 @@
                 <!-- https://groworks.jp/blog/4238 -->
                 <div class="p-faq__accordion">
                   <div class="p-faq__accordion-question">
-                    <span>どのような生徒さんがどれぐらいの期間で稼いでいますか？</span>
+                    <span
+                      >どのような生徒さんがどれぐらいの期間で稼いでいますか？</span
+                    >
                   </div>
                   <div class="p-faq__accordion-answer">
                     <span class="c-text">最短3か月で収入を得ております</span>
@@ -406,19 +415,25 @@
                     <span>途中でプランを変更することは可能ですか？</span>
                   </div>
                   <div class="p-faq__accordion-answer">
-                    <span class="c-text">途中でプラン変更も可能です。毎月15日までに申請すれば翌月からプランが変更となります。</span>
+                    <span class="c-text"
+                      >途中でプラン変更も可能です。毎月15日までに申請すれば翌月からプランが変更となります。</span
+                    >
                   </div>
                   <div class="p-faq__accordion-question">
                     <span>入学金などの分割払いはできますか？</span>
                   </div>
                   <div class="p-faq__accordion-answer">
-                    <span class="c-text">はい、可能です。詳細はお問い合わせください。</span>
+                    <span class="c-text"
+                      >はい、可能です。詳細はお問い合わせください。</span
+                    >
                   </div>
                   <div class="p-faq__accordion-question">
                     <span>休学することも可能ですか？</span>
                   </div>
                   <div class="p-faq__accordion-answer">
-                    <span class="c-text">一定条件のもと可能です。詳しくはサポートにご相談ください。</span>
+                    <span class="c-text"
+                      >一定条件のもと可能です。詳しくはサポートにご相談ください。</span
+                    >
                   </div>
                 </div>
               </div>
@@ -595,6 +610,10 @@
       <!-- AOSアニメーション -->
       <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
       <!-- <script src="js/main.js"></script> -->
+      <script
+        type="text/javascript"
+        src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      ></script>
       <script
         src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
