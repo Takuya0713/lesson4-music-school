@@ -13,7 +13,10 @@
     row-gap: 5.8rem;
     margin: 5.3rem 0 0;
     @include sp {
-      display: initial;
+      // display: initial;
+      // margin-top: 3.9rem;
+      margin: 3.9rem 0 0;
+      row-gap: 3.6rem;
     }
     &-detail {
       display: flex;
@@ -44,6 +47,9 @@
         height: 2rem;
         border-radius: 50%;
         margin-right: 4.3rem;
+        @include sp {
+          margin-right: initial;
+        }
       }
       &__ja {
         display: flex;
@@ -54,6 +60,9 @@
         line-height: calc(30 / 18);
         @include sp {
           width: 28.7rem;
+          margin-top: 0.9rem;
+          font-size: 1.6rem;
+          line-height: calc(30 / 16);
         }
       }
     }
@@ -71,6 +80,9 @@
       border-bottom: 0.3rem solid rgb(203, 0, 0);
       border-left: 0.3rem solid rgb(203, 0, 0);
       transform-origin: left top;
+      @include sp {
+        left: -1.2%;
+      }
     }
     // 縦棒部分
     :nth-child(1) &::after {
@@ -83,6 +95,10 @@
       transform-origin: left top;
       left: 4.5%;
       top: 5%;
+      @include sp {
+        top: 10%;
+        height: 67rem;
+      }
     }
   }
 }

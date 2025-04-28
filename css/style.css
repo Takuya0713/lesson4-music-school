@@ -238,6 +238,7 @@ img {
 
 .c-form-btn {
   display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -301,7 +302,7 @@ img {
   }
 }
 @media (max-width: 767px) {
-  .p-blog__image {
+  .p-blog__item {
     width: initial;
   }
 }
@@ -454,7 +455,6 @@ img {
   display: flex;
   align-items: center;
   position: relative;
-  background-color: lightblue;
 }
 @media (max-width: 767px) {
   .p-faq__accordion-question {
@@ -508,7 +508,6 @@ img {
   display: none;
   padding: 2rem 2.8rem 1.7rem 1.9rem;
   border-bottom: 0.05rem solid #000000;
-  background-color: lightyellow;
 }
 @media (max-width: 767px) {
   .p-faq__accordion-answer {
@@ -542,7 +541,6 @@ img {
 }
 .footer__wrapper {
   background-color: rgb(203, 0, 0);
-  height: 27.4rem;
   padding: 4.4rem 0 5rem 0;
 }
 .footer__nav ul {
@@ -569,8 +567,8 @@ img {
   justify-content: center;
   align-items: center;
   -moz-column-gap: 1.2rem;
-       column-gap: 1.2rem;
-  margin: 3.2rem 0 0 0;
+  column-gap: 1.2rem;
+  margin-top: 3.2rem;
 }
 
 .p-header {
@@ -669,10 +667,11 @@ img {
 .p-header__button {
   height: 4.5rem;
   display: flex;
+  padding: 0.6rem 3rem;
 }
 .p-header__button a {
-  padding: 0.7rem 3rem 0.5rem 3rem;
-  height: 100%;
+  line-height: 2.2;
+  font-size: 1.5rem;
 }
 .p-header__nav ul {
   display: flex;
@@ -888,7 +887,8 @@ img {
 }
 @media (max-width: 767px) {
   .p-use__flow {
-    display: initial;
+    margin: 3.9rem 0 0;
+    row-gap: 3.6rem;
   }
 }
 .p-use__flow-detail {
@@ -922,6 +922,11 @@ img {
   border-radius: 50%;
   margin-right: 4.3rem;
 }
+@media (max-width: 767px) {
+  .p-use__flow-detail__circle {
+    margin-right: initial;
+  }
+}
 .p-use__flow-detail__ja {
   display: flex;
   align-items: center;
@@ -933,6 +938,9 @@ img {
 @media (max-width: 767px) {
   .p-use__flow-detail__ja {
     width: 28.7rem;
+    margin-top: 0.9rem;
+    font-size: 1.6rem;
+    line-height: 1.875;
   }
 }
 :nth-child(1) .p-use__flow::before {
@@ -947,6 +955,11 @@ img {
   border-left: 0.3rem solid rgb(203, 0, 0);
   transform-origin: left top;
 }
+@media (max-width: 767px) {
+  :nth-child(1) .p-use__flow::before {
+    left: -1.2%;
+  }
+}
 :nth-child(1) .p-use__flow::after {
   content: "";
   position: absolute;
@@ -957,6 +970,12 @@ img {
   transform-origin: left top;
   left: 4.5%;
   top: 5%;
+}
+@media (max-width: 767px) {
+  :nth-child(1) .p-use__flow::after {
+    top: 10%;
+    height: 67rem;
+  }
 }
 
 .p-voice {
@@ -973,7 +992,6 @@ img {
   .p-voice__wrapper {
     margin-top: 4rem;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 .p-voice__image {

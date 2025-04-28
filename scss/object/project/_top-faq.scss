@@ -12,7 +12,7 @@
       display: flex;
       align-items: center;
       position: relative;
-      background-color: lightblue;
+      // background-color: lightblue;
       @include sp {
         padding: initial;
       }
@@ -77,7 +77,7 @@
       // align-items: center;
       padding: 2rem 2.8rem 1.7rem 1.9rem;
       border-bottom: 0.05rem solid #000000;
-      background-color: lightyellow;
+      // background-color: lightyellow;
       @include sp {
         padding: initial;
         & span {
