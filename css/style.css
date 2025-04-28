@@ -291,6 +291,7 @@ img {
   grid-template-columns: repeat(3, 1fr);
   -moz-column-gap: 5rem;
        column-gap: 5rem;
+  margin-top: 3.8rem;
 }
 @media (max-width: 767px) {
   .p-blog__items {
@@ -298,9 +299,6 @@ img {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 4.1rem;
   }
-}
-.p-blog__image {
-  width: 26rem;
 }
 @media (max-width: 767px) {
   .p-blog__image {
@@ -875,7 +873,7 @@ img {
 }
 
 .p-use {
-  padding: 5.4rem 0 0 0;
+  padding: 5.4rem 0 9.1rem 0;
 }
 @media (max-width: 767px) {
   .p-use {
@@ -891,6 +889,50 @@ img {
 @media (max-width: 767px) {
   .p-use__flow {
     display: initial;
+  }
+}
+.p-use__flow-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p-use__flow-detail-inner {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .p-use__flow-detail-inner {
+    display: initial;
+  }
+}
+.p-use__flow-detail__en {
+  display: flex;
+  align-items: center;
+  width: 15.4rem;
+  font-size: 2.2rem;
+  line-height: 1.5;
+  margin-right: 3.8rem;
+}
+.p-use__flow-detail__circle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(203, 0, 0);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-right: 4.3rem;
+}
+.p-use__flow-detail__ja {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56.7rem;
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+}
+@media (max-width: 767px) {
+  .p-use__flow-detail__ja {
+    width: 28.7rem;
   }
 }
 :nth-child(1) .p-use__flow::before {
@@ -915,47 +957,6 @@ img {
   transform-origin: left top;
   left: 4.5%;
   top: 5%;
-}
-.p-use-flow-detail {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media (max-width: 767px) {
-  .p-use-flow-detail {
-    display: initial;
-  }
-}
-.p-use-flow-detail__en {
-  display: flex;
-  align-items: center;
-  width: 15.4rem;
-  font-size: 2.2rem;
-  line-height: 1.5;
-  margin-right: 3.8rem;
-}
-.p-use-flow-detail__circle {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgb(203, 0, 0);
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  margin-right: 4.3rem;
-}
-.p-use-flow-detail__ja {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 56.7rem;
-  font-size: 1.8rem;
-  line-height: 1.6666666667;
-}
-@media (max-width: 767px) {
-  .p-use-flow-detail__ja {
-    width: 28.7rem;
-  }
 }
 
 .p-voice {
