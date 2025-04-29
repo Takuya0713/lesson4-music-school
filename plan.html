@@ -7,7 +7,14 @@
   </head>
   <body>
     <!-- ヘッダーを読み込む -->
-    <script src="js/header.js"></script>
+    <!-- <script src="js/header.js"></script> -->
+    <script>
+      fetch("index.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("header").innerHTML = html;
+        });
+    </script>
     <picture>
       <source srcset="images/pc/2.plan/About.jpg" media="(max-width: 768px)" />
       <img src="images/sp/2.plan/Plan.jpg" alt="plan-image" />

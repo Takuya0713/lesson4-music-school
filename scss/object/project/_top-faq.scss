@@ -68,9 +68,8 @@
         }
       }
     }
-    // 回答
-    // 通常
-    // 質問部分がクリックされたとき
+    // 回答・通常
+    // 0430質問部分のモーダルがクリックされたときに「display: flex;align-items: center;」を追加したい
     &-answer {
       display: none;
       // display: flex;

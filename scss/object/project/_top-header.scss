@@ -39,105 +39,122 @@
       height: 5rem;
     }
   }
+  // ハンバーガーボタン部分
   &__scroll-bg {
     display: none;
     @include sp {
       display: flex;
       justify-content: space-between;
     }
-  }
+    // ハンバーガーopen時の動作（三→×）
+    &.active {
+      span {
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(0.8rem, 0.8rem);
+        }
 
-  &__items {
-    display: flex;
-    align-items: center;
-    @include sp {
-      // height: 5rem;
-    }
-  }
-  &__item {
-    margin-right: 0.7rem;
-    @include sp {
-      display: flex;
-      align-items: center;
-    }
-    a {
-      @include sp {
-        display: flex;
-        align-items: center;
-        img {
-          @include sp {
-            height: 3.1rem;
-            width: 2rem;
-          }
+        &:nth-child(2) {
+          background-color: transparent;
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(0.8rem, -0.8rem);
         }
       }
-      @include sp {
-        height: 5rem;
-      }
     }
   }
+}
 
-  &__nav-wrapper {
+&__items {
+  display: flex;
+  align-items: center;
+  @include sp {
+    // height: 5rem;
+  }
+}
+&__item {
+  margin-right: 0.7rem;
+  @include sp {
     display: flex;
     align-items: center;
-    column-gap: 3.3rem;
-    margin-left: auto;
+  }
+  a {
     @include sp {
-      display: none;
-    }
-  }
-  // ナビゲーション部分のお問い合わせボタン
-  &__button {
-    height: 4.5rem;
-    display: flex;
-    padding: 0.6rem 3rem;
-    a {
-      line-height: calc(33/15);
-      font-size: 1.5rem;
-    }
-  }
-
-  &__nav {
-    ul {
       display: flex;
-      column-gap: 3.3rem;
-      li {
-        height: 8rem;
-        // width: 100%;
-      }
-      a {
-        display: flex;
-        align-items: center;
-        height: 8rem;
-        width: 100%;
-        transition: all 0.3s;
-        cursor: pointer;
-      }
-    }
-  }
-
-  @include sp {
-    &__hb-btn {
-      display: flex;
-      justify-content: center;
       align-items: center;
-      flex-direction: column;
-      width: 7.2rem;
+      img {
+        @include sp {
+          height: 3.1rem;
+          width: 2rem;
+        }
+      }
+    }
+    @include sp {
       height: 5rem;
-      background-color: $color-red;
-      row-gap: 0.7rem;
+    }
+  }
+}
+
+&__nav-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 3.3rem;
+  margin-left: auto;
+  @include sp {
+    display: none;
+  }
+}
+// ナビゲーション部分のお問い合わせボタン
+&__button {
+  height: 4.5rem;
+  display: flex;
+  padding: 0.6rem 3rem;
+  a {
+    line-height: calc(33 / 15);
+    font-size: 1.5rem;
+  }
+}
+
+&__nav {
+  ul {
+    display: flex;
+    column-gap: 3.3rem;
+    li {
+      height: 8rem;
+      // width: 100%;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      height: 8rem;
+      width: 100%;
+      transition: all 0.3s;
       cursor: pointer;
     }
-    &__hb-line {
-      @include sp {
-        transition: 0.3s;
-        display: block;
-        background-color: $color-white;
-        border-radius: 0.2rem;
-        width: 3.2rem;
-        height: 0;
-        padding-block: 0.2rem;
-      }
+  }
+}
+
+@include sp {
+  &__hb-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 7.2rem;
+    height: 5rem;
+    background-color: $color-red;
+    row-gap: 0.7rem;
+    cursor: pointer;
+  }
+  &__hb-line {
+    @include sp {
+      transition: 0.3s;
+      display: block;
+      background-color: $color-white;
+      border-radius: 0.2rem;
+      width: 3.2rem;
+      height: 0;
+      padding-block: 0.2rem;
     }
   }
 }

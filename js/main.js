@@ -21,10 +21,17 @@ $(document).ready(function () {
   });
 });
 
+// メニューのリンクをクリックしたら閉じる処理
+/* .header__navのaタグをクリックしたらメニューを閉じる（aタグのリンククリック後にメニューを閉じる動作） */
+$(".header__nav a").click(function () {
+  closeMenu();
+});
+
 // アコーディオンメニュー部分
 $(".p-faq__accordion-question").click(function () {
   $(this).toggleClass("active");
   $(this).next().slideToggle();
+  // 0430この後に「display: flex;align-items: center;」を追加したい
 });
 
 // 「生徒さんたちの声」slickスライド部分
@@ -37,3 +44,13 @@ $(function () {
     arrows: false,
   });
 });
+
+// すべて読み込み終わってからAOSを実行
+window.onload = function () {
+  AOS.init({
+    offset: 300,
+    duration: 500,
+    easing: "ease-out",
+    once: true,
+  });
+};
