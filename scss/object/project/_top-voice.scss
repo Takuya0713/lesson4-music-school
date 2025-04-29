@@ -4,23 +4,35 @@
 // 生徒さんたちの声
 .p-voice {
   padding: 6.5rem 0 6rem;
-  & .inner{
-    
-  }
+  // & .inner{
+
+  // }
   &__wrapper {
-    margin-top: 3.6rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 3.5rem;
+    margin-top: 3.6rem;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     @include sp {
-      margin-top: 4rem;
-      // アニメーション化したら消す
       grid-template-columns: repeat(1, 1fr);
-      // grid-template-columns: repeat(3, 1fr);
+      // grid-template-columns: repeat(1, auto);
+      column-gap: initial;
     }
   }
+  &__items {
+    // display: flex;
+  }
+  &__item {
+    width: 100%;
+  }
+
   &__image {
     width: 27rem;
+    @include sp{
+      width: initial;
+    }
   }
   &__name {
     margin-top: 1.7rem;

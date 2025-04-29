@@ -309,7 +309,7 @@ img {
 .p-blog__comment {
   padding: 2rem 0 1.1rem 0;
 }
-.p-blog__comment p {
+.p-blog__comment a {
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.25;
@@ -318,7 +318,7 @@ img {
   padding-top: 1.1rem;
   text-align: right;
 }
-.p-blog__date p {
+.p-blog__date time {
   font-size: 1.7rem;
 }
 .p-blog__link {
@@ -982,20 +982,29 @@ img {
   padding: 6.5rem 0 6rem;
 }
 .p-voice__wrapper {
-  margin-top: 3.6rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   -moz-column-gap: 3.5rem;
        column-gap: 3.5rem;
+  margin-top: 3.6rem;
 }
 @media (max-width: 767px) {
   .p-voice__wrapper {
-    margin-top: 4rem;
     grid-template-columns: repeat(1, 1fr);
+    -moz-column-gap: initial;
+         column-gap: initial;
   }
+}
+.p-voice__item {
+  width: 100%;
 }
 .p-voice__image {
   width: 27rem;
+}
+@media (max-width: 767px) {
+  .p-voice__image {
+    width: initial;
+  }
 }
 .p-voice__name {
   margin-top: 1.7rem;
@@ -1022,5 +1031,14 @@ img {
 .u-bg-red {
   background-color: rgb(203, 0, 0);
   color: #ffffff;
+}
+
+a {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 0.5;
 }
 /*# sourceMappingURL=style.css.map */

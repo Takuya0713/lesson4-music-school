@@ -1,7 +1,17 @@
 @use "../../foundation/mixins" as *; //spやpcでの表示サイズを読み込む
 @use "../../foundation/variables" as *; //min関数を読み込む
 
+// 背景色は赤、文字は白
 .u-bg-red {
   background-color: $color-red;
   color: $color-white;
+}
+
+// aタグホバー時の動作
+a {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+a:hover {
+  opacity: 0.5;
 }
