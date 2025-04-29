@@ -1,16 +1,39 @@
-// AOS.init();
+// 全て読み込み終わったらAOSを動作させる
+AOS.init();
+
+// ハンバーガーボタン部分
+/*　ハンバーガーボタンをクリックしたら、
+    1.三本線を×にする
+    2.ドロワーメニューが表示されるようにする
+　*/
+
+// 【ハンバーガーボタンイベントに関する動作】
+// ハンバーガーボタンをクリックした時に他のクリックイベントが広がるのを防ぐ
+$(document).ready(function () {
+  $("#hb-block").click(function (event) {
+    event.stopPropagation();
+    // クラス名「」にactiveが付与されていたら、メニューを閉じて付与されていない状況なら開く。
+    if ($(".hb").hasClass("active")) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+});
+
 // アコーディオンメニュー部分
 $(".p-faq__accordion-question").click(function () {
   $(this).toggleClass("active");
   $(this).next().slideToggle();
 });
-// 「生徒さんたちの声」スライド部分
+
+// 「生徒さんたちの声」slickスライド部分
 $(function () {
   $(".p-voice__wrapper").slick({
-    autoplay: true, // 自動再生
-    autoplaySpeed: 4000, // 再生速度（ミリ秒設定） 1000ミリ秒=1秒
+    autoplay: true,
+    autoplaySpeed: 4000,
     speed: 1000,
-    infinite: true, // 無限スライド
-    arrows: false, // 矢印
+    infinite: true,
+    arrows: false,
   });
 });
