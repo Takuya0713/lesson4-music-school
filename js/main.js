@@ -13,7 +13,8 @@ $(document).ready(function () {
   $("#hb-block").click(function (event) {
     event.stopPropagation();
     // クラス名「」にactiveが付与されていたら、メニューを閉じて付与されていない状況なら開く。
-    if ($(".hb").hasClass("active")) {
+    // if ($(".hb").hasClass("active")) {
+    if ($(".p-header__hb").hasClass("active")) {
       closeMenu();
     } else {
       openMenu();
@@ -23,9 +24,23 @@ $(document).ready(function () {
 
 // メニューのリンクをクリックしたら閉じる処理
 /* .header__navのaタグをクリックしたらメニューを閉じる（aタグのリンククリック後にメニューを閉じる動作） */
-$(".header__nav a").click(function () {
+$(".p-header__nav a").click(function () {
   closeMenu();
 });
+
+// ナビゲーションメニューを開く（ハンバーガーボタンとヘッダー部分にactiveがついたら発動）
+function openMenu() {
+  $(".p-header__hb").addClass("active");
+  $(".header__nav").addClass("active");
+}
+
+// ナビゲーションメニューを閉じる
+function closeMenu() {
+  if ($(window).width() <= 767) {
+    $(".p-header__hb").removeClass("active");
+    $(".header__nav").removeClass("active");
+  }
+}
 
 // アコーディオンメニュー部分
 $(".p-faq__accordion-question").click(function () {
@@ -44,13 +59,3 @@ $(function () {
     arrows: false,
   });
 });
-
-// すべて読み込み終わってからAOSを実行
-window.onload = function () {
-  AOS.init({
-    offset: 300,
-    duration: 500,
-    easing: "ease-out",
-    once: true,
-  });
-};
