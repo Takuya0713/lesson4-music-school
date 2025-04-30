@@ -570,6 +570,11 @@ img {
   column-gap: 1.2rem;
   margin-top: 3.2rem;
 }
+@media (max-width: 767px) {
+  .footer__sns-links {
+    width: 100%;
+  }
+}
 
 .p-header {
   z-index: 1000;

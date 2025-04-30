@@ -28,6 +28,8 @@
     justify-content: center;
     align-items: center;
     margin: 2.1rem 0 2.3rem 0;
+    @include sp{
+    }
   }
   &__sns-links {
     display: flex;
@@ -36,5 +38,8 @@
     -moz-column-gap: 1.2rem;
     column-gap: 1.2rem;
     margin-top: 3.2rem;
+    @include sp{
+      width: 100%;
+    }
   }
 }
