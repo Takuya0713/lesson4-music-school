@@ -16,7 +16,7 @@
     text-align: center;
     z-index: 99;
     color: $color-white;
-    font-size: 4rem;
+    font-size: vw(40);
     line-height: calc(60 / 40);
     font-weight: bold;
     @include sp {

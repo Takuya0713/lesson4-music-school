@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
   word-break: break-all;
   box-sizing: border-box;
-  scroll-padding-top: 5rem;
+  scroll-padding-top: 8rem;
   // 1020以下フォントサイズをPC・タブレット・スマートフォン毎に設定する
   font-size: 10px;
   margin-top: 8rem;
@@ -20,6 +20,7 @@ html {
     font-size: vw(10, 375);
     // フォントサイズは10pxで最大幅375px内に収まるように設定
     margin-top: 5rem;
+    scroll-padding-top: 5rem;
   }
 }
 

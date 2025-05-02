@@ -130,7 +130,7 @@ html {
   scroll-behavior: smooth;
   word-break: break-all;
   box-sizing: border-box;
-  scroll-padding-top: 5rem;
+  scroll-padding-top: 8rem;
   font-size: 10px;
   margin-top: 8rem;
 }
@@ -143,6 +143,7 @@ html {
   html {
     font-size: 2.6666666667vw;
     margin-top: 5rem;
+    scroll-padding-top: 5rem;
   }
 }
 
@@ -563,17 +564,14 @@ img {
   margin: 2.1rem 0 2.3rem 0;
 }
 .footer__sns-links {
+  margin-top: 3.2rem;
+}
+.footer__sns-links ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  -moz-column-gap: 1.2rem;
-  column-gap: 1.2rem;
-  margin-top: 3.2rem;
-}
-@media (max-width: 767px) {
-  .footer__sns-links {
-    width: 100%;
-  }
+  -moz-column-gap: 4.1rem;
+       column-gap: 4.1rem;
 }
 
 .p-header {
@@ -766,7 +764,7 @@ img {
   text-align: center;
   z-index: 99;
   color: #ffffff;
-  font-size: 4rem;
+  font-size: 3.7037037037vw;
   line-height: 1.5;
   font-weight: bold;
 }

@@ -9,4 +9,5 @@ https://www.genspark.ai/spark/css%E3%81%A7span%E3%82%BF%E3%82%B0%E3%82%92%E4%BD%
 
 display: flex;とflex-direction: column;を組み合わせて使用する。
 
-【】
+【リキッドレイアウト解説・GPT】
+https://chatgpt.com/c/6814abc5-56bc-8010-8a08-9fc813e4a6a4
