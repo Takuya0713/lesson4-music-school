@@ -116,20 +116,47 @@
   }
 
   &__nav {
-    ul {
-      display: flex;
-      column-gap: 3.3rem;
-      li {
-        height: 8rem;
-        // width: 100%;
-      }
-      a {
-        display: flex;
-        align-items: center;
-        height: 8rem;
-        width: 100%;
-        transition: all 0.3s;
-        cursor: pointer;
+    @include sp {
+      position: fixed;
+      top: 5rem;
+      right: -110%;
+      align-items: initial;
+      transition: all 0.3s;
+      // 0502ここの並びを直す
+      &.active {
+        @include sp {
+          right: 0;
+          // ナビゲーションメニューが表示された状態になる
+          background-color: lightgreen;
+        }
+        ul {
+          display: flex;
+          column-gap: 3.3rem;
+          @include sp {
+            display: block;
+            align-items: center;
+            column-gap: initial;
+            width: 30rem;
+            li {
+              height: 8rem;
+              @include sp {
+                align-items: center;
+                display: flex;
+                font-size: 1.8rem;
+                height: 5.8rem;
+                width: 30rem;
+              }
+            }
+          }
+          a {
+            display: flex;
+            align-items: center;
+            height: 8rem;
+            width: 100%;
+            transition: all 0.3s;
+            cursor: pointer;
+          }
+        }
       }
     }
   }
