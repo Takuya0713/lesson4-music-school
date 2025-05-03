@@ -12,15 +12,13 @@
   @include sp {
     height: 5rem;
     padding-right: 0;
-    @include sp {
-      // width: initial;
-    }
   }
   & .inner {
     @include sp {
       width: 100%;
     }
   }
+  // ヘッダーのロゴ～お問い合わせボタン部分の表記
   &__wrapper {
     display: flex;
     @include sp {
@@ -41,9 +39,6 @@
   &__items {
     display: flex;
     align-items: center;
-    @include sp {
-      // height: 5rem;
-    }
   }
   &__item {
     margin-right: 0.7rem;
@@ -51,57 +46,18 @@
       display: flex;
       align-items: center;
     }
-    // ヘッダーのロゴとリンク部分
-    a {
-      @include sp {
-        display: flex;
-        align-items: center;
-        height: 5rem;
-        img {
-          @include sp {
-            height: 3.1rem;
-            width: 2rem;
-          }
-        }
-      }
-    }
   }
-
-  // ハンバーガー三本線部分
-  &__hb {
-    &.active {
-      span {
-        &:nth-child(1) {
-          transform: rotate(45deg) translate(0.8rem, 0.8rem);
-        }
-
-        &:nth-child(2) {
-          background-color: transparent;
-        }
-
-        &:nth-child(3) {
-          transform: rotate(-45deg) translate(0.8rem, -0.8rem);
-        }
-      }
-    }
-  }
-
-  // ハンバーガーボタン部分（PCで非表示でSPで表示）
-  &__scroll-bg {
-    display: none;
+  & a {
     @include sp {
       display: flex;
-      justify-content: space-between;
-    }
-    // ハンバーガーopen時の動作（三→×）
-  }
-  &__nav-wrapper {
-    display: flex;
-    align-items: center;
-    column-gap: 3.3rem;
-    margin-left: auto;
-    @include sp {
-      display: none;
+      align-items: center;
+      height: 5rem;
+      img {
+        @include sp {
+          height: 3.1rem;
+          width: 2rem;
+        }
+      }
     }
   }
   // ナビゲーション部分のお問い合わせボタン
@@ -115,65 +71,35 @@
     }
   }
 
-  &__nav {
+  &__hb {
+    // ハンバーガーボタン部分（PCで非表示でSPで表示）
+    display: none;
     @include sp {
-      position: fixed;
-      top: 5rem;
-      right: -110%;
-      align-items: initial;
-      transition: all 0.3s;
-      // 0502ここの並びを直す
-      &.active {
-        @include sp {
-          right: 0;
-          // ナビゲーションメニューが表示された状態になる
-          background-color: lightgreen;
-        }
-        ul {
-          display: flex;
-          column-gap: 3.3rem;
-          @include sp {
-            display: block;
-            align-items: center;
-            column-gap: initial;
-            width: 30rem;
-            li {
-              height: 8rem;
-              @include sp {
-                align-items: center;
-                display: flex;
-                font-size: 1.8rem;
-                height: 5.8rem;
-                width: 30rem;
-              }
-            }
+      display: flex;
+      justify-content: space-between;
+    }
+    // ハンバーガーボタンがクリックされたとき
+    &.active {
+      @include sp {
+        right: 0;
+        // ナビゲーションメニューが表示された状態になる
+        background-color: lightgreen;
+        // ハンバーガーopen時の動作（三→×）
+        span {
+          &:nth-child(1) {
+            transform: rotate(45deg) translate(0.8rem, 0.8rem);
           }
-          a {
-            display: flex;
-            align-items: center;
-            height: 8rem;
-            width: 100%;
-            transition: all 0.3s;
-            cursor: pointer;
+          &:nth-child(2) {
+            background-color: transparent;
+          }
+          &:nth-child(3) {
+            transform: rotate(-45deg) translate(0.8rem, -0.8rem);
           }
         }
       }
     }
-  }
 
-  @include sp {
-    &__hb-btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: 7.2rem;
-      height: 5rem;
-      background-color: $color-red;
-      row-gap: 0.7rem;
-      cursor: pointer;
-    }
-    &__hb-line {
+    &-line {
       @include sp {
         transition: 0.3s;
         display: block;
@@ -184,5 +110,67 @@
         padding-block: 0.2rem;
       }
     }
+    @include sp {
+      &-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 7.2rem;
+        height: 5rem;
+        background-color: $color-red;
+        row-gap: 0.7rem;
+        cursor: pointer;
+        // ハンバーガーボタン　三本線部分
+      }
+    }
+    // 0503続き
+    // &__nav {
+    //   @include sp {
+    //     // position: fixed;
+    //     // top: 5rem;
+    //     // right: -110%;
+    //     // align-items: initial;
+    //     // transition: all 0.3s;
+    //     &-wrapper {
+    //       display: flex;
+    //       align-items: center;
+    //       column-gap: 3.3rem;
+    //       margin-left: auto;
+    //       @include sp {
+    //         display: none;
+    //       }
+    //       ul {
+    //         display: flex;
+    //         column-gap: 3.3rem;
+    //         @include sp {
+    //           display: block;
+    //           align-items: center;
+    //           column-gap: initial;
+    //           width: 30rem;
+    //           li {
+    //             height: 8rem;
+    //             @include sp {
+    //               align-items: center;
+    //               display: flex;
+    //               font-size: 1.8rem;
+    //               height: 5.8rem;
+    //               width: 30rem;
+    //             }
+    //           }
+    //         }
+    //         a {
+    //           display: flex;
+    //           align-items: center;
+    //           height: 8rem;
+    //           width: 100%;
+    //           transition: all 0.3s;
+    //           cursor: pointer;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
   }
+
 }
