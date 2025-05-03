@@ -22,12 +22,61 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
+      @include sp {
+        column-gap: 1.3rem;
+        align-items: initial;
+      }
+      &:first-of-type {
+        .p-use__flow-detail__circle {
+          position: relative;
+          span {
+            position: absolute;
+            transform: translateX(-50%);
+            width: 0.3rem;
+            height: 40.9rem;
+            background-color: rgb(203, 0, 0);
+            transform-origin: left top;
+            left: 4.5%;
+            top: 5%;
+            @include sp {
+              // top: 10%;
+              // height: 67rem;
+              // left: 2.5%;
+              top: 1rem;
+              left: 50%;
+              transform: translateX(-50%);
+              height: 67.4rem;
+            }
+            &::before {
+              left: 2.5%;
+              top: 100%;
+              content: "";
+              position: absolute;
+              transform: rotate(-45deg);
+              width: 2.5rem;
+              height: 2.5rem;
+              border-bottom: 0.3rem solid rgb(203, 0, 0);
+              border-left: 0.3rem solid rgb(203, 0, 0);
+              transform-origin: left top;
+              @include sp {
+                left: 0.15rem;
+                top: initial;
+                bottom: 0;
+                // background-color: #ff6;
+                // border-color: #00f;
+                transform: rotate(-45deg);
+                transform-origin: left bottom;
+              }
+            }
+          }
+        }
+      }
       &-inner {
         display: flex;
         // width: 29rem;
         @include sp {
           display: initial;
+          flex: 1;
         }
       }
       &__en {
@@ -49,6 +98,7 @@
         margin-right: 4.3rem;
         @include sp {
           margin-right: initial;
+          margin-top: 0.7rem;
         }
       }
       &__ja {
@@ -70,35 +120,36 @@
     // 矢印の屋根部分
     // :last-of-type &::before {
     :nth-child(1) &::before {
-      left: 2.5%;
-      top: 100%;
-      content: "";
-      position: absolute;
-      transform: rotate(-45deg);
-      width: 2.5rem;
-      height: 2.5rem;
-      border-bottom: 0.3rem solid rgb(203, 0, 0);
-      border-left: 0.3rem solid rgb(203, 0, 0);
-      transform-origin: left top;
-      @include sp {
-        left: -1.2%;
-      }
+      // left: 2.5%;
+      // top: 100%;
+      // content: "";
+      // position: absolute;
+      // transform: rotate(-45deg);
+      // width: 2.5rem;
+      // height: 2.5rem;
+      // border-bottom: 0.3rem solid rgb(203, 0, 0);
+      // border-left: 0.3rem solid rgb(203, 0, 0);
+      // transform-origin: left top;
+      // @include sp {
+      //   left: -1.2%;
+      // }
     }
     // 縦棒部分
     :nth-child(1) &::after {
-      content: "";
-      position: absolute;
-      transform: translateX(-50%);
-      width: 0.3rem;
-      height: 40.9rem;
-      background-color: rgb(203, 0, 0);
-      transform-origin: left top;
-      left: 4.5%;
-      top: 5%;
-      @include sp {
-        top: 10%;
-        height: 67rem;
-      }
+      // content: "";
+      // position: absolute;
+      // transform: translateX(-50%);
+      // width: 0.3rem;
+      // height: 40.9rem;
+      // background-color: rgb(203, 0, 0);
+      // transform-origin: left top;
+      // left: 4.5%;
+      // top: 5%;
+      // @include sp {
+      //   top: 10%;
+      //   height: 67rem;
+      //   left: 2.5%;
+      // }
     }
   }
 }
