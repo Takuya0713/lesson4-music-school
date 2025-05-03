@@ -83,7 +83,10 @@
     column-gap: 3.3rem;
     margin-left: auto;
     @include sp {
-      display: none;
+      position: fixed;
+      top: 5rem;
+      right: -110%;
+      transition: all 0.3s;
     }
     // 親要素
     ul {
@@ -91,6 +94,8 @@
       column-gap: 3.3rem;
       @include sp {
         display: none;
+        align-items: center;
+        width: 30rem;
         // 各項目
         li {
           height: 8rem;
@@ -107,8 +112,10 @@
           align-items: center;
           height: 8rem;
           width: 100%;
-          transition: all 0.3s;
           cursor: pointer;
+          @include sp {
+            padding-left: 2rem;
+          }
         }
       }
       // ハンバーガーボタンがクリックされたとき
@@ -118,6 +125,8 @@
         position: absolute;
         display: block;
         top: 100%;
+        right: 0;
+        transition: all 0.3s;
       }
       &.active {
         ul {
@@ -130,9 +139,9 @@
         }
         li {
           @include sp {
-              font-size: 1.8rem;
-              height: initial;
-              width: 30rem;
+            font-size: 1.8rem;
+            height: initial;
+            width: 30rem;
           }
         }
       }
@@ -147,7 +156,7 @@
       }
       &.active {
         @include sp {
-          display: block;
+          // display: block;
           right: 0;
         }
       }

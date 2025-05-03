@@ -1,12 +1,6 @@
 // 全て読み込み終わったらAOSを動作させる
 AOS.init();
 
-// ハンバーガーボタン部分
-/*　ハンバーガーボタンをクリックしたら、
-    1.三本線を×にする
-    2.ドロワーメニューが表示されるようにする
-　*/
-
 // 【ハンバーガーボタンイベントに関する動作】
 // ハンバーガーボタンをクリックした時に他のクリックイベントが広がるのを防ぐ
 $(document).ready(function () {
@@ -40,7 +34,7 @@ function openMenu() {
 function closeMenu() {
   if ($(window).width() <= 767) {
     $(".p-header__hb").removeClass("active");
-    $(".header__nav").removeClass("active");
+    $(".p-header__nav").removeClass("active");
   }
 }
 
