@@ -70,6 +70,53 @@
       font-size: 1.5rem;
     }
   }
+  // 0503続き
+  &__nav {
+    display: flex;
+    align-items: center;
+    column-gap: 3.3rem;
+    margin-left: auto;
+    @include sp {
+      display: none;
+    }
+    ul {
+      display: flex;
+      column-gap: 3.3rem;
+      @include sp {
+        display: block;
+        align-items: center;
+        column-gap: initial;
+        width: 30rem;
+        li {
+          height: 8rem;
+          @include sp {
+            align-items: center;
+            display: flex;
+            font-size: 1.8rem;
+            height: 5.8rem;
+            width: 30rem;
+          }
+        }
+      }
+      a {
+        display: flex;
+        align-items: center;
+        height: 8rem;
+        width: 100%;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+    }
+    &-wrapper {
+      @include sp {
+        position: fixed;
+        top: 5rem;
+        right: -110%;
+        align-items: initial;
+        transition: all 0.3s;
+      }
+    }
+  }
 
   &__hb {
     // ハンバーガーボタン部分（PCで非表示でSPで表示）
@@ -124,53 +171,5 @@
         // ハンバーガーボタン　三本線部分
       }
     }
-    // 0503続き
-    // &__nav {
-    //   @include sp {
-    //     // position: fixed;
-    //     // top: 5rem;
-    //     // right: -110%;
-    //     // align-items: initial;
-    //     // transition: all 0.3s;
-    //     &-wrapper {
-    //       display: flex;
-    //       align-items: center;
-    //       column-gap: 3.3rem;
-    //       margin-left: auto;
-    //       @include sp {
-    //         display: none;
-    //       }
-    //       ul {
-    //         display: flex;
-    //         column-gap: 3.3rem;
-    //         @include sp {
-    //           display: block;
-    //           align-items: center;
-    //           column-gap: initial;
-    //           width: 30rem;
-    //           li {
-    //             height: 8rem;
-    //             @include sp {
-    //               align-items: center;
-    //               display: flex;
-    //               font-size: 1.8rem;
-    //               height: 5.8rem;
-    //               width: 30rem;
-    //             }
-    //           }
-    //         }
-    //         a {
-    //           display: flex;
-    //           align-items: center;
-    //           height: 8rem;
-    //           width: 100%;
-    //           transition: all 0.3s;
-    //           cursor: pointer;
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
   }
-
 }
