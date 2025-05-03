@@ -65,12 +65,18 @@
     height: 4.5rem;
     display: flex;
     padding: 0.6rem 3rem;
+    @include sp {
+      display: none;
+      // →お問い合わせボタンはSPで移動時についてくるようにする
+    }
     a {
       line-height: calc(33 / 15);
       font-size: 1.5rem;
     }
   }
-  // 0503続き
+
+  // ナビゲーションメニュー（通常時）
+  // 全体
   &__nav {
     display: flex;
     align-items: center;
@@ -79,14 +85,13 @@
     @include sp {
       display: none;
     }
+    // 親要素
     ul {
       display: flex;
       column-gap: 3.3rem;
       @include sp {
-        display: block;
-        align-items: center;
-        column-gap: initial;
-        width: 30rem;
+        display: none;
+        // 各項目
         li {
           height: 8rem;
           @include sp {
@@ -97,14 +102,39 @@
             width: 30rem;
           }
         }
+        a {
+          display: flex;
+          align-items: center;
+          height: 8rem;
+          width: 100%;
+          transition: all 0.3s;
+          cursor: pointer;
+        }
       }
-      a {
-        display: flex;
-        align-items: center;
-        height: 8rem;
-        width: 100%;
-        transition: all 0.3s;
-        cursor: pointer;
+      // ハンバーガーボタンがクリックされたとき
+    }
+    &.active {
+      @include sp {
+        position: absolute;
+        display: block;
+        top: 100%;
+      }
+      &.active {
+        ul {
+          @include sp {
+            display: block;
+            align-items: center;
+            column-gap: initial;
+            width: 30rem;
+          }
+        }
+        li {
+          @include sp {
+              font-size: 1.8rem;
+              height: initial;
+              width: 30rem;
+          }
+        }
       }
     }
     &-wrapper {
@@ -115,11 +145,17 @@
         align-items: initial;
         transition: all 0.3s;
       }
+      &.active {
+        @include sp {
+          display: block;
+          right: 0;
+        }
+      }
     }
   }
 
+  // ハンバーガーボタン部分（PCで非表示でSPで表示）
   &__hb {
-    // ハンバーガーボタン部分（PCで非表示でSPで表示）
     display: none;
     @include sp {
       display: flex;

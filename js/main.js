@@ -31,7 +31,9 @@ $(".p-header__nav a").click(function () {
 // ナビゲーションメニューを開く（ハンバーガーボタンとヘッダー部分にactiveがついたら発動）
 function openMenu() {
   $(".p-header__hb").addClass("active");
-  $(".header__nav").addClass("active");
+  $(".p-header__nav").addClass("active");
+  $(".p-header__nav-wrapper").addClass("active");
+  $(".p-header__nav-wrapper").addClass("u-bg-red");
 }
 
 // ナビゲーションメニューを閉じる
