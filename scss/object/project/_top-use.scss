@@ -36,12 +36,9 @@
             height: 40.9rem;
             background-color: rgb(203, 0, 0);
             transform-origin: left top;
-            left: 4.5%;
+            // left: 4.5%;
             top: 5%;
             @include sp {
-              // top: 10%;
-              // height: 67rem;
-              // left: 2.5%;
               top: 1rem;
               left: 50%;
               transform: translateX(-50%);
@@ -49,7 +46,9 @@
             }
             &::before {
               left: 2.5%;
+              left: -1.5rem;
               top: 100%;
+              top: 96.5%;
               content: "";
               position: absolute;
               transform: rotate(-45deg);

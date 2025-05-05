@@ -3,10 +3,7 @@
 
 // 赤いボタン→共通部分ボタンの色部分
 .c-form-btn {
-  display: flex;
   display: none;
-  justify-content: center;
-  align-items: center;
   a {
     line-height: calc(33 / 20);
     color: $color-white;

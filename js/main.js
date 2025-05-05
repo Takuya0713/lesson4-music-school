@@ -1,7 +1,7 @@
 // 全て読み込み終わったらAOSを動作させる
 AOS.init();
 
-// 【ハンバーガーボタンイベントに関する動作】
+// 【ハンバーガーボタンイベント】
 // ハンバーガーボタンをクリックした時に他のクリックイベントが広がるのを防ぐ
 $(document).ready(function () {
   $("#hb-block").click(function (event) {
@@ -46,12 +46,28 @@ $(".p-faq__accordion-question").click(function () {
 });
 
 // 「生徒さんたちの声」slickスライド部分
+// 750px以下になったときのみslick機能を使用する
+// https://www.genius-web.co.jp/blog/web-programming/how-to-use-slick-js-to-apply-sliders-on-a-smartphone-to-the-rest-of-the-picture-on-a-pc.html
 $(function () {
-  $(".p-voice__wrapper").slick({
-    autoplay: true,
-    autoplaySpeed: 4000,
-    speed: 1000,
-    infinite: true,
-    arrows: false,
+  function sliderSetting() {
+    var width = $(window).width();
+    if (width <= 750) {
+      // class名にslick-nextと書かれたslick機能を働かせる
+      $(".slick-next").not(".slick-initialized").slick({
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 1000,
+        infinite: true,
+        arrows: false,
+      });
+    } else {
+      $(".slide.slick-initialized").slick("unslick");
+    }
+  }
+  // 上述の関数を実行
+  sliderSetting();
+  // windowサイズが変更されたときに再度関数の内容を実行
+  $(window).resize(function () {
+    sliderSetting();
   });
 });

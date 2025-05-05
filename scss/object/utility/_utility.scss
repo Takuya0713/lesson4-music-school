@@ -15,3 +15,10 @@ a {
 a:hover {
   opacity: 0.5;
 }
+
+// 横並びにした後、
+.u-df-tbc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

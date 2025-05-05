@@ -238,10 +238,7 @@ img {
 }
 
 .c-form-btn {
-  display: flex;
   display: none;
-  justify-content: center;
-  align-items: center;
 }
 .c-form-btn a {
   line-height: 1.65;
@@ -1015,7 +1012,6 @@ img {
   height: 40.9rem;
   background-color: rgb(203, 0, 0);
   transform-origin: left top;
-  left: 4.5%;
   top: 5%;
 }
 @media (max-width: 767px) {
@@ -1028,7 +1024,9 @@ img {
 }
 .p-use__flow-detail:first-of-type .p-use__flow-detail__circle span::before {
   left: 2.5%;
+  left: -1.5rem;
   top: 100%;
+  top: 96.5%;
   content: "";
   position: absolute;
   transform: rotate(-45deg);
@@ -1158,5 +1156,11 @@ a {
 
 a:hover {
   opacity: 0.5;
+}
+
+.u-df-tbc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
