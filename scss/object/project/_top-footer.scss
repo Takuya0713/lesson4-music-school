@@ -2,6 +2,7 @@
 @use "../../foundation/variables" as *;
 
 .footer {
+  position: relative;
   &__wrapper {
     background-color: $color-red;
     // height: 27.4rem;
@@ -36,11 +37,11 @@
       justify-content: center;
       align-items: center;
       column-gap: calc(12.3 / 3 * 1rem);
-      @include sp{
+      @include sp {
         column-gap: 1.2rem;
       }
     }
-    a{
+    a {
       display: block;
       width: 2.2rem;
     }
