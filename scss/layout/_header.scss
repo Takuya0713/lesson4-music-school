@@ -40,7 +40,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include sp{
+    @include sp {
       display: initial;
     }
   }
@@ -52,5 +52,9 @@
   &__nav ul {
     display: flex;
     column-gap: 3.3rem;
+  }
+  // パンくずナビゲーションのレイアウト部分
+  &__breadcrumb {
+    background-color: rgba(232, 232, 232, 1);
   }
 }

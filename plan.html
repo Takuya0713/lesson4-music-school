@@ -75,129 +75,128 @@
           </div>
         </div>
       </header>
-    <!-- パンくずリストを追加 -->
-    <!-- 矢印はbefore::li要素で作成する -->
-    <div>
-      <div class="nav breadcrumb">
-        <ol>
-          <li>
-            <a href=""><span>ホーム</span></a>
-          </li>
-          <li>
-            <a href=""><span>プラン・料金</span></a>
-          </li>
-        </ol>
-      </div>
-    </div>
-
-    <!-- FV -->
-
-    <!-- 料金体系 -->
-    <section>
-      <div class="p-price__wrapper">
-        <div class="p-price__title">
-          <h2>料金体系</h2>
+      <!-- パンくずリストを追加 -->
+      <div class="l-header__breadcrumb p-header__breadcrumb">
+        <div class="inner">
+          <ol>
+            <li>
+              <a href="index.html"><span>ホーム</span></a>
+            </li>
+            <li>
+              <a href=""><span>プラン・料金</span></a>
+            </li>
+          </ol>
         </div>
-        <div class="c-price">
-          <div class="c-price__items">
-            <div class="c-price__item">
-              <p>入会金 39,000円</p>
+      </div>
+
+      <!-- FV -->
+
+      <!-- 料金体系 -->
+      <section>
+        <div class="p-price__wrapper">
+          <div class="p-price__title">
+            <h2>料金体系</h2>
+          </div>
+          <div class="c-price">
+            <div class="c-price__items">
+              <div class="c-price__item">
+                <p>入会金 39,000円</p>
+              </div>
+              <div class="c-price__icon">
+                <span></span>
+              </div>
+              <div class="c-price__item">
+                <p>月額料金</p>
+              </div>
+              <div class="c-price__text">
+                <p>
+                  きたむらミュージックスクールでは、個人に合わせたサポートを行う完全オーダーメイドのプランを用意しており、サポート内容により月額料金が異なります。担当者があなたに最適なプランを提案いたしますので、お気軽にお問い合わせください。※すべての料金は税込価格となります。
+                </p>
+              </div>
             </div>
-            <div class="c-price__icon">
-              <span></span>
-            </div>
-            <div class="c-price__item">
-              <p>月額料金</p>
-            </div>
-            <div class="c-price__text">
+          </div>
+        </div>
+      </section>
+      <!-- プラン内容・月額料金 -->
+      <!-- https://chatgpt.com/c/67d4ef0d-1078-8010-8e1d-e08d4289c756 -->
+      <!-- https://www.kuronekoyamato.co.jp/ytc/search/estimate/ichiran.html -->
+      <section>
+        <div class="p-price-plan__wrapper">
+          <div class="p-price-plan__title">
+            <h2>プラン内容・月額料金</h2>
+          </div>
+          <div class="p-price-plan__list">
+            <table>
+              <!-- tableは表全体の親要素 -->
+              <!-- theadタグはthの親要素 -->
+              <!-- trは行部分、thはヘッダーの子要素 -->
+              <!-- theadはヘッダーの親要素、thは子要素となる -->
+              <!-- <caption>
+              料金表
+            </caption> -->
+              <thead>
+                <tr>
+                  <th>ベーシックプラン</th>
+                  <th>おすすめ<br />スタンダードプラン</th>
+                  <th>プレミアムプラン</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- trの中にtdデータ（行データ）を加える事で -->
+                <tr>
+                  <td>月額料金</td>
+                  <td>39,000円</td>
+                  <td><span>59,000円</span></td>
+                  <td>128,000円</td>
+                </tr>
+                <tr>
+                  <td>マンツーマン授業</td>
+                  <!-- 改行はbrタグかwhite-space: pre-lineを使用。長文の場合はulタグとliタグを使用 -->
+                  <td>●<br />週１回</td>
+                  <td>●<br />週２回</td>
+                  <td>●<br />無制限</td>
+                </tr>
+                <tr>
+                  <td>ビジネス基本講座</td>
+                  <td>●<br /></td>
+                  <td>●<br /></td>
+                  <td>●<br /></td>
+                  <td>●<br /></td>
+                </tr>
+                <tr>
+                  <td>練習ROOM利用</td>
+                  <td>●<br />月10時間</td>
+                  <td>●<br />月20時間</td>
+                  <td>●<br />無制限</td>
+                </tr>
+                <tr>
+                  <td>ビジネスコンサル</td>
+                  <td>●<span></span></td>
+                  <td>●<br />月２回</td>
+                  <td>●<br />月３回</td>
+                </tr>
+                <tr>
+                  <td>コミュニティ参加資格</td>
+                  <td><span></span></td>
+                  <td>●<span></span></td>
+                  <td>●</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="p-price-plan__option">
               <p>
-                きたむらミュージックスクールでは、個人に合わせたサポートを行う完全オーダーメイドのプランを用意しており、サポート内容により月額料金が異なります。担当者があなたに最適なプランを提案いたしますので、お気軽にお問い合わせください。※すべての料金は税込価格となります。
+                ※各サービスは１回ごとのオプション追加が可能です。詳しくは事務局までお問い合わせください。
               </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- プラン内容・月額料金 -->
-    <!-- https://chatgpt.com/c/67d4ef0d-1078-8010-8e1d-e08d4289c756 -->
-    <!-- https://www.kuronekoyamato.co.jp/ytc/search/estimate/ichiran.html -->
-    <section>
-      <div class="p-price-plan__wrapper">
-        <div class="p-price-plan__title">
-          <h2>プラン内容・月額料金</h2>
-        </div>
-        <div class="p-price-plan__list">
-          <table>
-            <!-- tableは表全体の親要素 -->
-            <!-- theadタグはthの親要素 -->
-            <!-- trは行部分、thはヘッダーの子要素 -->
-            <!-- theadはヘッダーの親要素、thは子要素となる -->
-            <!-- <caption>
-              料金表
-            </caption> -->
-            <thead>
-              <tr>
-                <th>ベーシックプラン</th>
-                <th>おすすめ<br />スタンダードプラン</th>
-                <th>プレミアムプラン</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- trの中にtdデータ（行データ）を加える事で -->
-              <tr>
-                <td>月額料金</td>
-                <td>39,000円</td>
-                <td><span>59,000円</span></td>
-                <td>128,000円</td>
-              </tr>
-              <tr>
-                <td>マンツーマン授業</td>
-                <!-- 改行はbrタグかwhite-space: pre-lineを使用。長文の場合はulタグとliタグを使用 -->
-                <td>●<br />週１回</td>
-                <td>●<br />週２回</td>
-                <td>●<br />無制限</td>
-              </tr>
-              <tr>
-                <td>ビジネス基本講座</td>
-                <td>●<br /></td>
-                <td>●<br /></td>
-                <td>●<br /></td>
-                <td>●<br /></td>
-              </tr>
-              <tr>
-                <td>練習ROOM利用</td>
-                <td>●<br />月10時間</td>
-                <td>●<br />月20時間</td>
-                <td>●<br />無制限</td>
-              </tr>
-              <tr>
-                <td>ビジネスコンサル</td>
-                <td>●<span></span></td>
-                <td>●<br />月２回</td>
-                <td>●<br />月３回</td>
-              </tr>
-              <tr>
-                <td>コミュニティ参加資格</td>
-                <td><span></span></td>
-                <td>●<span></span></td>
-                <td>●</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="p-price-plan__option">
-            <p>
-              ※各サービスは１回ごとのオプション追加が可能です。詳しくは事務局までお問い合わせください。
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- フッターを読み込む -->
+      <!-- フッターを読み込む -->
 
-    <!-- TOPへ戻るボタンを読み込む -->
+      <!-- TOPへ戻るボタンを読み込む -->
 
-    <!-- お問い合わせボタンを読み込む -->
-  </div>
-</body>
+      <!-- お問い合わせボタンを読み込む -->
+    </div>
+  </body>
 </html>
