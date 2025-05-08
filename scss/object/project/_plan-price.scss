@@ -1,0 +1,15 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+.p-price {
+  &__wrapper {
+    padding: 6rem 0;
+  }
+  &-plan {
+    &__wrapper {
+      padding: 5rem 0 22rem 0;
+    }
+    &__list{
+        margin-top: 5rem;
+    }
+  }
+}
