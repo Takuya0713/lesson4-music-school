@@ -349,14 +349,14 @@ img {
 }
 
 .p-price__wrapper {
-  padding: 6rem 0;
+  padding: 6rem 0 0 0;
 }
 .p-price__fee {
   margin-top: 4rem;
 }
 .p-price__items {
-  -moz-column-gap: 8rem;
-       column-gap: 8rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
 }
 .p-price__item {
   width: 21rem;
@@ -386,13 +386,31 @@ img {
   height: 100%;
   transform: translateX(-50%);
 }
+.p-price__text {
+  margin-top: 6rem;
+}
+.p-price__text p {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+}
 .p-price-plan__wrapper {
   padding: 5rem 0 22rem 0;
 }
 .p-price-plan__list {
   margin-top: 5rem;
 }
-
+.p-price-plan__list-inner {
+  background-color: lightyellow;
+}
+.p-price-plan__list th {
+  font-size: 2rem;
+  line-height: 1.65;
+}
+.p-price-plan__list th:nth-of-type(odd) {
+  background-color: #000;
+  color: #ffffff;
+  height: 5rem;
+}
 .p-blog {
   padding: 7rem 0 20.5rem 0;
 }

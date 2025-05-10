@@ -140,20 +140,20 @@
       <div class="p-price-plan__title">
         <h2 class="c-sectionTitle">プラン内容・月額料金</h2>
       </div>
+      <!-- tableは表全体の親要素 -->
+      <!-- theadタグはthの親要素 -->
+      <!-- trは行の親要素、thはヘッダーの子要素 -->
+      <!-- theadはヘッダーの親要素、thは子要素となる -->
+      <!-- <caption>
+                  料金表
+                </caption> -->
       <div class="p-price-plan__list">
-        <table>
-          <!-- tableは表全体の親要素 -->
-          <!-- theadタグはthの親要素 -->
-          <!-- trは行の親要素、thはヘッダーの子要素 -->
-          <!-- theadはヘッダーの親要素、thは子要素となる -->
-          <!-- <caption>
-                      料金表
-                    </caption> -->
+        <table class="p-price-plan__list-inner">
           <thead>
-            <tr>
-              <th>ベーシックプラン</th>
-              <th>おすすめ<br />スタンダードプラン</th>
-              <th>プレミアムプラン</th>
+            <tr class="u-df-tbc">
+              <th class="u-df-tbc">ベーシックプラン</th>
+              <th class="u-df-tbc u-bg-red"><span>おすすめ</span><br />スタンダードプラン</th>
+              <th class="u-df-tbc">プレミアムプラン</th>
             </tr>
           </thead>
           <tbody>

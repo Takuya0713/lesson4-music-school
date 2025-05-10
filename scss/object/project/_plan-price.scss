@@ -2,13 +2,13 @@
 @use "../../foundation/variables" as *;
 .p-price {
   &__wrapper {
-    padding: 6rem 0;
+    padding: 6rem 0 0 0;
   }
   &__fee {
     margin-top: 4rem;
   }
   &__items {
-    column-gap: 8rem;
+    column-gap: 3rem;
   }
   &__item {
     width: 21rem;
@@ -45,12 +45,35 @@
       transform: translateX(-50%);
     }
   }
+  &__text {
+    margin-top: 6rem;
+    p {
+      font-size: 1.8rem;
+      line-height: calc(30 / 18);
+    }
+  }
   &-plan {
     &__wrapper {
       padding: 5rem 0 22rem 0;
     }
+    // 料金表部分
     &__list {
       margin-top: 5rem;
+      &-inner {
+        background-color: lightyellow;
+      }
+      th {
+        font-size: 2rem;
+        line-height: calc(33 / 20);
+        &:nth-of-type(odd) {
+          background-color: #000;
+          color: $color-white;
+          height: 5rem;
+        }
+        &:nth-of-type(even) {
+          // height: 8rem;
+        }
+      }
     }
   }
 }
