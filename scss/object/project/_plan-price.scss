@@ -4,12 +4,53 @@
   &__wrapper {
     padding: 6rem 0;
   }
+  &__fee {
+    margin-top: 4rem;
+  }
+  &__items {
+    column-gap: 8rem;
+  }
+  &__item {
+    width: 21rem;
+    height: 6rem;
+  }
+  &__icon {
+    position: relative;
+    width: 1.85rem;
+    height: 1.85rem;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #000;
+    }
+    // 横線
+    &::before {
+      top: 50%;
+      left: 0;
+      // 親要素の1.85remが維持される
+      width: 100%;
+      // 線の高さ部分
+      height: 0.3rem;
+      transform: translateY(-50%);
+    }
+    // 縦線
+    &::after {
+      left: 50%;
+      top: 0;
+      // 線の幅部分
+      width: 0.3rem;
+      // 親要素の1.85remが維持される
+      height: 100%;
+      transform: translateX(-50%);
+    }
+  }
   &-plan {
     &__wrapper {
       padding: 5rem 0 22rem 0;
     }
-    &__list{
-        margin-top: 5rem;
+    &__list {
+      margin-top: 5rem;
     }
   }
 }
