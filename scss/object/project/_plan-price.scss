@@ -59,19 +59,86 @@
     // 料金表部分
     &__list {
       margin-top: 5rem;
-      &-inner {
-        background-color: lightyellow;
+      tbody {
+        tr {
+          &:first-of-type {
+            border-top: 0.1rem solid #000;
+          }
+          &:nth-of-type(0) {
+            border-left: 0.1rem solid #000;
+          }
+          &:nth-of-type(even) {
+            background-color: $color-white;
+          }
+          &:nth-of-type(odd) {
+            background-color: rgba(80, 80, 80, 0.149);
+          }
+          &:last-of-type {
+            border-bottom: 0.1rem solid #000;
+          }
+        }
+      }
+      thead {
+        tr {
+          &:first-of-type {
+            align-items: flex-end;
+          }
+        }
+      }
+      tr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 8.5rem;
       }
       th {
         font-size: 2rem;
         line-height: calc(33 / 20);
+        width: calc(880 / 4) * 0.1rem;
+        &:first-of-type {
+          padding: initial;
+        }
+        // 奇数
         &:nth-of-type(odd) {
+          padding: 1.1rem 2rem 0.5rem;
+        }
+        // 偶数
+        &:nth-of-type(even) {
           background-color: #000;
           color: $color-white;
           height: 5rem;
         }
-        &:nth-of-type(even) {
-          // height: 8rem;
+        span {
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+          line-height: calc(33 / 17);
+          font-size: 1.7rem;
+        }
+      }
+      td {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(880 / 4) * 0.1rem;
+        text-align: center;
+        flex-direction: column;
+        // ↑縦並びにする
+        height: 100%;
+        &:not(:first-of-type) {
+          border-left: 0.1rem solid #000;
+          height: 100%;
+        }
+        &.color-red,
+        .color-red {
+          color: $color-red;
+          &.font-bold{
+            font-weight: bold;
+          }
+        }
+        span {
+          width: 100%;
+          text-align: center;
         }
       }
     }

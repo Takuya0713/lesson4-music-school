@@ -399,18 +399,79 @@ img {
 .p-price-plan__list {
   margin-top: 5rem;
 }
-.p-price-plan__list-inner {
-  background-color: lightyellow;
+.p-price-plan__list tbody tr:first-of-type {
+  border-top: 0.1rem solid #000;
+}
+.p-price-plan__list tbody tr:nth-of-type(0) {
+  border-left: 0.1rem solid #000;
+}
+.p-price-plan__list tbody tr:nth-of-type(even) {
+  background-color: #ffffff;
+}
+.p-price-plan__list tbody tr:nth-of-type(odd) {
+  background-color: rgba(80, 80, 80, 0.149);
+}
+.p-price-plan__list tbody tr:last-of-type {
+  border-bottom: 0.1rem solid #000;
+}
+.p-price-plan__list thead tr:first-of-type {
+  align-items: flex-end;
+}
+.p-price-plan__list tr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8.5rem;
 }
 .p-price-plan__list th {
   font-size: 2rem;
   line-height: 1.65;
+  width: 22rem;
+}
+.p-price-plan__list th:first-of-type {
+  padding: initial;
 }
 .p-price-plan__list th:nth-of-type(odd) {
+  padding: 1.1rem 2rem 0.5rem;
+}
+.p-price-plan__list th:nth-of-type(even) {
   background-color: #000;
   color: #ffffff;
   height: 5rem;
 }
+.p-price-plan__list th span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  line-height: 1.9411764706;
+  font-size: 1.7rem;
+}
+.p-price-plan__list td {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22rem;
+  text-align: center;
+  flex-direction: column;
+  height: 100%;
+}
+.p-price-plan__list td:not(:first-of-type) {
+  border-left: 0.1rem solid #000;
+  height: 100%;
+}
+.p-price-plan__list td.color-red,
+.p-price-plan__list td .color-red {
+  color: rgb(203, 0, 0);
+}
+.p-price-plan__list td.color-red.font-bold,
+.p-price-plan__list td .color-red.font-bold {
+  font-weight: bold;
+}
+.p-price-plan__list td span {
+  width: 100%;
+  text-align: center;
+}
+
 .p-blog {
   padding: 7rem 0 20.5rem 0;
 }
