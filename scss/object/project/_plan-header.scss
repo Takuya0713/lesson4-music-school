@@ -1,25 +1,25 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
 // パンくずナビゲーションのレイアウト部分
-.p-header {
-    &__breadcrumb {
-    ol {
-      position: relative;
-      display: flex;
-      align-items: center;
-      height: 5rem;
-      column-gap: 5rem;
-      @include sp {
-        height: 3.5rem;
-      }
-    }
-    li {
-      // 矢印「>」部分
-      &::before {
-        content: ">";
-        position: absolute;
-        left: 8%;
-      }
-    }
-  }
-}
+// .p-header {
+//     &__breadcrumb {
+//     ol {
+//       position: relative;
+//       display: flex;
+//       align-items: center;
+//       height: 5rem;
+//       column-gap: 5rem;
+//       @include sp {
+//         height: 3.5rem;
+//       }
+//     }
+//     li {
+//       // 矢印「>」部分
+//       &::before {
+//         content: ">";
+//         position: absolute;
+//         left: 8%;
+//       }
+//     }
+//   }
+// }

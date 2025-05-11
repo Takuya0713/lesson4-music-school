@@ -1,6 +1,26 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
 
-// ナビゲーション部分の記述
-.c-header-nav {
+// パンくずナビゲーションのレイアウト部分
+.c-header {
+    &__breadcrumb {
+    ol {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 5rem;
+      column-gap: 5rem;
+      @include sp {
+        height: 3.5rem;
+      }
+    }
+    li {
+      // 矢印「>」部分
+      &::before {
+        content: ">";
+        position: absolute;
+        left: 8%;
+      }
+    }
+  }
 }
