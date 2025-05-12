@@ -1,419 +1,358 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex" />
-    <title>blog_list</title>
-    <link rel="stylesheet" type="text/css" href="css/slick.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div id="l-container">
-      <!-- ヘッダーを読み込む -->
-      <header class="p-header" id="header">
-        <div class="inner">
-          <div class="p-header__wrapper">
-            <div class="p-header__logo">
-              <div class="p-header__items">
-                <div class="p-header__item">
-                  <a href="#"
-                    ><img
-                      src="images/common/1.top/1.header/header__logo.svg"
-                      alt="ロゴマーク"
-                    />
-                  </a>
-                </div>
-                <div class="p-header__item">
-                  <h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>blog_list</title>
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="l-container">
+    <!-- ヘッダーを読み込む -->
+    <header class="p-header" id="header">
+      <div class="inner">
+        <div class="p-header__wrapper">
+          <div class="p-header__logo">
+            <div class="p-header__items">
+              <div class="p-header__item">
+                <a href="#"><img src="images/common/1.top/1.header/header__logo.svg" alt="ロゴマーク" />
+                </a>
+              </div>
+              <div class="p-header__item">
+                <h1>
                     <a href="index.html"
                       ><span class="ib-span">きたむら</span
                       ><br class="pc" />ミュージックスクール</a
                     >
                   </h1>
-                </div>
-              </div>
-            </div>
-            <!-- ハンバーガーボタン SPの時のみ表示する-->
-            <div id="hb-block" class="p-header__scroll-bg p-header__hb sp">
-              <div class="p-header__hb-btn sp u-bg-red">
-                <span class="p-header__hb-line"></span>
-                <span class="p-header__hb-line"></span>
-                <span class="p-header__hb-line"></span>
-              </div>
-            </div>
-
-            <!-- ナビゲーション -->
-            <div class="p-header__nav">
-              <nav class="p-header__nav-wrapper c-header-nav">
-                <ul>
-                  <li>
-                    <a href="plan.html">料金</a>
-                  </li>
-                  <li>
-                    <a href="blog_list.html">ブログ</a>
-                  </li>
-                  <li>
-                    <a href="#">卒業実績</a>
-                  </li>
-                </ul>
-              </nav>
-              <!-- ナビゲーション部分のお問い合わせボタン -->
-              <div class="p-header__button u-bg-red">
-                <a class="c-button" href="#">お問い合わせ</a>
               </div>
             </div>
           </div>
+          <!-- ハンバーガーボタン SPの時のみ表示する-->
+          <div id="hb-block" class="p-header__scroll-bg p-header__hb sp">
+            <div class="p-header__hb-btn sp u-bg-red">
+              <span class="p-header__hb-line"></span>
+              <span class="p-header__hb-line"></span>
+              <span class="p-header__hb-line"></span>
+            </div>
+          </div>
+
+          <!-- ナビゲーション -->
+          <div class="p-header__nav">
+            <nav class="p-header__nav-wrapper c-header-nav">
+              <ul>
+                <li>
+                  <a href="plan.html">料金</a>
+                </li>
+                <li>
+                  <a href="blog_list.html">ブログ</a>
+                </li>
+                <li>
+                  <a href="#">卒業実績</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- ナビゲーション部分のお問い合わせボタン -->
+            <div class="p-header__button u-bg-red">
+              <a class="c-button" href="#">お問い合わせ</a>
+            </div>
+          </div>
         </div>
-      </header>
+      </div>
+    </header>
 
       <main>
         <div class="l-main">
-          <section class="section p-blog-mv">
-            <div class="p-blog-mv__wrapper">
-              <div class="p-blog-mv__title">
-                <h2 class="p-blog-mv__titleInner">ブログ</h2>
+          <section class="section p-blog-list">
+            <div class="p-blog-list__wrapper">
+              <div class="p-blog-list__title">
+                <h2 class="p-blog-list__titleInner">ブログ一覧</h2>
               </div>
-              <div class="p-blog-mv__image">
+              <div class="p-blog-list__image">
                 <picture>
                   <source
                     srcset="images/common/3.blog_list/Blog.jpg"
                     media="(min-width: 768px)"
                   />
-                  <img src="images/common/3.blog_list/Blog-sp.jpg" alt="FV" />
+                  <img
+                    src="images/common/3.blog_list/Blog-sp.jpg"
+                    alt="FV"
+                  />
                 </picture>
               </div>
             </div>
           </section>
 
-          <!-- パンくずリストを追加 -->
-          <!-- 矢印はbefore::li要素で作成する -->
-          <div class="l-header__breadcrumb c-header__breadcrumb">
-            <div class="inner">
-              <ol>
-                <li>
-                  <a href="index.html"><span>ホーム</span></a>
-                </li>
-                <li>
-                  <a href="blog_list.html"><span>ブログ</span></a>
-                </li>
-              </ol>
-            </div>
+        <!-- パンくずリストを追加 -->
+        <!-- 矢印はbefore::li要素で作成する -->
+        <div class="l-header__breadcrumb c-header__breadcrumb">
+          <div class="inner">
+            <ol>
+              <li>
+                <a href="index.html"><span>ホーム</span></a>
+              </li>
+              <li>
+                <a href="blog_list.html"><span>ブログ</span></a>
+              </li>
+            </ol>
           </div>
-
-          <!-- ブログ一覧 -->
-          <section class="section p-blog-list">
-            <div class="inner">
-              <div class="p-blog-list__title">
-                <h2 class="p-blog-list__titleInner c-sectionTitle">
-                  ブログ一覧
-                </h2>
-              </div>
-              <div class="p-blog-list__items">
-                <div class="p-blog-list__item">
-                  <div class="p-blog-list__image">
-                    <picture>
-                      <source
-                        srcset="images/common/3.blog_list/blog01.jpg"
-                        media="(min-width: 768px)"
-                      />
-                      <img
-                        src="images/common/3.blog_list/blog01-sp.jpg"
-                        alt="FV"
-                      />
-                    </picture>
-                  </div>
-                  <div class="p-blog-list__subTitle">
-                    <h3>アルペジオが劇的に向上する3つの習慣</h3>
-                  </div>
-                  <div class="p-blog-list__date">
-                    <time datetime="0000.00.00">0000.00.00</time>
-                  </div>
-                  <div class="p-blog-list__description">
-                    <p>
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                    </p>
-                  </div>
-                </div>
-                <div class="p-blog-list__item">
-                  <div class="p-blog-list__image">
-                    <picture>
-                      <source
-                        srcset="images/common/3.blog_list/blog02.jpg"
-                        media="(min-width: 768px)"
-                      />
-                      <img
-                        src="images/common/3.blog_list/blog02-sp.jpg"
-                        alt="FV"
-                      />
-                    </picture>
-                  </div>
-                  <div class="p-blog-list__subTitle">
-                    <h3>アルペジオが劇的に向上する3つの習慣</h3>
-                  </div>
-                  <div class="p-blog-list__date">
-                    <time datetime="0000.00.00">0000.00.00</time>
-                  </div>
-                  <div class="p-blog-list__description">
-                    <p>
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                    </p>
-                  </div>
-                </div>
-                <div class="p-blog-list__item">
-                  <div class="p-blog-list__image">
-                    <picture>
-                      <source
-                        srcset="images/common/3.blog_list/blog03.jpg"
-                        media="(min-width: 768px)"
-                      />
-                      <img
-                        src="images/common/3.blog_list/blog03-sp.jpg"
-                        alt="FV"
-                      />
-                    </picture>
-                  </div>
-                  <div class="p-blog-list__subTitle">
-                    <h3>アルペジオが劇的に向上する3つの習慣</h3>
-                  </div>
-                  <div class="p-blog-list__date">
-                    <time datetime="0000.00.00">0000.00.00</time>
-                  </div>
-                  <div class="p-blog-list__description">
-                    <p>
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                    </p>
-                  </div>
-                </div>
-                <div class="p-blog-list__item">
-                  <div class="p-blog-list__image">
-                    <picture>
-                      <source
-                        srcset="images/common/3.blog_list/blog01.jpg"
-                        media="(min-width: 768px)"
-                      />
-                      <img
-                        src="images/common/3.blog_list/blog01-sp.jpg"
-                        alt="FV"
-                      />
-                    </picture>
-                  </div>
-                  <div class="p-blog-list__subTitle">
-                    <h3>アルペジオが劇的に向上する3つの習慣</h3>
-                  </div>
-                  <div class="p-blog-list__date">
-                    <time datetime="0000.00.00">0000.00.00</time>
-                  </div>
-                  <div class="p-blog-list__description">
-                    <p>
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                    </p>
-                  </div>
-                </div>
-                <div class="p-blog-list__item">
-                  <div class="p-blog-list__image">
-                    <picture>
-                      <source
-                        srcset="images/common/3.blog_list/blog02.jpg"
-                        media="(min-width: 768px)"
-                      />
-                      <img
-                        src="images/common/3.blog_list/blog02-sp.jpg"
-                        alt="FV"
-                      />
-                    </picture>
-                  </div>
-                  <div class="p-blog-list__subTitle">
-                    <h3>アルペジオが劇的に向上する3つの習慣</h3>
-                  </div>
-                  <div class="p-blog-list__date">
-                    <time datetime="0000.00.00">0000.00.00</time>
-                  </div>
-                  <div class="p-blog-list__description">
-                    <p>
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                    </p>
-                  </div>
-                </div>
-                <div class="p-blog-list__item">
-                  <div class="p-blog-list__image">
-                    <picture>
-                      <source
-                        srcset="images/common/3.blog_list/blog03.jpg"
-                        media="(min-width: 768px)"
-                      />
-                      <img
-                        src="images/common/3.blog_list/blog03-sp.jpg"
-                        alt="FV"
-                      />
-                    </picture>
-                  </div>
-                  <div class="p-blog-list__subTitle">
-                    <h3>アルペジオが劇的に向上する3つの習慣</h3>
-                  </div>
-                  <div class="p-blog-list__date">
-                    <time datetime="0000.00.00">0000.00.00</time>
-                  </div>
-                  <div class="p-blog-list__description">
-                    <p>
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                    </p>
-                  </div>
-                </div>
-                <div class="p-blog-list__item">
-                  <div class="p-blog-list__image">
-                    <picture>
-                      <source
-                        srcset="images/common/3.blog_list/blog01.jpg"
-                        media="(min-width: 768px)"
-                      />
-                      <img
-                        src="images/common/3.blog_list/blog01-sp.jpg"
-                        alt="FV"
-                      />
-                    </picture>
-                  </div>
-                  <div class="p-blog-list__subTitle">
-                    <h3>アルペジオが劇的に向上する3つの習慣</h3>
-                  </div>
-                  <div class="p-blog-list__date">
-                    <time datetime="0000.00.00">0000.00.00</time>
-                  </div>
-                  <div class="p-blog-list__description">
-                    <p>
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                    </p>
-                  </div>
-                </div>
-                <div class="p-blog-list__item">
-                  <div class="p-blog-list__image">
-                    <picture>
-                      <source
-                        srcset="images/common/3.blog_list/blog02.jpg"
-                        media="(min-width: 768px)"
-                      />
-                      <img
-                        src="images/common/3.blog_list/blog02-sp.jpg"
-                        alt="FV"
-                      />
-                    </picture>
-                  </div>
-                  <div class="p-blog-list__subTitle">
-                    <h3>アルペジオが劇的に向上する3つの習慣</h3>
-                  </div>
-                  <div class="p-blog-list__date">
-                    <time datetime="0000.00.00">0000.00.00</time>
-                  </div>
-                  <div class="p-blog-list__description">
-                    <p>
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                    </p>
-                  </div>
-                </div>
-                <div class="p-blog-list__item">
-                  <div class="p-blog-list__image">
-                    <picture>
-                      <source
-                        srcset="images/common/3.blog_list/blog03.jpg"
-                        media="(min-width: 768px)"
-                      />
-                      <img
-                        src="images/common/3.blog_list/blog03-sp.jpg"
-                        alt="FV"
-                      />
-                    </picture>
-                  </div>
-                  <div class="p-blog-list__subTitle">
-                    <h3>アルペジオが劇的に向上する3つの習慣</h3>
-                  </div>
-                  <div class="p-blog-list__date">
-                    <time datetime="0000.00.00">0000.00.00</time>
-                  </div>
-                  <div class="p-blog-list__description">
-                    <p>
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                    </p>
-                  </div>
-                </div>
-                <div class="p-blog-list__item">
-                  <div class="p-blog-list__image">
-                    <picture>
-                      <source
-                        srcset="images/common/3.blog_list/blog01.jpg"
-                        media="(min-width: 768px)"
-                      />
-                      <img
-                        src="images/common/3.blog_list/blog01-sp.jpg"
-                        alt="FV"
-                      />
-                    </picture>
-                  </div>
-                  <div class="p-blog-list__subTitle">
-                    <h3>アルペジオが劇的に向上する3つの習慣</h3>
-                  </div>
-                  <div class="p-blog-list__date">
-                    <time datetime="0000.00.00">0000.00.00</time>
-                  </div>
-                  <div class="p-blog-list__description">
-                    <p>
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- ページネーション部分・spanタグで色付けし、hover時に色を変えるようにする -->
-              <div class="pager">
-                <ul class="pager__lists">
-                  <li class="pager__list"><span>1</span></li>
-                  <li class="pager__list"><span>2</span></li>
-                  <li class="pager__list"><span>3</span></li>
-                  <li class="pager__list"><span>・・・</span></li>
-                  <li class="pager__list"><span>9</span></li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          <!-- お問い合わせボタンとTOP画面に戻るボタン -->
-          <div class="c-button__wrapper">
-            <!-- ページトップボタン -->
-            <div class="inner">
-              <div class="c-fix-area l-fix-area u-df-tbc">
-                <a href="#" class="scroll-top-btn">
-                  <!-- <a href="#" class="scroll-top-btn" style="display: none"> -->
-                  <img src="./images/common/arrow-top.svg" alt="arrow-top" />
-                </a>
-              </div>
-              <!-- お問い合わせボタン -->
-              <div class="c-form-btn u-bg-red u-df-tbc">
-                <a class="c-button c-button--fixed" href="#">お問い合わせ</a>
-              </div>
-            </div>
-          </div>
-          <script
-            src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-            crossorigin="anonymous"
-          ></script>
-          <!-- slick部分を追加 -->
-          <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-          <!-- AOSアニメーション -->
-          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-          <script src="js/main.js"></script>
         </div>
-      </main>
-    </div>
-  </body>
+
+          <div class="inner">
+            <div class="p-blog-list__subTitle">
+              <h3>アルペジオが劇的に向上する3つの習慣</h3>
+            </div>
+          </div>
+          <p><time datetime="0000.00.00">0000.00.00</time></p>
+          <div class="p-blog-list__description">
+            <p>
+              本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+              本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+            </p>
+          </div>
+
+          <div class="p-blog-list__items">
+            <div class="p-blog-list__item">
+              <div class="p-blog-list__image">
+                <picture>
+                  <source
+                    srcset="images/pc/3.blog_list/blog02.jpg"
+                    media="(max-width: 768px)"
+                  />
+                  <img src="images/sp/3.blog_list/image02.jpg" alt="image-02" />
+                </picture>
+              </div>
+              <div class="p-blog-list__subTitle">
+                <h3>集客してる間は売れないという法則</h3>
+              </div>
+              <p><time datetime="0000.00.00">0000.00.00</time></p>
+              <div class="p-blog-list__description">
+                <p>
+                  本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-blog-list__items">
+            <div class="p-blog-list__item">
+              <div class="p-blog-list__image">
+                <picture>
+                  <source
+                    srcset="images/pc/3.blog_list/blog03.jpg"
+                    media="(max-width: 768px)"
+                  />
+                  <img src="images/sp/3.blog_list/image03.jpg" alt="image-03" />
+                </picture>
+              </div>
+              <div class="p-blog-list__subTitle">
+                <h3>フォロワーではなくファンを増やせとは？</h3>
+              </div>
+              <p><time datetime="0000.00.00">0000.00.00</time></p>
+              <div class="p-blog-list__description">
+                <p>
+                  本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-blog-list__items">
+            <div class="p-blog-list__item">
+              <div class="p-blog-list__image">
+                <picture>
+                  <source
+                    srcset="images/pc/3.blog_list/blog04.jpg"
+                    media="(max-width: 768px)"
+                  />
+                  <img src="images/sp/3.blog_list/image04.jpg" alt="image-04" />
+                </picture>
+              </div>
+              <div class="p-blog-list__subTitle">
+                <h3>アルペジオが劇的に向上する3つの習慣</h3>
+              </div>
+              <p><time datetime="0000.00.00">0000.00.00</time></p>
+              <div class="p-blog-list__description">
+                <p>
+                  本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                  本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                  本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-blog-list__items">
+            <div class="p-blog-list__item">
+              <div class="p-blog-list__image">
+                <picture>
+                  <source
+                    srcset="images/pc/3.blog_list/blog05.jpg"
+                    media="(max-width: 768px)"
+                  />
+                  <img src="images/sp/3.blog_list/image05.jpg" alt="image-05" />
+                </picture>
+              </div>
+              <div class="p-blog-list__subTitle">
+                <h3>集客してる間は売れないという法則</h3>
+              </div>
+              <p><time datetime="0000.00.00">0000.00.00</time></p>
+              <div class="p-blog-list__description">
+                <p>
+                  本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-blog-list__items">
+            <div class="p-blog-list__item">
+              <div class="p-blog-list__image">
+                <picture>
+                  <source
+                    srcset="images/pc/3.blog_list/blog06.jpg"
+                    media="(max-width: 768px)"
+                  />
+                  <img src="images/sp/3.blog_list/image06.jpg" alt="image-06" />
+                </picture>
+              </div>
+              <div class="p-blog-list__subTitle">
+                <h3>フォロワーではなくファンを増やせとは？</h3>
+              </div>
+              <p><time datetime="0000.00.00">0000.00.00</time></p>
+              <div class="p-blog-list__description">
+                <p>
+                  本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-blog-list__items">
+            <div class="p-blog-list__item">
+              <div class="p-blog-list__image">
+                <picture>
+                  <source
+                    srcset="images/pc/3.blog_list/blog07.jpg"
+                    media="(max-width: 768px)"
+                  />
+                  <img src="images/sp/3.blog_list/image07.jpg" alt="image-07" />
+                </picture>
+              </div>
+              <div class="p-blog-list__subTitle">
+                <h3>アルペジオが劇的に向上する3つの習慣</h3>
+              </div>
+              <p><time datetime="0000.00.00">0000.00.00</time></p>
+              <div class="p-blog-list__description">
+                <p>
+                  本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                  本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                  本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-blog-list__items">
+            <div class="p-blog-list__item">
+              <div class="p-blog-list__image">
+                <picture>
+                  <source
+                    srcset="images/pc/3.blog_list/blog08.jpg"
+                    media="(max-width: 768px)"
+                  />
+                  <img src="images/sp/3.blog_list/image08.jpg" alt="image-08" />
+                </picture>
+              </div>
+              <div class="p-blog-list__subTitle">
+                <h3>集客してる間は売れないという法則</h3>
+              </div>
+              <p><time datetime="0000.00.00">0000.00.00</time></p>
+              <div class="p-blog-list__description">
+                <p>
+                  本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-blog-list__items">
+            <div class="p-blog-list__item">
+              <div class="p-blog-list__image">
+                <picture>
+                  <source
+                    srcset="images/pc/3.blog_list/blog09.jpg"
+                    media="(max-width: 768px)"
+                  />
+                  <img src="images/sp/3.blog_list/image09.jpg" alt="image-09" />
+                </picture>
+              </div>
+              <div class="p-blog-list__subTitle">
+                <h3>フォロワーではなくファンを増やせとは？</h3>
+              </div>
+              <p><time datetime=""></time></p>
+              <div class="p-blog-list__description">
+                <p>
+                  本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-blog-list__items">
+            <div class="p-blog-list__item">
+              <div class="p-blog-list__image">
+                <picture>
+                  <source
+                    srcset="images/pc/3.blog_list/blog10.jpg"
+                    media="(max-width: 768px)"
+                  />
+                  <img src="images/sp/3.blog_list/image10.jpg" alt="image-10" />
+                </picture>
+              </div>
+              <div class="p-blog-list__subTitle">
+                <h3>アルペジオが劇的に向上する3つの習慣</h3>
+              </div>
+              <p><time datetime=""></time></p>
+              <div class="p-blog-list__description">
+                <p>
+                  本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                  本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                  本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- ページネーション部分・spanタグで色付けし、hover時に色を変えるようにする -->
+          <div class="pager">
+            <ul class="pager__lists">
+              <li class="pager__list"><span>1</span></li>
+              <li class="pager__list"><span>2</span></li>
+              <li class="pager__list"><span>3</span></li>
+              <li class="pager__list"><span>・・・</span></li>
+              <li class="pager__list"><span>9</span></li>
+            </ul>
+          </div>
+
+        <!-- お問い合わせボタンとTOP画面に戻るボタン -->
+        <div class="c-button__wrapper">
+          <!-- ページトップボタン -->
+          <div class="inner">
+            <div class="c-fix-area l-fix-area u-df-tbc">
+              <a href="#" class="scroll-top-btn">
+                <!-- <a href="#" class="scroll-top-btn" style="display: none"> -->
+                <img src="./images/common/arrow-top.svg" alt="arrow-top" />
+              </a>
+            </div>
+            <!-- お問い合わせボタン -->
+            <div class="c-form-btn u-bg-red u-df-tbc">
+              <a class="c-button c-button--fixed" href="#">お問い合わせ</a>
+            </div>
+          </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <!-- slick部分を追加 -->
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- AOSアニメーション -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/main.js"></script>
+      </div>
+    </main>
+  </div>
+</body>
 </html>
