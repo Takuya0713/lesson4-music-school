@@ -354,6 +354,37 @@ img {
 .p-blog-list__items {
   margin-top: 4rem;
 }
+.p-blog-list__item {
+  display: flex;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+.p-blog-list__image {
+  width: 100%;
+}
+.p-blog-list__subTitle h3 {
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: bold;
+}
+.p-blog-list__date {
+  margin: 0.3rem 0 1.1rem 0;
+}
+.p-blog-list__date time {
+  line-height: 1.7647058824;
+  font-size: 1.7rem;
+}
+.p-blog-list__description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 57rem;
+}
+.p-blog-list__description p {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+}
 
 .p-plan-mv {
   position: relative;
