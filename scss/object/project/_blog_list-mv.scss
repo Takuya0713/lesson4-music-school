@@ -1,6 +1,7 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
-.p-blog-list {
+// MV部分
+.p-blog-mv {
   position: relative;
   // 背景画像に影を付ける
   &__wrapper {
@@ -39,4 +40,8 @@
       line-height: calc(50 / 30);
     }
   }
+}
+
+.p-blog-list{
+  padding: 6.5rem 0 20rem 0;
 }
