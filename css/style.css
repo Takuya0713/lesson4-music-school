@@ -362,12 +362,8 @@ img {
        column-gap: 5rem;
 }
 .p-blog-list__image {
-  width: 26rem;
-  width: 28rem;
-}
-.p-blog-list__text-inner {
-  width: 57rem;
-  height: 18rem;
+  display: flex;
+  justify-content: center;
 }
 .p-blog-list__text-inner h3 {
   font-size: 2rem;
@@ -379,8 +375,16 @@ img {
   font-size: 1.7rem;
 }
 .p-blog-list__text-inner p {
-  font-size: 1.8rem;
   line-height: 1.6666666667;
+  width: 57rem;
+}
+.p-blog-list .pager {
+  margin-top: 7rem;
+}
+.p-blog-list .pager__lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .p-plan-mv {

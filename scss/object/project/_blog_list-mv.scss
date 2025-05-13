@@ -54,12 +54,14 @@
     column-gap: 5rem;
   }
   &__image {
-    width: 26rem;
-    width: 28rem;
+    display: flex;
+    justify-content: center;
+    // picture {
+    //   height: 18.4rem;
+    // }
   }
   &__text-inner {
-    width: 57rem;
-    height: 18rem;
+    // height: 18rem;
     h3 {
       font-size: 2rem;
       line-height: calc(25 / 20);
@@ -72,8 +74,18 @@
       font-size: 1.7rem;
     }
     p {
-      font-size: 1.8rem;
+      // font-size: 1.8rem;
       line-height: calc(30 / 18);
+      width: 57rem;
+    }
+  }
+  // ページ部分
+  .pager {
+    margin-top: 7rem;
+    &__lists {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
