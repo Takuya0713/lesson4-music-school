@@ -385,6 +385,16 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.p-blog-list .pager__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  height: 5rem;
+  width: 5rem;
 }
 
 .p-plan-mv {

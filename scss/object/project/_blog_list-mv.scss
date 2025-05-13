@@ -86,6 +86,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      column-gap: 1rem;
+    }
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #000;
+      height: 5rem;
+      width: 5rem;
     }
   }
 }
