@@ -46,38 +46,31 @@
   padding: 6.5rem 0 20rem 0;
   &__items {
     margin-top: 4rem;
+    display: grid;
+    row-gap: 7rem;
   }
   &__item {
     display: flex;
-    // display: grid;
-    // grid-template-columns: repeat(2, 1fr);
     column-gap: 5rem;
   }
   &__image {
-    width: 100%;
+    width: 26rem;
+    width: 28rem;
   }
-  // &__text-inner {
-  // }
-  &__subTitle {
+  &__text-inner {
+    width: 57rem;
+    height: 18rem;
     h3 {
       font-size: 2rem;
       line-height: calc(25 / 20);
       font-weight: bold;
     }
-  }
-  &__date {
-    margin: 0.3rem 0 1.1rem 0;
     time {
+      // display: inline-block;
+      // margin: 0.3rem 0 1.1rem 0;
       line-height: calc(30 / 17);
       font-size: 1.7rem;
     }
-  }
-  &__description {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 57rem;
     p {
       font-size: 1.8rem;
       line-height: calc(30 / 18);
