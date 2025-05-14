@@ -2,3 +2,6 @@
 npx gulp sass:watch
 【scssを1回だけ実行する】
 npx gulp sass
+
+node.jsエラーに関するバージョン変更
+https://chatgpt.com/c/6825134d-137c-8010-8b16-fd728765323a
