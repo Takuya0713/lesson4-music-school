@@ -6,15 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <title>blog_details</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- ヘッダーとパンくずリストを読み込む -->
     <header class="p-header" id="header">
       <!-- <header> -->
       <div class="inner">
@@ -74,11 +69,9 @@
         </div>
       </div>
     </header>
-  <!-- コンテンツ部分 -->
     <main>
-      <!-- メイン部分 -->
-      <div class="main">
-        <div class="main-inner">
+      <div class="l-main">
+        <section class="section p-blog-detail-mv">
           <!-- habitは習慣という意味 -->
           <article class="entry">
             <div class="mv">
@@ -192,43 +185,44 @@
               </div>
             </section>
           </article>
-        </div>
+        </section>
+
+        <!-- サイドバー部分 -->
+        <aside id="side">
+          <div class="side-inner">
+            <!-- 無料メールマガジン -->
+            <article class="mail__wrapper">
+              <div class="l-mail__header">無料メールマガジン</div>
+              <div class="mail__banner"></div>
+            </article>
+            <!-- ブログ内を検索 -->
+            <article class="blog__wrapper">
+              <div class="l-blog__header">ブログ内を検索</div>
+              <div class="blog__search"></div>
+            </article>
+            <!-- おすすめの記事 -->
+            <article class="news__wrapper">
+              <div class="l-news__header">おすすめの記事</div>
+              <div class="news__items"></div>
+            </article>
+            <!-- カテゴリー -->
+            <article class="category__wrapper">
+              <div class="l-category__header">カテゴリー</div>
+              <div class="category__items">
+                <ul>
+                  <li class="category__item"><a href="">カテゴリー</a></li>
+                  <li class="category__item"><a href="">カテゴリー</a></li>
+                  <li class="category__item"><a href="">カテゴリー</a></li>
+                  <li class="category__item"><a href="">カテゴリー</a></li>
+                  <li class="category__item"><a href="">カテゴリー</a></li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </aside>
       </div>
     </main>
 
-    <!-- サイドバー部分 -->
-    <aside id="side">
-      <div class="side-inner">
-        <!-- 無料メールマガジン -->
-        <article class="mail__wrapper">
-          <div class="l-mail__header">無料メールマガジン</div>
-          <div class="mail__banner"></div>
-        </article>
-        <!-- ブログ内を検索 -->
-        <article class="blog__wrapper">
-          <div class="l-blog__header">ブログ内を検索</div>
-          <div class="blog__search"></div>
-        </article>
-        <!-- おすすめの記事 -->
-        <article class="news__wrapper">
-          <div class="l-news__header">おすすめの記事</div>
-          <div class="news__items"></div>
-        </article>
-        <!-- カテゴリー -->
-        <article class="category__wrapper">
-          <div class="l-category__header">カテゴリー</div>
-          <div class="category__items">
-            <ul>
-              <li class="category__item"><a href="">カテゴリー</a></li>
-              <li class="category__item"><a href="">カテゴリー</a></li>
-              <li class="category__item"><a href="">カテゴリー</a></li>
-              <li class="category__item"><a href="">カテゴリー</a></li>
-              <li class="category__item"><a href="">カテゴリー</a></li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </aside>
     <!-- フッターを読み込む -->
 
     <!-- TOPへ戻るボタンを読み込む -->

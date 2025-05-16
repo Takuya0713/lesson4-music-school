@@ -56,9 +56,71 @@
   &__image {
     display: flex;
     justify-content: center;
-    // picture {
-    //   height: 18.4rem;
-    // }
+    position: relative;
+    // 集客方法（attracting-customers）・SNS（sns）
+    &.guitar {
+      &::before {
+        content: "ギター";
+        background-color: rgb(203, 0, 0);
+        color: #ffffff;
+        width: 8rem;
+        height: 3rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        line-height: calc(25 / 15);
+        // font-weight: bold;
+      }
+    }
+    // 集客方法（attracting-customers）
+    &.attracting-customers {
+      &::before {
+        content: "集客方法";
+        background-color: rgb(203, 0, 0);
+        color: #ffffff;
+        width: 8rem;
+        height: 3rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        line-height: calc(25 / 15);
+        // font-weight: bold;
+      }
+    }
+    // SNS（sns）
+    &.sns {
+      &::before {
+        content: "SNS";
+        background-color: rgb(203, 0, 0);
+        color: #ffffff;
+        width: 8rem;
+        height: 3rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        line-height: calc(25 / 15);
+        // font-weight: bold;
+      }
+    }
+  }
+  &__label {
+    width: 8rem;
+    height: 3rem;
   }
   &__text-inner {
     // height: 18rem;

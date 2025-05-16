@@ -364,6 +364,59 @@ img {
 .p-blog-list__image {
   display: flex;
   justify-content: center;
+  position: relative;
+}
+.p-blog-list__image.guitar::before {
+  content: "ギター";
+  background-color: rgb(203, 0, 0);
+  color: #ffffff;
+  width: 8rem;
+  height: 3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 1.6666666667;
+}
+.p-blog-list__image.attracting-customers::before {
+  content: "集客方法";
+  background-color: rgb(203, 0, 0);
+  color: #ffffff;
+  width: 8rem;
+  height: 3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 1.6666666667;
+}
+.p-blog-list__image.sns::before {
+  content: "SNS";
+  background-color: rgb(203, 0, 0);
+  color: #ffffff;
+  width: 8rem;
+  height: 3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 1.6666666667;
+}
+.p-blog-list__label {
+  width: 8rem;
+  height: 3rem;
 }
 .p-blog-list__text-inner h3 {
   font-size: 2rem;
