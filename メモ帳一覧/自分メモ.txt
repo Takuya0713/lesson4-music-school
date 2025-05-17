@@ -11,3 +11,28 @@ display: flex;とflex-direction: column;を組み合わせて使用する。
 
 【リキッドレイアウト解説・GPT】
 https://chatgpt.com/c/6814abc5-56bc-8010-8a08-9fc813e4a6a4
+
+・articleタグとasideタグの違い
+https://chatgpt.com/c/6827f913-f870-8010-9961-f75d02a87b85
+【article】
+独立して意味が成り立つコンテンツの事。
+例）
+・ブログ記事
+・ニュース記事
+・投稿一覧の1つ1つ
+・お知らせ など
+
+【aside】
+本文の横にある「補足情報」や「関連情報」に使います。
+例）
+・関連リンク
+・広告
+・プロフィール欄
+・サイドバー
+
+【使い方】
+articleタグに左側の独立コンテンツを配置して、右側のサイドバー部分にasideタグで記述する。
+asideタグのみ、各セクションを<section>タグで囲む。
+
+【左右配置】
+display:flex;をクラス名のl-mainに適用。
