@@ -1,5 +1,15 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
-.p-blog-details{
-    
+.p-blog-details {
+  &__article {
+    padding: 7rem 0 18rem 0;
+  }
+  &-habit__title {
+    margin-top: 4.5rem;
+    & h1 {
+      font-size: 2.5rem;
+      line-height: calc(40 / 25);
+      font-weight: bold;
+    }
+  }
 }
