@@ -1,0 +1,7 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+.l-main{
+  &.inner{
+    display: flex;
+  }
+}

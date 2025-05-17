@@ -310,6 +310,10 @@ img {
   }
 }
 
+.l-main.inner {
+  display: flex;
+}
+
 .p-blog-mv {
   position: relative;
 }
