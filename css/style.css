@@ -462,6 +462,15 @@ img {
   width: 5rem;
 }
 
+.p-contact-form {
+  padding: 7rem 0 10rem 0;
+}
+.p-contact-form__description p {
+  text-align: center;
+  line-height: 1.6666666667;
+  font-size: 1.8rem;
+}
+
 .p-plan-mv {
   position: relative;
 }

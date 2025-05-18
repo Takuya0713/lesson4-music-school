@@ -1,0 +1,12 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+.p-contact-form {
+  padding: 7rem 0 10rem 0;
+  &__description {
+    p {
+      text-align: center;
+      line-height: calc(30/18);
+      font-size: 1.8rem;
+    }
+  }
+}
