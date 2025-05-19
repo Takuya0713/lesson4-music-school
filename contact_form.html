@@ -96,94 +96,129 @@
                 <div class="p-contact-form__description">
                   <p>
                     当校に関するご質問・ご相談・資料請求は下記のフォームからお気軽にお問い合わせください。
-                    <br class="pc">通常３営業日以内にメールにてご連絡させていただきます。
+                    <br
+                      class="pc"
+                    />通常３営業日以内にメールにてご連絡させていただきます。
                   </p>
                 </div>
                 <form action="">
                   <!-- 会社名 -->
-                  <dl class=" company">
+                  <dl class="section-item company">
                     <dt><label>会社名</label></dt>
-                    <dd class="section-item company"></dd>
+                    <dd>
+                      <input
+                        type="text"
+                        placeholder="きたむらミュージックスクール"
+                        name="company"
+                        class="form-control"
+                        id="company"
+                      />
+                    </dd>
                   </dl>
                   <!-- お名前 -->
-                  <dl class=" name">
+                  <dl class="section-item name">
                     <dt><label>お名前</label></dt>
-                    <dd class="section-item name"></dd>
+                    <dd>
+                      <input
+                        type="text"
+                        placeholder="北村　翔平"
+                        name="name"
+                        class="form-control"
+                        id="name"
+                      />
+                    </dd>
                   </dl>
                   <!-- メールアドレス -->
-                  <dl class=" mail">
+                  <dl class="section-item mail">
                     <dt><label>メールアドレス</label></dt>
-                    <dd class="section-item mail"></dd>
+                    <dd>
+                      <input
+                        type="text"
+                        placeholder="info@kitamura.musicschool.jp"
+                        name="name"
+                        class="form-control"
+                        id="name"
+                      />
+                    </dd>
                   </dl>
                   <!-- 電話番号 -->
-                  <dl class=" tel">
+                  <dl class="section-item tel">
                     <dt><label>電話番号</label></dt>
-                    <dd class="section-item tel"></dd>
+                    <dd>
+                      <input
+                        type="text"
+                        placeholder="090-1234-5678"
+                        name="name"
+                        class="form-control"
+                        id="name"
+                      />
+                    </dd>
                   </dl>
                   <!-- 目的 -->
                   <dl>
                     <dt><label>目　的 (複数選択可)</label></dt>
-                    <dd class="check-box__check"></dd>
-                    <!-- <dd class="section-item purpose"></dd> -->
-                    <div class="check-item-wrap">
-                      <label for="checkbox-01"
-                        ><input
-                          type="checkbox"
-                          name="plan"
-                          class="check-item"
-                          value="プランについてのお問い合わせ"
-                          id="checkbox-01"
-                        /><span>プランについてのお問い合わせ</span></label
-                      >
-                    </div>
-                    <div class="check-item-wrap">
-                      <label for="checkbox-02"
-                        ><input
-                          type="checkbox"
-                          name="hearing"
-                          class="check-item"
-                          value="ヒアリングのご予約"
-                          id="checkbox-02"
-                        /><span>ヒアリングのご予約</span></label
-                      >
-                    </div>
-                    <div class="check-item-wrap">
-                      <label for="checkbox-03"
-                        ><input
-                          type="checkbox"
-                          name="information"
-                          class="check-item"
-                          value="資料請求"
-                          id="checkbox-03"
-                        /><span>資料請求</span></label
-                      >
-                    </div>
-                    <div class="check-item-wrap">
-                      <label for="checkbox-04"
-                        ><input
-                          type="checkbox"
-                          name="inquiry-plan"
-                          class="check-item"
-                          value="プランについてのお問い合わせ"
-                          id="checkbox-04"
-                        /><span>プランについてのお問い合わせ</span></label
-                      >
-                    </div>
+                    <!-- <dd><input type="checkbox" name="plan" class="check-item" value="プランについてのお問い合わせ" id="checkbox-01"></dd> -->
+                    <dd>
+                      <div class="check-item-wrap">
+                        <label for="checkbox-01"
+                          ><input
+                            type="checkbox"
+                            name="plan"
+                            class="check-item"
+                            value="プランについてのお問い合わせ"
+                            id="checkbox-01"
+                          /><span>プランについてのお問い合わせ</span></label
+                        >
+                      </div>
+                      <div class="check-item-wrap">
+                        <label for="checkbox-02"
+                          ><input
+                            type="checkbox"
+                            name="hearing"
+                            class="check-item"
+                            value="ヒアリングのご予約"
+                            id="checkbox-02"
+                          /><span>ヒアリングのご予約</span></label
+                        >
+                      </div>
+                      <div class="check-item-wrap">
+                        <label for="checkbox-03"
+                          ><input
+                            type="checkbox"
+                            name="information"
+                            class="check-item"
+                            value="資料請求"
+                            id="checkbox-03"
+                          /><span>資料請求</span></label
+                        >
+                      </div>
+                      <div class="check-item-wrap">
+                        <label for="checkbox-04"
+                          ><input
+                            type="checkbox"
+                            name="inquiry-plan"
+                            class="check-item"
+                            value="プランについてのお問い合わせ"
+                            id="checkbox-04"
+                          /><span>プランについてのお問い合わせ</span></label
+                        >
+                      </div>
+                    </dd>
                   </dl>
                   <!-- 内容 -->
                   <dl class="section-item comment-label">
                     <dt><label>内　容</label></dt>
-                    <dd class="section-item comment-form">
-                      <textarea></textarea>
+                    <dd class="section-item comment-inner">
+                      <textarea id="comment" class="comment-form"></textarea>
                     </dd>
                   </dl>
                   <!-- 赤いボタンは使いまわせる -->
-                  <div class="form-btn">
+                  <div class="form-btn u-bg-red">
                     <input
                       type="submit"
                       value="送　信"
                       class="form-submit"
-                      onclick="redirectPage()"
+                      onclick="redirectPage(contact_send.html)"
                     />
                   </div>
                 </form>
