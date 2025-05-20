@@ -1,0 +1,22 @@
+.p-contact-send {
+  padding: 6.7rem 0 9rem 0;
+}
+.sended {
+  &__message {
+    text-align: center;
+  }
+  &__return {
+    margin-top: 4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    width: 25rem;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
