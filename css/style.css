@@ -470,6 +470,56 @@ img {
   line-height: 1.6666666667;
   font-size: 1.8rem;
 }
+.p-contact-form form {
+  display: grid;
+  row-gap: 3rem;
+  margin-top: 7rem;
+}
+.p-contact-form .section-item {
+  display: flex;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  width: 71rem;
+  height: 4rem;
+}
+.p-contact-form dt label {
+  display: flex;
+  align-items: center;
+  width: 14rem;
+  height: 4rem;
+  background-color: lightgreen;
+  font-size: 2rem;
+  line-height: 1.65;
+}
+.p-contact-form dd {
+  flex: 1;
+}
+.p-contact-form dd .form-control {
+  background-color: #ffffff;
+  width: 71rem;
+  height: 4rem;
+  padding-inline: 2rem;
+  font-size: 1.5rem;
+  border: 0.1rem solid #000;
+  color: rgb(178, 178, 178);
+}
+.p-contact-form dd textarea {
+  height: 30rem;
+  width: 71rem;
+  padding-inline: 0;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+.p-contact-form .form-btn {
+  margin-top: 5rem;
+}
+.p-contact-form .form-btn-inner {
+  width: 25rem;
+  height: 5rem;
+  font-size: 2.5rem;
+  line-height: 1.32;
+  font-weight: bold;
+}
 
 .p-plan-mv {
   position: relative;

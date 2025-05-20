@@ -5,8 +5,61 @@
   &__description {
     p {
       text-align: center;
-      line-height: calc(30/18);
+      line-height: calc(30 / 18);
       font-size: 1.8rem;
+    }
+  }
+  // お問い合わせフォーム
+  form {
+    display: grid;
+    row-gap: 3rem;
+    margin-top: 7rem;
+  }
+  // dlタグで1行で入力する部分
+  .section-item {
+    display: flex;
+    column-gap: 3rem;
+    width: 71rem;
+    height: 4rem;
+  }
+  dt {
+    label {
+      display: flex;
+      align-items: center;
+      width: 14rem;
+      height: 4rem;
+      background-color: lightgreen;
+      font-size: 2rem;
+      line-height: 1.65;
+    }
+  }
+  dd {
+    flex: 1;
+    .form-control {
+      background-color: #ffffff;
+      width: 71rem;
+      height: 4rem;
+      padding-inline: 2rem;
+      font-size: 1.5rem;
+      border: 0.1rem solid #000;
+      color: rgba(178, 178, 178, 1);
+    }
+    textarea {
+      height: 30rem;
+      width: 71rem;
+      padding-inline: 0;
+      padding: 1rem;
+      background-color: #ffffff;
+    }
+  }
+  .form-btn {
+    margin-top: 5rem;
+    &-inner {
+      width: 25rem;
+      height: 5rem;
+      font-size: 2.5rem;
+      line-height: calc(33 / 25);
+      font-weight: bold;
     }
   }
 }
