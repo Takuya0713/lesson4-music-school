@@ -8,15 +8,20 @@
   &__return {
     margin-top: 4rem;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 5rem;
-    width: 25rem;
-    a {
+    width: 100%;
+    &-inner {
       display: flex;
       align-items: center;
       justify-content: center;
+      height: 5rem;
+      width: 25rem;
+      margin: 0 auto;
+      // 親要素の幅が100%に対して左右中央寄せができる
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
   }
 }

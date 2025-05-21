@@ -538,13 +538,17 @@ img {
 .sended__return {
   margin-top: 4rem;
   text-align: center;
+  width: 100%;
+}
+.sended__return-inner {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 5rem;
   width: 25rem;
+  margin: 0 auto;
 }
-.sended__return a {
+.sended__return-inner a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -552,24 +556,6 @@ img {
 
 .p-error {
   padding: 6.7rem 0 9rem 0;
-}
-
-.sended__message {
-  text-align: center;
-}
-.sended__return {
-  margin-top: 4rem;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 5rem;
-  width: 25rem;
-}
-.sended__return a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .p-plan-mv {
