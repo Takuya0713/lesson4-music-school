@@ -1,25 +1,26 @@
 .p-error {
   padding: 6.7rem 0 9rem 0;
 }
-// .sended {
-//   &__message {
-//     text-align: center;
-//   }
-//   &__return {
-//     margin-top: 4rem;
-//     text-align: center;
-//     background-color: #ff6;
-//     &-inner {
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       height: 5rem;
-//       width: 25rem;
-//       a {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//       }
-//     }
-//   }
-// }
+.error {
+  &__message {
+    text-align: center;
+  }
+  &__return {
+    margin-top: 4rem;
+    text-align: center;
+    width: 100%;
+    &-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 5rem;
+      width: 25rem;
+      margin: 0 auto;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

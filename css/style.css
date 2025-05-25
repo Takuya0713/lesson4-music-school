@@ -558,6 +558,28 @@ img {
   padding: 6.7rem 0 9rem 0;
 }
 
+.error__message {
+  text-align: center;
+}
+.error__return {
+  margin-top: 4rem;
+  text-align: center;
+  width: 100%;
+}
+.error__return-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  width: 25rem;
+  margin: 0 auto;
+}
+.error__return-inner a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .p-plan-mv {
   position: relative;
 }
