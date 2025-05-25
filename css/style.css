@@ -742,6 +742,16 @@ img {
   text-align: center;
 }
 
+.p-result-list {
+  padding: 7.5rem 0 15.5rem 0;
+}
+.p-result-list__item {
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .p-blog {
   padding: 7rem 0 20.5rem 0;
 }
