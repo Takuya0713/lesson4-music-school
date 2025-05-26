@@ -26,4 +26,22 @@
       line-height: calc(25 / 20);
     }
   }
+  // ページ部分
+}
+.pager {
+  margin-top: 7rem;
+  &__lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    height: 5rem;
+    width: 5rem;
+  }
 }

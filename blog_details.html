@@ -1,87 +1,83 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex" />
-    <title>blog_details</title>
-    <link rel="stylesheet" type="text/css" href="css/slick.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="p-header" id="header">
-      <div class="inner">
-        <div class="p-header__wrapper">
-          <div class="p-header__logo">
-            <div class="p-header__items">
-              <div class="p-header__item">
-                <a href="#"
-                  ><img
-                    src="images/common/1.top/1.header/header__logo.svg"
-                    alt="ロゴマーク"
-                  />
-                </a>
-              </div>
-              <div class="p-header__item">
-                <h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>blog_details</title>
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="p-header" id="header">
+    <div class="inner">
+      <div class="p-header__wrapper">
+        <div class="p-header__logo">
+          <div class="p-header__items">
+            <div class="p-header__item">
+              <a href="#"><img src="images/common/1.top/1.header/header__logo.svg" alt="ロゴマーク" />
+              </a>
+            </div>
+            <div class="p-header__item">
+              <h1>
                   <a href="index.html"
                     ><span class="ib-span">きたむら</span
                     ><br class="pc" />ミュージックスクール</a
                   >
                 </h1>
-              </div>
-            </div>
-          </div>
-          <!-- ハンバーガーボタン SPの時のみ表示する-->
-          <div id="hb-block" class="p-header__scroll-bg p-header__hb sp">
-            <div class="p-header__hb-btn sp u-bg-red">
-              <span class="p-header__hb-line"></span>
-              <span class="p-header__hb-line"></span>
-              <span class="p-header__hb-line"></span>
-            </div>
-          </div>
-
-          <!-- ナビゲーション -->
-          <div class="p-header__nav">
-            <nav class="p-header__nav-wrapper c-header-nav">
-              <ul>
-                <!-- <li class="u-bg-red"> -->
-                <li>
-                  <a href="plan.html">料金</a>
-                </li>
-                <li>
-                  <a href="blog_details.html">ブログ</a>
-                </li>
-                <li>
-                  <a href="result_list.html">卒業実績</a>
-                </li>
-              </ul>
-            </nav>
-            <!-- ナビゲーション部分のお問い合わせボタン -->
-            <div class="p-header__button u-bg-red">
-              <a class="c-button" href="#">お問い合わせ</a>
             </div>
           </div>
         </div>
-      </div>
-    </header>
+        <!-- ハンバーガーボタン SPの時のみ表示する-->
+        <div id="hb-block" class="p-header__scroll-bg p-header__hb sp">
+          <div class="p-header__hb-btn sp u-bg-red">
+            <span class="p-header__hb-line"></span>
+            <span class="p-header__hb-line"></span>
+            <span class="p-header__hb-line"></span>
+          </div>
+        </div>
 
-    <!-- パンくずリストを追加 -->
-    <div class="l-header__breadcrumb c-header__breadcrumb">
-      <div class="inner">
-        <ol>
-          <li>
-            <a href="index.html"><span>ホーム</span></a>
-          </li>
-          <li>
-            <a href=""><span>プラン・料金</span></a>
-          </li>
-        </ol>
+        <!-- ナビゲーション -->
+        <div class="p-header__nav">
+          <nav class="p-header__nav-wrapper c-header-nav">
+            <ul>
+              <!-- <li class="u-bg-red"> -->
+              <li>
+                <a href="plan.html">料金</a>
+              </li>
+              <li>
+                <a href="blog_details.html">ブログ</a>
+              </li>
+              <li>
+                <a href="result_list.html">卒業実績</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- ナビゲーション部分のお問い合わせボタン -->
+          <div class="p-header__button u-bg-red">
+            <a class="c-button" href="#">お問い合わせ</a>
+          </div>
+        </div>
       </div>
     </div>
+  </header>
 
-    <!--
+  <!-- パンくずリストを追加 -->
+  <div class="l-header__breadcrumb c-header__breadcrumb">
+    <div class="inner">
+      <ol>
+        <li>
+          <a href="index.html"><span>ホーム</span></a>
+        </li>
+        <li>
+          <a href=""><span>プラン・料金</span></a>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <!--
     5/18一旦スキップする
     https://chatgpt.com/c/68294af4-eed4-8010-8c22-24eab57da54d
   【blog_detailsページの表記】
@@ -91,300 +87,265 @@
   ・タイトル
   ・前の記事
     -->
-    <main>
-      <div class="l-main">
-        <div class="p-blog-details">
-          <div class="inner">
-            <article class="p-blog-details__article">
-              <div class="inner">
-                <div class="p-blog-details__article-wrapper">
-                  <div class="p-blog-details__mv-image">
-                    <picture>
-                      <source
-                        srcset="images/common/4.blog_details/blog01.jpg"
-                        media="(min-width: 768px)"
-                      />
-                      <img
-                        src="images/common/4.blog_details/blog01-sp.jpg"
-                        alt="FV"
-                      />
-                    </picture>
-                  </div>
+  <main>
+    <div class="l-main">
+      <div class="p-blog-details">
+        <div class="inner">
+          <article class="p-blog-details__article">
+            <div class="inner">
+              <div class="p-blog-details__article-wrapper">
+                <div class="p-blog-details__mv-image">
+                  <picture>
+                    <source srcset="images/common/4.blog_details/blog01.jpg" media="(min-width: 768px)" />
+                    <img src="images/common/4.blog_details/blog01-sp.jpg" alt="FV" />
+                  </picture>
                 </div>
               </div>
-              <!-- アルペジオが劇的に向上する３つの習慣 -->
-              <section>
-                <div class="p-blog-details-habit__wrapper">
-                  <div class="p-blog-details-habit__title">
-                    <h1>アルペジオが劇的に向上する３つの習慣</h1>
-                  </div>
-                  <div class="p-blog-details-habit__date">
-                    <time datetime="0000.00.00">0000.00.00</time>
-                  </div>
-                  <ul class="p-blog-details-habit__sns">
-                    <li class="p-blog-details-habit__sns">
-                      <a href="https://www.facebook.com/" class="sns-btn"
-                        ><img
-                          src="images/common/4.blog_details/sns-icon/icon-share-facebook.svg"
-                          alt=""
-                        />Facebook</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="images/common/4.blog_details/sns-icon/icon-share-twitter.svg"
-                      ></a
-                      >Twitter
-                    </li>
-                    <li>
-                      <a
-                        href="images/common/4.blog_details/sns-icon/icon-share-hatena.svg"
-                      ></a
-                      >Hatena
-                    </li>
-                    <li>
-                      <a
-                        href="images/common/4.blog_details/sns-icon/icon-share-line.svg"
-                      ></a
-                      >LINE
-                    </li>
-                    <li>
-                      <a
-                        href="images/common/4.blog_details/sns-icon/icon-share-pocket.svg"
-                      ></a
-                      >Pocket
-                    </li>
-                  </ul>
-                  <div class="p-blog-details-habit__desc">
-                    <p>
+            </div>
+            <!-- アルペジオが劇的に向上する３つの習慣 -->
+            <section>
+              <div class="p-blog-details-habit__wrapper">
+                <div class="p-blog-details-habit__title">
+                  <h1>アルペジオが劇的に向上する３つの習慣</h1>
+                </div>
+                <div class="p-blog-details-habit__date">
+                  <time datetime="0000.00.00">0000.00.00</time>
+                </div>
+                <ul class="p-blog-details-habit__sns">
+                  <li class="p-blog-details-habit__sns">
+                    <a href="https://www.facebook.com/" class="sns-btn"><img src="images/common/4.blog_details/sns-icon/icon-share-facebook.svg" alt="" />Facebook</a>
+                  </li>
+                  <li>
+                    <a href="images/common/4.blog_details/sns-icon/icon-share-twitter.svg"></a>Twitter
+                  </li>
+                  <li>
+                    <a href="images/common/4.blog_details/sns-icon/icon-share-hatena.svg"></a>Hatena
+                  </li>
+                  <li>
+                    <a href="images/common/4.blog_details/sns-icon/icon-share-line.svg"></a>LINE
+                  </li>
+                  <li>
+                    <a href="images/common/4.blog_details/sns-icon/icon-share-pocket.svg"></a>Pocket
+                  </li>
+                </ul>
+                <div class="p-blog-details-habit__desc">
+                  <p>
                       本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
                     </p>
-                  </div>
-                  <div class="p-blog-details-habit__section-title2">
-                    <h2>H2見出しが入ります。H2見出しが入ります。</h2>
-                  </div>
-                  <div class="p-blog-details-habit__section-desc">
-                    <p>
+                </div>
+                <div class="p-blog-details-habit__section-title2">
+                  <h2>H2見出しが入ります。H2見出しが入ります。</h2>
+                </div>
+                <div class="p-blog-details-habit__section-desc">
+                  <p>
                       本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
                     </p>
-                  </div>
-                  <ul class="p-blog-details-habit__list">
-                    <li>リストが入ります</li>
-                    <li>リストが入ります</li>
-                    <li>リストが入ります</li>
-                  </ul>
-                  <div class="p-blog-details-habit__under-line"></div>
                 </div>
-              </section>
+                <ul class="p-blog-details-habit__list">
+                  <li>リストが入ります</li>
+                  <li>リストが入ります</li>
+                  <li>リストが入ります</li>
+                </ul>
+                <div class="p-blog-details-habit__under-line"></div>
+              </div>
+            </section>
 
-              <!-- 「H3見出しが入ります。H3見出しが入ります。」部分 -->
-              <section>
-                <div class="p-blog-details-habit__wrapper">
-                  <div class="p-blog-details-habit__section-title3">
-                    <h3>H3見出しが入ります。H3見出しが入ります。</h3>
+            <!-- 「H3見出しが入ります。H3見出しが入ります。」部分 -->
+            <section>
+              <div class="p-blog-details-habit__wrapper">
+                <div class="p-blog-details-habit__section-title3">
+                  <h3>H3見出しが入ります。H3見出しが入ります。</h3>
+                </div>
+                <!-- メモ書き部分 -->
+                <div class="p-blog-details-habit__note-inner">
+                  <div class="p-blog-details-habit__note-icon">
+                    <!-- <img src="" alt=""> -->
                   </div>
-                  <!-- メモ書き部分 -->
-                  <div class="p-blog-details-habit__note-inner">
-                    <div class="p-blog-details-habit__note-icon">
-                      <!-- <img src="" alt=""> -->
-                    </div>
-                    <div class="p-blog-details-habit__note-comment">
-                      <p>
+                  <div class="p-blog-details-habit__note-comment">
+                    <p>
                         本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
                       </p>
-                    </div>
-                    <div class="p-blog-details-habit__text-link">
-                      <a href="#">テキストリンク</a>
-                    </div>
                   </div>
-                </div>
-                <!-- 以下のタイトル部分のデザインと文字は共通なので、同じクラス名が使用できる -->
-                <div class="pagenation">
-                  <!-- 前の記事 page-previous -->
-                  <div class="page-previous"></div>
-                  <!-- 後の記事 page-next -->
-                  <div class="page-next"></div>
-                </div>
-                <!-- 関連記事 page-relation→Webページを分割して読みやすくする機能や仕組みの事 -->
-                <div class="page-relation">
-                  <div class="page-relation__title">
-                    <h4>関連記事</h4>
+                  <div class="p-blog-details-habit__text-link">
+                    <a href="#">テキストリンク</a>
                   </div>
-                  <div class="page-relation__items">
-                    <div class="page-relation__item">
-                      <div class="page-relation__image">
-                        <!-- <img src="" alt="" /> -->
-                      </div>
-                      <div class="page-relation__sub-title">
-                        <p>
-                          タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                        </p>
-                      </div>
-                      <div class="c-blog__date">
-                        <time datetime="0000.00.00">0000.00.00</time>
-                      </div>
-                    </div>
-                    <div class="page-relation__item">
-                      <div class="page-relation__image">
-                        <!-- <img src="" alt="" /> -->
-                      </div>
-                      <div class="page-relation__sub-title">
-                        <p>
-                          タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                        </p>
-                      </div>
-                      <div class="c-blog__date">
-                        <time datetime="0000.00.00">0000.00.00</time>
-                      </div>
-                    </div>
-                    <div class="page-relation__item">
-                      <div class="page-relation__image">
-                        <!-- <img src="" alt="" /> -->
-                      </div>
-                      <div class="page-relation__sub-title">
-                        <p>
-                          タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                        </p>
-                      </div>
-                      <div class="c-blog__date">
-                        <time datetime="0000.00.00">0000.00.00</time>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </article>
-            <!-- サイドバー部分 -->
-            <aside id="p-blog-details__aside">
-              <div class="inner">
-                <div class="side-inner">
-                  <!-- 無料メールマガジン -->
-                  <section class="mail__wrapper">
-                    <div class="l-mail__header">無料メールマガジン</div>
-                    <div class="mail__banner"></div>
-                  </section>
-                  <!-- ブログ内を検索 -->
-                  <section class="blog__wrapper">
-                    <div class="l-blog__header">ブログ内を検索</div>
-                    <div class="blog__search"></div>
-                  </section>
-                  <!-- おすすめの記事 -->
-                  <section class="news__wrapper">
-                    <div class="l-news__header">おすすめの記事</div>
-                    <div class="news__items"></div>
-                  </section>
-                  <!-- カテゴリー -->
-                  <section class="category__wrapper">
-                    <div class="l-category__header">カテゴリー</div>
-                    <div class="category__items">
-                      <ul>
-                        <li class="category__item">
-                          <a href="">カテゴリー</a>
-                        </li>
-                        <li class="category__item">
-                          <a href="">カテゴリー</a>
-                        </li>
-                        <li class="category__item">
-                          <a href="">カテゴリー</a>
-                        </li>
-                        <li class="category__item">
-                          <a href="">カテゴリー</a>
-                        </li>
-                        <li class="category__item">
-                          <a href="">カテゴリー</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </section>
                 </div>
               </div>
-            </aside>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <!-- フッターを読み込む -->
-    <footer class="footer">
-      <div class="footer__wrapper u-bg-red">
-        <div class="footer__inner">
-          <div class="footer__nav">
-            <ul>
-              <li><a href="index.html">ホーム</a></li>
-              <li><a href="plan.html">料金</a></li>
-              <li><a href="blog_list.html">ブログ</a></li>
-              <li><a href="result_list.html">卒業実績</a></li>
-            </ul>
-          </div>
-          <div class="footer__logo">
-            <picture>
-              <source
-                srcset="images/common/1.top/7.footer/footer__logo.svg"
-                media="(max-width: 768px)"
-              />
-              <img
-                src="images/common/1.top/7.footer/footer__logo.svg"
-                alt="footer-icon"
-              />
-            </picture>
-          </div>
-          <div class="footer__copyright">
-            <p>
-              Copyright © 0000 KITAMURA music school Inc.
-              <br class="sp" />All Rights
-            </p>
-          </div>
-          <div class="footer__sns-links">
-            <ul>
-              <li class="link-x">
-                <a href="https://x.com/home?lang=ja"
-                  ><img
-                    src="images/common/1.top/7.footer/icon-twitter.svg"
-                    alt="X"
-                /></a>
-              </li>
-              <li class="link-facebook">
-                <a href="https://www.facebook.com/"
-                  ><img
-                    src="images/common/1.top/7.footer/icon-facebook.svg"
-                    alt="facebook"
-                /></a>
-              </li>
-              <li class="link-youtube">
-                <a href="https://www.youtube.com/"
-                  ><img
-                    src="images/common/1.top/7.footer/icon-youtube.svg"
-                    alt="youtube"
-                /></a>
-              </li>
-              <li class="link-instagram">
-                <a href="https://www.instagram.com/"
-                  ><img
-                    src="images/common/1.top/7.footer/icon-instagram.svg"
-                    alt="instagram"
-                /></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- お問い合わせボタンとTOP画面に戻るボタン -->
-    <div class="c-button__wrapper">
-      <div class="inner">
-        <!-- ページトップボタン -->
-        <div class="c-fix-area l-fix-area u-df-tbc">
-          <a href="#" class="scroll-top-btn">
-            <!-- <a href="#" class="scroll-top-btn" style="display: none"> -->
-            <img src="./images/common/arrow-top.svg" alt="arrow-top" />
-          </a>
-        </div>
-        <!-- お問い合わせボタン -->
-        <div class="c-form-btn u-bg-red u-df-tbc">
-          <a class="c-button c-button--fixed" href="#">お問い合わせ</a>
+              <!-- 以下のタイトル部分のデザインと文字は共通なので、同じクラス名が使用できる -->
+              <div class="pagenation">
+                <!-- 前の記事 page-previous -->
+                <div class="page-previous"></div>
+                <!-- 後の記事 page-next -->
+                <div class="page-next"></div>
+              </div>
+              <!-- 関連記事 page-relation→Webページを分割して読みやすくする機能や仕組みの事 -->
+              <div class="page-relation">
+                <div class="page-relation__title">
+                  <h4>関連記事</h4>
+                </div>
+                <div class="page-relation__items">
+                  <div class="page-relation__item">
+                    <div class="page-relation__image">
+                      <!-- <img src="" alt="" /> -->
+                    </div>
+                    <div class="page-relation__sub-title">
+                      <p>
+                          タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                        </p>
+                    </div>
+                    <div class="c-blog__date">
+                      <time datetime="0000.00.00">0000.00.00</time>
+                    </div>
+                  </div>
+                  <div class="page-relation__item">
+                    <div class="page-relation__image">
+                      <!-- <img src="" alt="" /> -->
+                    </div>
+                    <div class="page-relation__sub-title">
+                      <p>
+                          タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                        </p>
+                    </div>
+                    <div class="c-blog__date">
+                      <time datetime="0000.00.00">0000.00.00</time>
+                    </div>
+                  </div>
+                  <div class="page-relation__item">
+                    <div class="page-relation__image">
+                      <!-- <img src="" alt="" /> -->
+                    </div>
+                    <div class="page-relation__sub-title">
+                      <p>
+                          タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                        </p>
+                    </div>
+                    <div class="c-blog__date">
+                      <time datetime="0000.00.00">0000.00.00</time>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </article>
+          <!-- サイドバー部分 -->
+          <aside id="p-blog-details__aside">
+            <div class="inner">
+              <div class="side-inner">
+                <!-- 無料メールマガジン -->
+                <section class="mail__wrapper">
+                  <div class="l-mail__header">無料メールマガジン</div>
+                  <div class="mail__banner"></div>
+                </section>
+                <!-- ブログ内を検索 -->
+                <section class="blog__wrapper">
+                  <div class="l-blog__header">ブログ内を検索</div>
+                  <div class="blog__search"></div>
+                </section>
+                <!-- おすすめの記事 -->
+                <section class="news__wrapper">
+                  <div class="l-news__header">おすすめの記事</div>
+                  <div class="news__items"></div>
+                </section>
+                <!-- カテゴリー -->
+                <section class="category__wrapper">
+                  <div class="l-category__header">カテゴリー</div>
+                  <div class="category__items">
+                    <ul>
+                      <li class="category__item">
+                        <a href="">カテゴリー</a>
+                      </li>
+                      <li class="category__item">
+                        <a href="">カテゴリー</a>
+                      </li>
+                      <li class="category__item">
+                        <a href="">カテゴリー</a>
+                      </li>
+                      <li class="category__item">
+                        <a href="">カテゴリー</a>
+                      </li>
+                      <li class="category__item">
+                        <a href="">カテゴリー</a>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </aside>
         </div>
       </div>
     </div>
-  </body>
+  </main>
+
+  <!-- フッターを読み込む -->
+  <footer class="footer">
+    <div class="footer__wrapper u-bg-red">
+      <div class="footer__inner">
+        <div class="footer__nav">
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="plan.html">料金</a></li>
+            <li><a href="blog_list.html">ブログ</a></li>
+            <li><a href="result_list.html">卒業実績</a></li>
+          </ul>
+        </div>
+        <div class="footer__logo">
+          <picture>
+            <source srcset="images/common/1.top/7.footer/footer__logo.svg" media="(max-width: 768px)" />
+            <img src="images/common/1.top/7.footer/footer__logo.svg" alt="footer-icon" />
+          </picture>
+        </div>
+        <div class="footer__copyright">
+          <p>
+              Copyright © 0000 KITAMURA music school Inc.
+              <br class="sp" />All Rights
+            </p>
+        </div>
+        <div class="footer__sns-links">
+          <ul>
+            <li class="link-x">
+              <a href="https://x.com/home?lang=ja"><img src="images/common/1.top/7.footer/icon-twitter.svg" alt="X" /></a>
+            </li>
+            <li class="link-facebook">
+              <a href="https://www.facebook.com/"><img src="images/common/1.top/7.footer/icon-facebook.svg" alt="facebook" /></a>
+            </li>
+            <li class="link-youtube">
+              <a href="https://www.youtube.com/"><img src="images/common/1.top/7.footer/icon-youtube.svg" alt="youtube" /></a>
+            </li>
+            <li class="link-instagram">
+              <a href="https://www.instagram.com/"><img src="images/common/1.top/7.footer/icon-instagram.svg" alt="instagram" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ページネーション部分・spanタグで色付けし、hover時に色を変えるようにする -->
+  <div class="pager">
+    <ul class="pager__lists">
+      <li class="pager__list"><a>1</a></li>
+      <li class="pager__list"><a>2</a></li>
+      <li class="pager__list"><a>3</a></li>
+      <li class="pager__list"><a>・・・</a></li>
+      <li class="pager__list"><a>9</a></li>
+    </ul>
+  </div>
+
+  <!-- お問い合わせボタンとTOP画面に戻るボタン -->
+  <div class="c-button__wrapper">
+    <div class="inner">
+      <!-- ページトップボタン -->
+      <div class="c-fix-area l-fix-area u-df-tbc">
+        <a href="#" class="scroll-top-btn">
+          <!-- <a href="#" class="scroll-top-btn" style="display: none"> -->
+          <img src="./images/common/arrow-top.svg" alt="arrow-top" />
+        </a>
+      </div>
+      <!-- お問い合わせボタン -->
+      <div class="c-form-btn u-bg-red u-df-tbc">
+        <a class="c-button c-button--fixed" href="#">お問い合わせ</a>
+      </div>
+    </div>
+  </div>
+</body>
 </html>

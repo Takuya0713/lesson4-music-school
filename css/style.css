@@ -762,6 +762,25 @@ img {
   line-height: 1.25;
 }
 
+.pager {
+  margin-top: 7rem;
+}
+.pager__lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.pager__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  height: 5rem;
+  width: 5rem;
+}
+
 .p-blog {
   padding: 7rem 0 20.5rem 0;
 }
