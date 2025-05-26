@@ -1,11 +1,29 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
 .p-result-list {
-  padding: 7.5rem 0 15.5rem 0;
-  &__item {
-    display: flex;
-    flex-direction: column;
+  //   padding: 7.5rem 0 15.5rem 0;
+  &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 4rem;
+    row-gap: 6rem;
+    column-gap: 10.6rem;
+  }
+  &__wrapper {
+    padding: 7.5rem 0 15.5rem 0;
+  }
+  &__item {
+    // display: flex;
+    // flex-direction: column;
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+  }
+  &__title {
+    margin: 2rem 0 1rem 0;
+    p {
+      font-weight: bold;
+      font-size: 2rem;
+      line-height: calc(25 / 20);
+    }
   }
 }
