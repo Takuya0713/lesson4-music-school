@@ -14,7 +14,12 @@
         font-weight: bold;
       }
     }
+    &__sns {
+      display: flex;
+      background-color: yellow;
+    }
   }
 }
-
-// p-blog-habit
+.test {
+  display: flex;
+}
