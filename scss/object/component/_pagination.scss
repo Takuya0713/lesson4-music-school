@@ -19,9 +19,5 @@
       color: #fff;
       cursor: pointer;
     }
-    // aタグ部分をホバーした時に色が変わらないようにする
-    a:hover {
-      pointer-events: none;
-    }
   }
 }

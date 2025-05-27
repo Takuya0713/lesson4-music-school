@@ -317,9 +317,6 @@ img {
   color: #fff;
   cursor: pointer;
 }
-.c-pager__list a:hover {
-  pointer-events: none;
-}
 
 .c-text {
   color: rgb(203, 0, 0);
