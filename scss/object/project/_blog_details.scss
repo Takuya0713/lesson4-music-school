@@ -16,13 +16,36 @@
     }
     &__sns {
       display: flex;
-      background-color: yellow;
       margin-top: 2.1rem;
-      &-link{
+      column-gap: .4rem;
+      & li {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10.5rem;
+        height: 4rem;
+        font-size: 1rem;
+        line-height: calc(33/10);
+        color: $color-white;
+        &.fb{
+          background-color: rgba(66, 88, 147, 1);
+        }
+        &.x{
+          background-color: rgba(74, 159, 235, 1);
+        }
+        &.hatena{
+          background-color: rgba(78, 172, 213, 1);
+        }
+        &.line{
+          background-color: rgba(82, 181, 52, 1);
+        }
+        &.pocket{
+          background-color: rgba(220, 79, 90, 1);
+        }
+
       }
     }
-    &__desc{
+    &__desc {
       margin-top: 4.8rem;
     }
   }

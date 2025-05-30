@@ -348,11 +348,34 @@ img {
 }
 .p-blog-details-habit__sns {
   display: flex;
-  background-color: yellow;
   margin-top: 2.1rem;
+  -moz-column-gap: 0.4rem;
+       column-gap: 0.4rem;
 }
-.p-blog-details-habit__sns-link {
+.p-blog-details-habit__sns li {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10.5rem;
+  height: 4rem;
+  font-size: 1rem;
+  line-height: 3.3;
+  color: #ffffff;
+}
+.p-blog-details-habit__sns li.fb {
+  background-color: rgb(66, 88, 147);
+}
+.p-blog-details-habit__sns li.x {
+  background-color: rgb(74, 159, 235);
+}
+.p-blog-details-habit__sns li.hatena {
+  background-color: rgb(78, 172, 213);
+}
+.p-blog-details-habit__sns li.line {
+  background-color: rgb(82, 181, 52);
+}
+.p-blog-details-habit__sns li.pocket {
+  background-color: rgb(220, 79, 90);
 }
 .p-blog-details-habit__desc {
   margin-top: 4.8rem;
