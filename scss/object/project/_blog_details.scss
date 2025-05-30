@@ -17,6 +17,13 @@
     &__sns {
       display: flex;
       background-color: yellow;
+      margin-top: 2.1rem;
+      &-link{
+        display: flex;
+      }
+    }
+    &__desc{
+      margin-top: 4.8rem;
     }
   }
 }

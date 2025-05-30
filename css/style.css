@@ -346,6 +346,21 @@ img {
   line-height: 1.6;
   font-weight: bold;
 }
+.p-blog-details-habit__sns {
+  display: flex;
+  background-color: yellow;
+  margin-top: 2.1rem;
+}
+.p-blog-details-habit__sns-link {
+  display: flex;
+}
+.p-blog-details-habit__desc {
+  margin-top: 4.8rem;
+}
+
+.test {
+  display: flex;
+}
 
 .p-blog-mv {
   position: relative;
