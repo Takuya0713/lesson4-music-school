@@ -524,25 +524,23 @@ img {
   row-gap: 3rem;
   margin-top: 7rem;
 }
-.p-contact-form .section-item {
-  display: flex;
-  -moz-column-gap: 3rem;
-       column-gap: 3rem;
-  width: 71rem;
-  height: 4rem;
-}
 .p-contact-form dl {
   display: flex;
   -moz-column-gap: 3rem;
        column-gap: 3rem;
 }
+.p-contact-form dt {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+}
 .p-contact-form dt label {
   display: inline-block;
   vertical-align: top;
   width: 14rem;
-  background-color: lightgreen;
   font-size: 2rem;
   line-height: 1.65;
+  height: 4rem;
 }
 .p-contact-form dd {
   flex: 1;
@@ -558,12 +556,50 @@ img {
   border: 0.1rem solid #000;
   color: rgb(178, 178, 178);
 }
-.p-contact-form dd textarea {
+.p-contact-form .check-box__wrapper .checkbox_icon[type=checkbox] {
+  position: relative;
+  display: none;
+  -webkit-appearance: revert;
+     -moz-appearance: revert;
+          appearance: revert;
+}
+.p-contact-form .check-box__wrapper span {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+  cursor: pointer;
+}
+.p-contact-form .check-box__wrapper span::before {
+  content: "";
+  border: 0.1rem solid #000;
+  margin-right: 2rem;
+  background-color: #ffffff;
+  height: 2rem;
+  width: 2rem;
+}
+.p-contact-form .check-box__wrapper span:checked:after {
+  content: "";
+  border-right: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+  transform: rotate(45deg);
+  height: 1.6rem;
+  width: 0.7rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 0.7rem;
+  opacity: 0;
+}
+.p-contact-form textarea {
+  display: inline-block;
   height: 30rem;
   width: 71rem;
   padding-inline: 0;
   padding: 1rem;
   background-color: #ffffff;
+  scrollbar-width: none;
+  border: 0.1rem solid #000;
 }
 .p-contact-form .form-btn {
   margin-top: 5rem;

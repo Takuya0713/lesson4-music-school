@@ -15,40 +15,29 @@
     row-gap: 3rem;
     margin-top: 7rem;
   }
-  // dlタグで1行で入力する部分
-  .section-item {
-    display: flex;
-    column-gap: 3rem;
-    width: 71rem;
-    height: 4rem;
-  }
   dl {
     display: flex;
     column-gap: 3rem;
   }
   dt {
-    // label {
-    //   display: flex;
-    //   align-items: center;
-    //   width: 14rem;
-    //   height: 4rem;
-    //   background-color: lightgreen;
-    //   font-size: 2rem;
-    //   line-height: 1.65;
-    // }
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    // https://qiita.com/ikue-san/items/93d4e6dc857b24571393
     label {
       display: inline-block;
       vertical-align: top;
       width: 14rem;
-      background-color: lightgreen;
       font-size: 2rem;
       line-height: 1.65;
+      height: 4rem;
     }
   }
   dd {
     flex: 1;
     display: flex;
     flex-flow: column;
+    // 入力フォーム部分
     .form-control {
       background-color: #ffffff;
       width: 71rem;
@@ -58,13 +47,67 @@
       border: 0.1rem solid #000;
       color: rgba(178, 178, 178, 1);
     }
-    textarea {
-      height: 30rem;
-      width: 71rem;
-      padding-inline: 0;
-      padding: 1rem;
-      background-color: #ffffff;
+  }
+  // （親要素）チェックボックス
+  .check-box__wrapper {
+    .checkbox_icon[type="checkbox"] {
+      // inputタグのチェックボックスを非表示にする
+      position: relative;
+      display: none;
+      appearance: revert;
+      // &:checked:before {
+      //   position: absolute;
+      //   top: 1px;
+      //   left: 4px;
+      //   transform: rotate(50deg);
+      //   width: 4px;
+      //   height: 8px;
+      //   border-right: 2px solid #000;
+      //   border-bottom: 2px solid #000;
+      //   content: "";
+      // }
     }
+    span {
+      display: flex;
+      align-items: center;
+      position: relative;
+      font-size: 1.8rem;
+      line-height: calc(30 / 18);
+      cursor: pointer;
+      // チェックボックス部分
+      &::before {
+        content: "";
+        border: 0.1rem solid #000;
+        margin-right: 2rem;
+        background-color: $color-white;
+        height: 2rem;
+        width: 2rem;
+      }
+      // チェック部分
+      // &::after {
+      &:checked:after {
+        content: "";
+        border-right: 3px solid #000000;
+        border-bottom: 3px solid #000000;
+        transform: rotate(45deg);
+        height: 1.6rem;
+        width: 0.7rem;
+        position: absolute;
+        top: 0.4rem;
+        left: 0.7rem;
+        opacity: 0;
+      }
+    }
+  }
+  textarea {
+    display: inline-block;
+    height: 30rem;
+    width: 71rem;
+    padding-inline: 0;
+    padding: 1rem;
+    background-color: #ffffff;
+    scrollbar-width: none;
+    border: 0.1rem solid #000;
   }
   .form-btn {
     margin-top: 5rem;

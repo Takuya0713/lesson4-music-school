@@ -159,21 +159,24 @@
                         (複数選択可)</label
                       >
                     </dt>
-                    <dd>
-                      <label for="checkbox-01"
-                        ><input
-                          type="checkbox"
-                          name="plan"
-                          class="check-item"
-                          value="プランについてのお問い合わせ"
-                          id="checkbox-01"
-                        /><span>プランについてのお問い合わせ</span></label
-                      >
+                    <!-- before要素でチェックボックス、after要素でチェックを作る -->
+                    <dd class="check-box__wrapper">
+                      <div class="check-item-wrap">
+                        <label for="checkbox-01"
+                          ><input
+                            type="checkbox"
+                            name="plan"
+                            class="checkbox_icon"
+                            value="プランについてのお問い合わせ"
+                            id="checkbox-01"
+                          /><span>プランについてのお問い合わせ</span></label
+                        >
+                      </div>
                       <label for="checkbox-02"
                         ><input
                           type="checkbox"
                           name="hearing"
-                          class="check-item"
+                          class="checkbox_icon"
                           value="ヒアリングのご予約"
                           id="checkbox-02"
                         /><span>ヒアリングのご予約</span></label
@@ -182,7 +185,7 @@
                         ><input
                           type="checkbox"
                           name="information"
-                          class="check-item"
+                          class="checkbox_icon"
                           value="資料請求"
                           id="checkbox-03"
                         /><span>資料請求</span></label
@@ -191,7 +194,7 @@
                         ><input
                           type="checkbox"
                           name="inquiry-plan"
-                          class="check-item"
+                          class="checkbox_icon"
                           value="プランについてのお問い合わせ"
                           id="checkbox-04"
                         /><span>その他</span></label
