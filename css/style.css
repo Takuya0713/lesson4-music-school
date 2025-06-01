@@ -435,6 +435,29 @@ img {
   color: rgb(203, 0, 0);
   opacity: 1;
 }
+.p-blog-details-main__articles {
+  display: flex;
+  margin-top: 6rem;
+  -moz-column-gap: 8rem;
+       column-gap: 8rem;
+}
+.p-blog-details-main__article-item {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  width: 26rem;
+  height: 4rem;
+  padding-inline: 2rem;
+}
+.p-blog-details-main__article-item-01 {
+  justify-content: left;
+}
+.p-blog-details-main__article-item-02 {
+  justify-content: right;
+}
+.p-blog-details-main__article-item p {
+  color: #ffffff;
+}
 
 .p-blog-mv {
   position: relative;
