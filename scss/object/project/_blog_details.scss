@@ -76,12 +76,38 @@
     &__list {
       margin-top: 2.8rem;
     }
-    &__under-line{
-      border-bottom: .1rem solid #000;
+    &__under-line {
+      border-bottom: 0.1rem solid #000;
       margin-top: 4rem;
     }
-    &__section-title3{
+    &__section-title3 {
       margin-top: 4.35rem;
+      h3 {
+        font-size: 2rem;
+        line-height: calc(40 / 20);
+        font-weight: bold;
+      }
+    }
+    &__note-comment {
+      margin-top: 1.7rem;
+      background-color: rgba(232, 232, 232, 1);
+      p {
+        font-size: 1.8rem;
+        line-height: calc(30 / 18);
+      }
+    }
+    &__text-link {
+      margin-top: 3.7rem;
+      a {
+        text-decoration: underline;
+        font-size: 2rem;
+        line-height: calc(33 / 20);
+        font-weight: bold;
+        &:hover{
+          color: $color-red;
+          opacity: 1;
+        }
+      }
     }
   }
 }
