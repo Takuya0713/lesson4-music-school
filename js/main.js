@@ -40,7 +40,7 @@ function closeMenu() {
 
 // アコーディオンメニュー部分（編集前）
 // $(".p-faq__accordion-question,.p-faq__accordion-answer").click(function () {
-//   // アコーディオンの質問または回答部分をクリックした時に
+// アコーディオンの質問または回答部分をクリックした時に
 //   $(this).next().slideToggle();
 
 //   $(this).toggleClass("active");
@@ -53,9 +53,15 @@ function closeMenu() {
 // 表示・非表示のアニメーションを切り替える（.slideToggle()）。
 $(".p-faq__accordion-question, .p-faq__accordion-answer").click(function () {
   // アコーディオンの質問または回答部分をクリックした時に
-  $(this).closest(p - faq__accordion - question);
-
-  $(this).toggleClass("active");
+  $(this)
+    .closest(".p-faq__accordion-list")
+    .find(".p-faq__accordion-answer")
+    .slideToggle();
+  // アコーディオンリストから一番近い（liタグ）、回答を表示する
+  $(this)
+    .closest(".p-faq__accordion-list")
+    .find(".p-faq__accordion-question")
+    .toggleClass("active");
 });
 
 // 「生徒さんたちの声」slickスライド部分
