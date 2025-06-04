@@ -138,19 +138,22 @@
   //   }
   // }
   &-main__article-item-01 {
+    padding-inline: 2rem;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    width: 26rem;
+    height: 4rem;
+    color: #ffffff;
     p {
-      width: 26rem;
-      height: 4rem;
-      padding-inline: 2rem;
-      background-color: #000;
-      color: #ffffff;
-      display: flex;
-      align-items: center;
+      font-size: 1.7rem;
+      line-height: calc(30 / 17);
     }
   }
   &-main__article-item-02 {
     display: flex;
     margin-top: 1.7rem;
+    height: 6.8rem;
   }
   .page-relation {
     margin-top: 10rem;

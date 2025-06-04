@@ -1,4 +1,4 @@
-// 
+//
 
 // ページ送り部分
 .c-pager {
@@ -22,5 +22,15 @@
       color: #fff;
       cursor: pointer;
     }
+  }
+}
+
+// 前の記事・次の記事部分
+.c-paging {
+  display: flex;
+  column-gap: 8rem;
+  &__prev {
+    width: 26rem;
+    height: 4rem;
   }
 }
