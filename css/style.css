@@ -246,11 +246,12 @@ img {
 
 .c-button__wrapper {
   position: relative;
+  width: 100%;
 }
 .c-button__wrapper .c-fix-area {
   position: fixed;
   bottom: 9.1rem;
-  right: 6%;
+  right: 10rem;
   width: 6.8rem;
   height: 6.8rem;
   transition: all 0.5s;
@@ -266,7 +267,7 @@ img {
 .c-button__wrapper .c-form-btn {
   position: fixed;
   bottom: 0rem;
-  right: 6.4%;
+  right: 0;
   padding: 1.35rem 8.2rem;
 }
 .c-button__wrapper .c-form-btn a {
@@ -398,6 +399,10 @@ img {
   font-size: 2rem;
   line-height: 2;
   font-weight: bold;
+}
+.p-blog-details-habit-img__half {
+  width: 50%;
+  margin-top: 12.2rem;
 }
 .p-blog-details-habit__list {
   margin-top: 2.8rem;
@@ -1102,6 +1107,7 @@ img {
 
 .p-faq__accordion {
   padding: 5.3rem 0 0 0;
+  border-bottom: 0.05rem solid #000000;
 }
 .p-faq__accordion-question {
   padding: 2rem 2.8rem 1.7rem 1.9rem;
@@ -1159,6 +1165,9 @@ img {
     margin-left: 5.5rem;
     width: 23.3rem;
   }
+}
+.p-faq__accordion-question.active {
+  border-bottom: 0.1rem solid #000;
 }
 .p-faq__accordion-answer {
   display: none;

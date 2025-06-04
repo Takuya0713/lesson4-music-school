@@ -73,6 +73,10 @@
       line-height: calc(40 / 20);
       font-weight: bold;
     }
+    &-img__half {
+      width: 50%;
+      margin-top: 12.2rem;
+    }
     &__list {
       margin-top: 2.8rem;
     }
@@ -159,12 +163,12 @@
       width: 60rem;
       height: 5rem;
     }
-    &__item{
+    &__item {
       display: flex;
       align-items: center;
     }
-    &__sub-title{
-      display: block; 
+    &__sub-title {
+      display: block;
     }
   }
 }

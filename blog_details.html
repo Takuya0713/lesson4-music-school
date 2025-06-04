@@ -209,16 +209,12 @@
                   <div class="p-blog-details-habit__section-title2">
                     <h2>H2見出しが入ります。H2見出しが入ります。</h2>
                   </div>
-                  <picture>
-                    <source
-                      srcset="images/common/4.blog_details/Choice01.jpg"
-                      media="(min-width: 768px)"
-                    />
+                  <div class="p-blog-details-habit-img__half">
                     <img
-                      src="images/common/4.blog_details/Choice01-sp.jpg"
-                      alt="FV"
+                      src="images/common/4.blog_details/Choice01.jpg"
+                      alt="Choice01"
                     />
-                  </picture>
+                  </div>
 
                   <ul class="p-blog-details-habit__list">
                     <li>・リストが入ります</li>
@@ -252,7 +248,8 @@
 
               <!-- 前の記事・次の記事・関連記事 -->
               <section class="p-blog-details-main__articles">
-                <a href="blog_details.html">
+                <!-- <a href="blog_details.html">
+                  
                   <div class="p-blog-details-main__article-item-01">
                     <p>◀︎ 前の記事</p>
                   </div>
@@ -288,7 +285,55 @@
                     </picture>
                     <p>タイトルが入ります。タイトルが入ります。タイトルが入</p>
                   </div>
-                </a>
+                </a> -->
+
+                <ul class="c-paging">
+                  <li class="c-paging__prev">
+                    <a href="blog_details.html">
+                      <div class="p-blog-details-main__article-item-01">
+                        <p class="c-paging__btn">◀︎ 前の記事</p>
+                      </div>
+
+                      <div class="p-blog-details-main__article-item-02">
+                        <picture>
+                          <source
+                            srcset="images/common/4.blog_details/blog03.jpg"
+                            media="(min-width: 768px)"
+                          />
+                          <img
+                            src="images/common/4.blog_details/blog03-sp.jpg"
+                            alt="FV"
+                          />
+                        </picture>
+                        <p>
+                          タイトルが入ります。タイトルが入ります。タイトルが入
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="c-paging__prev">
+                    <a href="blog_details.html">
+                      <div class="p-blog-details-main__article-item-01">
+                        <p class="c-paging__btn">次の記事 ▶︎</p>
+                      </div>
+                      <div class="p-blog-details-main__article-item-02">
+                        <picture>
+                          <source
+                            srcset="images/common/4.blog_details/blog03.jpg"
+                            media="(min-width: 768px)"
+                          />
+                          <img
+                            src="images/common/4.blog_details/blog03-sp.jpg"
+                            alt="FV"
+                          />
+                        </picture>
+                        <p>
+                          タイトルが入ります。タイトルが入ります。タイトルが入
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
               </section>
               <!-- 以下のタイトル部分のデザインと文字は共通なので、同じクラス名が使用できる -->
               <div class="pagenation">

@@ -38,19 +38,7 @@ function closeMenu() {
   }
 }
 
-// アコーディオンメニュー部分（編集前）
-// $(".p-faq__accordion-question,.p-faq__accordion-answer").click(function () {
-// アコーディオンの質問または回答部分をクリックした時に
-//   $(this).next().slideToggle();
-
-//   $(this).toggleClass("active");
-// });
-// （編集中）
-// （参考サイト）https://b-risk.jp/blog/2021/11/accordion/
-// （GPT）https://chatgpt.com/c/683ecaaf-05b4-8010-8226-ebb8af04de35
-// アコーディオンメニューの質問または回答部分をクリックした時に、クリックされた要素から一番近い（.closest）要素を探す。
-// その中にある要素を探す（.find）。
-// 表示・非表示のアニメーションを切り替える（.slideToggle()）。
+// アコーディオンメニュー
 $(".p-faq__accordion-question, .p-faq__accordion-answer").click(function () {
   // アコーディオンの質問または回答部分をクリックした時に
   $(this)

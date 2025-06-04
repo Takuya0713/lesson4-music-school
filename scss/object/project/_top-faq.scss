@@ -6,10 +6,10 @@
   // アコーディオンメニューの親要素
   &__accordion {
     padding: 5.3rem 0 0 0;
+    border-bottom: 0.05rem solid #000000;
     // 質問
     &-question {
       padding: 2rem 2.8rem 1.7rem 1.9rem;
-      // border-bottom: 0.05rem solid #000000;
       display: flex;
       align-items: center;
       position: relative;
@@ -65,6 +65,10 @@
           width: 23.3rem;
         }
       }
+      // 回答部分が表示されたときに下線を表示する
+      &.active {
+        border-bottom: 0.1rem solid #000;
+      }
     }
     // 回答・通常
     &-answer {
@@ -75,9 +79,6 @@
       }
       &:first-of-type {
         border-top: 0.05rem solid #000000;
-      }
-      &:last-of-type {
-        // border-bottom: 0.1rem solid #000;
       }
 
       @include sp {
