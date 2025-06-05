@@ -78,3 +78,45 @@ $(function () {
     sliderSetting();
   });
 });
+
+// 現在のスクロール位置
+var scrollTop = $(this).scrollTop();
+// ウィンドウの高さ
+var windowHeight = $(window).height();
+// ヘッダーの位置を取得
+var headerHeight = $("#header").outerHeight();
+// フッターの位置を取得
+var footerOffsetTop = $(".footer").offset().top;
+// トップへ戻るボタン
+var scrollTopBtn = $(".c-fix-area, .scroll-top-btn"); // トップへ戻るボタン
+// お問い合わせボタン
+var contactBtn = $(".c-form-btn");
+
+// ヘッダーを過ぎたら表示する
+$(window).scroll(function () {
+  if ($(this).scrollTop() > headerHeight) {
+    scrollTopBtn.fadeIn();
+  } else {
+    scrollTopBtn.fadeOut();
+  }
+  if ($(this).scrollTop() > headerHeight) {
+    contactBtn.fadeIn();
+  } else {
+    contactBtn.fadeOut();
+  }
+});
+
+// フッターに入ったら非表示にする
+$(window).scroll(function () {
+  if ($(this).scrollTop() > footerOffsetTop ) {
+    scroll.fadeOut();
+  } else {
+    scroll.fadeIn();
+  }
+  if ($(this).scrollTop() > footerOffsetTop ) {
+    contactBtn.fadeOut();
+  } else {
+    contactBtn.fadeIn();
+  }
+});
+
