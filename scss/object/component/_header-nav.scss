@@ -20,6 +20,9 @@
         content: ">";
         position: absolute;
         left: 8%;
+        @include sp{
+          left: 20%;
+        }
       }
     }
   }

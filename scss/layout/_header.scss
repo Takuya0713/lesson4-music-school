@@ -56,5 +56,8 @@
   // パンくずナビゲーションのレイアウト部分
   &__breadcrumb {
     background-color: rgba(232, 232, 232, 1);
+    @include sp{
+      height: 3.5rem;
+    }
   }
 }

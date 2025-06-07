@@ -15,6 +15,7 @@
       position: relative;
       @include sp {
         padding: initial;
+        height: 8.6rem;
       }
       &:hover {
         cursor: pointer;
