@@ -3,7 +3,18 @@
 .p-blog-details {
   display: flex;
   &__article {
-    padding: 7rem 0 18rem 0;
+    padding: 7rem 0 18.5rem 0;
+    width: 60rem;
+  }
+  &__outer {
+    display: flex;
+    column-gap: 3rem;
+  }
+  &__aside {
+    padding: 7rem 0 18.5rem 0;
+  }
+  &__side-inner{
+    width: 25rem;
   }
   // SNSリンクセクション部分
   &-habit {
@@ -128,7 +139,7 @@
     width: 26rem;
     height: 4rem;
     color: #ffffff;
-    
+
     p {
       font-size: 1.7rem;
       line-height: calc(30 / 17);
@@ -153,10 +164,15 @@
     }
     &__item {
       display: flex;
-      align-items: center;
+      margin-top: 3rem;
     }
-    &__sub-title {
-      display: block;
+    &__title-inner {
+      p {
+        margin-bottom: 1.4rem;
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: calc(25 / 20);
+      }
     }
   }
 }
