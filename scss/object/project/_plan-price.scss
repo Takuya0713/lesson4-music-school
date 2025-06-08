@@ -9,6 +9,9 @@
   }
   &__items {
     column-gap: 3rem;
+    @include sp {
+      flex-direction: column;
+    }
   }
   &__item {
     width: 21rem;
@@ -18,6 +21,9 @@
     position: relative;
     width: 1.85rem;
     height: 1.85rem;
+    @include sp {
+      margin-block: 2rem;
+    }
     &::before,
     &::after {
       content: "";
@@ -47,18 +53,32 @@
   }
   &__text {
     margin-top: 6rem;
+    @include sp{
+      margin-top: 4rem;
+    }
     p {
       font-size: 1.8rem;
       line-height: calc(30 / 18);
+      @include sp {
+        font-size: 1.6rem;
+        line-height: calc(30 / 16);
+      }
     }
   }
   &-plan {
     &__wrapper {
       padding: 5rem 0 22rem 0;
+      @include sp{
+      padding: 4rem 0 19rem 0;
+      }
     }
     // 料金表部分
     &__list {
       margin-top: 5rem;
+      overflow-x: scroll;
+      table{
+        margin-bottom: 1rem;
+      }
       tbody {
         tr {
           &:first-of-type {
@@ -132,7 +152,7 @@
         &.color-red,
         .color-red {
           color: $color-red;
-          &.font-bold{
+          &.font-bold {
             font-weight: bold;
           }
         }
@@ -141,6 +161,9 @@
           text-align: center;
         }
       }
+    }
+    &__option{
+      margin-top: 1.7rem;
     }
   }
 }

@@ -2,7 +2,7 @@
 // 色
 $color-red: rgba(203, 0, 0, 1);
 $color-white: #ffffff;
-$button-color: rgba(0, 0, 0, 0.502);
+$color-black: rgba(0, 0, 0, 1);
 
 // min関数を使用した可変表示（vw）
 @function vw($pixelSize, $baseWidth: 1080) {

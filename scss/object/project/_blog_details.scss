@@ -7,15 +7,16 @@
     width: 60rem;
   }
   &__outer {
-    display: flex;
-    column-gap: 3rem;
+    // display: flex;
+    // column-gap: 3rem;
   }
   &__aside {
     padding: 7rem 0 18.5rem 0;
-  }
-  &__side-inner{
     width: 25rem;
   }
+  // &__side-inner{
+  //   width: 25rem;
+  // }
   // SNSリンクセクション部分
   &-habit {
     // 件名部分
@@ -176,3 +177,4 @@
     }
   }
 }
+// asideタグ部分
