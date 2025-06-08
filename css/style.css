@@ -567,6 +567,17 @@ img {
   width: 4rem;
 }
 
+.news__items .news__item {
+  display: flex;
+  margin-block: 1.5rem;
+}
+.news__items .news__item .image {
+  width: 9.5rem;
+  height: 7.5rem;
+  background-color: rgb(232, 232, 232);
+  display: flex;
+}
+
 .p-blog-mv {
   position: relative;
 }

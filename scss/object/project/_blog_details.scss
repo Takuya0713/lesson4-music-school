@@ -211,7 +211,7 @@
     display: flex;
     padding: 1.5rem;
     border: 0.1rem solid $color-black;
-    }
+  }
   img {
     // aspect-ratio: 1.8/2.33;
     // aspect-ratio: 2.33/1.8;
@@ -223,6 +223,20 @@
       background-color: $color-black;
       height: 4rem;
       width: 4rem;
+    }
+  }
+}
+
+// おすすめ記事
+.news__items {
+  .news__item {
+    display: flex;
+    margin-block: 1.5rem;
+    .image {
+      width: 9.5rem;
+      height: 7.5rem;
+      background-color: rgba(232, 232, 232, 1);
+      display: flex;
     }
   }
 }
