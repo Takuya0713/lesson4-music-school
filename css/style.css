@@ -358,6 +358,8 @@ img {
 
 .p-blog-details {
   display: flex;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
 }
 .p-blog-details__article {
   padding: 7rem 0 18.5rem 0;
@@ -366,6 +368,11 @@ img {
 .p-blog-details__aside {
   padding: 7rem 0 18.5rem 0;
   width: 25rem;
+}
+.p-blog-details__side-inner {
+  display: flex;
+  row-gap: 3rem;
+  flex-direction: column;
 }
 .p-blog-details-habit__title {
   margin-top: 4.5rem;
@@ -512,6 +519,52 @@ img {
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.25;
+}
+
+.aside-header {
+  width: 25rem;
+  height: 5rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+}
+
+.mail__banner {
+  width: 25rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid rgb(0, 0, 0);
+}
+.mail__banner p {
+  color: rgb(0, 0, 0);
+  background-color: rgb(232, 232, 232);
+  width: 22rem;
+  height: 17rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 1.8333333333;
+}
+
+.blog__search input {
+  background-color: rgb(232, 232, 232);
+  width: 18rem;
+  height: 4rem;
+}
+.blog__search form {
+  display: flex;
+  padding: 1.5rem;
+  border: 0.1rem solid rgb(0, 0, 0);
+}
+.blog__search button span {
+  display: inline-block;
+  background-color: rgb(0, 0, 0);
+  height: 4rem;
+  width: 4rem;
 }
 
 .p-blog-mv {
