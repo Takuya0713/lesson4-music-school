@@ -1,14 +1,33 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+
 .p-error {
   padding: 6.7rem 0 9rem 0;
+  @include sp {
+    padding: 4.7rem 0 5rem 0;
+  }
 }
 .error {
   &__message {
     text-align: center;
+    @include sp {
+      text-align: left;
+    }
+    p {
+      @include sp {
+        font-size: 1.6rem;
+        line-height: calc(30 / 16);
+        font-weight: 400;
+      }
+    }
   }
   &__return {
     margin-top: 4rem;
     text-align: center;
     width: 100%;
+    @include sp {
+      margin-top: 1rem;
+    }
     &-inner {
       display: flex;
       align-items: center;
@@ -16,6 +35,9 @@
       height: 5rem;
       width: 25rem;
       margin: 0 auto;
+      @include sp {
+        width: initial;
+      }
       a {
         display: flex;
         align-items: center;
