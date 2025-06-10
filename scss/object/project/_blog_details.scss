@@ -213,9 +213,9 @@
     border: 0.1rem solid $color-black;
   }
   img {
-    // aspect-ratio: 1.8/2.33;
-    // aspect-ratio: 2.33/1.8;
-    // background-color: $color-black;
+    aspect-ratio: 1.8/2.33;
+    aspect-ratio: 2.33/1.8;
+    background-color: $color-black;
   }
   button {
     span {
@@ -231,12 +231,29 @@
 .news__items {
   .news__item {
     display: flex;
-    margin-block: 1.5rem;
+    // margin-block: 1.5rem;
+    margin-top: 1.5rem;
+    column-gap: 1.5rem;
     .image {
       width: 9.5rem;
       height: 7.5rem;
       background-color: rgba(232, 232, 232, 1);
       display: flex;
+      aspect-ratio: 95/75;
     }
+    p {
+      font-size: 1.7rem;
+      line-height: calc(28 / 17);
+    }
+  }
+}
+
+// カテゴリー
+.category {
+  &__item {
+    height: 4.7rem;
+    border-bottom: 0.05rem solid $color-black;
+    display: flex;
+    align-items: center;
   }
 }
