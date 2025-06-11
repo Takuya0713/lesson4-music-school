@@ -120,17 +120,23 @@
               <table>
                 <tbody>
                   <tr>
-                    <td>名前</td>
-                    <td>職業</td>
-                    <td>ジャンル</td>
-                    <td>実績</td>
-                    <td>SNS</td>
+                    <th>名前</th>
+                    <td>丸山</td>
                   </tr>
                   <tr>
-                    <td>丸山</td>
+                    <th>職業</th>
                     <td>証券会社勤務</td>
+                  </tr>
+                  <tr>
+                    <th>ジャンル</th>
                     <td>入力欄</td>
+                  </tr>
+                  <tr>
+                    <th>実績</th>
                     <td>入力欄</td>
+                  </tr>
+                  <tr>
+                    <th>SNS</th>
                     <td>入力欄</td>
                   </tr>
                 </tbody>
@@ -142,6 +148,45 @@
               </p>
             </div>
           </div>
+          <!-- 前の記事・次の記事・関連記事 -->
+          <section class="p-blog-details-main__articles">
+            <ul class="c-paging">
+              <li class="c-paging__prev">
+                <a href="blog_details.html">
+                  <div class="p-blog-details-main__article-item-01">
+                    <p class="c-paging__btn">◀︎ 前の記事</p>
+                  </div>
+
+                  <div class="p-blog-details-main__article-item-02">
+                    <p>
+                      <img
+                        src="images/common/4.blog_details/blog03.jpg"
+                        alt="FV"
+                      />
+                    </p>
+                    <p>タイトルが入ります。タイトルが入ります。タイトルが入</p>
+                  </div>
+                </a>
+              </li>
+              <li class="c-paging__prev">
+                <a href="blog_details.html">
+                  <div class="p-blog-details-main__article-item-01">
+                    <p class="c-paging__btn">次の記事 ▶︎</p>
+                  </div>
+                  <div class="p-blog-details-main__article-item-02">
+                    <p>
+                      <img
+                        src="images/common/4.blog_details/blog03.jpg"
+                        alt="FV"
+                      />
+                    </p>
+                    <p>タイトルが入ります。タイトルが入ります。タイトルが入</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+
           <!-- 以下のタイトル部分のデザインと文字は共通なので、同じクラス名が使用できる -->
           <div class="pagenation">
             <!-- 前の記事 page-previous -->

@@ -12,26 +12,53 @@
       font-weight: bold;
     }
   }
-  &__date{
+  &__date {
     display: inline-block;
     margin-top: 1.5rem;
   }
-  &__profile-inner{
+  &__profile-inner {
     margin-top: 5.7rem;
     display: flex;
+    column-gap: 4rem;
   }
-  &__profile-data{
-    table{
-        td{
-            display: flex;
-            flex-direction: column;
+  &__profile-data {
+    table {
+      th {
+        background: rgba(229, 229, 229, 1);
+        border-top: 0.1rem solid rgba(112, 112, 112, 1);
+        border-bottom: 0.1rem solid rgba(112, 112, 112, 1);
+        border-left: 0.1rem solid rgba(112, 112, 112, 1);
+        width: 14rem;
+        height: calc(190 / 5) * 0.1rem;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: calc(30 / 18);
+        padding: 0.8rem 2rem 0;
+      }
+      td {
+        border-top: 0.1rem solid rgba(112, 112, 112, 1);
+        border-right: 0.1rem solid rgba(112, 112, 112, 1);
+        border-left: 0.1rem solid rgba(112, 112, 112, 1);
+        width: 26rem;
+        height: calc(190 / 5) * 0.1rem;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: calc(30 / 18);
+        padding: 0.8rem 8rem 0 2rem;
+        &:last-child {
+          border-bottom: 0.1rem solid rgba(112, 112, 112, 1);
         }
+      }
     }
-    background: #ff6;
+  }
+  &__profile-comment {
+    width: 44rem;
+    p {
+    }
   }
 }
 
 // ページ部分
-.pagenation{
-    margin-top: 10rem;
+.pagenation {
+  margin-top: 10rem;
 }

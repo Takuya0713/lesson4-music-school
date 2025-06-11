@@ -1151,15 +1151,38 @@ img {
 .p-result-details__profile-inner {
   margin-top: 5.7rem;
   display: flex;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
 }
-.p-result-details__profile-data {
-  background: #ff6;
+.p-result-details__profile-data table th {
+  background: rgb(229, 229, 229);
+  border-top: 0.1rem solid rgb(112, 112, 112);
+  border-bottom: 0.1rem solid rgb(112, 112, 112);
+  border-left: 0.1rem solid rgb(112, 112, 112);
+  width: 14rem;
+  height: 3.8rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+  padding: 0.8rem 2rem 0;
 }
 .p-result-details__profile-data table td {
-  display: flex;
-  flex-direction: column;
+  border-top: 0.1rem solid rgb(112, 112, 112);
+  border-right: 0.1rem solid rgb(112, 112, 112);
+  border-left: 0.1rem solid rgb(112, 112, 112);
+  width: 26rem;
+  height: 3.8rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+  padding: 0.8rem 8rem 0 2rem;
 }
-
+.p-result-details__profile-data table td:last-child {
+  border-bottom: 0.1rem solid rgb(112, 112, 112);
+}
+.p-result-details__profile-comment {
+  width: 44rem;
+}
 .pagenation {
   margin-top: 10rem;
 }
