@@ -1,2 +1,37 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
+.p-result-details {
+  &__image {
+    margin-top: 7rem;
+  }
+  &__title {
+    margin-top: 5rem;
+    h2 {
+      font-size: 2.5rem;
+      line-height: calc(40 / 25);
+      font-weight: bold;
+    }
+  }
+  &__date{
+    display: inline-block;
+    margin-top: 1.5rem;
+  }
+  &__profile-inner{
+    margin-top: 5.7rem;
+    display: flex;
+  }
+  &__profile-data{
+    table{
+        td{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    background: #ff6;
+  }
+}
+
+// ページ部分
+.pagenation{
+    margin-top: 10rem;
+}

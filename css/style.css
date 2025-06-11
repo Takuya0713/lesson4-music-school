@@ -1133,6 +1133,37 @@ img {
   margin-top: 1.7rem;
 }
 
+.p-result-details__image {
+  margin-top: 7rem;
+}
+.p-result-details__title {
+  margin-top: 5rem;
+}
+.p-result-details__title h2 {
+  font-size: 2.5rem;
+  line-height: 1.6;
+  font-weight: bold;
+}
+.p-result-details__date {
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+.p-result-details__profile-inner {
+  margin-top: 5.7rem;
+  display: flex;
+}
+.p-result-details__profile-data {
+  background: #ff6;
+}
+.p-result-details__profile-data table td {
+  display: flex;
+  flex-direction: column;
+}
+
+.pagenation {
+  margin-top: 10rem;
+}
+
 .p-result-list {
   padding: 7.5rem 0 21rem 0;
 }

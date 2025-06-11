@@ -67,23 +67,56 @@
       </div>
     </header>
 
+    <!-- パンくずリストを追加 -->
+    <div class="l-header__breadcrumb c-header__breadcrumb">
+      <div class="inner">
+        <ol>
+          <li>
+            <a href="index.html"><span>ホーム</span></a>
+          </li>
+          <li>
+            <a href=""><span>卒業実績</span></a>
+          </li>
+          <li>
+            <a href=""><span>ポップス</span></a>
+          </li>
+          <li>
+            <a href=""
+              ><span
+                >タイトルが入ります。タイトルが入ります。タイトルが入ります。</span
+              ></a
+            >
+          </li>
+        </ol>
+      </div>
+    </div>
+
     <main>
-      <section id="result-details">
-        <div class="result-details__wrapper">
-          <div class="result-details__fv">
-            <!-- <img src="" alt="" /> -->
+      <div class="inner">
+        <section class="p-result-details">
+          <div class="p-result-details__image">
+            <picture>
+              <source
+                srcset="images/common/10.result_details/voice01.jpg"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="images/common/10.result_details/voice01-sp.jpg"
+                alt="p-result-details__fv"
+              />
+            </picture>
           </div>
-          <div class="result-details__title">
+          <div class="p-result-details__title">
             <h2>
               タイトルが入ります。タイトルが入ります。タイトルが入ります。
             </h2>
           </div>
-          <div class="result-details__date">
+          <div class="p-result-details__date">
             <time datetime="0000.00.00">0000.00.00</time>
           </div>
-          <div class="result-details__profile-inner">
+          <div class="p-result-details__profile-inner">
             <!-- プロフィール表を作成する -->
-            <div class="result-details__profile-data">
+            <div class="p-result-details__profile-data">
               <table>
                 <tbody>
                   <tr>
@@ -103,7 +136,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="result-details__profile-comment">
+            <div class="p-result-details__profile-comment">
               <p>
                 昔やっていた音楽活動で、副収入が得られるようになったので、毎日充実するようになりました。
               </p>
@@ -163,8 +196,8 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <!-- フッターを読み込む -->
 
