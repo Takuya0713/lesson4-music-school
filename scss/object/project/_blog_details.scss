@@ -126,13 +126,10 @@
   }
   &-main__article-item-01 {
     padding-inline: 2rem;
-    background-color: #000;
     display: flex;
     align-items: center;
-    width: 26rem;
-    height: 4rem;
-    color: #ffffff;
-
+    width: 40rem;
+    height: 3.7rem;
     p {
       font-size: 1.7rem;
       line-height: calc(30 / 17);
@@ -145,13 +142,11 @@
     height: 6.8rem;
   }
   .page-relation {
-    margin-top: 10rem;
+    // margin-top: 10rem;
     &__title {
       display: flex;
       align-items: center;
       padding-inline-start: 3rem;
-      background-color: #000;
-      color: #ffffff;
       width: 60rem;
       height: 5rem;
     }

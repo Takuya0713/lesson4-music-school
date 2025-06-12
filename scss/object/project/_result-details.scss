@@ -59,6 +59,19 @@
 }
 
 // ページ部分
-.pagenation {
+// .pagenation {
+// }
+.page-relation {
   margin-top: 10rem;
+  &__title {
+    display: flex;
+    align-items: center;
+    padding-inline-start: 3rem;
+    height: 5rem;
+    h4 {
+      font-weight: bold;
+      font-size: 1.8rem;
+      line-height: calc(33 / 18);
+    }
+  }
 }

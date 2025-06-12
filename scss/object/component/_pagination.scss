@@ -1,5 +1,5 @@
-//
-
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
 // ページ送り部分
 .c-pager {
   margin-top: 7rem;
@@ -28,9 +28,19 @@
 // 前の記事・次の記事部分
 .c-paging {
   display: flex;
-  column-gap: 8rem;
+  column-gap: 20rem;
   &__prev {
     width: 26rem;
     height: 4rem;
   }
+}
+
+// ページの見出し部分
+// .c-page-button {
+//   background-color: #000;
+//   color: $color-white;
+// }
+.c-page-heading {
+  background-color: #000;
+  color: $color-white;
 }
