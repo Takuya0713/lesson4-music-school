@@ -86,7 +86,8 @@ var windowHeight = $(window).height();
 // ヘッダーの位置を取得
 var headerHeight = $("#header").outerHeight();
 // フッターの位置を取得
-var footerOffsetTop = $(".footer").offset().top;
+// var footerOffsetTop = $("footer").offset().top;
+var footHeight = $("footer").height();
 // トップへ戻るボタン
 var scrollTopBtn = $(".c-fix-area, .scroll-top-btn"); // トップへ戻るボタン
 // お問い合わせボタン
@@ -96,27 +97,55 @@ var contactBtn = $(".c-form-btn");
 $(window).scroll(function () {
   if ($(this).scrollTop() > headerHeight) {
     scrollTopBtn.fadeIn();
+    // ヘッダーの位置を超えたらTOPへ戻るボタンとお問い合わせボタンを表示する
   } else {
     scrollTopBtn.fadeOut();
+    // それ以外なら非表示にする
   }
   if ($(this).scrollTop() > headerHeight) {
     contactBtn.fadeIn();
+    // ヘッダーの位置を超えたらお問い合わせボタンを表示する
   } else {
     contactBtn.fadeOut();
+    // それ以外なら非表示にする
   }
 });
+
+// フッターに入ったら固定する（編集中）
+// $(window).scroll(function () {
+//   if ($(this).scrollTop() >= footHeight) {
+//     $(scrollTopBtn).css({
+//       position: "absolute",
+//       bottom: footHeight,
+//     });
+//   } else {
+//     // scroll.fadeIn();
+//     $(scrollTopBtn).css({
+//       position: "fixed",
+//     });
+//   }
+//   if ($(this).scrollTop() >= footHeight) {
+//     contactBtn.css({
+//       position: "absolute",
+//       bottom: footHeight,
+//     });
+//   } else {
+//     contactBtn.css({
+//       position: "fixed",
+//     });
+//   }
+// });
 
 // フッターに入ったら非表示にする
-$(window).scroll(function () {
-  if ($(this).scrollTop() > footerOffsetTop ) {
-    scroll.fadeOut();
-  } else {
-    scroll.fadeIn();
-  }
-  if ($(this).scrollTop() > footerOffsetTop ) {
-    contactBtn.fadeOut();
-  } else {
-    contactBtn.fadeIn();
-  }
-});
-
+// $(window).scroll(function () {
+//   if ($(this).scrollTop() > footerOffsetTop ) {
+//     scroll.fadeOut();
+//   } else {
+//     scroll.fadeIn();
+//   }
+//   if ($(this).scrollTop() > footerOffsetTop ) {
+//     contactBtn.fadeOut();
+//   } else {
+//     contactBtn.fadeIn();
+//   }
+// });
