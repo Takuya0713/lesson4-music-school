@@ -3,9 +3,16 @@
 .p-blog-details {
   display: flex;
   column-gap: 3rem;
+  @include sp {
+    display: initial;
+  }
   &__article {
     padding: 7rem 0 18.5rem 0;
     width: 60rem;
+    @include sp {
+      width: initial;
+      padding: 5rem 0 19.7rem 0;
+    }
   }
   &__aside {
     padding: 7rem 0 18.5rem 0;
@@ -21,6 +28,9 @@
     // 件名部分
     &__title {
       margin-top: 4.5rem;
+      @include sp {
+        margin-top: 3rem;
+      }
       & h1 {
         font-size: 2.5rem;
         line-height: calc(40 / 25);
@@ -70,6 +80,9 @@
     }
     &__desc {
       margin-top: 4.8rem;
+      @include sp {
+        margin-top: 2.7rem;
+      }
     }
     &__section-title2 {
       margin-top: 3.8rem;
@@ -80,6 +93,10 @@
     &-img__half {
       width: 50%;
       margin-top: 12.2rem;
+      @include sp {
+        width: 100%;
+        margin-top: 3.9rem;
+      }
     }
     &__list {
       margin-top: 2.8rem;
@@ -87,9 +104,15 @@
     &__under-line {
       border-bottom: 0.1rem solid #000;
       margin-top: 4rem;
+      @include sp {
+        margin-top: 3.85rem;
+      }
     }
     &__section-title3 {
       margin-top: 4.35rem;
+      @include sp {
+        margin-top: 5rem;
+      }
       h3 {
         font-size: 2rem;
         line-height: calc(40 / 20);
@@ -99,9 +122,17 @@
     &__note-comment {
       margin-top: 1.7rem;
       background-color: rgba(232, 232, 232, 1);
+      @include sp {
+        margin-top: 1.95rem;
+      }
       p {
         font-size: 1.8rem;
         line-height: calc(30 / 18);
+        @include sp {
+          font-size: 1.6rem;
+          line-height: calc(30 / 16);
+          padding: 1.7rem 2rem 1.1rem 7rem;
+        }
       }
     }
     &__text-link {
@@ -123,6 +154,9 @@
     column-gap: 8rem;
     display: flex;
     align-items: center;
+    @include sp {
+      margin-top: 4.5rem;
+    }
   }
   &-main__article-item-01 {
     padding-inline: 2rem;
