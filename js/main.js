@@ -127,7 +127,7 @@ $(window).scroll(function () {
 //   if ($(this).scrollTop() >= footHeight) {
 //     contactBtn.css({
 //       position: "absolute",
-//       bottom: footHeight,
+//       bottom: 29.6rem,
 //     });
 //   } else {
 //     contactBtn.css({

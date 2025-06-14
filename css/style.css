@@ -1122,8 +1122,18 @@ img {
 .p-price-plan__list tbody tr:nth-of-type(even) {
   background-color: #ffffff;
 }
+@media (max-width: 767px) {
+  .p-price-plan__list tbody tr:nth-of-type(even) {
+    background-color: rgba(80, 80, 80, 0.149);
+  }
+}
 .p-price-plan__list tbody tr:nth-of-type(odd) {
   background-color: rgba(80, 80, 80, 0.149);
+}
+@media (max-width: 767px) {
+  .p-price-plan__list tbody tr:nth-of-type(odd) {
+    background-color: #ffffff;
+  }
 }
 .p-price-plan__list tbody tr:last-of-type {
   border-bottom: 0.1rem solid #000;
@@ -1134,7 +1144,6 @@ img {
 .p-price-plan__list tr {
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 8.5rem;
 }
 .p-price-plan__list th {
@@ -1142,16 +1151,34 @@ img {
   line-height: 1.65;
   width: 22rem;
 }
+@media (max-width: 767px) {
+  .p-price-plan__list th {
+    width: 16.75rem;
+    line-height: 1.25;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
 .p-price-plan__list th:first-of-type {
   padding: initial;
 }
 .p-price-plan__list th:nth-of-type(odd) {
   padding: 1.1rem 2rem 0.5rem;
 }
+@media (max-width: 767px) {
+  .p-price-plan__list th:nth-of-type(odd) {
+    align-items: center;
+  }
+}
 .p-price-plan__list th:nth-of-type(even) {
   background-color: #000;
   color: #ffffff;
   height: 5rem;
+}
+@media (max-width: 767px) {
+  .p-price-plan__list th:nth-of-type(even) {
+    height: 6.6rem;
+  }
 }
 .p-price-plan__list th span {
   display: inline-block;
@@ -1159,6 +1186,11 @@ img {
   text-align: center;
   line-height: 1.9411764706;
   font-size: 1.7rem;
+}
+@media (max-width: 767px) {
+  .p-price-plan__list th span {
+    font-size: 1.6rem;
+  }
 }
 .p-price-plan__list td {
   display: flex;
@@ -1168,6 +1200,11 @@ img {
   text-align: center;
   flex-direction: column;
   height: 100%;
+}
+@media (max-width: 767px) {
+  .p-price-plan__list td {
+    width: 16.75rem;
+  }
 }
 .p-price-plan__list td:not(:first-of-type) {
   border-left: 0.1rem solid #000;
@@ -1518,6 +1555,17 @@ img {
 .p-faq__accordion-question.active {
   border-bottom: 0.1rem solid #000;
 }
+.p-faq__accordion-question.active::after {
+  position: absolute;
+  content: "";
+  width: 1.36rem;
+  height: 1.36rem;
+  border-right: 0.1rem solid #000;
+  border-bottom: 0.1rem solid #000;
+  left: 85.5%;
+  transform: rotate(-135deg);
+  transition: 0.5s all;
+}
 .p-faq__accordion-answer {
   display: none;
   padding: 2rem 2.8rem 1.7rem 1.9rem;
@@ -1564,6 +1612,7 @@ img {
   font-size: 1.7rem;
   line-height: 1.7647058824;
 }
+
 .footer {
   position: relative;
 }

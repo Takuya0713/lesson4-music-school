@@ -31,9 +31,6 @@
         border-radius: 50%;
         background-color: #000;
         color: $color-white;
-        @include sp {
-          // margin-right: 2rem;
-        }
       }
       &::after {
         position: absolute;
@@ -69,6 +66,18 @@
       // 回答部分が表示されたときに下線を表示する
       &.active {
         border-bottom: 0.1rem solid #000;
+        // 0614追加中
+        &::after {
+          position: absolute;
+          content: "";
+          width: 1.36rem;
+          height: 1.36rem;
+          border-right: 0.1rem solid #000;
+          border-bottom: 0.1rem solid #000;
+          left: 85.5%;
+          transform: rotate(-135deg);
+          transition: .5s all;
+        }
       }
     }
     // 回答・通常
@@ -115,10 +124,6 @@
         padding-left: 4.1rem;
         font-size: 1.7rem;
         line-height: calc(30 / 17);
-        @include sp {
-          // display: flex;
-          // align-items: center;
-        }
       }
     }
   }
