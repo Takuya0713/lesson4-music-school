@@ -69,36 +69,34 @@
       </header>
 
       <main>
-        <div class="l-main">
-          <section class="section p-plan-mv">
-            <div class="p-plan-mv__wrapper">
-              <div class="p-plan-mv__title">
-                <h2 class="p-plan-mv__titleInner">プラン・料金</h2>
-              </div>
-              <div class="p-plan-mv__image">
-                <picture>
-                  <source
-                    srcset="images/common/2.plan/About.jpg"
-                    media="(min-width: 768px)"
-                  />
-                  <img src="images/common/2.plan/About-sp.jpg" alt="FV" />
-                </picture>
-              </div>
+        <section class="section p-plan-mv">
+          <div class="p-plan-mv__wrapper">
+            <div class="p-plan-mv__title">
+              <h2 class="p-plan-mv__titleInner">プラン・料金</h2>
             </div>
-          </section>
+            <div class="p-plan-mv__image">
+              <picture>
+                <source
+                  srcset="images/common/2.plan/About.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img src="images/common/2.plan/About-sp.jpg" alt="FV" />
+              </picture>
+            </div>
+          </div>
+        </section>
 
-          <!-- パンくずリストを追加 -->
-          <div class="l-header__breadcrumb c-header__breadcrumb">
-            <div class="inner">
-              <ol>
-                <li>
-                  <a href="index.html"><span>ホーム</span></a>
-                </li>
-                <li>
-                  <a href="plan.html"><span>プラン・料金</span></a>
-                </li>
-              </ol>
-            </div>
+        <!-- パンくずリストを追加 -->
+        <div class="l-header__breadcrumb c-header__breadcrumb">
+          <div class="inner">
+            <ol>
+              <li>
+                <a href="index.html"><span>ホーム</span></a>
+              </li>
+              <li>
+                <a href="plan.html"><span>プラン・料金</span></a>
+              </li>
+            </ol>
           </div>
         </div>
 
@@ -150,9 +148,11 @@
                 <thead>
                   <tr>
                     <th>&nbsp;</th>
-                    <th class="u-df-tbc">ベーシック<br class="sp">プラン</th>
+                    <th class="u-df-tbc">ベーシック<br class="sp" />プラン</th>
                     <th class="u-bg-red">
-                      <span>おすすめ</span><br />スタンダード<br class="sp">プラン
+                      <span>おすすめ</span><br />スタンダード<br
+                        class="sp"
+                      />プラン
                     </th>
                     <th class="u-df-tbc">プレミアムプラン</th>
                     <!-- <th class="u-df-tbc">ベーシック<br class="sp">プラン</th> -->
@@ -225,74 +225,6 @@
             </div>
           </div>
         </section>
-
-        <footer class="footer">
-          <!-- 0312フッター部分から再開 -->
-          <div class="footer__wrapper u-bg-red">
-            <div class="footer__inner">
-              <div class="footer__nav">
-                <ul>
-                  <li><a href="index.html">ホーム</a></li>
-                  <li><a href="plan.html">料金</a></li>
-                  <li><a href="blog_list.html">ブログ</a></li>
-                  <li><a href="result_list.html">卒業実績</a></li>
-                </ul>
-              </div>
-              <div class="footer__logo">
-                <picture>
-                  <source
-                    srcset="images/common/1.top/7.footer/footer__logo.svg"
-                    media="(max-width: 768px)"
-                  />
-                  <img
-                    src="images/common/1.top/7.footer/footer__logo.svg"
-                    alt="footer-icon"
-                  />
-                </picture>
-              </div>
-              <div class="footer__copyright">
-                <p>
-                  Copyright © 0000 KITAMURA music school Inc.
-                  <br class="sp" />All Rights
-                </p>
-              </div>
-              <!-- SNSリンク部分改修中 -->
-              <div class="footer__sns-links">
-                <ul>
-                  <li class="link-x">
-                    <a href="https://x.com/home?lang=ja"
-                      ><img
-                        src="images/common/1.top/7.footer/icon-twitter.svg"
-                        alt="X"
-                    /></a>
-                  </li>
-                  <li class="link-facebook">
-                    <a href="https://www.facebook.com/"
-                      ><img
-                        src="images/common/1.top/7.footer/icon-facebook.svg"
-                        alt="facebook"
-                    /></a>
-                  </li>
-                  <li class="link-youtube">
-                    <a href="https://www.youtube.com/"
-                      ><img
-                        src="images/common/1.top/7.footer/icon-youtube.svg"
-                        alt="youtube"
-                    /></a>
-                  </li>
-                  <li class="link-instagram">
-                    <a href="https://www.instagram.com/"
-                      ><img
-                        src="images/common/1.top/7.footer/icon-instagram.svg"
-                        alt="instagram"
-                    /></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </footer>
-
         <!-- お問い合わせボタンとTOP画面に戻るボタン -->
         <div class="c-button__wrapper">
           <div class="inner">
@@ -309,19 +241,86 @@
             </div>
           </div>
         </div>
-
-        <script
-          src="https://code.jquery.com/jquery-3.7.1.min.js"
-          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-          crossorigin="anonymous"
-        ></script>
-        <!-- slick部分を追加 -->
-        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <!-- AOSアニメーション -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="js/main.js"></script>
       </main>
+
+      <footer class="footer">
+        <!-- 0312フッター部分から再開 -->
+        <div class="footer__wrapper u-bg-red">
+          <div class="footer__inner">
+            <div class="footer__nav">
+              <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="plan.html">料金</a></li>
+                <li><a href="blog_list.html">ブログ</a></li>
+                <li><a href="result_list.html">卒業実績</a></li>
+              </ul>
+            </div>
+            <div class="footer__logo">
+              <picture>
+                <source
+                  srcset="images/common/1.top/7.footer/footer__logo.svg"
+                  media="(max-width: 768px)"
+                />
+                <img
+                  src="images/common/1.top/7.footer/footer__logo.svg"
+                  alt="footer-icon"
+                />
+              </picture>
+            </div>
+            <div class="footer__copyright">
+              <p>
+                Copyright © 0000 KITAMURA music school Inc.
+                <br class="sp" />All Rights
+              </p>
+            </div>
+            <!-- SNSリンク部分改修中 -->
+            <div class="footer__sns-links">
+              <ul>
+                <li class="link-x">
+                  <a href="https://x.com/home?lang=ja"
+                    ><img
+                      src="images/common/1.top/7.footer/icon-twitter.svg"
+                      alt="X"
+                  /></a>
+                </li>
+                <li class="link-facebook">
+                  <a href="https://www.facebook.com/"
+                    ><img
+                      src="images/common/1.top/7.footer/icon-facebook.svg"
+                      alt="facebook"
+                  /></a>
+                </li>
+                <li class="link-youtube">
+                  <a href="https://www.youtube.com/"
+                    ><img
+                      src="images/common/1.top/7.footer/icon-youtube.svg"
+                      alt="youtube"
+                  /></a>
+                </li>
+                <li class="link-instagram">
+                  <a href="https://www.instagram.com/"
+                    ><img
+                      src="images/common/1.top/7.footer/icon-instagram.svg"
+                      alt="instagram"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- slick部分を追加 -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- AOSアニメーション -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
 

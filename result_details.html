@@ -151,26 +151,44 @@
           <!-- 前の記事・次の記事・関連記事 -->
           <section class="p-blog-details-main__articles">
             <ul class="c-paging">
-              <li class="c-paging__prev">
-                <a href="blog_details.html">
+              <li>
+                <a href="blog_details.html" class="c-paging-item">
                   <div
-                    class="p-blog-details-main__article-item-01 c-page-heading"
+                    class="c-paging-item__heading"
                   >
-                    <p class="c-paging__btn">◀︎ 前の記事</p>
+                    <p>◀︎ 前の記事</p>
                   </div>
 
-                  <div class="p-blog-details-main__article-item-02">
-                    <p>
+                  <div class="c-paging-item__content">
+                    <p class="c-paging-item__image">
                       <img
                         src="images/common/4.blog_details/blog03.jpg"
                         alt="FV"
                       />
                     </p>
-                    <p>タイトルが入ります。タイトルが入ります。タイトルが入</p>
+                    <p class="c-paging-item__text">タイトルが入ります。タイトルが入ります。タイトルが入</p>
                   </div>
                 </a>
               </li>
-              <li class="c-paging__prev">
+              <li>
+                <a href="blog_details.html" class="c-paging-item">
+                  <div
+                    class="c-paging-item__heading"
+                  >
+                    <p>次の記事 ▶</p>
+                  </div>
+                  <div class="c-paging-item__content">
+                    <p class="c-paging-item__image">
+                      <img
+                        src="images/common/4.blog_details/blog03.jpg"
+                        alt="FV"
+                      />
+                    </p>
+                    <p class="c-paging-item__text">タイトルが入ります。タイトルが入ります。タイトルが入</p>
+                  </div>
+                </a>
+              </li>
+              <!-- <li>
                 <a href="blog_details.html">
                   <div
                     class="p-blog-details-main__article-item-01 c-page-heading"
@@ -178,26 +196,20 @@
                     <p class="c-paging__btn">次の記事 ▶︎</p>
                   </div>
                   <div class="p-blog-details-main__article-item-02">
-                    <p>
+                    <p class="item02-image">
                       <img
                         src="images/common/4.blog_details/blog03.jpg"
                         alt="FV"
                       />
                     </p>
-                    <p>タイトルが入ります。タイトルが入ります。タイトルが入</p>
+                    <p class="item02-text">タイトルが入ります。タイトルが入ります。タイトルが入</p>
                   </div>
                 </a>
-              </li>
+              </li> -->
             </ul>
           </section>
 
           <!-- 以下のタイトル部分のデザインと文字は共通なので、同じクラス名が使用できる -->
-          <div class="pagenation">
-            <!-- 前の記事 page-previous -->
-            <div class="page-previous"></div>
-            <!-- 後の記事 page-next -->
-            <div class="page-next"></div>
-          </div>
           <!-- 関連記事 page-relation→Webページを分割して読みやすくする機能や仕組みの事 -->
           <div class="page-relation">
             <div class="page-relation__title c-page-heading">

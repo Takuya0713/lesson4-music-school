@@ -23,12 +23,12 @@
     display: flex;
     align-items: center;
     height: 4rem;
+    width: 14rem;
     // https://qiita.com/ikue-san/items/93d4e6dc857b24571393
+    font-size: 2rem;
     label {
       display: inline-block;
       vertical-align: top;
-      width: 14rem;
-      font-size: 2rem;
       line-height: 1.65;
       height: 4rem;
     }
@@ -36,7 +36,8 @@
   dd {
     flex: 1;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
+    align-items: flex-start;
     // 入力フォーム部分
     .form-control {
       background-color: #ffffff;
@@ -50,52 +51,53 @@
   }
   // （親要素）チェックボックス
   .check-box__wrapper {
-    .checkbox_icon[type="checkbox"] {
+    input[type="checkbox"] {
       // inputタグのチェックボックスを非表示にする
       position: relative;
       display: none;
       appearance: revert;
-      // &:checked:before {
-      //   position: absolute;
-      //   top: 1px;
-      //   left: 4px;
-      //   transform: rotate(50deg);
-      //   width: 4px;
-      //   height: 8px;
-      //   border-right: 2px solid #000;
-      //   border-bottom: 2px solid #000;
-      //   content: "";
-      // }
-    }
-    span {
-      display: flex;
-      align-items: center;
-      position: relative;
-      font-size: 1.8rem;
-      line-height: calc(30 / 18);
-      cursor: pointer;
-      // チェックボックス部分
-      &::before {
-        content: "";
-        border: 0.1rem solid #000;
-        margin-right: 2rem;
-        background-color: $color-white;
-        height: 2rem;
-        width: 2rem;
+      // 0615 input隣のspanタグという指定
+      & + span {
+        display: flex;
+        align-items: center;
+        position: relative;
+        font-size: 1.8rem;
+        line-height: calc(30 / 18);
+        cursor: pointer;
+        padding-left: 4rem;
+        // チェックボックス部分
+        &::before {
+          content: "";
+          border: 0.1rem solid #000;
+          background-color: $color-white;
+          height: 2rem;
+          width: 2rem;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+        }
+        // チェックが入る前表示
+        &::after {
+          content: "";
+          border-right: 3px solid #000000;
+          border-bottom: 3px solid #000000;
+          transform: rotate(45deg);
+          height: 1.6rem;
+          width: 0.7rem;
+          position: absolute;
+          top: 0.4rem;
+          left: 0.7rem;
+          opacity: 0;
+        }
       }
-      // チェック部分
-      // &::after {
-      &:checked:after {
-        content: "";
-        border-right: 3px solid #000000;
-        border-bottom: 3px solid #000000;
-        transform: rotate(45deg);
-        height: 1.6rem;
-        width: 0.7rem;
-        position: absolute;
-        top: 0.4rem;
-        left: 0.7rem;
-        opacity: 0;
+      // チェックが入った時の表示
+      &:checked {
+        & + span {
+          &::after {
+            opacity: 1;
+          }
+        }
       }
     }
   }
