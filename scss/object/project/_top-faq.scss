@@ -41,6 +41,9 @@
         border-bottom: 0.1rem solid #000;
         left: 85.5%;
         transform: rotate(45deg);
+        @include sp {
+          left: 90%;
+        }
       }
       // 最初の要素のみ上に線を付ける
       &:first-of-type {
@@ -61,6 +64,7 @@
           font-weight: 400;
           margin-left: 5.5rem;
           width: 23.3rem;
+          line-height: calc(30 / 16);
         }
       }
       // 回答部分が表示されたときに下線を表示する
@@ -76,7 +80,10 @@
           border-bottom: 0.1rem solid #000;
           left: 85.5%;
           transform: rotate(-135deg);
-          transition: .5s all;
+          transition: 0.5s all;
+          @include sp {
+            left: 90%;
+          }
         }
       }
     }
