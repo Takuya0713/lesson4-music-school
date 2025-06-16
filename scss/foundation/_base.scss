@@ -3,7 +3,8 @@
 
 html {
   -webkit-appearance: none;
-  -webkit-text-size-adjust: 100%;
+  appearance: none;
+  // -webkit-text-size-adjust: 100%;
   // CSSでスムーズに戻すときはこちらを使い、jQuery使うときはコメントアウトする。
   scroll-behavior: smooth;
   word-break: break-all;
