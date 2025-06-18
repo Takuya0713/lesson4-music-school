@@ -83,6 +83,7 @@ $(function () {
 var scrollTopBtn = $(".c-button__wrapper");
 
 // 少しスクロールしたら現れる
+// 最初は非表示、特定の位置までスクロールしたらスクロールボタンを表示する
 scrollTopBtn.hide();
 $(window).scroll(function () {
   if ($(this).scrollTop() > 100) {

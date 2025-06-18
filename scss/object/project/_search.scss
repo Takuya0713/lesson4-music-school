@@ -1,0 +1,20 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+.p-search {
+  &__result {
+    display: flex;
+    @include sp {
+      column-gap: 8rem;
+      margin-top: 3.6rem;
+    }
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &__inner {
+    @include sp {
+      margin-top: 4rem;
+    }
+  }
+}

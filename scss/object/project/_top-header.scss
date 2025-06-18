@@ -126,6 +126,9 @@
         &:hover::before {
           clip-path: inset(0 0 0 0);
           // 全表示状態
+          @include sp {
+            clip-path: initial;
+          }
         }
         // ホバー
         &::before {
