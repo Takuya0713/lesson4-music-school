@@ -122,16 +122,24 @@
         cursor: pointer;
         position: relative;
         transition: 0.3s all;
+        // ホバーした時に全部表示する
+        &:hover::before {
+          clip-path: inset(0 0 0 0);
+          // 全表示状態
+        }
+        // ホバー
         &::before {
           position: absolute;
           content: "";
           width: 100%;
           height: 0.1rem;
           background-color: $color-black;
-          bottom: 3rem;
+          bottom: 2.5rem;
           // 一番左寄せ
           left: 0;
           clip-path: inset(0 100% 0 0);
+          // 上・右・下・左の順番
+          // 今回は右から左に線を消す
           transition: 0.3s all;
         }
         @include sp {
