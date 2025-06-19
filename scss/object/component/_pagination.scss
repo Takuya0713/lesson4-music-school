@@ -36,8 +36,9 @@
   .c-paging-item {
     display: flex;
     flex-direction: column;
+    column-gap: 2.2rem;
+
     &__heading {
-      padding-inline: 2rem;
       display: flex;
       align-items: center;
       // width: 40rem;
@@ -45,6 +46,9 @@
       height: 3.7rem;
       background-color: #000;
       color: $color-white;
+      @include sp {
+        width: 15.6rem;
+      }
 
       p {
         font-size: 1.7rem;
@@ -63,6 +67,9 @@
     }
     &__image {
       width: 9.8rem;
+      @include sp {
+        display: none;
+      }
       img {
         aspect-ratio: 98 / 68;
         object-fit: cover;
@@ -75,9 +82,13 @@
   // 以下に
   &--blog {
     column-gap: 0;
+    @include sp {
+      column-gap: 2rem;
+    }
+    padding-inline: 2rem;
     justify-content: space-between;
     width: 100%;
-    li{
+    li {
       width: 26rem;
     }
   }
