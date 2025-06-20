@@ -81,13 +81,12 @@
   }
   // 以下に
   &--blog {
+    justify-content: space-between;
+    width: 100%;
     column-gap: 0;
     @include sp {
       column-gap: 2rem;
     }
-    padding-inline: 2rem;
-    justify-content: space-between;
-    width: 100%;
     li {
       width: 26rem;
     }

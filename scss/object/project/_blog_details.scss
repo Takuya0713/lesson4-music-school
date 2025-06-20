@@ -2,7 +2,8 @@
 @use "../../foundation/variables" as *;
 .p-blog-details {
   display: flex;
-  column-gap: 3rem;
+  // column-gap: 3rem;
+  justify-content: space-between;
   @include sp {
     display: initial;
   }
@@ -132,8 +133,16 @@
     &__note-comment {
       margin-top: 1.7rem;
       background-color: rgba(232, 232, 232, 1);
+      display: flex;
+      padding: 1.8rem 3rem 1rem 6.7rem;
+      position: relative;
       @include sp {
         margin-top: 1.95rem;
+      }
+      span {
+        position: absolute;
+        top: 2rem;
+        left: 3rem;
       }
       p {
         font-size: 1.8rem;
@@ -212,6 +221,7 @@
     &__item {
       display: flex;
       margin-top: 3rem;
+      column-gap: 3rem;
     }
     &__title-inner {
       p {
@@ -273,10 +283,12 @@
   }
   button {
     span {
-      display: inline-block;
       background-color: $color-black;
       height: 4rem;
       width: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }

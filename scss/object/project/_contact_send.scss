@@ -28,7 +28,7 @@
       width: 25rem;
       margin: 0 auto;
       // 親要素の幅が100%に対して左右中央寄せができる
-      @include sp{
+      @include sp {
         width: initial;
       }
       a {
