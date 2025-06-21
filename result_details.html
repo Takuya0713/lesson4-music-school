@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex" />
-    <title>result_details</title>
-    <link rel="stylesheet" type="text/css" href="css/slick.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>result_details</title>
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="l-container">
     <header class="p-header" id="header">
       <!-- <header> -->
       <div class="inner">
@@ -17,11 +18,7 @@
           <div class="p-header__logo">
             <div class="p-header__items">
               <div class="p-header__item">
-                <a href="#"
-                  ><img
-                    src="images/common/1.top/1.header/header__logo.svg"
-                    alt="ロゴマーク"
-                  />
+                <a href="#"><img src="images/common/1.top/1.header/header__logo.svg" alt="ロゴマーク" />
                 </a>
               </div>
               <div class="p-header__item">
@@ -66,7 +63,6 @@
         </div>
       </div>
     </header>
-
     <!-- パンくずリストを追加 -->
     <div class="l-header__breadcrumb c-header__breadcrumb">
       <div class="inner">
@@ -81,29 +77,19 @@
             <a href=""><span>ポップス</span></a>
           </li>
           <li>
-            <a href=""
-              ><span
-                >タイトルが入ります。タイトルが入ります。タイトルが入ります。</span
-              ></a
-            >
+            <a href=""><span>タイトルが入ります。タイトルが入ります。タイトルが入ります。</span></a>
           </li>
         </ol>
       </div>
     </div>
-
+    <!-- メインコンテンツ -->
     <main>
       <div class="inner">
         <section class="p-result-details">
           <div class="p-result-details__image">
             <picture>
-              <source
-                srcset="images/common/10.result_details/voice01.jpg"
-                media="(min-width: 768px)"
-              />
-              <img
-                src="images/common/10.result_details/voice01-sp.jpg"
-                alt="p-result-details__fv"
-              />
+              <source srcset="images/common/10.result_details/voice01.jpg" media="(min-width: 768px)" />
+              <img src="images/common/10.result_details/voice01-sp.jpg" alt="p-result-details__fv" />
             </picture>
           </div>
           <div class="p-result-details__title">
@@ -153,9 +139,7 @@
             <ul class="c-paging">
               <li>
                 <a href="blog_details.html" class="c-paging-item">
-                  <div
-                    class="c-paging-item__heading"
-                  >
+                  <div class="c-paging-item__heading">
                     <p>◀︎ 前の記事</p>
                   </div>
 
@@ -172,9 +156,7 @@
               </li>
               <li>
                 <a href="blog_details.html" class="c-paging-item">
-                  <div
-                    class="c-paging-item__heading"
-                  >
+                  <div class="c-paging-item__heading">
                     <p>次の記事 ▶</p>
                   </div>
                   <div class="c-paging-item__content">
@@ -188,24 +170,6 @@
                   </div>
                 </a>
               </li>
-              <!-- <li>
-                <a href="blog_details.html">
-                  <div
-                    class="p-blog-details-main__article-item-01 c-page-heading"
-                  >
-                    <p class="c-paging__btn">次の記事 ▶︎</p>
-                  </div>
-                  <div class="p-blog-details-main__article-item-02">
-                    <p class="item02-image">
-                      <img
-                        src="images/common/4.blog_details/blog03.jpg"
-                        alt="FV"
-                      />
-                    </p>
-                    <p class="item02-text">タイトルが入ります。タイトルが入ります。タイトルが入</p>
-                  </div>
-                </a>
-              </li> -->
             </ul>
           </section>
 
@@ -259,79 +223,74 @@
           </div>
         </section>
       </div>
-    </main>
-
-    <footer class="footer">
-      <!-- 0312フッター部分から再開 -->
-      <div class="footer__wrapper u-bg-red">
-        <div class="footer__inner">
-          <div class="footer__nav">
-            <ul>
-              <li><a href="index.html">ホーム</a></li>
-              <li><a href="plan.html">料金</a></li>
-              <li><a href="blog_list.html">ブログ</a></li>
-              <li><a href="result_list.html">卒業実績</a></li>
-            </ul>
+      <!-- お問い合わせボタンとTOP画面に戻るボタン -->
+      <div class="c-button__wrapper">
+        <div class="inner">
+          <!-- ページトップボタン -->
+          <div class="c-fix-area l-fix-area u-df-tbc">
+            <a href="#" class="scroll-top-btn">
+              <!-- <a href="#" class="scroll-top-btn" style="display: none"> -->
+              <img src="./images/common/arrow-top.svg" alt="arrow-top" />
+            </a>
           </div>
-          <div class="footer__logo">
-            <picture>
-              <source
-                srcset="images/common/1.top/7.footer/footer__logo.svg"
-                media="(max-width: 768px)"
-              />
-              <img
-                src="images/common/1.top/7.footer/footer__logo.svg"
-                alt="footer-icon"
-              />
-            </picture>
-          </div>
-          <div class="footer__copyright">
-            <p>
-              Copyright © 0000 KITAMURA music school Inc.
-              <br class="sp" />All Rights
-            </p>
-          </div>
-          <!-- SNSリンク部分改修中 -->
-          <div class="footer__sns-links">
-            <ul>
-              <li class="link-x">
-                <a href="https://x.com/home?lang=ja"
-                  ><img
-                    src="images/common/1.top/7.footer/icon-twitter.svg"
-                    alt="X"
-                /></a>
-              </li>
-              <li class="link-facebook">
-                <a href="https://www.facebook.com/"
-                  ><img
-                    src="images/common/1.top/7.footer/icon-facebook.svg"
-                    alt="facebook"
-                /></a>
-              </li>
-              <li class="link-youtube">
-                <a href="https://www.youtube.com/"
-                  ><img
-                    src="images/common/1.top/7.footer/icon-youtube.svg"
-                    alt="youtube"
-                /></a>
-              </li>
-              <li class="link-instagram">
-                <a href="https://www.instagram.com/"
-                  ><img
-                    src="images/common/1.top/7.footer/icon-instagram.svg"
-                    alt="instagram"
-                /></a>
-              </li>
-            </ul>
+          <!-- お問い合わせボタン -->
+          <div class="c-form-btn u-bg-red u-df-tbc">
+            <a class="c-button c-button--fixed" href="#">お問い合わせ</a>
           </div>
         </div>
       </div>
-    </footer>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="footer__wrapper u-bg-red">
+      <div class="footer__inner">
+        <div class="footer__nav">
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="plan.html">料金</a></li>
+            <li><a href="blog_list.html">ブログ</a></li>
+            <li><a href="result_list.html">卒業実績</a></li>
+          </ul>
+        </div>
+        <div class="footer__logo">
+          <picture>
+            <source srcset="images/common/1.top/7.footer/footer__logo.svg" media="(max-width: 768px)" />
+            <img src="images/common/1.top/7.footer/footer__logo.svg" alt="footer-icon" />
+          </picture>
+        </div>
+        <div class="footer__copyright">
+          <p>
+              Copyright © 0000 KITAMURA music school Inc.
+              <br class="sp" />All Rights
+            </p>
+        </div>
+        <!-- SNSリンク部分改修中 -->
+        <div class="footer__sns-links">
+          <ul>
+            <li class="link-x">
+              <a href="https://x.com/home?lang=ja"><img src="images/common/1.top/7.footer/icon-twitter.svg" alt="X" /></a>
+            </li>
+            <li class="link-facebook">
+              <a href="https://www.facebook.com/"><img src="images/common/1.top/7.footer/icon-facebook.svg" alt="facebook" /></a>
+            </li>
+            <li class="link-youtube">
+              <a href="https://www.youtube.com/"><img src="images/common/1.top/7.footer/icon-youtube.svg" alt="youtube" /></a>
+            </li>
+            <li class="link-instagram">
+              <a href="https://www.instagram.com/"><img src="images/common/1.top/7.footer/icon-instagram.svg" alt="instagram" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <!-- フッターを読み込む -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- slick部分を追加 -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- AOSアニメーション -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
 
-    <!-- TOPへ戻るボタンを読み込む -->
-
-    <!-- お問い合わせボタンを読み込む -->
-  </body>
+</body>
 </html>
