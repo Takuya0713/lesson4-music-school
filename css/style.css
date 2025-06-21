@@ -1082,30 +1082,41 @@ main {
   font-weight: bold;
 }
 
-.p-contact-send {
+.p-error {
   padding: 6.7rem 0 9rem 0;
 }
+@media (max-width: 767px) {
+  .p-error {
+    padding: 4.7rem 0 5rem 0;
+  }
+}
 
-.sended__message {
+.error__message {
   text-align: center;
 }
 @media (max-width: 767px) {
-  .sended__message {
+  .error__message {
     text-align: left;
   }
 }
 @media (max-width: 767px) {
-  .sended__message p {
+  .error__message p {
     font-size: 1.6rem;
     line-height: 1.875;
+    font-weight: 400;
   }
 }
-.sended__return {
+.error__return {
   margin-top: 4rem;
   text-align: center;
   width: 100%;
 }
-.sended__return-inner {
+@media (max-width: 767px) {
+  .error__return {
+    margin-top: 1rem;
+  }
+}
+.error__return-inner {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1114,11 +1125,11 @@ main {
   margin: 0 auto;
 }
 @media (max-width: 767px) {
-  .sended__return-inner {
+  .error__return-inner {
     width: initial;
   }
 }
-.sended__return-inner a {
+.error__return-inner a {
   display: flex;
   align-items: center;
   justify-content: center;
