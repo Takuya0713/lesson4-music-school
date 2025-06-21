@@ -1536,10 +1536,19 @@ main {
 .p-search__result span {
   font-weight: bold;
 }
+.p-search__inner {
+  display: flex;
+}
 @media (max-width: 767px) {
   .p-search__inner {
     margin-top: 4rem;
   }
+}
+.p-search__items {
+  display: grid;
+}
+.p-search__item {
+  display: flex;
 }
 
 .p-blog {

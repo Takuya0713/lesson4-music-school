@@ -13,8 +13,15 @@
   }
 
   &__inner {
+    display: flex;
     @include sp {
       margin-top: 4rem;
     }
+  }
+  &__items {
+    display: grid;
+  }
+  &__item {
+    display: flex;
   }
 }
