@@ -659,6 +659,7 @@ main {
 @media (max-width: 767px) {
   .p-blog-details-habit__note-comment {
     margin-top: 1.95rem;
+    padding: 1.7rem 2rem 1.1rem 1.7rem;
   }
 }
 .p-blog-details-habit__note-comment span {
