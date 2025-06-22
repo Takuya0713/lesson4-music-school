@@ -1,167 +1,201 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex" />
-  <title>contact_send</title>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <div id="l-container">
-    <!-- ヘッダーを読み込む -->
-    <header class="p-header" id="header">
-      <!-- <header> -->
-      <div class="inner">
-        <div class="p-header__wrapper">
-          <div class="p-header__logo">
-            <div class="p-header__items">
-              <div class="p-header__item">
-                <a href="#"><img src="images/common/1.top/1.header/header__logo.svg" alt="ロゴマーク" />
-                </a>
-              </div>
-              <div class="p-header__item">
-                <h1>
-                  <a href="#"
-                    ><span class="ib-span">きたむら</span
-                    ><br class="pc" />ミュージックスクール</a
-                  >
-                </h1>
-              </div>
-            </div>
-          </div>
-          <!-- ハンバーガーボタン SPの時のみ表示する-->
-          <div id="hb-block" class="p-header__scroll-bg p-header__hb sp">
-            <div class="p-header__hb-btn sp u-bg-red">
-              <span class="p-header__hb-line"></span>
-              <span class="p-header__hb-line"></span>
-              <span class="p-header__hb-line"></span>
-            </div>
-          </div>
-
-          <!-- ナビゲーション -->
-          <div class="p-header__nav">
-            <nav class="p-header__nav-wrapper c-header-nav">
-              <ul>
-                <!-- <li class="u-bg-red"> -->
-                <li>
-                  <a href="#">料金</a>
-                </li>
-                <!-- <li class="u-bg-red"> -->
-                <li>
-                  <a href="#">ブログ</a>
-                </li>
-                <!-- <li class="u-bg-red"> -->
-                <li>
-                  <a href="#">卒業実績</a>
-                </li>
-              </ul>
-            </nav>
-            <!-- ナビゲーション部分のお問い合わせボタン -->
-            <div class="p-header__button u-bg-red">
-              <a class="c-button" href="#">お問い合わせ</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section class="section p-top-mv">
-        <div class="p-top-mv__wrapper">
-          <div class="p-top-mv__title">
-            <h2 class="p-top-mv__titleInner">お問い合わせ</h2>
-            <!-- pはプロジェクトの略 -->
-            <!-- FLOCSSとBEMを使ってp-fv__titleInnerと命名 -->
-            <!-- https://chatgpt.com/c/67c78ebc-f148-8010-99d2-fa7b17657cac -->
-          </div>
-          <div class="p-top-mv__image">
-            <picture>
-              <source srcset="images/common/6.contact_send/Contact.jpg" media="(min-width: 768px)" />
-              <img src="images/common/6.contact_send/Contact-sp.jpg" alt="contact_send" />
-            </picture>
-          </div>
-        </div>
-      </section>
-      <!-- パンくずリストを追加 -->
-      <div class="l-header__breadcrumb c-header__breadcrumb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>contact_send</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="l-container">
+      <!-- ヘッダーを読み込む -->
+      <header class="p-header" id="header">
+        <!-- <header> -->
         <div class="inner">
-          <ol>
-            <li>
-              <a href="index.html"><span>ホーム</span></a>
-            </li>
-            <li>
-              <a href=""><span>送信完了</span></a>
-            </li>
-          </ol>
-        </div>
-      </div>
-      <div class="inner">
-        <div class="p-error">
-          <section id="error" class="error">
-            <div class="error__wrapper">
-              <div class="error__message">
-                <p>
-                お問い合わせいただきありがとうございました。
-                <br />内容確認後、担当者よりメールにてご連絡いたします。
-              </p>
+          <div class="p-header__wrapper">
+            <div class="p-header__logo">
+              <div class="p-header__items">
+                <div class="p-header__item">
+                  <a href="#"
+                    ><img
+                      src="images/common/1.top/1.header/header__logo.svg"
+                      alt="ロゴマーク"
+                    />
+                  </a>
+                </div>
+                <div class="p-header__item">
+                  <h1>
+                    <a href="#"
+                      ><span class="ib-span">きたむら</span
+                      ><br class="pc" />ミュージックスクール</a
+                    >
+                  </h1>
+                </div>
               </div>
-              <div class="error__return">
-                <div class="error__return-inner u-bg-red">
+            </div>
+            <!-- ハンバーガーボタン SPの時のみ表示する-->
+            <div id="hb-block" class="p-header__scroll-bg p-header__hb sp">
+              <div class="p-header__hb-btn sp u-bg-red">
+                <span class="p-header__hb-line"></span>
+                <span class="p-header__hb-line"></span>
+                <span class="p-header__hb-line"></span>
+              </div>
+            </div>
+
+            <!-- ナビゲーション -->
+            <div class="p-header__nav">
+              <nav class="p-header__nav-wrapper c-header-nav">
+                <ul>
+                  <!-- <li class="u-bg-red"> -->
+                  <li>
+                    <a href="#">料金</a>
+                  </li>
+                  <!-- <li class="u-bg-red"> -->
+                  <li>
+                    <a href="#">ブログ</a>
+                  </li>
+                  <!-- <li class="u-bg-red"> -->
+                  <li>
+                    <a href="#">卒業実績</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- ナビゲーション部分のお問い合わせボタン -->
+              <div class="p-header__button u-bg-red">
+                <a class="c-button" href="#">お問い合わせ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section p-contact_send">
+          <div class="p-contact_send__wrapper">
+            <div class="p-contact_send__title">
+              <h2 class="p-contact_send__titleInner">お問い合わせ</h2>
+              <!-- pはプロジェクトの略 -->
+              <!-- FLOCSSとBEMを使ってp-fv__titleInnerと命名 -->
+              <!-- https://chatgpt.com/c/67c78ebc-f148-8010-99d2-fa7b17657cac -->
+            </div>
+            <div class="p-contact_send__image">
+              <picture>
+                <source
+                  srcset="images/common/6.contact_send/Contact.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="images/common/6.contact_send/Contact-sp.jpg"
+                  alt="contact_send"
+                />
+              </picture>
+            </div>
+          </div>
+        </section>
+        <!-- パンくずリストを追加 -->
+        <div class="l-header__breadcrumb c-header__breadcrumb">
+          <div class="inner">
+            <ol>
+              <li>
+                <a href="index.html"><span>ホーム</span></a>
+              </li>
+              <li>
+                <span>送信完了</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="inner">
+          <section class="p-sended">
+            <div class="p-sended__wrapper">
+              <div class="p-sended__message">
+                <p>
+                  お問い合わせいただきありがとうございました。
+                  <br />内容確認後、担当者よりメールにてご連絡いたします。
+                </p>
+              </div>
+              <div class="p-sended__return">
+                <div class="p-sended__return-inner u-bg-red">
                   <a href="index.html">ホームへ戻る</a>
                 </div>
               </div>
             </div>
           </section>
         </div>
-      </div>
-    </main>
-  </div>
+      </main>
+    </div>
 
-  <footer class="footer">
-    <div class="footer__wrapper u-bg-red">
-      <div class="footer__inner">
-        <div class="footer__nav">
-          <ul>
-            <li><a href="index.html">ホーム</a></li>
-            <li><a href="plan.html">料金</a></li>
-            <li><a href="blog_list.html">ブログ</a></li>
-            <li><a href="result_list.html">卒業実績</a></li>
-          </ul>
-        </div>
-        <div class="footer__logo">
-          <picture>
-            <source srcset="images/common/1.top/7.footer/footer__logo.svg" media="(max-width: 768px)" />
-            <img src="images/common/1.top/7.footer/footer__logo.svg" alt="footer-icon" />
-          </picture>
-        </div>
-        <div class="footer__copyright">
-          <p>
+    <footer class="footer">
+      <div class="footer__wrapper u-bg-red">
+        <div class="footer__inner">
+          <div class="footer__nav">
+            <ul>
+              <li><a href="index.html">ホーム</a></li>
+              <li><a href="plan.html">料金</a></li>
+              <li><a href="blog_list.html">ブログ</a></li>
+              <li><a href="result_list.html">卒業実績</a></li>
+            </ul>
+          </div>
+          <div class="footer__logo">
+            <picture>
+              <source
+                srcset="images/common/1.top/7.footer/footer__logo.svg"
+                media="(max-width: 768px)"
+              />
+              <img
+                src="images/common/1.top/7.footer/footer__logo.svg"
+                alt="footer-icon"
+              />
+            </picture>
+          </div>
+          <div class="footer__copyright">
+            <p>
               Copyright © 0000 KITAMURA music school Inc. <br class="sp" />All
               Rights
             </p>
-        </div>
-        <!-- SNSリンク部分改修中 -->
-        <div class="footer__sns-links">
-          <ul>
-            <li class="link-x">
-              <a href="https://x.com/home?lang=ja"><img src="images/common/1.top/7.footer/icon-twitter.svg" alt="X" /></a>
-            </li>
-            <li class="link-facebook">
-              <a href="https://www.facebook.com/"><img src="images/common/1.top/7.footer/icon-facebook.svg" alt="facebook" /></a>
-            </li>
-            <li class="link-youtube">
-              <a href="https://www.youtube.com/"><img src="images/common/1.top/7.footer/icon-youtube.svg" alt="youtube" /></a>
-            </li>
-            <li class="link-instagram">
-              <a href="https://www.instagram.com/"><img src="images/common/1.top/7.footer/icon-instagram.svg" alt="instagram" /></a>
-            </li>
-          </ul>
+          </div>
+          <!-- SNSリンク部分改修中 -->
+          <div class="footer__sns-links">
+            <ul>
+              <li class="link-x">
+                <a href="https://x.com/home?lang=ja"
+                  ><img
+                    src="images/common/1.top/7.footer/icon-twitter.svg"
+                    alt="X"
+                /></a>
+              </li>
+              <li class="link-facebook">
+                <a href="https://www.facebook.com/"
+                  ><img
+                    src="images/common/1.top/7.footer/icon-facebook.svg"
+                    alt="facebook"
+                /></a>
+              </li>
+              <li class="link-youtube">
+                <a href="https://www.youtube.com/"
+                  ><img
+                    src="images/common/1.top/7.footer/icon-youtube.svg"
+                    alt="youtube"
+                /></a>
+              </li>
+              <li class="link-instagram">
+                <a href="https://www.instagram.com/"
+                  ><img
+                    src="images/common/1.top/7.footer/icon-instagram.svg"
+                    alt="instagram"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>

@@ -1082,41 +1082,78 @@ main {
   font-weight: bold;
 }
 
-.p-error {
+.p-contact_send {
+  position: relative;
+}
+.p-contact_send__title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-content: center;
+}
+.p-contact_send__titleInner {
+  text-align: center;
+  z-index: 99;
+  color: #ffffff;
+  font-size: 2.3148148148vw;
+  line-height: 2.4;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .p-contact_send__titleInner {
+    width: 30rem;
+    font-size: 3rem;
+    line-height: 1.6666666667;
+  }
+}
+.p-contact_send__image::after {
+  background-color: rgba(80, 80, 80, 0.502);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.p-sended {
   padding: 6.7rem 0 9rem 0;
 }
 @media (max-width: 767px) {
-  .p-error {
+  .p-sended {
     padding: 4.7rem 0 5rem 0;
   }
 }
-
-.error__message {
+.p-sended__message {
   text-align: center;
 }
 @media (max-width: 767px) {
-  .error__message {
+  .p-sended__message {
     text-align: left;
   }
 }
 @media (max-width: 767px) {
-  .error__message p {
+  .p-sended__message p {
     font-size: 1.6rem;
     line-height: 1.875;
     font-weight: 400;
   }
 }
-.error__return {
+.p-sended__return {
   margin-top: 4rem;
   text-align: center;
   width: 100%;
 }
 @media (max-width: 767px) {
-  .error__return {
+  .p-sended__return {
     margin-top: 1rem;
   }
 }
-.error__return-inner {
+.p-sended__return-inner {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1125,14 +1162,17 @@ main {
   margin: 0 auto;
 }
 @media (max-width: 767px) {
-  .error__return-inner {
+  .p-sended__return-inner {
     width: initial;
   }
 }
-.error__return-inner a {
+.p-sended__return-inner a {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: bold;
 }
 
 .p-error {
@@ -1488,6 +1528,20 @@ main {
   font-size: 1.8rem;
   line-height: 1.8333333333;
 }
+.page-relation__item {
+  display: flex;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+.page-relation__image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.page-relation__text-inner {
+  display: flex;
+  flex-direction: column;
+}
 
 .p-result-list {
   padding: 7.5rem 0 21rem 0;
@@ -1523,6 +1577,9 @@ main {
   text-align: right;
 }
 
+.p-search {
+  padding: 6.6rem 0 21rem 0;
+}
 .p-search__result {
   display: flex;
 }
@@ -1549,6 +1606,109 @@ main {
 }
 .p-search__item {
   display: flex;
+}
+.p-search__items {
+  margin-top: 4rem;
+  display: grid;
+  row-gap: 7rem;
+}
+@media (max-width: 767px) {
+  .p-search__items {
+    row-gap: 4rem;
+  }
+}
+.p-search__item {
+  display: flex;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+@media (max-width: 767px) {
+  .p-search__item {
+    -moz-column-gap: 0;
+         column-gap: 0;
+    flex-direction: column;
+  }
+}
+.p-search__image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.p-search__image.guitar::before {
+  content: "ギター";
+  background-color: rgb(203, 0, 0);
+  color: #ffffff;
+  width: 8rem;
+  height: 3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 1.6666666667;
+}
+.p-search__image.attracting-customers::before {
+  content: "集客方法";
+  background-color: rgb(203, 0, 0);
+  color: #ffffff;
+  width: 8rem;
+  height: 3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 1.6666666667;
+}
+.p-search__image.sns::before {
+  content: "SNS";
+  background-color: rgb(203, 0, 0);
+  color: #ffffff;
+  width: 8rem;
+  height: 3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 1.6666666667;
+}
+.p-search__label {
+  width: 8rem;
+  height: 3rem;
+}
+.p-search__text-inner h3 {
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .p-search__text-inner h3 {
+    margin: 3rem 0 0.6rem;
+  }
+}
+.p-search__text-inner time {
+  line-height: 1.7647058824;
+  font-size: 1.7rem;
+}
+.p-search__text-inner p {
+  line-height: 1.6666666667;
+  width: 57rem;
+}
+@media (max-width: 767px) {
+  .p-search__text-inner p {
+    width: initial;
+    margin-top: 0.8rem;
+  }
 }
 
 .p-blog {

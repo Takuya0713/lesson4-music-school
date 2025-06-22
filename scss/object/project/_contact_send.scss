@@ -1,13 +1,87 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
+// .p-top-mv {
+//   position: relative;
+//   &__title {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     display: grid;
+//     place-content: center;
+//   }
+//   &__titleInner {
+//     text-align: center;
+//     z-index: 99;
+//     color: $color-white;
+//     font-size: vw(40);
+//     line-height: calc(60 / 40);
+//     font-weight: bold;
+//     @include sp {
+//       width: 30rem;
+//       font-size: 3rem;
+//       line-height: calc(50 / 30);
+//     }
+//   }
+//   // 背景画像に影を付ける
+//   &__image {
+//     &::after {
+//       background-color: rgba(80, 80, 80, 0.502);
+//       content: "";
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       width: 100%;
+//       height: 100%;
+//       pointer-events: none;
+//     }
+//   }
+// }
+.p-contact_send {
+  position: relative;
+  &__title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-content: center;
+  }
+  &__titleInner {
+    text-align: center;
+    z-index: 99;
+    color: $color-white;
+    font-size: vw(25);
+    line-height: calc(60 / 25);
+    font-weight: bold;
+    @include sp {
+      width: 30rem;
+      font-size: 3rem;
+      line-height: calc(50 / 30);
+    }
+  }
+  // 背景画像に影を付ける
+  &__image {
+    &::after {
+      background-color: rgba(80, 80, 80, 0.502);
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+  }
+}
 
-.p-error {
+.p-sended {
   padding: 6.7rem 0 9rem 0;
   @include sp {
     padding: 4.7rem 0 5rem 0;
   }
-}
-.error {
   &__message {
     text-align: center;
     @include sp {
@@ -42,6 +116,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: 2.5rem;
+        line-height: calc(30 / 25);
+        font-weight: bold;
       }
     }
   }

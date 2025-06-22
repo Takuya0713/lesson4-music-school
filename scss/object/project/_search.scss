@@ -1,6 +1,7 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
 .p-search {
+  padding: 6.6rem 0 21rem 0;
   &__result {
     display: flex;
     @include sp {
@@ -24,4 +25,117 @@
   &__item {
     display: flex;
   }
+  &__items {
+    margin-top: 4rem;
+    display: grid;
+    row-gap: 7rem;
+    @include sp{
+      row-gap: 4rem;
+    }
+  }
+  &__item {
+    display: flex;
+    column-gap: 5rem;
+    @include sp {
+      column-gap: 0;
+      flex-direction: column;
+    }
+  }
+  &__image {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    // 集客方法（attracting-customers）・SNS（sns）
+    &.guitar {
+      &::before {
+        content: "ギター";
+        background-color: rgb(203, 0, 0);
+        color: #ffffff;
+        width: 8rem;
+        height: 3rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        line-height: calc(25 / 15);
+        // font-weight: bold;
+      }
+    }
+    // 集客方法（attracting-customers）
+    &.attracting-customers {
+      &::before {
+        content: "集客方法";
+        background-color: rgb(203, 0, 0);
+        color: #ffffff;
+        width: 8rem;
+        height: 3rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        line-height: calc(25 / 15);
+        // font-weight: bold;
+      }
+    }
+    // SNS（sns）
+    &.sns {
+      &::before {
+        content: "SNS";
+        background-color: rgb(203, 0, 0);
+        color: #ffffff;
+        width: 8rem;
+        height: 3rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        line-height: calc(25 / 15);
+        // font-weight: bold;
+      }
+    }
+  }
+  
+  &__label {
+    width: 8rem;
+    height: 3rem;
+  }
+  &__text-inner {
+    // height: 18rem;
+    h3 {
+      font-size: 2rem;
+      line-height: calc(25 / 20);
+      font-weight: bold;
+      @include sp{
+        margin: 3rem 0 .6rem;
+      }
+    }
+    time {
+      // display: inline-block;
+      // margin: 0.3rem 0 1.1rem 0;
+      line-height: calc(30 / 17);
+      font-size: 1.7rem;
+    }
+    p {
+      // font-size: 1.8rem;
+      line-height: calc(30 / 18);
+      width: 57rem;
+      @include sp{
+        width: initial;
+        margin-top: .8rem;
+      }
+    }
+  }
 }
+

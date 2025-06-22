@@ -2,7 +2,7 @@
 @use "../../foundation/variables" as *;
 .p-result-details {
   padding: 7rem 0 15.7rem 0;
-  &__image {
+  &__item {
     // margin-top: 7rem;
   }
   &__title {
@@ -64,6 +64,7 @@
 // }
 .page-relation {
   margin-top: 10rem;
+  // 関連記事タイトル
   &__title {
     display: flex;
     align-items: center;
@@ -74,5 +75,19 @@
       font-size: 1.8rem;
       line-height: calc(33 / 18);
     }
+  }
+
+  &__item {
+    display: flex;
+    column-gap: 5rem;
+  }
+  &__image {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  &__text-inner {
+    display: flex;
+    flex-direction: column;
   }
 }
