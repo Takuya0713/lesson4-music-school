@@ -64,6 +64,7 @@
 // }
 .page-relation {
   margin-top: 10rem;
+  display: grid;
   // 関連記事タイトル
   &__title {
     display: flex;
@@ -76,10 +77,10 @@
       line-height: calc(33 / 18);
     }
   }
-
   &__item {
     display: flex;
     column-gap: 5rem;
+    margin-top: 3rem;
   }
   &__image {
     display: flex;
@@ -89,5 +90,14 @@
   &__text-inner {
     display: flex;
     flex-direction: column;
+    p {
+      font-weight: bold;
+      font-size: 2rem;
+      line-height: calc(25 / 20);
+    }
+    time {
+      display: block;
+      margin-top: 1.3rem;
+    }
   }
 }

@@ -439,6 +439,7 @@ main {
 .c-paging .c-paging-item__heading p {
   font-size: 1.7rem;
   line-height: 1.7647058824;
+  padding-left: 2rem;
 }
 .c-paging .c-paging-item__content {
   display: flex;
@@ -1516,6 +1517,7 @@ main {
 }
 .page-relation {
   margin-top: 10rem;
+  display: grid;
 }
 .page-relation__title {
   display: flex;
@@ -1532,6 +1534,7 @@ main {
   display: flex;
   -moz-column-gap: 5rem;
        column-gap: 5rem;
+  margin-top: 3rem;
 }
 .page-relation__image {
   display: flex;
@@ -1541,6 +1544,15 @@ main {
 .page-relation__text-inner {
   display: flex;
   flex-direction: column;
+}
+.page-relation__text-inner p {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.25;
+}
+.page-relation__text-inner time {
+  display: block;
+  margin-top: 1.3rem;
 }
 
 .p-result-list {
