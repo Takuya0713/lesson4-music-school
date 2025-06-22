@@ -1424,8 +1424,8 @@ main {
   margin-top: 1.7rem;
 }
 
-.p-result-details__image {
-  margin-top: 7rem;
+.p-result-details {
+  padding: 7rem 0 15.7rem 0;
 }
 .p-result-details__title {
   margin-top: 5rem;

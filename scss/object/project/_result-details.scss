@@ -1,8 +1,9 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
 .p-result-details {
+  padding: 7rem 0 15.7rem 0;
   &__image {
-    margin-top: 7rem;
+    // margin-top: 7rem;
   }
   &__title {
     margin-top: 5rem;
@@ -75,4 +76,3 @@
     }
   }
 }
-
