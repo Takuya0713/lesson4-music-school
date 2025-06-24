@@ -1,5 +1,41 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
+// パンくずの矢印部分
+.p-header__breadcrumb {
+  ol {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    column-gap: 5rem;
+    @include sp {
+      height: 3.5rem;
+    }
+  }
+  li:first-of-type {
+    // 矢印「>」部分
+    &::before {
+      content: ">";
+      position: absolute;
+      left: 8%;
+      @include sp {
+        left: 20%;
+      }
+    }
+  }
+  li:nth-last-of-type(2) {
+    // 矢印「>」部分
+    &::before {
+      content: ">";
+      position: absolute;
+      left: 19%;
+      @include sp {
+        left: 52%;
+      }
+    }
+  }
+}
+
 .p-blog-details {
   display: flex;
   justify-content: space-between;
@@ -15,19 +51,6 @@
       padding: initial;
       padding-top: 5rem;
     }
-  }
-  &__aside {
-    padding: 7rem 0 18.5rem 0;
-    width: 25rem;
-    @include sp {
-      padding: 3rem 0 20rem 0;
-      width: 100%;
-    }
-  }
-  &__side-inner {
-    display: flex;
-    row-gap: 3rem;
-    flex-direction: column;
   }
   // SNSリンクセクション部分
   &-habit {
@@ -267,7 +290,21 @@
       }
     }
   }
+  &__aside {
+    padding: 7rem 0 18.5rem 0;
+    width: 25rem;
+    @include sp {
+      padding: 3rem 0 20rem 0;
+      width: 100%;
+    }
+  }
+  &__side-inner {
+    display: flex;
+    row-gap: 3rem;
+    flex-direction: column;
+  }
 }
+
 // aside-header部分
 .aside-header {
   width: 25rem;

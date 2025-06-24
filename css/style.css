@@ -334,14 +334,24 @@ main {
     height: 3.5rem;
   }
 }
-.c-header__breadcrumb li::before {
+.c-header__breadcrumb li:first-of-type::before {
   content: ">";
   position: absolute;
   left: 8%;
 }
 @media (max-width: 767px) {
-  .c-header__breadcrumb li::before {
+  .c-header__breadcrumb li:first-of-type::before {
     left: 20%;
+  }
+}
+.c-header__breadcrumb li:nth-last-of-type(2)::before {
+  content: ">";
+  position: absolute;
+  left: 19%;
+}
+@media (max-width: 767px) {
+  .c-header__breadcrumb li:nth-last-of-type(2)::before {
+    left: 52%;
   }
 }
 
@@ -502,6 +512,40 @@ main {
   }
 }
 
+.p-header__breadcrumb ol {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+@media (max-width: 767px) {
+  .p-header__breadcrumb ol {
+    height: 3.5rem;
+  }
+}
+.p-header__breadcrumb li:first-of-type::before {
+  content: ">";
+  position: absolute;
+  left: 8%;
+}
+@media (max-width: 767px) {
+  .p-header__breadcrumb li:first-of-type::before {
+    left: 20%;
+  }
+}
+.p-header__breadcrumb li:nth-last-of-type(2)::before {
+  content: ">";
+  position: absolute;
+  left: 19%;
+}
+@media (max-width: 767px) {
+  .p-header__breadcrumb li:nth-last-of-type(2)::before {
+    left: 52%;
+  }
+}
+
 .p-blog-details {
   display: flex;
   justify-content: space-between;
@@ -521,21 +565,6 @@ main {
     padding: initial;
     padding-top: 5rem;
   }
-}
-.p-blog-details__aside {
-  padding: 7rem 0 18.5rem 0;
-  width: 25rem;
-}
-@media (max-width: 767px) {
-  .p-blog-details__aside {
-    padding: 3rem 0 20rem 0;
-    width: 100%;
-  }
-}
-.p-blog-details__side-inner {
-  display: flex;
-  row-gap: 3rem;
-  flex-direction: column;
 }
 .p-blog-details-habit__title {
   margin-top: 4.5rem;
@@ -799,6 +828,21 @@ main {
   .p-blog-details .page-relation__title-inner p .sp-none {
     display: none;
   }
+}
+.p-blog-details__aside {
+  padding: 7rem 0 18.5rem 0;
+  width: 25rem;
+}
+@media (max-width: 767px) {
+  .p-blog-details__aside {
+    padding: 3rem 0 20rem 0;
+    width: 100%;
+  }
+}
+.p-blog-details__side-inner {
+  display: flex;
+  row-gap: 3rem;
+  flex-direction: column;
 }
 
 .aside-header {

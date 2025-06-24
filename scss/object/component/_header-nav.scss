@@ -14,7 +14,7 @@
         height: 3.5rem;
       }
     }
-    li {
+    li:first-of-type {
       // 矢印「>」部分
       &::before {
         content: ">";
@@ -22,6 +22,17 @@
         left: 8%;
         @include sp{
           left: 20%;
+        }
+      }
+    }
+    li:nth-last-of-type(2) {
+      // 矢印「>」部分
+      &::before {
+        content: ">";
+        position: absolute;
+        left: 19%;
+        @include sp{
+          left: 52%;
         }
       }
     }
