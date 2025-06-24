@@ -1103,10 +1103,20 @@ main {
 .p-contact-form {
   padding: 7rem 0 10rem 0;
 }
+.p-contact-form__description {
+  background-color: #ff6;
+}
 .p-contact-form__description p {
   text-align: center;
   line-height: 1.6666666667;
   font-size: 1.8rem;
+}
+@media (max-width: 767px) {
+  .p-contact-form__description p {
+    text-align: initial;
+    line-height: 1.875;
+    font-size: 1.6rem;
+  }
 }
 .p-contact-form form {
   display: grid;
@@ -1118,12 +1128,22 @@ main {
   -moz-column-gap: 3rem;
        column-gap: 3rem;
 }
+@media (max-width: 767px) {
+  .p-contact-form dl {
+    display: initial;
+  }
+}
 .p-contact-form dt {
   display: flex;
   align-items: center;
   height: 4rem;
   width: 14rem;
   font-size: 2rem;
+}
+@media (max-width: 767px) {
+  .p-contact-form dt {
+    display: initial;
+  }
 }
 .p-contact-form dt label {
   display: inline-block;
@@ -1145,6 +1165,11 @@ main {
   font-size: 1.5rem;
   border: 0.1rem solid #000;
   color: rgb(178, 178, 178);
+}
+@media (max-width: 767px) {
+  .p-contact-form dd .form-control {
+    width: 100%;
+  }
 }
 .p-contact-form .check-box__wrapper input[type=checkbox] {
   position: relative;
@@ -1197,6 +1222,11 @@ main {
   background-color: #ffffff;
   scrollbar-width: none;
   border: 0.1rem solid #000;
+}
+@media (max-width: 767px) {
+  .p-contact-form textarea {
+    width: 100%;
+  }
 }
 .p-contact-form .form-btn {
   margin-top: 5rem;
