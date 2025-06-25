@@ -62,22 +62,40 @@
     </div>
   </header>
 
-  <!-- パンくずリストを追加 -->
-  <div class="l-header__breadcrumb c-header__breadcrumb">
-    <div class="inner">
-      <ol>
-        <li>
-          <a href="index.html"><span>ホーム</span></a>
-        </li>
-        <li>
-          <a href=""><span>お問い合わせ</span></a>
-        </li>
-      </ol>
-    </div>
-  </div>
 
   <main>
     <div class="l-main">
+      <section class="section p-contact-form__mv">
+        <div class="p-contact-form__wrapper">
+          <div class="p-contact-form__title">
+            <h2 class="p-contact-form__titleInner">お問い合わせ</h2>
+            <!-- pはプロジェクトの略 -->
+            <!-- FLOCSSとBEMを使ってp-fv__titleInnerと命名 -->
+            <!-- https://chatgpt.com/c/67c78ebc-f148-8010-99d2-fa7b17657cac -->
+          </div>
+          <div class="p-contact-form__image">
+            <picture>
+              <source srcset="images/common/5.contact_form/Contact.jpg" media="(min-width: 768px)" />
+              <img src="images/common/5.contact_form/Contact-sp.jpg" alt="error-404" />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <!-- パンくずリストを追加 -->
+      <div class="l-header__breadcrumb c-header__breadcrumb">
+        <div class="inner">
+          <ol>
+            <li>
+              <a href="index.html"><span>ホーム</span></a>
+            </li>
+            <li>
+              <a href=""><span>お問い合わせ</span></a>
+            </li>
+          </ol>
+        </div>
+      </div>
+
       <section class="section p-contact-form">
         <div class="p-contact-form__wrapper">
           <div class="inner">
@@ -169,9 +187,9 @@
           </a>
         </div>
         <!-- お問い合わせボタン -->
-        <div class="c-form-btn u-bg-red u-df-tbc">
+        <!-- <div class="c-form-btn u-bg-red u-df-tbc">
           <a class="c-button c-button--fixed" href="#">お問い合わせ</a>
-        </div>
+        </div> -->
       </div>
     </div>
 
