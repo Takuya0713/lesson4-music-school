@@ -86,6 +86,40 @@
     display: flex;
     justify-content: center;
     position: relative;
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: rgb(203, 0, 0);
+      color: #ffffff;
+      width: 10rem;
+      height: 3rem;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: calc(25 / 15);
+      // ロック
+    }
+    &.rock {
+      &::before {
+        content: "ロック";
+      }
+    }
+    // ジャズ
+    &.jazz {
+      &::before {
+        content: "ジャズ";
+      }
+    }
+    // ラテン
+    &.latin {
+      &::before {
+        content: "ラテン";
+      }
+    }
   }
   &__text-inner {
     display: flex;

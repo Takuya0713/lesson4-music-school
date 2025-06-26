@@ -1750,6 +1750,31 @@ main {
   justify-content: center;
   position: relative;
 }
+.page-relation__image::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgb(203, 0, 0);
+  color: #ffffff;
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.6666666667;
+}
+.page-relation__image.rock::before {
+  content: "ロック";
+}
+.page-relation__image.jazz::before {
+  content: "ジャズ";
+}
+.page-relation__image.latin::before {
+  content: "ラテン";
+}
 .page-relation__text-inner {
   display: flex;
   flex-direction: column;
@@ -1803,6 +1828,7 @@ main {
   align-items: center;
   font-size: 1.5rem;
   line-height: 1.6666666667;
+  font-weight: bold;
 }
 .p-result-list__image.hops::before {
   content: "ホップ";
