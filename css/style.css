@@ -1316,7 +1316,6 @@ main {
   .p-contact_send__titleInner {
     width: 30rem;
     font-size: 3rem;
-    line-height: 1.6666666667;
   }
 }
 .p-contact_send__image::after {
@@ -1340,6 +1339,7 @@ main {
 }
 .p-sended__message {
   text-align: center;
+  margin-bottom: 4rem;
 }
 @media (max-width: 767px) {
   .p-sended__message {
@@ -1785,6 +1785,39 @@ main {
     grid-template-columns: initial;
     row-gap: 4rem;
   }
+}
+.p-result-list__image {
+  position: relative;
+}
+.p-result-list__image::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgb(203, 0, 0);
+  color: #ffffff;
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 1.6666666667;
+}
+.p-result-list__image.hops::before {
+  content: "ホップ";
+}
+.p-result-list__image.rock::before {
+  content: "ロック";
+}
+.p-result-list__image.jazz::before {
+  content: "ジャズ";
+}
+.p-result-list__image.latin::before {
+  content: "ラテン";
+}
+.p-result-list__image.classic::before {
+  content: "クラシック";
 }
 .p-result-list__title {
   margin: 2rem 0 1rem 0;
