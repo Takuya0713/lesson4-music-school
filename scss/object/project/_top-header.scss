@@ -96,7 +96,7 @@
       position: fixed;
       top: 5rem;
       right: -110%;
-      transition: all 0.3s;
+      // transition: all 0.3s;
     }
     ul {
       display: flex;
@@ -158,7 +158,7 @@
         display: block;
         top: 100%;
         right: 0;
-        transition: all 0.3s;
+        // transition: all 0.3s;
       }
       &.active {
         ul {
@@ -178,6 +178,7 @@
         }
       }
     }
+    // ハンバーガーボタンを押して開くときの動作
     &-wrapper {
       @include sp {
         position: fixed;
@@ -186,6 +187,7 @@
         align-items: initial;
         transition: all 0.3s;
       }
+      // 右に収納されている状態）（-110%）から定位置（0%）に表示を変える
       &.active {
         @include sp {
           right: 0;
@@ -206,7 +208,6 @@
       @include sp {
         right: 0;
         // ナビゲーションメニューが表示された状態になる
-        background-color: lightgreen;
         // ハンバーガーopen時の動作（三→×）
         span {
           &:nth-child(1) {

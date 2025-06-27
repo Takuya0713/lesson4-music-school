@@ -8,6 +8,8 @@ $(document).ready(function () {
     event.stopPropagation();
     // クラス名「」にactiveが付与されていたら、メニューを閉じて付与されていない状況なら開く。
     // if ($(".hb").hasClass("active")) {
+
+    // activeになっていたらクローズ、なっていない場合は逆の動作を行う
     if ($(".p-header__hb").hasClass("active")) {
       closeMenu();
     } else {
@@ -24,9 +26,13 @@ $(".p-header__nav a").click(function () {
 
 // ナビゲーションメニューを開く（ハンバーガーボタンとヘッダー部分にactiveがついたら発動）
 function openMenu() {
+  // ハンバーガーボタン部分→ハンバーガーの矢印が動く
   $(".p-header__hb").addClass("active");
+  // ナビゲーションメニュー表示部分（親要素と子要素）
+  // 以下2つをactiveにすることで中身が表示される
   $(".p-header__nav").addClass("active");
   $(".p-header__nav-wrapper").addClass("active");
+  // 背景色を赤くする
   $(".p-header__nav-wrapper").addClass("u-bg-red");
 }
 
@@ -35,6 +41,8 @@ function closeMenu() {
   if ($(window).width() <= 767) {
     $(".p-header__hb").removeClass("active");
     $(".p-header__nav").removeClass("active");
+    $(".p-header__nav-wrapper").removeClass("active");
+    $(".p-header__nav-wrapper").removeClass("u-bg-red");
   }
 }
 
