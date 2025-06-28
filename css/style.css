@@ -2529,11 +2529,11 @@ main {
     width: 30rem;
   }
 }
+.p-header__nav.active li:hover {
+  background-color: rgb(0, 0, 0);
+}
 .p-header__nav.active a {
   width: 100%;
-}
-.p-header__nav.active a:hover {
-  background-color: rgb(0, 0, 0);
 }
 @media (max-width: 767px) {
   .p-header__nav-wrapper {

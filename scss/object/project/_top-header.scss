@@ -168,12 +168,12 @@
           height: initial;
           width: 30rem;
         }
+        &:hover {
+          background-color: rgb(0, 0, 0);
+        }
       }
       a {
         width: 100%;
-      }
-      a:hover {
-        background-color: rgb(0, 0, 0);
       }
     }
     &-wrapper {
