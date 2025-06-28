@@ -60,6 +60,7 @@
       }
     }
   }
+  
   // ナビゲーション部分のお問い合わせボタン
   &__button {
     display: flex;
@@ -95,7 +96,7 @@
     @include sp {
       position: fixed;
       top: 5rem;
-      right: -110%;
+      // right: -110%;
       transition: all 0.3s;
     }
     ul {
@@ -153,42 +154,41 @@
 
     // ハンバーガーボタンがクリックされたとき
     &.active {
-      @include sp {
-        position: absolute;
-        display: block;
-        top: 100%;
-        right: 0;
-        transition: all 0.3s;
+      ul {
+        @include sp {
+          display: block;
+          align-items: center;
+          column-gap: initial;
+          width: 30rem;
+        }
       }
-      &.active {
-        ul {
-          @include sp {
-            display: block;
-            align-items: center;
-            column-gap: initial;
-            width: 30rem;
-          }
+      li {
+        @include sp {
+          font-size: 1.8rem;
+          height: initial;
+          width: 30rem;
         }
-        li {
-          @include sp {
-            font-size: 1.8rem;
-            height: initial;
-            width: 30rem;
-          }
-        }
+      }
+      a {
+        width: 100%;
+      }
+      a:hover {
+        background-color: rgb(0, 0, 0);
       }
     }
     &-wrapper {
       @include sp {
         position: fixed;
         top: 5rem;
-        right: -110%;
+        right: -110%; // ← 初期状態（隠す）
         align-items: initial;
         transition: all 0.3s;
       }
       &.active {
         @include sp {
-          right: 0;
+          right: 0; // ← 表示状態
+          background-color: $color-red;
+          color: $color-white;
         }
       }
     }

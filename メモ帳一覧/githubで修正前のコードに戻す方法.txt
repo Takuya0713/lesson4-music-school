@@ -1,0 +1,8 @@
+【ソースURL】
+https://qiita.com/Yado_Tarou/items/a5bc8837e8f2ad693779
+【操作】
+1.戻したい保存履歴を右クリック、Copy SHAを選択
+2.リポジトリ→コマンドプロンプトを開く
+3.ターミナルにて
+git reset --hard xxxxx
+(xxxxxにSHAをコピペ)
