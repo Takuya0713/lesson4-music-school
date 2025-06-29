@@ -2,17 +2,17 @@
 AOS.init();
 
 // 【ハンバーガーボタンイベント】
-// ハンバーガーボタンをクリックした時に他のクリックイベントが広がるのを防ぐ
 $(document).ready(function () {
   $("#hb-block").click(function (event) {
     event.stopPropagation();
-    // クラス名「」にactiveが付与されていたら、メニューを閉じて付与されていない状況なら開く。
-    // activeになっていたらクローズ、なっていない場合は逆の動作を行う
+    // ハンバーガーボタンをクリックした時に他のクリックイベントが広がるのを防ぐ
     if ($(".l-header__hb").hasClass("active")) {
       closeMenu();
     } else {
       openMenu();
     }
+    // クラス名「」にactiveが付与されていたら、メニューを閉じて付与されていない状況なら開く。
+    // activeになっていたらクローズ、なっていない場合は逆の動作を行う
   });
 });
 
