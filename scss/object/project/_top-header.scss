@@ -19,59 +19,57 @@
     }
   }
   // ヘッダーのロゴ～お問い合わせボタン部分の表記
-  &__wrapper {
-    display: flex;
-    @include sp {
-      padding-left: 2rem;
-      height: 5rem;
-      justify-content: space-between;
-    }
-  }
-  &__logo {
-    display: flex;
-    align-items: center;
-    height: 8rem;
-    @include sp {
-      display: initial;
-      height: 5rem;
-    }
-  }
-  &__items {
-    display: flex;
-    align-items: center;
-  }
-  &__item {
-    margin-right: 0.7rem;
-    @include sp {
-      display: flex;
-      align-items: center;
-    }
-  }
-  & a {
-    @include sp {
-      display: flex;
-      align-items: center;
-      height: 5rem;
-      img {
-        @include sp {
-          height: 3.1rem;
-          width: 2rem;
-        }
-      }
-    }
-  }
+  // &__wrapper {
+  //   display: flex;
+  //   @include sp {
+  //     padding-left: 2rem;
+  //     height: 5rem;
+  //     justify-content: space-between;
+  //   }
+  // }
+  // &__logo {
+  //   display: flex;
+  //   align-items: center;
+  //   height: 8rem;
+  //   @include sp {
+  //     display: initial;
+  //     height: 5rem;
+  //   }
+  // }
+  // &__items {
+  //   display: flex;
+  //   align-items: center;
+  // }
+  // &__item {
+  //   margin-right: 0.7rem;
+  //   @include sp {
+  //     display: flex;
+  //     align-items: center;
+  //   }
+  // }
+  // & a {
+  //   @include sp {
+  //     display: flex;
+  //     align-items: center;
+  //     height: 5rem;
+  //     img {
+  //       @include sp {
+  //         height: 3.1rem;
+  //         width: 2rem;
+  //       }
+  //     }
+  //   }
+  // }
 
   // ナビゲーション部分のお問い合わせボタン
   &__button {
     display: flex;
     align-items: center;
     justify-content: center;
-    // padding: 0.6rem 3rem;
     height: 4.5rem;
     width: 15rem;
     @include sp {
       display: none;
-      // →お問い合わせボタンはSPで移動時についてくるようにする
     }
     a {
       line-height: calc(33 / 15);
