@@ -2155,7 +2155,7 @@ main {
   height: 19rem;
   background-color: rgb(203, 0, 0);
   transform-origin: left top;
-  left: 44.7rem;
+  left: 44rem;
 }
 @media (max-width: 767px) {
   :nth-of-type(1) .p-concept__flow-detail::after {
