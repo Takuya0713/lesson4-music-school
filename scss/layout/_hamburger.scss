@@ -1,18 +1,25 @@
 @use "../foundation/mixins" as *;
 @use "../foundation/variables" as *;
+// ハンバーガーメニュー（レイアウト部分）
+// https://chatgpt.com/c/6860a96d-2690-8010-b4fb-2ac4186077a3
 .l-header {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   &__hb {
     display: none;
     @include sp {
       display: flex;
       justify-content: space-between;
     }
+
     // ハンバーガーボタンがクリックされたとき
     &.active {
       @include sp {
         right: 0;
-        // ナビゲーションメニューが表示された状態になる
-        background-color: lightgreen;
         // ハンバーガーopen時の動作（三→×）
         span {
           &:nth-child(1) {
@@ -39,6 +46,7 @@
         padding-block: 0.2rem;
       }
     }
+
     @include sp {
       &-btn {
         display: flex;
@@ -53,5 +61,19 @@
         // ハンバーガーボタン　三本線部分
       }
     }
+    &-line {
+      @include sp {
+        transition: 0.3s;
+        display: block;
+        background-color: $color-white;
+        border-radius: 0.2rem;
+        width: 3.2rem;
+        height: 0;
+        padding-block: 0.2rem;
+      }
+    }
   }
+  // // ボタンの余白や配置を調整する
+  // .l-header__button {
+  // }
 }

@@ -190,6 +190,13 @@ img {
   }
 }
 
+.l-header {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .l-header__hb {
   display: none;
 }
@@ -202,7 +209,6 @@ img {
 @media (max-width: 767px) {
   .l-header__hb.active {
     right: 0;
-    background-color: lightgreen;
   }
   .l-header__hb.active span:nth-child(1) {
     transform: rotate(45deg) translate(0.8rem, 0.8rem);
@@ -236,6 +242,17 @@ img {
     background-color: rgb(203, 0, 0);
     row-gap: 0.7rem;
     cursor: pointer;
+  }
+}
+@media (max-width: 767px) {
+  .l-header__hb-line {
+    transition: 0.3s;
+    display: block;
+    background-color: #ffffff;
+    border-radius: 0.2rem;
+    width: 3.2rem;
+    height: 0;
+    padding-block: 0.2rem;
   }
 }
 
@@ -401,6 +418,146 @@ main {
 @media (max-width: 767px) {
   .c-header__breadcrumb li:nth-last-of-type(2)::before {
     left: 52%;
+  }
+}
+
+.c-text {
+  color: rgb(203, 0, 0);
+  font-weight: bold;
+}
+
+.c-sectionTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .c-sectionTitle {
+    font-size: 2.5rem;
+    line-height: 1.6;
+  }
+}
+
+.c-header {
+  z-index: 1000;
+  width: 100%;
+  height: 8rem;
+  left: 0;
+  top: 0;
+  transition: all 0.3s;
+  position: fixed;
+  background-color: #ffffff;
+}
+@media (max-width: 767px) {
+  .c-header {
+    height: 5rem;
+    padding-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .c-header .inner {
+    width: 100%;
+  }
+}
+.c-header__wrapper {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .c-header__wrapper {
+    padding-left: 2rem;
+    height: 5rem;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 767px) {
+  .c-header a {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+  }
+}
+@media (max-width: 767px) and (max-width: 767px) {
+  .c-header a img {
+    height: 3.1rem;
+    width: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .c-header__nav-wrapper {
+    position: fixed;
+    top: 5rem;
+    right: -110%;
+    transition: all 0.3s;
+  }
+}
+@media (max-width: 767px) {
+  .c-header__nav-wrapper.active {
+    right: 0;
+    background-color: rgb(203, 0, 0);
+    color: #ffffff;
+  }
+}
+@media (max-width: 767px) {
+  .c-header__nav {
+    position: fixed;
+    top: 5rem;
+    transition: all 0.3s;
+  }
+}
+@media (max-width: 767px) {
+  .c-header__nav.active ul {
+    display: block;
+    align-items: center;
+    width: 30rem;
+  }
+}
+@media (max-width: 767px) {
+  .c-header__nav.active li {
+    font-size: 1.8rem;
+    width: 30rem;
+  }
+}
+.c-header__nav.active li:hover {
+  background-color: black;
+}
+.c-header__nav.active a {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .c-header__nav ul {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .c-header__nav li {
+    display: flex;
+    align-items: center;
+    height: 5.8rem;
+  }
+}
+.c-header__nav a {
+  display: flex;
+  align-items: center;
+  height: 8rem;
+  position: relative;
+}
+.c-header__nav a::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.1rem;
+  background-color: rgb(0, 0, 0);
+  bottom: 2.5rem;
+  left: 0;
+  clip-path: inset(0 100% 0 0);
+  transition: 0.3s all;
+}
+.c-header__nav a:hover::before {
+  clip-path: inset(0 0 0 0);
+}
+@media (max-width: 767px) {
+  .c-header__nav a {
+    padding-left: 2rem;
   }
 }
 
@@ -2598,6 +2755,53 @@ main {
     right: 0;
     background-color: rgb(203, 0, 0);
     color: #ffffff;
+  }
+}
+.p-header__hb {
+  display: none;
+}
+@media (max-width: 767px) {
+  .p-header__hb {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 767px) {
+  .p-header__hb.active {
+    right: 0;
+  }
+  .p-header__hb.active span:nth-child(1) {
+    transform: rotate(45deg) translate(0.8rem, 0.8rem);
+  }
+  .p-header__hb.active span:nth-child(2) {
+    background-color: transparent;
+  }
+  .p-header__hb.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(0.8rem, -0.8rem);
+  }
+}
+@media (max-width: 767px) {
+  .p-header__hb-line {
+    transition: 0.3s;
+    display: block;
+    background-color: #ffffff;
+    border-radius: 0.2rem;
+    width: 3.2rem;
+    height: 0;
+    padding-block: 0.2rem;
+  }
+}
+@media (max-width: 767px) {
+  .p-header__hb-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 7.2rem;
+    height: 5rem;
+    background-color: rgb(203, 0, 0);
+    row-gap: 0.7rem;
+    cursor: pointer;
   }
 }
 

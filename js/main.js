@@ -8,7 +8,7 @@ $(document).ready(function () {
     event.stopPropagation();
     // クラス名「」にactiveが付与されていたら、メニューを閉じて付与されていない状況なら開く。
     // activeになっていたらクローズ、なっていない場合は逆の動作を行う
-    if ($(".p-header__hb").hasClass("active")) {
+    if ($(".l-header__hb").hasClass("active")) {
       closeMenu();
     } else {
       openMenu();
@@ -18,31 +18,32 @@ $(document).ready(function () {
 
 // メニューのリンクをクリックしたら閉じる処理
 /* .header__navのaタグをクリックしたらメニューを閉じる（aタグのリンククリック後にメニューを閉じる動作） */
-$(".p-header__nav a").click(function () {
+$(".c-header__nav a").click(function () {
   closeMenu();
 });
 
 // ナビゲーションメニューを開く（ハンバーガーボタンとヘッダー部分にactiveがついたら発動）
 function openMenu() {
   // ハンバーガーボタン部分→ハンバーガーの矢印が動く
-  $(".p-header__hb").addClass("active");
+  $(".l-header__hb").addClass("active");
   // ナビゲーションメニュー表示部分（親要素と子要素）
   // 以下2つをactiveにすることで中身が表示される
-  $(".p-header__nav").addClass("active");
-  $(".p-header__nav-wrapper").addClass("active");
+  $(".c-header__nav").addClass("active");
+  $(".c-header__nav-wrapper").addClass("active");
 }
 
 // ナビゲーションメニューを閉じる
 function closeMenu() {
   if ($(window).width() <= 767) {
     // 非表示状態（-110%右寄り）にする
-    $(".p-header__nav-wrapper").css("right", "-110%");
-    $(".p-header__hb").removeClass("active");
+    $(".c-header__nav-wrapper").css("right", "-110%");
+    $(".l-header__hb").removeClass("active");
+
     // 以下のナビゲーション部分は0.3秒掛けて元に戻す
     setTimeout(function () {
-      $(".p-header__nav").removeClass("active");
-      $(".p-header__nav-wrapper").removeClass("active");
-      $(".p-header__nav-wrapper").css("right", "");
+      $(".c-header__nav").removeClass("active");
+      $(".c-header__nav-wrapper").removeClass("active");
+      $(".c-header__nav-wrapper").css("right", "");
     }, 300);
   }
 }
@@ -51,9 +52,9 @@ if ($(window).width() <= 767) {
   $(document).click(function (event) {
     if (
       //ハンバーガーアイコン以外
-      !$(event.target).closest(".p-header__hb").length &&
+      !$(event.target).closest(".l-header__hb").length &&
       //ナビゲーション以外
-      !$(event.target).closest(".p-header__nav").length
+      !$(event.target).closest(".c-header__nav").length
       // （closestは直近の要素を取得するという意味）
     ) {
       closeMenu();
