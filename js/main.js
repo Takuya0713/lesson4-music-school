@@ -18,7 +18,7 @@ $(document).ready(function () {
 
 // メニューのリンクをクリックしたら閉じる処理
 /* .header__navのaタグをクリックしたらメニューを閉じる（aタグのリンククリック後にメニューを閉じる動作） */
-$(".c-header__nav a").click(function () {
+$(".l-header__nav a").click(function () {
   closeMenu();
 });
 
@@ -28,22 +28,22 @@ function openMenu() {
   $(".l-header__hb").addClass("active");
   // ナビゲーションメニュー表示部分（親要素と子要素）
   // 以下2つをactiveにすることで中身が表示される
-  $(".c-header__nav").addClass("active");
-  $(".c-header__nav-wrapper").addClass("active");
+  $(".l-header__nav").addClass("active");
+  $(".l-header__nav-wrapper").addClass("active");
 }
 
 // ナビゲーションメニューを閉じる
 function closeMenu() {
   if ($(window).width() <= 767) {
     // 非表示状態（-110%右寄り）にする
-    $(".c-header__nav-wrapper").css("right", "-110%");
+    $(".l-header__nav-wrapper").css("right", "-110%");
     $(".l-header__hb").removeClass("active");
 
     // 以下のナビゲーション部分は0.3秒掛けて元に戻す
     setTimeout(function () {
-      $(".c-header__nav").removeClass("active");
-      $(".c-header__nav-wrapper").removeClass("active");
-      $(".c-header__nav-wrapper").css("right", "");
+      $(".l-header__nav").removeClass("active");
+      $(".l-header__nav-wrapper").removeClass("active");
+      $(".l-header__nav-wrapper").css("right", "");
     }, 300);
   }
 }
@@ -54,7 +54,7 @@ if ($(window).width() <= 767) {
       //ハンバーガーアイコン以外
       !$(event.target).closest(".l-header__hb").length &&
       //ナビゲーション以外
-      !$(event.target).closest(".c-header__nav").length
+      !$(event.target).closest(".l-header__nav").length
       // （closestは直近の要素を取得するという意味）
     ) {
       closeMenu();
