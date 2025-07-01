@@ -6,7 +6,7 @@ $(document).ready(function () {
   $("#hb-block").click(function (event) {
     event.stopPropagation();
     // ハンバーガーボタンをクリックした時に他のクリックイベントが広がるのを防ぐ
-    if ($(".l-header__hb").hasClass("active")) {
+    if ($(".c-hamburger").hasClass("active")) {
       closeMenu();
     } else {
       openMenu();
@@ -25,7 +25,7 @@ $(".l-header__nav a").click(function () {
 // ナビゲーションメニューを開く（ハンバーガーボタンとヘッダー部分にactiveがついたら発動）
 function openMenu() {
   // ハンバーガーボタン部分→ハンバーガーの矢印が動く
-  $(".l-header__hb").addClass("active");
+  $(".c-hamburger").addClass("active");
   // ナビゲーションメニュー表示部分（親要素と子要素）
   // 以下2つをactiveにすることで中身が表示される
   $(".l-header__nav").addClass("active");
@@ -37,7 +37,7 @@ function closeMenu() {
   if ($(window).width() <= 767) {
     // 非表示状態（-110%右寄り）にする
     $(".l-header__nav-wrapper").css("right", "-110%");
-    $(".l-header__hb").removeClass("active");
+    $(".c-hamburger").removeClass("active");
 
     // 以下のナビゲーション部分は0.3秒掛けて元に戻す
     setTimeout(function () {
@@ -52,7 +52,7 @@ if ($(window).width() <= 767) {
   $(document).click(function (event) {
     if (
       //ハンバーガーアイコン以外
-      !$(event.target).closest(".l-header__hb").length &&
+      !$(event.target).closest(".c-hamburger").length &&
       //ナビゲーション以外
       !$(event.target).closest(".l-header__nav").length
       // （closestは直近の要素を取得するという意味）
@@ -68,7 +68,7 @@ $(".p-faq__accordion-question, .p-faq__accordion-answer").click(function () {
   $(this)
     .closest(".p-faq__accordion-list")
     .find(".p-faq__accordion-answer")
-    .slideToggle();
+    .slideToggle(500);
   // アコーディオンリストから一番近い（liタグ）、回答を表示する
   $(this)
     .closest(".p-faq__accordion-list")

@@ -248,11 +248,6 @@ img {
   height: 4.5rem;
   display: flex;
 }
-.l-header .inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 @media (max-width: 767px) {
   .l-header .inner {
     display: initial;
@@ -2440,6 +2435,7 @@ main {
   display: flex;
   align-items: center;
   position: relative;
+  background-color: #ffffff;
 }
 @media (max-width: 767px) {
   .p-faq__accordion-question {
