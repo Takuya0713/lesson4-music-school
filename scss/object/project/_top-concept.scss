@@ -48,16 +48,6 @@
       // 矢印の上部（屋根部分）
       // 最初の子要素にbefore擬似要素
       :nth-of-type(1) &::before {
-        // top: -18%;
-        // left: 50%;
-        // content: "";
-        // position: absolute;
-        // transform: rotate(45deg);
-        // width: 2.5rem;
-        // height: 2.5rem;
-        // border-top: 0.3rem solid rgb(203, 0, 0); //太さ3px
-        // border-left: 0.3rem solid rgb(203, 0, 0); //太さ3px
-        // transform-origin: left top;
         top: -38%;
         left: 50%;
         content: "";

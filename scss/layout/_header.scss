@@ -56,12 +56,11 @@
   // パンくずナビゲーションのレイアウト部分
   &__breadcrumb {
     background-color: rgba(232, 232, 232, 1);
-    @include sp{
+    @include sp {
       height: 3.5rem;
     }
   }
 }
-
 
 // 0701追加
 .l-header {
@@ -83,7 +82,7 @@
     }
   }
 
-    // ナビゲーション部分のお問い合わせボタン
+  // ナビゲーション部分のお問い合わせボタン
   &__button {
     display: flex;
     align-items: center;
@@ -106,7 +105,6 @@
     }
   }
 
-  
   &__wrapper {
     display: flex;
     @include sp {
@@ -127,6 +125,13 @@
   &__items {
     display: flex;
     align-items: center;
+  }
+  &__logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
   }
   &__item {
     margin-right: 0.7rem;
