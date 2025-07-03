@@ -64,17 +64,42 @@ if ($(window).width() <= 767) {
 
 // アコーディオンメニュー
 $(".p-faq__accordion-question, .p-faq__accordion-answer").click(function () {
-  // アコーディオンの質問または回答部分をクリックした時に
-  $(this)
+  var $question = $(this)
     .closest(".p-faq__accordion-list")
-    .find(".p-faq__accordion-answer")
-    .slideToggle(500);
-  // アコーディオンリストから一番近い（liタグ）、回答を表示する
-  $(this)
+    .find(".p-faq__accordion-question");
+  var $answer = $(this)
     .closest(".p-faq__accordion-list")
-    .find(".p-faq__accordion-question")
-    .toggleClass("active");
+    .find(".p-faq__accordion-answer");
+
+  // 現在の状態を確認
+  var isOpen = $answer.is(":visible");
+
+  if (isOpen) {
+    // 閉じる場合：コンテンツを先に閉じてからアイコンを回転
+    $answer.slideToggle(500);
+    setTimeout(function () {
+      $question.removeClass("active");
+    }, 500);
+  } else {
+    // 開く場合：アイコンを先に回転してからコンテンツを開く
+    $question.addClass("active");
+    $answer.slideToggle(500);
+  }
 });
+
+// アコーディオン修正前
+// $(".p-faq__accordion-question, .p-faq__accordion-answer").click(function () {
+//   // アコーディオンの質問または回答部分をクリックした時に
+//   $(this)
+//     .closest(".p-faq__accordion-list")
+//     .find(".p-faq__accordion-answer")
+//     .slideToggle(500);
+//   // アコーディオンリストから一番近い（liタグ）、回答を表示する
+//   $(this)
+//     .closest(".p-faq__accordion-list")
+//     .find(".p-faq__accordion-question")
+//     .toggleClass("active");
+// });
 
 // 「生徒さんたちの声」slickスライド部分
 // 750px以下になったときのみslick機能を使用する
