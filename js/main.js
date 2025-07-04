@@ -87,20 +87,6 @@ $(".p-faq__accordion-question, .p-faq__accordion-answer").click(function () {
   }
 });
 
-// アコーディオン修正前
-// $(".p-faq__accordion-question, .p-faq__accordion-answer").click(function () {
-//   // アコーディオンの質問または回答部分をクリックした時に
-//   $(this)
-//     .closest(".p-faq__accordion-list")
-//     .find(".p-faq__accordion-answer")
-//     .slideToggle(500);
-//   // アコーディオンリストから一番近い（liタグ）、回答を表示する
-//   $(this)
-//     .closest(".p-faq__accordion-list")
-//     .find(".p-faq__accordion-question")
-//     .toggleClass("active");
-// });
-
 // 「生徒さんたちの声」slickスライド部分
 // 750px以下になったときのみslick機能を使用する
 // https://www.genius-web.co.jp/blog/web-programming/how-to-use-slick-js-to-apply-sliders-on-a-smartphone-to-the-rest-of-the-picture-on-a-pc.html
@@ -116,8 +102,11 @@ $(function () {
         infinite: true,
         arrows: false,
       });
-    } else {
-      $(".slide.slick-initialized").slick("unslick");
+    }
+    // 751px以上のときの動作
+    else {
+      // $(".slide.slick-initialized").slick("unslick");
+      $(".slide.slick-initialized");
     }
   }
   // 上述の関数を実行
@@ -127,6 +116,7 @@ $(function () {
     sliderSetting();
   });
 });
+
 
 // トップへ戻るボタン
 var scrollTopBtn = $(".c-button__wrapper");

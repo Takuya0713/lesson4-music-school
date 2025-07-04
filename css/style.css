@@ -353,6 +353,9 @@ img {
     align-items: center;
   }
 }
+.l-header__item h1 {
+  font-weight: bold;
+}
 @media (max-width: 767px) {
   .l-header a {
     display: flex;
@@ -408,6 +411,7 @@ img {
   cursor: pointer;
   position: relative;
   transition: 0.3s all;
+  font-weight: bold;
 }
 .l-header__nav ul a:hover::before {
   clip-path: inset(0 0 0 0);
@@ -2975,6 +2979,13 @@ main {
     -moz-column-gap: initial;
          column-gap: initial;
   }
+}
+.p-voice__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 3.5rem;
+       column-gap: 3.5rem;
+  margin-top: 3.6rem;
 }
 .p-voice__item {
   width: 100%;
