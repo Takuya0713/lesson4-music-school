@@ -52,8 +52,7 @@
               </li>
             </ul>
           </nav>
-          <!-- ナビゲーション部分のお問い合わせボタン -->
-          <div class="p-header__button u-bg-red l-header__button">
+          <div class="l-header__button">
             <a class="c-button" href="contact_form.html">お問い合わせ </a>
           </div>
         </div>
@@ -110,7 +109,7 @@
               <form>
                 <!-- 会社名 -->
                 <dl class="section-item company">
-                  <dt><label>会社名</label></dt>
+                  <dt><label for="company">会社名</label></dt>
                   <dd>
                     <input type="text" placeholder="きたむらミュージックスクール" name="company" class="form-control" id="company" />
                   </dd>
@@ -124,16 +123,16 @@
                 </dl>
                 <!-- メールアドレス -->
                 <dl class="section-item mail">
-                  <dt><label>メールアドレス</label></dt>
+                  <dt><label for="mail">メールアドレス</label></dt>
                   <dd>
-                    <input type="text" placeholder="info@kitamura.musicschool.jp" name="name" class="form-control" id="name" />
+                    <input type="text" placeholder="info@kitamura.musicschool.jp" name="name" class="form-control" id="mail" />
                   </dd>
                 </dl>
                 <!-- 電話番号 -->
                 <dl class="section-item tel">
-                  <dt><label>電話番号</label></dt>
+                  <dt><label for="tel">電話番号</label></dt>
                   <dd>
-                    <input type="text" placeholder="090-1234-5678" name="name" class="form-control" id="name" />
+                    <input type="text" placeholder="090-1234-5678" name="name" class="form-control" id="tel" />
                   </dd>
                 </dl>
                 <!-- 目的 -->
@@ -157,16 +156,16 @@
                 </dl>
                 <!-- 内容 -->
                 <dl class="section-item comment-label">
-                  <dt><label>内　容</label></dt>
+                  <dt><label for="comment">内　容</label></dt>
                   <dd class="section-item comment-form">
-                    <textarea></textarea>
+                    <textarea id="comment" placeholder="内容に関する詳細や備考等をご入力ください。"></textarea>
                   </dd>
                 </dl>
                 <!-- 赤いボタンは使いまわせる -->
 
                 <div class="form-btn u-df-tbc">
                   <div class="form-btn-inner u-bg-red u-df-tbc">
-                    <input type="submit" value="送　信" class="form-submit" onclick="redirectPage(contact_send.html)" />
+                    <button class="form-submit u-bg-red u-df-tbc"">送　信</button>
                   </div>
                 </div>
               </form>

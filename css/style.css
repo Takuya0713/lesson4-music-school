@@ -311,6 +311,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgb(203, 0, 0);
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.l-header__button a:hover {
+  background-color: #ffffff;
+  color: rgb(203, 0, 0);
+  border: 0.1rem solid rgb(203, 0, 0);
 }
 .l-header__wrapper {
   display: flex;
@@ -689,14 +697,19 @@ main {
   justify-content: center;
   align-items: center;
   border: 1px solid #000;
-  height: 5rem;
-  width: 5rem;
 }
 .c-pager__list:hover {
-  transition: 0.3s all;
   background-color: #000;
   color: #fff;
   cursor: pointer;
+}
+.c-pager__list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  width: 5rem;
 }
 
 .c-paging {
@@ -1518,6 +1531,7 @@ main {
   background-color: #ffffff;
   scrollbar-width: none;
   border: 0.1rem solid #000;
+  color: rgb(178, 178, 178);
 }
 @media (max-width: 767px) {
   .p-contact-form textarea {
@@ -1533,6 +1547,20 @@ main {
   font-size: 2.5rem;
   line-height: 1.32;
   font-weight: bold;
+}
+.p-contact-form .form-btn button {
+  width: 100%;
+  height: 100%;
+  font-size: 2.5rem;
+  line-height: 1.32;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.p-contact-form .form-btn button:hover {
+  background-color: #ffffff;
+  color: rgb(203, 0, 0);
+  border: 0.1rem solid rgb(203, 0, 0);
 }
 
 .p-contact-form__mv {
@@ -2671,15 +2699,6 @@ main {
   .p-header__button {
     display: none;
   }
-}
-.p-header__button a {
-  line-height: 2.2;
-  font-size: 1.5rem;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .p-massage {
