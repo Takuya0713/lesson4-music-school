@@ -48,7 +48,7 @@
     margin-top: 4rem;
     display: grid;
     row-gap: 7rem;
-    @include sp{
+    @include sp {
       row-gap: 4rem;
     }
   }
@@ -125,19 +125,14 @@
       }
     }
   }
-
-  &__label {
-    width: 8rem;
-    height: 3rem;
-  }
   &__text-inner {
     // height: 18rem;
     h3 {
       font-size: 2rem;
       line-height: calc(25 / 20);
       font-weight: bold;
-      @include sp{
-        margin: 3rem 0 .6rem;
+      @include sp {
+        margin: 3rem 0 0.6rem;
       }
     }
     time {
@@ -150,10 +145,15 @@
       // font-size: 1.8rem;
       line-height: calc(30 / 18);
       width: 57rem;
-      @include sp{
+      @include sp {
         width: initial;
-        margin-top: .8rem;
+        margin-top: 0.8rem;
       }
     }
+  }
+
+  &__label {
+    width: 8rem;
+    height: 3rem;
   }
 }
