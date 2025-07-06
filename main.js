@@ -74,33 +74,42 @@ $(".p-faq__accordion-question, .p-faq__accordion-answer").click(function () {
     .find(".p-faq__accordion-question")
     .toggleClass("active");
 });
+console.log("sliderSetting");
+$(".slick-next").not(".slick-initialized").slick({
+  autoplay: true,
+  autoplaySpeed: 4000,
+  speed: 1000,
+  infinite: true,
+  arrows: false,
+});
 
 // 「生徒さんたちの声」slickスライド部分
 // 750px以下になったときのみslick機能を使用する
 // https://www.genius-web.co.jp/blog/web-programming/how-to-use-slick-js-to-apply-sliders-on-a-smartphone-to-the-rest-of-the-picture-on-a-pc.html
-$(function () {
-  function sliderSetting() {
-    var width = $(window).width();
-    if (width <= 750) {
-      // class名にslick-nextと書かれたslick機能を働かせる
-      $(".slick-next").not(".slick-initialized").slick({
-        autoplay: true,
-        autoplaySpeed: 4000,
-        speed: 1000,
-        infinite: true,
-        arrows: false,
-      });
-    } else {
-      $(".slide.slick-initialized").slick("unslick");
-    }
-  }
-  // 上述の関数を実行
-  sliderSetting();
-  // windowサイズが変更されたときに再度関数の内容を実行
-  $(window).resize(function () {
-    sliderSetting();
-  });
-});
+// $(function () {
+//   function sliderSetting() {
+//     // var width = $(window).width();
+//     // if (width <= 750) {
+//     //   // class名にslick-nextと書かれたslick機能を働かせる
+//     // } else {
+//     //   $(".slide.slick-initialized").slick("unslick");
+//     // }
+//     $(".slick-next").not(".slick-initialized").slick({
+//       autoplay: true,
+//       autoplaySpeed: 4000,
+//       speed: 1000,
+//       infinite: true,
+//       arrows: false,
+//     });
+//   }
+//   // 上述の関数を実行
+//   console.log("sliderSetting");
+//   sliderSetting();
+//   // windowサイズが変更されたときに再度関数の内容を実行
+//   $(window).resize(function () {
+//     sliderSetting();
+//   });
+// });
 
 // トップへ戻るボタン
 var scrollTopBtn = $(".c-button__wrapper");
