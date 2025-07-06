@@ -2326,13 +2326,13 @@ main {
     row-gap: 4.1rem;
   }
 }
-.p-blog__item a {
+.p-blog a {
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.25;
 }
 @media (max-width: 767px) {
-  .p-blog__item {
+  .p-blog {
     width: initial;
   }
 }
@@ -3010,15 +3010,11 @@ main {
 .p-voice__comment {
   margin-top: 1rem;
   text-align: center;
-  font-size: 1.8rem;
-  line-height: 1.6666666667;
   font-size: medium;
 }
-@media (max-width: 767px) {
-  .p-voice__comment p {
-    font-size: 1.8rem;
-    line-height: 1.6666666667;
-  }
+.p-voice__comment p {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
 }
 
 .u-bg-red {

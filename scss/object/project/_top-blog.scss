@@ -16,16 +16,13 @@
       row-gap: 4.1rem;
     }
   }
-  &__item {
-    // width: 26rem;
-    a {
-      font-size: 2rem;
-      font-weight: bold;
-      line-height: calc(25 / 20);
-    }
-    @include sp {
-      width: initial;
-    }
+  a {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: calc(25 / 20);
+  }
+  @include sp {
+    width: initial;
   }
   &__comment {
     padding: 2rem 0 1.1rem 0;

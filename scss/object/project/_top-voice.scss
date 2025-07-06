@@ -4,11 +4,6 @@
 // 生徒さんたちの声
 .p-voice {
   padding: 6.5rem 0 6rem;
-  // & .inner{
-
-  // }
-  // &__wrapper {
-  // }
   &__items {
     // display: grid;
     // grid-template-columns: repeat(3, 1fr);
@@ -36,14 +31,10 @@
   &__comment {
     margin-top: 1rem;
     text-align: center;
-    font-size: 1.8rem;
-    line-height: calc(30 / 18);
     font-size: medium;
     & p {
-      @include sp {
-        font-size: 1.8rem;
-        line-height: calc(30 / 18);
-      }
+      font-size: 1.8rem;
+      line-height: calc(30 / 18);
     }
   }
 }
