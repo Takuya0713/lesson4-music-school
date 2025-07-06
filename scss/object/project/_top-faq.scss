@@ -3,6 +3,8 @@
 
 // よくあるご質問
 .p-faq {
+  position: relative;
+  // z-index: 5;
   // アコーディオンメニューの親要素
   &__accordion {
     padding: 5.3rem 0 0 0;
@@ -42,6 +44,7 @@
         border-bottom: 0.1rem solid #000;
         left: 85.5%;
         transform: rotate(45deg);
+        transition: 0.5s all;
         @include sp {
           left: 90%;
         }
@@ -73,17 +76,16 @@
         border-bottom: 0.1rem solid #000;
         // 0614追加中
         &::after {
-          position: absolute;
-          content: "";
-          width: 1.36rem;
-          height: 1.36rem;
-          border-right: 0.1rem solid #000;
-          border-bottom: 0.1rem solid #000;
-          left: 85.5%;
+          // position: absolute;
+          // content: "";
+          // width: 1.36rem;
+          // height: 1.36rem;
+          // border-right: 0.1rem solid #000;
+          // border-bottom: 0.1rem solid #000;
+          // left: 85.5%;
           transform: rotate(-135deg);
-          transition: 0.5s all;
           @include sp {
-            left: 90%;
+            // left: 90%;
           }
         }
       }

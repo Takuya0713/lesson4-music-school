@@ -489,6 +489,7 @@ main {
 }
 
 .c-button__wrapper {
+  pointer-events: none;
   position: absolute;
   width: 30rem;
   height: 100%;
@@ -535,6 +536,7 @@ main {
   display: grid;
   place-content: center;
   background-color: rgba(0, 0, 0, 0.502);
+  pointer-events: auto;
 }
 .c-button__wrapper .c-fix-area a img {
   width: 2.3rem;
@@ -560,6 +562,7 @@ main {
   align-items: center;
   justify-content: center;
   transition: all 0.3s;
+  pointer-events: auto;
 }
 .c-button__wrapper .c-form-btn a:hover {
   opacity: 0.75;
@@ -2471,6 +2474,9 @@ main {
   }
 }
 
+.p-faq {
+  position: relative;
+}
 .p-faq__accordion {
   padding: 5.3rem 0 0 0;
   border-bottom: 0.05rem solid #000000;
@@ -2512,6 +2518,7 @@ main {
   border-bottom: 0.1rem solid #000;
   left: 85.5%;
   transform: rotate(45deg);
+  transition: 0.5s all;
 }
 @media (max-width: 767px) {
   .p-faq__accordion-question::after {
@@ -2544,20 +2551,7 @@ main {
   border-bottom: 0.1rem solid #000;
 }
 .p-faq__accordion-question.active::after {
-  position: absolute;
-  content: "";
-  width: 1.36rem;
-  height: 1.36rem;
-  border-right: 0.1rem solid #000;
-  border-bottom: 0.1rem solid #000;
-  left: 85.5%;
   transform: rotate(-135deg);
-  transition: 0.5s all;
-}
-@media (max-width: 767px) {
-  .p-faq__accordion-question.active::after {
-    left: 90%;
-  }
 }
 .p-faq__accordion-answer {
   display: none;
@@ -2991,25 +2985,7 @@ main {
 .p-voice {
   padding: 6.5rem 0 6rem;
 }
-.p-voice__wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  -moz-column-gap: 3.5rem;
-       column-gap: 3.5rem;
-  margin-top: 3.6rem;
-}
-@media (max-width: 767px) {
-  .p-voice__wrapper {
-    grid-template-columns: repeat(1, 1fr);
-    -moz-column-gap: initial;
-         column-gap: initial;
-  }
-}
 .p-voice__items {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  -moz-column-gap: 3.5rem;
-       column-gap: 3.5rem;
   margin-top: 3.6rem;
 }
 .p-voice__item {
