@@ -1744,6 +1744,9 @@ main {
   height: 5rem;
   width: 25rem;
   margin: 0 auto;
+  background-color: rgb(203, 0, 0);
+  color: #ffffff;
+  transition: all 0.3s;
 }
 @media (max-width: 767px) {
   .error__return-inner {
@@ -1754,6 +1757,14 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 5rem;
+}
+.error__return-inner a:hover {
+  background-color: #ffffff;
+  color: rgb(203, 0, 0);
+  border: 0.1rem solid rgb(203, 0, 0);
+  opacity: 1;
 }
 
 .p-plan-mv {
