@@ -68,6 +68,9 @@
     h1 {
       font-weight: bold;
     }
+    span {
+      font-size: 2rem;
+    }
   }
 
   &__nav-wrapper {
@@ -112,6 +115,7 @@
     display: flex;
     align-items: center;
     column-gap: 3.3rem;
+    column-gap: 4.1rem;
     margin-left: auto;
     @include sp {
       position: fixed;

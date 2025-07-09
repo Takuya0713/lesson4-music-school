@@ -3,8 +3,10 @@
 
 .p-concept {
   position: relative;
-  // padding: 6.6rem 0 5.5rem 0;
-  padding: 7rem 0 6.3rem 0;
+  // padding: 7rem 0 6.3rem 0;
+  // padding: 6.4rem 0 2.2rem 0;
+  padding: 6.4rem 0 0.8rem 0;
+
   // 全人類、 ミュージシャン計画。
   @include sp {
     padding: 3.4rem 0 4.6rem 0;
@@ -33,10 +35,15 @@
       }
     }
   }
-
+  &__contents {
+    // position: absolute;
+  }
   // 親要素
   &__flow {
     position: relative;
+    display: grid;
+    row-gap: 1.7rem;
+    margin: -3rem 0 5rem 0;
     // 子要素（英語・●・日本語）
     &-detail {
       display: flex;
@@ -49,6 +56,7 @@
       // 最初の子要素にbefore擬似要素
       :nth-of-type(1) &::before {
         top: -38%;
+        top: -16%;
         left: 50%;
         content: "";
         position: absolute;
@@ -72,7 +80,7 @@
         // left: 44rem;
         content: "";
         position: absolute;
-        top: -5.5rem;
+        top: -2.5rem;
         transform: translateX(-50%);
         width: 0.3rem;
         height: 19rem;
