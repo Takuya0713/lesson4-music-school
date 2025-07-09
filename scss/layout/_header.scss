@@ -37,11 +37,8 @@
   }
 
   &__logo {
-    display: flex;
-    align-items: center;
-    height: 8rem;
     @include sp {
-      display: initial;
+      // display: initial;
       height: 5rem;
     }
   }
@@ -49,6 +46,7 @@
   &__items {
     display: flex;
     align-items: center;
+    height: 100%;
   }
 
   &__logo-link {
@@ -63,9 +61,9 @@
     display: flex;
     align-items: center;
     margin-right: 0.7rem;
+    height: 100%;
     @include sp {
-      display: flex;
-      align-items: center;
+      padding-block: 1rem;
     }
     h1 {
       font-weight: bold;

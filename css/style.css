@@ -257,20 +257,15 @@ img {
     justify-content: space-between;
   }
 }
-.l-header__logo {
-  display: flex;
-  align-items: center;
-  height: 8rem;
-}
 @media (max-width: 767px) {
   .l-header__logo {
-    display: initial;
     height: 5rem;
   }
 }
 .l-header__items {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 .l-header__logo-link {
   display: flex;
@@ -283,11 +278,11 @@ img {
   display: flex;
   align-items: center;
   margin-right: 0.7rem;
+  height: 100%;
 }
 @media (max-width: 767px) {
   .l-header__item {
-    display: flex;
-    align-items: center;
+    padding-block: 1rem;
   }
 }
 .l-header__item h1 {
