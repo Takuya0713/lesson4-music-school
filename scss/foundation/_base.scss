@@ -12,7 +12,6 @@ html {
   scroll-padding-top: 8rem;
   // 1020以下フォントサイズをPC・タブレット・スマートフォン毎に設定する
   font-size: 10px;
-  margin-top: 8rem;
   @media (min-width: 768px) and (max-width: 980px) {
     font-size: vw(10, 980);
     // フォントサイズは10pxで最大幅980px内に収まるように設定
@@ -20,7 +19,6 @@ html {
   @include sp {
     font-size: vw(10, 375);
     // フォントサイズは10pxで最大幅375px内に収まるように設定
-    margin-top: 5rem;
     scroll-padding-top: 5rem;
   }
 }
@@ -30,6 +28,10 @@ body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
     "游ゴシック", "Yu Gothic", sans-serif;
   font-size: 1.6rem;
+  padding-top: 8rem; // ヘッダーの高さ分の余白を追加
+  @include sp {
+    padding-top: 5rem; // SPの時はヘッダーの高さ分の余白を追加
+  }
 }
 
 #main {
