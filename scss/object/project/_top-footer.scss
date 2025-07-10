@@ -6,7 +6,7 @@
   &__wrapper {
     background-color: $color-red;
     // height: 27.4rem;
-    padding: 4.4rem 0 5rem 0;
+    padding: 4.5rem 0 3rem 0;
   }
   &__nav {
     ul {
@@ -54,15 +54,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2.1rem 0 2.3rem 0;
+    margin: 2.5rem 0 2.3rem 0;
   }
   &__sns-links {
-    margin-top: 3.2rem;
+    margin-top: 0.7rem;
     ul {
       display: flex;
       justify-content: center;
       align-items: center;
-      column-gap: calc(12.3 / 3 * 1rem);
+      // column-gap: calc(12.3 / 3 * 1rem);
+      column-gap: 1.2rem;
       @include sp {
         column-gap: 1.2rem;
       }

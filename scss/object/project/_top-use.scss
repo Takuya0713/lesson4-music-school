@@ -11,10 +11,10 @@
     // row-gap適用するためにdisplay: gridを使用
     display: grid;
     row-gap: 5.8rem;
-    margin: 5.3rem 0 0;
+    // margin: 5.3rem 0 0;
+    // margin: 5rem 0 0 4.5rem;
+    margin-top: 5rem;
     @include sp {
-      // display: initial;
-      // margin-top: 3.9rem;
       margin: 3.9rem 0 0;
       row-gap: 3.6rem;
     }
@@ -36,8 +36,8 @@
             height: 40.9rem;
             background-color: rgb(203, 0, 0);
             transform-origin: left top;
-            // left: 4.5%;
-            top: 5%;
+            top: 10%;
+            left: 10%;
             @include sp {
               top: 1rem;
               left: 50%;
@@ -45,8 +45,7 @@
               height: 67.4rem;
             }
             &::before {
-              left: 2.5%;
-              left: -1.5rem;
+              left: -1.6rem;
               top: 100%;
               top: 96.5%;
               content: "";
@@ -94,7 +93,8 @@
         width: 2rem;
         height: 2rem;
         border-radius: 50%;
-        margin-right: 4.3rem;
+        // margin-right: 4.3rem;
+        // margin-right: 0;
         @include sp {
           margin-right: initial;
           margin-top: 0.7rem;
@@ -103,7 +103,7 @@
       &__ja {
         display: flex;
         align-items: center;
-        justify-content: center;
+        // justify-content: center;
         width: 56.7rem;
         font-size: 1.8rem;
         line-height: calc(30 / 18);

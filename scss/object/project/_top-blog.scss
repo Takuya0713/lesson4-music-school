@@ -4,16 +4,25 @@
 // よくあるご質問
 .p-blog {
   // padding: 7rem 0 27.2rem 0;
-  padding: 7rem 0 20.5rem 0;
+  padding: 14.5rem 0 21.5rem 0;
+  &__title {
+    padding-top: 2rem;
+  }
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 5rem;
-    margin-top: 3.8rem;
+    margin-top: 1.5rem;
     @include sp {
       margin-top: 3.9rem;
       grid-template-columns: repeat(1, 1fr);
       row-gap: 4.1rem;
+    }
+  }
+  &__image {
+    img {
+      height: 20rem;
+      object-fit: cover;
     }
   }
   a {
@@ -28,7 +37,6 @@
     padding: 2rem 0 1.1rem 0;
   }
   &__date {
-    padding-top: 1.1rem;
     text-align: right;
     time {
       font-size: 1.7rem;
