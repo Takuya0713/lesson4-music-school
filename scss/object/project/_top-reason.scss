@@ -5,15 +5,21 @@
   padding: 6.5rem 0 7rem;
   @include sp {
     // padding: 4.3rem 0 2.8rem 0;
-    padding: 5rem 0 3.9rem 0;
+    padding: 4.9rem 0 3.9rem 0;
+    // padding: 3.7rem 0 3.9rem 0;
   }
   &__sectionTitle {
     @include sp {
-      padding-top: 0.7rem;
+      // padding-top: 0.7rem;
+      background-color: #ff6;
+      margin-top: -0.6rem;
     }
   }
   &__contents {
-    margin: 2.8rem 0 0 0;
+    margin: 3.6rem 0 0 0;
+    @include sp {
+      margin: 4.3rem 0 0 0;
+    }
   }
   &__items {
     display: grid;
@@ -25,7 +31,7 @@
 
   &__item {
     display: flex;
-    row-gap: .7rem;
+    row-gap: 0.7rem;
 
     @include sp {
       display: initial;
@@ -50,13 +56,13 @@
     // border-bottom: 2px solid $color-red;
     position: relative;
     // margin-top: 0.7rem;
-    padding-bottom: 1.2rem;
+    // padding-bottom: 1.2rem;
     padding-left: 5rem;
     // ↑疑似要素で位置を0で調整すればよいため、paddingで調整を掛ける
     @include sp {
       padding-left: initial;
       // margin-top: 3rem;
-      padding-bottom: 1rem;
+      // padding-bottom: 1rem;
     }
     &::before {
       content: "";
