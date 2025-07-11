@@ -4,7 +4,13 @@
 .p-reason {
   padding: 6.5rem 0 7rem;
   @include sp {
+    // padding: 4.3rem 0 2.8rem 0;
     padding: 5rem 0 3.9rem 0;
+  }
+  &__sectionTitle {
+    @include sp {
+      padding-top: 0.7rem;
+    }
   }
   &__contents {
     margin: 2.8rem 0 0 0;

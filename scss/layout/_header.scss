@@ -67,9 +67,16 @@
     }
     h1 {
       font-weight: bold;
+      @include sp {
+        font-size: 1.3rem;
+      }
+
     }
     span {
       font-size: 2rem;
+      @include sp {
+        font-size: 1.3rem;
+      }
     }
   }
 
