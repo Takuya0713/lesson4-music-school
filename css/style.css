@@ -1368,7 +1368,7 @@ main {
 }
 
 .p-contact-form {
-  padding: 7rem 0 10rem 0;
+  padding: 6.4rem 0 10rem 0;
 }
 @media (max-width: 767px) {
   .p-contact-form {
@@ -1512,7 +1512,7 @@ main {
   }
 }
 .p-contact-form .form-btn {
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 .p-contact-form .form-btn-inner {
   width: 25rem;
@@ -1628,6 +1628,10 @@ main {
     text-align: left;
   }
 }
+.p-sended__message p {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+}
 @media (max-width: 767px) {
   .p-sended__message p {
     font-size: 1.6rem;
@@ -1668,7 +1672,7 @@ main {
 }
 
 .p-error {
-  padding: 6.7rem 0 9rem 0;
+  padding: 6rem 0 9rem 0;
 }
 @media (max-width: 767px) {
   .p-error {
@@ -1684,11 +1688,15 @@ main {
     text-align: left;
   }
 }
+.error__message p {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+  font-weight: 400;
+}
 @media (max-width: 767px) {
   .error__message p {
     font-size: 1.6rem;
     line-height: 1.875;
-    font-weight: 400;
   }
 }
 .error__return {
@@ -1723,6 +1731,10 @@ main {
   justify-content: center;
   width: 100%;
   height: 5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.32;
 }
 .error__return-inner a:hover {
   background-color: #ffffff;
@@ -2338,8 +2350,8 @@ main {
 
 .p-concept {
   position: relative;
-  padding: 6.4rem 0 0.8rem 0;
-  padding: 6.6rem 0 0.5rem 0;
+  padding-top: 6.6rem;
+  padding-bottom: 0.7rem;
 }
 @media (max-width: 767px) {
   .p-concept {
@@ -2707,7 +2719,7 @@ main {
 }
 
 .p-massage {
-  padding: 6.8rem 0 6rem;
+  padding: 6rem 0 6.2rem;
 }
 @media (max-width: 767px) {
   .p-massage {
@@ -2728,7 +2740,7 @@ main {
   }
 }
 .p-massage__contents {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
 }
 @media (max-width: 767px) {
   .p-massage__contents {

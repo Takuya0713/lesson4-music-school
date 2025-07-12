@@ -2,7 +2,7 @@
 @use "../../foundation/variables" as *;
 // 音楽業界初！・・・
 .p-massage {
-  padding: 6.8rem 0 6rem;
+  padding: 6rem 0 6.2rem;
   @include sp {
     // padding: 4.1rem 0 3.1rem;
     padding: 4.1rem 0 4.2rem;
@@ -19,7 +19,7 @@
     }
   }
   &__contents {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     @include sp {
       margin-top: 1.9rem;
     }

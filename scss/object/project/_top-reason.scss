@@ -56,7 +56,7 @@
     position: relative;
     padding-left: 5rem;
     // ↑疑似要素で位置を0で調整すればよいため、paddingで調整を掛ける
-
+    // padding-top: 0.5rem;
     &.first {
       padding-top: 0.5rem;
     }

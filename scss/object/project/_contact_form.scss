@@ -1,10 +1,11 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
 .p-contact-form {
-  padding: 7rem 0 10rem 0;
+  padding: 6.4rem 0 10rem 0;
   @include sp {
     padding: 4.7rem 0 10.8rem 0;
   }
+
   // 説明部分
   &__description {
     p {
@@ -144,7 +145,7 @@
     }
   }
   .form-btn {
-    margin-top: 5rem;
+    margin-top: 4rem;
     &-inner {
       width: 25rem;
       height: 5rem;
