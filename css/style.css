@@ -2795,7 +2795,7 @@ main {
   }
 }
 .p-reason__contents {
-  margin: 3.6rem 0 0 0;
+  padding-top: 3rem;
 }
 @media (max-width: 767px) {
   .p-reason__contents {
@@ -2813,7 +2813,6 @@ main {
 }
 .p-reason__item {
   display: flex;
-  row-gap: 0.7rem;
 }
 @media (max-width: 767px) {
   .p-reason__item {
@@ -2837,6 +2836,9 @@ main {
   position: relative;
   padding-left: 5rem;
 }
+.p-reason__title.first {
+  padding-top: 0.5rem;
+}
 @media (max-width: 767px) {
   .p-reason__title {
     padding-left: initial;
@@ -2850,6 +2852,7 @@ main {
   background-color: rgb(203, 0, 0);
   bottom: 0;
   right: 0;
+  top: 5.1rem;
 }
 .p-reason__title h3 {
   font-size: 2.2rem;
@@ -2863,7 +2866,7 @@ main {
 }
 .p-reason__comment {
   padding-left: 5rem;
-  margin-top: 3.7rem;
+  padding-top: 4.8rem;
 }
 @media (max-width: 767px) {
   .p-reason__comment {

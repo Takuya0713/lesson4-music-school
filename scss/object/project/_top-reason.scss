@@ -16,7 +16,7 @@
     }
   }
   &__contents {
-    margin: 3.6rem 0 0 0;
+    padding-top: 3rem;
     @include sp {
       margin: 4.3rem 0 0 0;
     }
@@ -31,7 +31,7 @@
 
   &__item {
     display: flex;
-    row-gap: 0.7rem;
+    // row-gap: 0.7rem;
 
     @include sp {
       display: initial;
@@ -53,16 +53,15 @@
   }
   // 文字に対するプロパティはh3タグに記載する
   &__title {
-    // border-bottom: 2px solid $color-red;
     position: relative;
-    // margin-top: 0.7rem;
-    // padding-bottom: 1.2rem;
     padding-left: 5rem;
     // ↑疑似要素で位置を0で調整すればよいため、paddingで調整を掛ける
+
+    &.first {
+      padding-top: 0.5rem;
+    }
     @include sp {
       padding-left: initial;
-      // margin-top: 3rem;
-      // padding-bottom: 1rem;
     }
     &::before {
       content: "";
@@ -73,6 +72,7 @@
       background-color: $color-red;
       bottom: 0;
       right: 0;
+      top: 5.1rem;
     }
     & h3 {
       font-size: 2.2rem;
@@ -85,7 +85,7 @@
   }
   &__comment {
     padding-left: 5rem;
-    margin-top: 3.7rem;
+    padding-top: 4.8rem;
     @include sp {
       padding-left: initial;
       margin-top: 1.7rem;
