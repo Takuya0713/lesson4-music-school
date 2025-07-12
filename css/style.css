@@ -769,6 +769,7 @@ main {
 
 .c-sectionTitle {
   font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
 }
@@ -1266,6 +1267,7 @@ main {
 .p-blog-list__items {
   margin-top: 4rem;
   display: grid;
+  grid-template-columns: repeat(1, 1fr);
   row-gap: 7rem;
 }
 @media (max-width: 767px) {
@@ -1338,6 +1340,9 @@ main {
   font-size: 1.5rem;
   line-height: 1.6666666667;
 }
+.p-blog-list__text-inner {
+  width: 100%;
+}
 .p-blog-list__text-inner h3 {
   font-size: 2rem;
   line-height: 1.25;
@@ -1349,12 +1354,16 @@ main {
   }
 }
 .p-blog-list__text-inner time {
+  display: inline-block;
   line-height: 1.7647058824;
   font-size: 1.7rem;
+  margin-top: 0.3rem;
 }
 .p-blog-list__text-inner p {
   line-height: 1.6666666667;
+  font-size: 1.8rem;
   width: 57rem;
+  margin-top: 1rem;
 }
 @media (max-width: 767px) {
   .p-blog-list__text-inner p {

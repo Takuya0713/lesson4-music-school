@@ -47,6 +47,7 @@
   &__items {
     margin-top: 4rem;
     display: grid;
+    grid-template-columns: repeat(1, 1fr);
     row-gap: 7rem;
     @include sp {
       row-gap: 4rem;
@@ -126,7 +127,7 @@
     }
   }
   &__text-inner {
-    // height: 18rem;
+    width: 100%;
     h3 {
       font-size: 2rem;
       line-height: calc(25 / 20);
@@ -136,15 +137,17 @@
       }
     }
     time {
-      // display: inline-block;
-      // margin: 0.3rem 0 1.1rem 0;
+      display: inline-block;
       line-height: calc(30 / 17);
       font-size: 1.7rem;
+      margin-top: 0.3rem;
     }
     p {
       // font-size: 1.8rem;
       line-height: calc(30 / 18);
+      font-size: 1.8rem;
       width: 57rem;
+      margin-top: 1rem;
       @include sp {
         width: initial;
         margin-top: 0.8rem;
