@@ -9,4 +9,7 @@ contact_form.html
 plan.html（横線部分）
 
 【次回着手】
-blog_details.html
+blog_details.html（画像のサイズ変更をblog_details.htmlに記載する）
+search.html
+result_list.html
+result_details.html
