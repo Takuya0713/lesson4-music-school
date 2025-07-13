@@ -67,7 +67,7 @@
   }
   &-plan {
     &__wrapper {
-      padding: 5rem 0 22rem 0;
+      padding: 5.3rem 0 22.5rem 0;
       @include sp {
         padding: 4rem 0 19rem 0;
       }
@@ -117,7 +117,7 @@
         display: flex;
         align-items: center;
         height: 8.5rem;
-        // justify-content: center;
+        // 料金・サービス内容部分
       }
       th {
         font-size: 2rem;
@@ -160,6 +160,7 @@
         }
       }
       td {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -170,6 +171,18 @@
         height: 100%;
         @include sp {
           width: 16.75rem;
+        }
+        // 項目ごとのタイトル
+        &.service-title {
+          text-align: left;
+          align-items: initial;
+          padding-left: 2rem;
+        }
+        // 料金
+        &.price {
+          font-size: 2.2rem;
+          line-height: calc(33 / 22);
+          font-weight: bold;
         }
         &:not(:first-of-type) {
           border-left: 0.1rem solid #000;
@@ -189,7 +202,19 @@
       }
     }
     &__option {
-      margin-top: 1.7rem;
+      margin-top: 2.6rem;
     }
   }
 }
+
+// サービスなし（横線）→after要素で作る
+// &.none {
+//   content: "";
+//   position: absolute;
+//   top: 50%;
+//   left: 0;
+//   width: 3rem;
+//   height: 0.1rem;
+//   background-color: #000;
+//   transform: translateY(-50%);
+// }

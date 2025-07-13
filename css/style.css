@@ -854,7 +854,7 @@ main {
 .p-blog-details-habit__sns {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 2.1rem;
+  margin-top: 3.1rem;
   -moz-column-gap: 0.4rem;
        column-gap: 0.4rem;
 }
@@ -916,8 +916,18 @@ main {
     margin-top: 2.7rem;
   }
 }
+.p-blog-details-habit__desc p {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+}
+@media (max-width: 767px) {
+  .p-blog-details-habit__desc p {
+    font-size: 1.6rem;
+    line-height: 1.875;
+  }
+}
 .p-blog-details-habit__section-title2 {
-  margin-top: 3.8rem;
+  margin-top: 3.3rem;
   font-size: 2rem;
   line-height: 2;
   font-weight: bold;
@@ -934,6 +944,16 @@ main {
 }
 .p-blog-details-habit__list {
   margin-top: 2.8rem;
+}
+.p-blog-details-habit__list li {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+}
+@media (max-width: 767px) {
+  .p-blog-details-habit__list li {
+    font-size: 1.6rem;
+    line-height: 1.875;
+  }
 }
 .p-blog-details-habit__under-line {
   border-bottom: 0.1rem solid #000;
@@ -987,7 +1007,7 @@ main {
   }
 }
 .p-blog-details-habit__text-link {
-  margin-top: 3.7rem;
+  margin-top: 2.4rem;
 }
 .p-blog-details-habit__text-link a {
   text-decoration: underline;
@@ -1000,7 +1020,7 @@ main {
   opacity: 1;
 }
 .p-blog-details-main__articles {
-  margin-top: 6rem;
+  margin-top: 5.7rem;
   -moz-column-gap: 8rem;
        column-gap: 8rem;
   display: flex;
@@ -1041,7 +1061,7 @@ main {
   flex: 1;
 }
 .p-blog-details .page-relation {
-  margin-top: 10rem;
+  margin-top: 9.2rem;
 }
 @media (max-width: 767px) {
   .p-blog-details .page-relation {
@@ -1882,7 +1902,7 @@ main {
   }
 }
 .p-price-plan__wrapper {
-  padding: 5rem 0 22rem 0;
+  padding: 5.3rem 0 22.5rem 0;
 }
 @media (max-width: 767px) {
   .p-price-plan__wrapper {
@@ -1980,6 +2000,7 @@ main {
   }
 }
 .p-price-plan__list td {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1992,6 +2013,16 @@ main {
   .p-price-plan__list td {
     width: 16.75rem;
   }
+}
+.p-price-plan__list td.service-title {
+  text-align: left;
+  align-items: initial;
+  padding-left: 2rem;
+}
+.p-price-plan__list td.price {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  font-weight: bold;
 }
 .p-price-plan__list td:not(:first-of-type) {
   border-left: 0.1rem solid #000;
@@ -2010,7 +2041,7 @@ main {
   text-align: center;
 }
 .p-price-plan__option {
-  margin-top: 1.7rem;
+  margin-top: 2.6rem;
 }
 
 .p-result-details {

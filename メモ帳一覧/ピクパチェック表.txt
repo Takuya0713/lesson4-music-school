@@ -1,11 +1,12 @@
 【1回目のチェック実施済みファイル】
-error_404
-contact_send
-blog_list
+error_404.html
+contact_send.html
+blog_list.html
 
 【再確認が必要】
 index.html
-contact_form
+contact_form.html
+plan.html（横線部分）
 
 【次回着手】
-plan
+blog_details.html
