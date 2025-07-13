@@ -43,7 +43,7 @@
 }
 
 .p-blog-list {
-  padding: 6.5rem 0 20rem 0;
+  padding: 6.5rem 0 21rem 0;
   &__items {
     margin-top: 4rem;
     display: grid;
@@ -65,6 +65,25 @@
     display: flex;
     justify-content: center;
     position: relative;
+    width: 26rem; // 画像の幅を固定
+    height: 18.4rem; // 画像の高さを固定
+    flex-shrink: 0; // ☆画像部分が縮まないようにする
+    @include sp {
+      width: 100%;
+      height: 20rem;
+    }
+
+    picture {
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // ☆画像のアスペクト比を保ちながら指定サイズに収める
+    }
+
     // 集客方法（attracting-customers）・SNS（sns）
     &.guitar {
       &::before {
@@ -83,6 +102,7 @@
         font-size: 1.5rem;
         line-height: calc(25 / 15);
         // font-weight: bold;
+        z-index: 1; // ラベルを画像の上に表示
       }
     }
     // 集客方法（attracting-customers）
@@ -103,6 +123,7 @@
         font-size: 1.5rem;
         line-height: calc(25 / 15);
         // font-weight: bold;
+        z-index: 1; // ラベルを画像の上に表示
       }
     }
     // SNS（sns）
@@ -123,6 +144,7 @@
         font-size: 1.5rem;
         line-height: calc(25 / 15);
         // font-weight: bold;
+        z-index: 1; // ラベルを画像の上に表示
       }
     }
   }
@@ -140,14 +162,13 @@
       display: inline-block;
       line-height: calc(30 / 17);
       font-size: 1.7rem;
-      margin-top: 0.3rem;
     }
     p {
       // font-size: 1.8rem;
       line-height: calc(30 / 18);
       font-size: 1.8rem;
       width: 57rem;
-      margin-top: 1rem;
+      margin-top: 0.7rem;
       @include sp {
         width: initial;
         margin-top: 0.8rem;

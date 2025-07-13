@@ -1,10 +1,11 @@
 【1回目のチェック実施済みファイル】
 error_404
 contact_send
+blog_list
 
 【再確認が必要】
 index.html
 contact_form
 
 【次回着手】
-blog_list
+plan

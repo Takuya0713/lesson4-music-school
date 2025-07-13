@@ -670,6 +670,7 @@ main {
   justify-content: center;
   align-items: center;
   border: 1px solid #000;
+  margin: -0.1rem -0.2rem 0rem 0rem;
 }
 .c-pager__list:hover {
   background-color: #000;
@@ -683,6 +684,9 @@ main {
   width: 100%;
   height: 5rem;
   width: 5rem;
+}
+.c-pager__ellipsis {
+  margin-inline: 1rem;
 }
 
 .c-paging {
@@ -1262,7 +1266,7 @@ main {
 }
 
 .p-blog-list {
-  padding: 6.5rem 0 20rem 0;
+  padding: 6.5rem 0 21rem 0;
 }
 .p-blog-list__items {
   margin-top: 4rem;
@@ -1291,6 +1295,25 @@ main {
   display: flex;
   justify-content: center;
   position: relative;
+  width: 26rem;
+  height: 18.4rem;
+  flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .p-blog-list__image {
+    width: 100%;
+    height: 20rem;
+  }
+}
+.p-blog-list__image picture {
+  width: 100%;
+  height: 100%;
+}
+.p-blog-list__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-blog-list__image.guitar::before {
   content: "ギター";
@@ -1307,6 +1330,7 @@ main {
   align-items: center;
   font-size: 1.5rem;
   line-height: 1.6666666667;
+  z-index: 1;
 }
 .p-blog-list__image.attracting-customers::before {
   content: "集客方法";
@@ -1323,6 +1347,7 @@ main {
   align-items: center;
   font-size: 1.5rem;
   line-height: 1.6666666667;
+  z-index: 1;
 }
 .p-blog-list__image.sns::before {
   content: "SNS";
@@ -1339,6 +1364,7 @@ main {
   align-items: center;
   font-size: 1.5rem;
   line-height: 1.6666666667;
+  z-index: 1;
 }
 .p-blog-list__text-inner {
   width: 100%;
@@ -1357,13 +1383,12 @@ main {
   display: inline-block;
   line-height: 1.7647058824;
   font-size: 1.7rem;
-  margin-top: 0.3rem;
 }
 .p-blog-list__text-inner p {
   line-height: 1.6666666667;
   font-size: 1.8rem;
   width: 57rem;
-  margin-top: 1rem;
+  margin-top: 0.7rem;
 }
 @media (max-width: 767px) {
   .p-blog-list__text-inner p {
@@ -1790,11 +1815,11 @@ main {
   }
 }
 
-.p-price__wrapper {
+.p-price {
   padding: 6rem 0 0 0;
 }
 .p-price__fee {
-  margin-top: 4rem;
+  margin-top: 4.4rem;
 }
 .p-price__items {
   -moz-column-gap: 3rem;
@@ -1839,7 +1864,7 @@ main {
   transform: translateX(-50%);
 }
 .p-price__text {
-  margin-top: 6rem;
+  margin-top: 4.5rem;
 }
 @media (max-width: 767px) {
   .p-price__text {
