@@ -26,10 +26,10 @@
     display: flex;
   }
   &__items {
-    margin-top: 4rem;
+    margin-top: 4.5rem;
     display: grid;
     row-gap: 7rem;
-    @include sp{
+    @include sp {
       row-gap: 4rem;
     }
   }
@@ -45,6 +45,17 @@
     display: flex;
     justify-content: center;
     position: relative;
+    picture {
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     // 集客方法（attracting-customers）・SNS（sns）
     &.guitar {
       &::before {
@@ -106,19 +117,20 @@
       }
     }
   }
-  
+
   &__label {
     width: 8rem;
     height: 3rem;
   }
   &__text-inner {
     // height: 18rem;
+    width: 57rem;
     h3 {
       font-size: 2rem;
       line-height: calc(25 / 20);
       font-weight: bold;
-      @include sp{
-        margin: 3rem 0 .6rem;
+      @include sp {
+        margin: 3rem 0 0.6rem;
       }
     }
     time {
@@ -131,11 +143,12 @@
       // font-size: 1.8rem;
       line-height: calc(30 / 18);
       width: 57rem;
-      @include sp{
+      margin-top: 1rem;
+      font-size: 1.8rem;
+      @include sp {
         width: initial;
-        margin-top: .8rem;
+        margin-top: 0.8rem;
       }
     }
   }
 }
-
