@@ -70,7 +70,6 @@
       @include sp {
         font-size: 1.3rem;
       }
-
     }
     span {
       font-size: 2rem;
@@ -254,6 +253,13 @@
           left: -3rem;
           top: 50%;
           transform: translateY(-50%);
+        }
+        a {
+          font-size: 1.6rem;
+          line-height: calc(30 / 16);
+          @include sp {
+            font-size: 1.2rem;
+          }
         }
       }
     }

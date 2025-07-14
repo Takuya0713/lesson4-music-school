@@ -255,7 +255,7 @@
     }
   }
   .page-relation {
-    margin-top: 9.2rem;
+    margin-top: 9.7rem;
     @include sp {
       margin-top: 7rem;
     }
@@ -286,6 +286,10 @@
       @include sp {
         column-gap: 2rem;
       }
+    }
+    &__image {
+      width: 32rem;
+      height: 14rem;
     }
     &__title-inner {
       p {
