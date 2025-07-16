@@ -2061,7 +2061,7 @@ main {
   padding: 7rem 0 15.7rem 0;
 }
 .p-result-details__title {
-  margin-top: 5rem;
+  margin-top: 3.5rem;
 }
 .p-result-details__title h2 {
   font-size: 2.5rem;
@@ -2073,7 +2073,7 @@ main {
   margin-top: 1.5rem;
 }
 .p-result-details__profile-inner {
-  margin-top: 5.7rem;
+  margin-top: 6.6rem;
   display: flex;
   -moz-column-gap: 4rem;
        column-gap: 4rem;
@@ -2108,7 +2108,7 @@ main {
   width: 44rem;
 }
 .page-relation {
-  margin-top: 10rem;
+  margin-top: 10.5rem;
   display: grid;
 }
 .page-relation__title {
@@ -2132,6 +2132,9 @@ main {
   display: flex;
   justify-content: center;
   position: relative;
+  width: 26rem;
+  height: 18.4rem;
+  flex-shrink: 0;
 }
 .page-relation__image::before {
   position: absolute;

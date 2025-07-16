@@ -2,6 +2,7 @@
 error_404.html
 contact_send.html
 blog_list.html
+search.html
 
 【再確認が必要】
 index.html
@@ -10,6 +11,5 @@ plan.html（横線部分）
 blog_details.html（画像のサイズ変更をblog_details.htmlに記載する）
 
 【次回着手】
-search.html
-result_list.html
-result_details.html
+result_list.html（画像を配置する）
+result_details.html（FV画像・ラベル・微調整）
