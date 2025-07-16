@@ -2296,6 +2296,9 @@ main {
   display: flex;
   justify-content: center;
   position: relative;
+  width: 26rem;
+  height: 18.4rem;
+  flex-shrink: 0;
 }
 .p-search__image picture {
   width: 100%;
