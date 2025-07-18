@@ -5,8 +5,14 @@
 .p-blog {
   // padding: 7rem 0 27.2rem 0;
   padding: 14.5rem 0 21.5rem 0;
+  @include sp {
+    padding: 5rem 0 19rem 0;
+  }
   &__title {
     padding-top: 2rem;
+    @include sp {
+      padding-top: initial;
+    }
   }
   &__items {
     display: grid;
@@ -27,7 +33,6 @@
   }
   a {
     font-size: 2rem;
-    font-weight: bold;
     line-height: calc(25 / 20);
   }
   @include sp {
@@ -35,6 +40,7 @@
   }
   &__comment {
     padding: 2rem 0 1.1rem 0;
+    font-weight: bold;
   }
   &__date {
     text-align: right;
@@ -45,8 +51,17 @@
   &__link {
     margin-top: 3.7rem;
     text-align: right;
+    @include sp {
+      text-align: center;
+    }
     span {
       border-bottom: 0.1rem solid #000;
+      a {
+        @include sp {
+          font-size: 1.8rem;
+          line-height: calc(30 / 18);
+        }
+      }
     }
   }
 }

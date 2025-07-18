@@ -5,19 +5,18 @@
   padding: 6.5rem 0 7rem;
   @include sp {
     // padding: 4.3rem 0 2.8rem 0;
-    padding: 4.9rem 0 3.9rem 0;
+    padding: 4.7rem 0 3.9rem 0;
     // padding: 3.7rem 0 3.9rem 0;
   }
   &__sectionTitle {
     @include sp {
-      // padding-top: 0.7rem;
-      background-color: #ff6;
       margin-top: -0.6rem;
     }
   }
   &__contents {
     padding-top: 3rem;
     @include sp {
+      padding-top: initial;
       margin: 4.3rem 0 0 0;
     }
   }
@@ -25,18 +24,16 @@
     display: grid;
     row-gap: 5rem;
     @include sp {
-      row-gap: 3.9rem;
+      row-gap: 4.3rem;
     }
   }
 
   &__item {
     display: flex;
-    // row-gap: 0.7rem;
-
     @include sp {
       display: initial;
       display: grid;
-      row-gap: 3rem;
+      row-gap: 2.6rem;
     }
   }
   // 画像幅を35remに指定する
@@ -57,11 +54,14 @@
     padding-left: 5rem;
     // ↑疑似要素で位置を0で調整すればよいため、paddingで調整を掛ける
     // padding-top: 0.5rem;
-    &.first {
-      padding-top: 0.5rem;
-    }
     @include sp {
       padding-left: initial;
+    }
+    &.first {
+      padding-top: 0.5rem;
+      @include sp {
+        padding-top: initial;
+      }
     }
     &::before {
       content: "";
@@ -73,6 +73,9 @@
       bottom: 0;
       right: 0;
       top: 5.1rem;
+      @include sp {
+        top: 7.1rem;
+      }
     }
     & h3 {
       font-size: 2.2rem;
@@ -88,7 +91,8 @@
     padding-top: 4.8rem;
     @include sp {
       padding-left: initial;
-      margin-top: 1.7rem;
+      padding-top: initial;
+      margin-top: 2.7rem;
     }
     & p {
       // margin: 3.7rem 0 0;

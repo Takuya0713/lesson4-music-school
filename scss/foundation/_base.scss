@@ -73,7 +73,8 @@ img {
   margin: 0 auto;
   height: 100%;
   @include sp {
-    width: 31.5rem;
+    // width: 31.5rem;
     // SPの時の横幅は315pxで固定。
+    width: 33.5rem;
   }
 }

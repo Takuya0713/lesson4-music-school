@@ -4,6 +4,7 @@
 // よくあるご質問
 .p-faq {
   position: relative;
+  padding-top: 5.5rem;
   // z-index: 5;
   // アコーディオンメニューの親要素
   &__title {
@@ -13,8 +14,11 @@
     }
   }
   &__accordion {
-    padding: 3.8rem 0 0 0;
+    margin-top: 3.8rem;
     border-bottom: 0.05rem solid #000000;
+    @include sp{
+      margin-top: 4.1rem;
+    }
     // 質問
     &-question {
       padding: 2rem 2.8rem 1.7rem 1.9rem;
