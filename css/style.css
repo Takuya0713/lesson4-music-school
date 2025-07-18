@@ -483,7 +483,7 @@ img {
 }
 .l-header__breadcrumb ol li a {
   font-size: 1.6rem;
-  line-height: 1.875;
+  line-height: 2.0625;
 }
 @media (max-width: 767px) {
   .l-header__breadcrumb ol li a {
@@ -733,8 +733,7 @@ main {
 }
 .c-paging .c-paging-item__content {
   display: flex;
-  align-items: center;
-  margin-top: 1rem;
+  margin-top: 1.6rem;
   -moz-column-gap: 1.6rem;
        column-gap: 1.6rem;
 }
@@ -753,6 +752,8 @@ main {
 }
 .c-paging .c-paging-item__text {
   flex: 1;
+  font-size: 1.6rem;
+  line-height: 1.5625;
 }
 .c-paging--blog {
   justify-content: space-between;
@@ -2060,6 +2061,26 @@ main {
 .p-result-details {
   padding: 7rem 0 15.7rem 0;
 }
+.p-result-details__image {
+  position: relative;
+}
+.p-result-details__image.hops::before {
+  content: "ホップス";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgb(203, 0, 0);
+  color: #ffffff;
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 1.6666666667;
+  font-weight: bold;
+}
 .p-result-details__title {
   margin-top: 3.5rem;
 }
@@ -2072,8 +2093,12 @@ main {
   display: inline-block;
   margin-top: 1.5rem;
 }
+.p-result-details__date time {
+  font-size: 1.7rem;
+  line-height: 1.7647058824;
+}
 .p-result-details__profile-inner {
-  margin-top: 6.6rem;
+  margin-top: 6rem;
   display: flex;
   -moz-column-gap: 4rem;
        column-gap: 4rem;
@@ -2107,8 +2132,13 @@ main {
 .p-result-details__profile-comment {
   width: 44rem;
 }
+.p-result-details__profile-comment p {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+}
+
 .page-relation {
-  margin-top: 10.5rem;
+  margin-top: 10.1rem;
   display: grid;
 }
 .page-relation__title {
@@ -2124,8 +2154,8 @@ main {
 }
 .page-relation__item {
   display: flex;
-  -moz-column-gap: 5rem;
-       column-gap: 5rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
   margin-top: 3rem;
 }
 .page-relation__image {
@@ -2176,48 +2206,11 @@ main {
 }
 
 .p-result-list {
-  padding: 7.5rem 0 21rem 0;
+  padding: 6.4rem 0 20.2rem 0;
 }
 @media (max-width: 767px) {
   .p-result-list {
     padding: 4.5rem 0 20rem 0;
-  }
-}
-.p-result-list__mv {
-  position: relative;
-}
-.p-result-list__mv__wrapper::after {
-  background-color: rgba(80, 80, 80, 0.502);
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-.p-result-list__title {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: grid;
-  place-content: center;
-}
-.p-result-list__titleInner {
-  text-align: center;
-  z-index: 99;
-  color: #ffffff;
-  font-size: 2.3148148148vw;
-  line-height: 2.4;
-  font-weight: bold;
-}
-@media (max-width: 767px) {
-  .p-result-list__titleInner {
-    width: 30rem;
-    font-size: 3rem;
-    line-height: 1.6666666667;
   }
 }
 .p-result-list__items {
@@ -2269,6 +2262,9 @@ main {
   content: "クラシック";
 }
 .p-result-list__title {
+  margin: 3rem 0 1rem 0;
+}
+.p-result-list__title.first {
   margin: 2rem 0 1rem 0;
 }
 .p-result-list__title p {
@@ -2278,6 +2274,10 @@ main {
 }
 .p-result-list__date {
   text-align: right;
+}
+.p-result-list__date time {
+  font-size: 1.8rem;
+  line-height: 1.7777777778;
 }
 
 .p-search {
@@ -2758,7 +2758,7 @@ main {
 }
 .footer__wrapper {
   background-color: rgb(203, 0, 0);
-  padding: 4.5rem 0 3rem 0;
+  padding: 4.3rem 0 3rem 0;
 }
 .footer__nav ul {
   display: flex;
@@ -2770,15 +2770,18 @@ main {
 .footer__nav ul li {
   color: #ffffff;
 }
-.footer__nav ul a {
+.footer__nav ul li a {
   cursor: pointer;
   position: relative;
   transition: 0.3s all;
+  font-size: 1.7rem;
+  line-height: 1.9411764706;
+  font-weight: bold;
 }
-.footer__nav ul a:hover::before {
+.footer__nav ul li a:hover::before {
   clip-path: inset(0 0 0 0);
 }
-.footer__nav ul a::before {
+.footer__nav ul li a::before {
   position: absolute;
   content: "";
   width: 100%;
