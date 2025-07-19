@@ -2,7 +2,7 @@
 @use "../../foundation/variables" as *;
 // スクールが選ばれる理由
 .p-reason {
-  padding: 6.5rem 0 7rem;
+  padding: 6.4rem 0 7rem;
   @include sp {
     // padding: 4.3rem 0 2.8rem 0;
     padding: 4.7rem 0 3.9rem 0;
@@ -12,9 +12,18 @@
     @include sp {
       margin-top: -0.6rem;
     }
+    h2 {
+      font-size: 3rem;
+      line-height: calc(50 / 30);
+      font-weight: bold;
+      @include sp {
+        font-size: 2.5rem;
+        line-height: calc(40 / 25);
+      }
+    }
   }
   &__contents {
-    padding-top: 3rem;
+    padding-top: 2.8rem;
     @include sp {
       padding-top: initial;
       margin: 4.3rem 0 0 0;
@@ -57,12 +66,6 @@
     @include sp {
       padding-left: initial;
     }
-    &.first {
-      padding-top: 0.5rem;
-      @include sp {
-        padding-top: initial;
-      }
-    }
     &::before {
       content: "";
       // width: calc(100% + 5rem);
@@ -72,14 +75,36 @@
       background-color: $color-red;
       bottom: 0;
       right: 0;
-      top: 5.1rem;
+      top: 4.1rem;
       @include sp {
         top: 7.1rem;
       }
     }
-    & h3 {
+    &.first {
+      padding-top: 0.5rem;
+      @include sp {
+        padding-top: initial;
+      }
+      &::before {
+        content: "";
+        // width: calc(100% + 5rem);
+        width: calc(100%);
+        height: 0.3rem;
+        position: absolute;
+        background-color: $color-red;
+        bottom: 0;
+        right: 0;
+        top: 5.1rem;
+        @include sp {
+          top: 7.1rem;
+        }
+      }
+    }
+
+    h3 {
       font-size: 2.2rem;
       font-weight: bold;
+      line-height: calc(33 / 22);
       @include sp {
         font-size: 2rem;
         line-height: calc(30 / 20);
@@ -88,7 +113,7 @@
   }
   &__comment {
     padding-left: 5rem;
-    padding-top: 4.8rem;
+    padding-top: 4.5rem;
     @include sp {
       padding-left: initial;
       padding-top: initial;

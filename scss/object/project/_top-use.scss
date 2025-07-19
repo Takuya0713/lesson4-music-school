@@ -6,6 +6,16 @@
   @include sp {
     padding: 4.6rem 0 0 0;
   }
+  &__title {
+    h2 {
+      font-size: 3rem;
+      line-height: calc(50 / 30);
+      @include sp {
+        font-size: 2.5rem;
+        line-height: calc(40 / 25);
+      }
+    }
+  }
   &__flow {
     position: relative;
     // row-gap適用するためにdisplay: gridを使用
@@ -14,17 +24,19 @@
     // margin: 5.3rem 0 0;
     // margin: 5rem 0 0 4.5rem;
     margin-top: 5rem;
+    padding-left: 5rem;
     @include sp {
-      margin: 3.4rem 0 0;
-      row-gap: 3.6rem;  
+      margin-top: 3.4rem;
+      row-gap: 3.6rem;
+      padding-left: inherit;
     }
     &-detail {
       display: flex;
       align-items: center;
       justify-content: center;
       @include sp {
+        display: initial;
         column-gap: 2rem;
-        align-items: initial;
       }
       &:first-of-type {
         .p-use__flow-detail__circle {
@@ -37,7 +49,7 @@
             background-color: rgb(203, 0, 0);
             transform-origin: left top;
             top: 10%;
-            left: 10%;
+            left: 51%;
             @include sp {
               top: 1rem;
               left: 52%;
@@ -72,9 +84,11 @@
       &-inner {
         display: flex;
         // width: 29rem;
+        margin-left: 5rem;
         @include sp {
-          display: initial;
-          flex: 1;
+          flex-direction: column;
+          margin-top: -2.5rem;
+          // flex: 1;
         }
       }
       &__title {
