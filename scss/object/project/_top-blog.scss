@@ -6,7 +6,7 @@
   // padding: 7rem 0 27.2rem 0;
   padding: 9.5rem 0 20.8rem 0;
   @include sp {
-    padding: 4.5rem 0 19rem 0;
+    padding: 4.5rem 0 19.5rem 0;
   }
   &__title {
     // padding-top: 2rem;
@@ -34,10 +34,47 @@
     }
   }
   &__image {
+    position: relative;
+    // 写真に重ねる文字の配色部分（全体）
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: rgb(203, 0, 0);
+      color: #ffffff;
+      width: 10rem;
+      height: 3rem;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      line-height: calc(25 / 15);
+      font-weight: bold;
+    }
+    // ホップ
+    &.sns {
+      &::before {
+        content: "SNS";
+      }
+    }
+    // ロック
+    &.attracting-customers {
+      &::before {
+        content: "集客方法";
+      }
+    }
+    // ギター
+    &.guitar {
+      &::before {
+        content: "ギター";
+      }
+    }
     img {
       height: 20rem;
       object-fit: cover;
     }
+    // 画像部分のラベル（ホップス）
   }
   a {
     font-size: 2rem;

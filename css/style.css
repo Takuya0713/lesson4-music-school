@@ -563,6 +563,8 @@ main {
 .c-button__wrapper .c-form-btn a {
   line-height: 1.65;
   font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
   width: 100%;
   height: 100%;
   display: flex;
@@ -2429,7 +2431,7 @@ main {
 }
 @media (max-width: 767px) {
   .p-blog {
-    padding: 4.5rem 0 19rem 0;
+    padding: 4.5rem 0 19.5rem 0;
   }
 }
 @media (max-width: 767px) {
@@ -2460,6 +2462,34 @@ main {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 4.3rem;
   }
+}
+.p-blog__image {
+  position: relative;
+}
+.p-blog__image::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgb(203, 0, 0);
+  color: #ffffff;
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 1.6666666667;
+  font-weight: bold;
+}
+.p-blog__image.sns::before {
+  content: "SNS";
+}
+.p-blog__image.attracting-customers::before {
+  content: "集客方法";
+}
+.p-blog__image.guitar::before {
+  content: "ギター";
 }
 .p-blog__image img {
   height: 20rem;

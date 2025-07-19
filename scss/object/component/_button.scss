@@ -68,6 +68,8 @@ main {
     a {
       line-height: calc(33 / 20);
       font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 0.3rem;
       // 親要素に対して、子要素の横幅100%（横幅）
       width: 100%;
       // 親要素に対して、子要素の横幅100%（縦幅）
