@@ -16,7 +16,7 @@
   &__accordion {
     margin-top: 3.8rem;
     border-bottom: 0.05rem solid #000000;
-    @include sp{
+    @include sp {
       margin-top: 4.1rem;
     }
     // 質問
@@ -29,6 +29,11 @@
       @include sp {
         padding: initial;
         height: 8.6rem;
+      }
+      &.last {
+        @include sp {
+          height: 5.6rem;
+        }
       }
       &:hover {
         cursor: pointer;
@@ -115,7 +120,7 @@
         padding: initial;
         & span {
           @include sp {
-            padding: 1.7rem 4.7rem 0.9rem 5.5rem;
+            padding: 1.6rem 4.7rem 0.9rem 5.5rem;
             font-size: 1.6rem;
             font-weight: bold;
           }
@@ -144,6 +149,12 @@
         padding-left: 4.1rem;
         font-size: 1.7rem;
         line-height: calc(30 / 17);
+        @include sp {
+          font-size: 1.6rem;
+          line-height: calc(30 / 16);
+          padding-left: 5.5rem;
+          text-align: left;
+        }
       }
     }
   }
