@@ -1,14 +1,27 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
 .p-price {
-  padding: 6rem 0 0 0;
-  // &__wrapper {
-  // }
+  padding: 6.7rem 0 0 0;
+  @include sp {
+    padding: 4.6rem 0 0 0;
+  }
+  &__title {
+    h2 {
+      font-size: 2.5rem;
+      line-height: calc(38 / 25);
+      @include sp {
+        font-size: 2.5rem;
+        line-height: calc(40 / 25);
+      }
+    }
+  }
+
   &__fee {
-    margin-top: 4.4rem;
+    margin-top: 3.9rem;
   }
   &__items {
     column-gap: 3rem;
+    // column-gap: 3.6rem;
     @include sp {
       flex-direction: column;
     }
@@ -16,11 +29,18 @@
   &__item {
     width: 21rem;
     height: 6rem;
+    p {
+      font-size: 2.2rem;
+      line-height: calc(33 / 22);
+      font-weight: bold;
+    }
   }
   &__icon {
     position: relative;
     width: 1.85rem;
     height: 1.85rem;
+    // margin-inline: 1rem;
+
     @include sp {
       margin-block: 2rem;
     }
@@ -66,15 +86,28 @@
     }
   }
   &-plan {
-    &__wrapper {
-      padding: 5.3rem 0 22.5rem 0;
-      @include sp {
-        padding: 4rem 0 19rem 0;
+    padding: 5.7rem 0 22.5rem 0;
+    @include sp {
+      padding: 3.8rem 0 19rem 0;
+    }
+    &__title {
+      h2 {
+        font-size: 2.5rem;
+        line-height: calc(38 / 25);
+        @include sp {
+          font-size: 2.5rem;
+          line-height: calc(40 / 25);
+        }
       }
     }
+
     // 料金表部分
     &__list {
-      margin-top: 5rem;
+      margin-top: 4.8rem;
+      @include sp {
+        margin-top: 3.6rem;
+        // margin-top: 2.3rem;
+      }
       @include sp {
         overflow-x: scroll;
       }
@@ -203,18 +236,13 @@
     }
     &__option {
       margin-top: 2.6rem;
+      @include sp {
+        margin-top: 1.7rem;
+      }
+      p {
+        font-size: 1.7rem;
+        line-height: calc(25 / 17);
+      }
     }
   }
 }
-
-// サービスなし（横線）→after要素で作る
-// &.none {
-//   content: "";
-//   position: absolute;
-//   top: 50%;
-//   left: 0;
-//   width: 3rem;
-//   height: 0.1rem;
-//   background-color: #000;
-//   transform: translateY(-50%);
-// }

@@ -42,7 +42,7 @@
       top: 0;
       background-color: rgb(203, 0, 0);
       color: #ffffff;
-      width: 10rem;
+      width: 8rem;
       height: 3rem;
       text-align: center;
       display: flex;
@@ -51,6 +51,9 @@
       font-size: 1.5rem;
       line-height: calc(25 / 15);
       font-weight: bold;
+      @include sp {
+        width: 9rem;
+      }
     }
     // ホップ
     &.sns {

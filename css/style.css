@@ -455,7 +455,7 @@ img {
 }
 @media (max-width: 767px) {
   .l-header__breadcrumb {
-    height: 3.5rem;
+    height: 3.6rem;
   }
 }
 .l-header__breadcrumb ol {
@@ -484,11 +484,6 @@ img {
 .l-header__breadcrumb ol li a {
   font-size: 1.6rem;
   line-height: 2.0625;
-}
-@media (max-width: 767px) {
-  .l-header__breadcrumb ol li a {
-    font-size: 1.2rem;
-  }
 }
 
 main {
@@ -1844,10 +1839,25 @@ main {
 }
 
 .p-price {
-  padding: 6rem 0 0 0;
+  padding: 6.7rem 0 0 0;
+}
+@media (max-width: 767px) {
+  .p-price {
+    padding: 4.6rem 0 0 0;
+  }
+}
+.p-price__title h2 {
+  font-size: 2.5rem;
+  line-height: 1.52;
+}
+@media (max-width: 767px) {
+  .p-price__title h2 {
+    font-size: 2.5rem;
+    line-height: 1.6;
+  }
 }
 .p-price__fee {
-  margin-top: 4.4rem;
+  margin-top: 3.9rem;
 }
 .p-price__items {
   -moz-column-gap: 3rem;
@@ -1861,6 +1871,11 @@ main {
 .p-price__item {
   width: 21rem;
   height: 6rem;
+}
+.p-price__item p {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  font-weight: bold;
 }
 .p-price__icon {
   position: relative;
@@ -1909,16 +1924,31 @@ main {
     line-height: 1.875;
   }
 }
-.p-price-plan__wrapper {
-  padding: 5.3rem 0 22.5rem 0;
+.p-price-plan {
+  padding: 5.7rem 0 22.5rem 0;
 }
 @media (max-width: 767px) {
-  .p-price-plan__wrapper {
-    padding: 4rem 0 19rem 0;
+  .p-price-plan {
+    padding: 3.8rem 0 19rem 0;
+  }
+}
+.p-price-plan__title h2 {
+  font-size: 2.5rem;
+  line-height: 1.52;
+}
+@media (max-width: 767px) {
+  .p-price-plan__title h2 {
+    font-size: 2.5rem;
+    line-height: 1.6;
   }
 }
 .p-price-plan__list {
-  margin-top: 5rem;
+  margin-top: 4.8rem;
+}
+@media (max-width: 767px) {
+  .p-price-plan__list {
+    margin-top: 3.6rem;
+  }
 }
 @media (max-width: 767px) {
   .p-price-plan__list {
@@ -2050,6 +2080,15 @@ main {
 }
 .p-price-plan__option {
   margin-top: 2.6rem;
+}
+@media (max-width: 767px) {
+  .p-price-plan__option {
+    margin-top: 1.7rem;
+  }
+}
+.p-price-plan__option p {
+  font-size: 1.7rem;
+  line-height: 1.4705882353;
 }
 
 .p-result-details {
@@ -2472,7 +2511,7 @@ main {
   top: 0;
   background-color: rgb(203, 0, 0);
   color: #ffffff;
-  width: 10rem;
+  width: 8rem;
   height: 3rem;
   text-align: center;
   display: flex;
@@ -2481,6 +2520,11 @@ main {
   font-size: 1.5rem;
   line-height: 1.6666666667;
   font-weight: bold;
+}
+@media (max-width: 767px) {
+  .p-blog__image::before {
+    width: 9rem;
+  }
 }
 .p-blog__image.sns::before {
   content: "SNS";

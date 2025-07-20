@@ -18,11 +18,9 @@
   }
   &__flow {
     position: relative;
-    // row-gap適用するためにdisplay: gridを使用
     display: grid;
+    // row-gap適用するためにdisplay: gridを使用
     row-gap: 5.8rem;
-    // margin: 5.3rem 0 0;
-    // margin: 5rem 0 0 4.5rem;
     margin-top: 5rem;
     padding-left: 5rem;
     @include sp {
