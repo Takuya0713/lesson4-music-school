@@ -92,7 +92,7 @@
   &-plan {
     padding: 5.7rem 0 22.5rem 0;
     @include sp {
-      padding: 3.8rem 0 19rem 0;
+      padding: 3.8rem 0 20rem 0;
     }
     &__title {
       h2 {
@@ -113,21 +113,31 @@
         margin-top: 2.3rem;
       }
       @include sp {
+        // 横軸方向にスクロールをつける
         overflow-x: scroll;
         /* スクロールバーの高さ設定 */
         &::-webkit-scrollbar {
           height: 2.5rem;
+          // background-clip: padding-box;
         }
 
+        &::-webkit-scrollbar-button {
+          width: 100%;
+        }
         /* スクロールバーの背景色デザイン */
         &::-webkit-scrollbar-track {
           background-color: rgba(80, 80, 80, 0.149);
+          // background-clip: padding-box;
         }
 
         /* スクロールバーのボタンデザイン */
         &::-webkit-scrollbar-thumb {
           background-color: rgba(80, 80, 80, 0.251);
-          // border-radius: 8px;
+          background-clip: padding-box;
+          border-left: 1.2rem solid transparent;
+          // 左から1.2rem分削除して調整（表示から削除する間隔）
+          border-right: 5.55rem solid transparent;
+          // 右から5.55rem分削除(335px-12px-223px=100px=10rem)
         }
       }
       table {
@@ -212,7 +222,7 @@
         }
       }
       td {
-        position: relative;
+        // position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -221,6 +231,7 @@
         flex-direction: column;
         // ↑縦並びにする
         height: 100%;
+
         @include sp {
           width: 16.75rem;
         }
@@ -250,6 +261,21 @@
         span {
           width: 100%;
           text-align: center;
+          // 横線「-」無しの意味合い
+          &.none {
+            position: relative;
+            &::before {
+              position: absolute;
+              content: "";
+              width: 3rem;
+              height: 0.1rem;
+              background-color: $color-black;
+              background-color: rgba(112, 112, 112, 1);
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
         }
       }
     }
