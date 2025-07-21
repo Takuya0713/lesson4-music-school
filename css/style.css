@@ -452,6 +452,7 @@ img {
 }
 .l-header__breadcrumb {
   background-color: rgb(232, 232, 232);
+  height: 5rem;
 }
 @media (max-width: 767px) {
   .l-header__breadcrumb {
@@ -461,17 +462,13 @@ img {
 .l-header__breadcrumb ol {
   display: flex;
   align-items: center;
-  height: 5rem;
+  height: 100%;
   -moz-column-gap: 5rem;
        column-gap: 5rem;
 }
-@media (max-width: 767px) {
-  .l-header__breadcrumb ol {
-    height: 3.5rem;
-  }
-}
 .l-header__breadcrumb ol li {
   position: relative;
+  height: 100%;
 }
 .l-header__breadcrumb ol li:not(:first-of-type)::before {
   content: ">";
@@ -482,8 +479,17 @@ img {
   transform: translateY(-50%);
 }
 .l-header__breadcrumb ol li a {
+  display: inline-block;
   font-size: 1.6rem;
   line-height: 2.0625;
+  height: 100%;
+}
+.l-header__breadcrumb ol li span {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 2.0625;
+  height: 100%;
 }
 
 main {
@@ -1826,18 +1832,10 @@ main {
   text-align: center;
   z-index: 99;
   color: #ffffff;
-  font-size: 2.3148148148vw;
+  font-size: 2.5rem;
   line-height: 2.4;
   font-weight: bold;
 }
-@media (max-width: 767px) {
-  .p-plan-mv__titleInner {
-    width: 30rem;
-    font-size: 3rem;
-    line-height: 1.6666666667;
-  }
-}
-
 .p-price {
   padding: 6.7rem 0 0 0;
 }
@@ -1857,7 +1855,12 @@ main {
   }
 }
 .p-price__fee {
-  margin-top: 3.9rem;
+  margin-top: 4.2rem;
+}
+@media (max-width: 767px) {
+  .p-price__fee {
+    margin-top: 3.9rem;
+  }
 }
 .p-price__items {
   -moz-column-gap: 3rem;
@@ -1953,10 +1956,22 @@ main {
 @media (max-width: 767px) {
   .p-price-plan__list {
     overflow-x: scroll;
+    /* スクロールバーの高さ設定 */
+    /* スクロールバーの背景色デザイン */
+    /* スクロールバーのボタンデザイン */
+  }
+  .p-price-plan__list::-webkit-scrollbar {
+    height: 2.5rem;
+  }
+  .p-price-plan__list::-webkit-scrollbar-track {
+    background-color: rgba(80, 80, 80, 0.149);
+  }
+  .p-price-plan__list::-webkit-scrollbar-thumb {
+    background-color: rgba(80, 80, 80, 0.251);
   }
 }
 .p-price-plan__list table {
-  margin-bottom: 1rem;
+  margin-bottom: 1.75rem;
 }
 .p-price-plan__list tbody tr:first-of-type {
   border-top: 0.1rem solid #000;

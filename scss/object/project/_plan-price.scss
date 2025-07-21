@@ -4,6 +4,7 @@
   padding: 6.7rem 0 0 0;
   @include sp {
     padding: 4.6rem 0 0 0;
+    // padding: 4.3rem 0 0 0;
   }
   &__title {
     h2 {
@@ -17,7 +18,10 @@
   }
 
   &__fee {
-    margin-top: 3.9rem;
+    margin-top: 4.2rem;
+    @include sp {
+      margin-top: 3.9rem;
+    }
   }
   &__items {
     column-gap: 3rem;
@@ -110,9 +114,24 @@
       }
       @include sp {
         overflow-x: scroll;
+        /* スクロールバーの高さ設定 */
+        &::-webkit-scrollbar {
+          height: 2.5rem;
+        }
+
+        /* スクロールバーの背景色デザイン */
+        &::-webkit-scrollbar-track {
+          background-color: rgba(80, 80, 80, 0.149);
+        }
+
+        /* スクロールバーのボタンデザイン */
+        &::-webkit-scrollbar-thumb {
+          background-color: rgba(80, 80, 80, 0.251);
+          // border-radius: 8px;
+        }
       }
       table {
-        margin-bottom: 1rem;
+        margin-bottom: 1.75rem;
       }
       tbody {
         tr {
