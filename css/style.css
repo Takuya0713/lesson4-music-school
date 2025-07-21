@@ -1932,7 +1932,7 @@ main {
 }
 @media (max-width: 767px) {
   .p-price-plan {
-    padding: 3.8rem 0 20rem 0;
+    padding: 3.8rem 0 18.8rem 0;
   }
 }
 .p-price-plan__title h2 {
@@ -1963,9 +1963,6 @@ main {
   .p-price-plan__list::-webkit-scrollbar {
     height: 2.5rem;
   }
-  .p-price-plan__list::-webkit-scrollbar-button {
-    width: 100%;
-  }
   .p-price-plan__list::-webkit-scrollbar-track {
     background-color: rgba(80, 80, 80, 0.149);
   }
@@ -1973,7 +1970,6 @@ main {
     background-color: rgba(80, 80, 80, 0.251);
     background-clip: padding-box;
     border-left: 1.2rem solid transparent;
-    border-right: 5.55rem solid transparent;
   }
 }
 .p-price-plan__list table {
@@ -2023,6 +2019,7 @@ main {
     line-height: 1.25;
     text-align: center;
     font-size: 1.6rem;
+    font-weight: bold;
   }
 }
 .p-price-plan__list th:first-of-type {
@@ -2044,6 +2041,9 @@ main {
 @media (max-width: 767px) {
   .p-price-plan__list th:nth-of-type(even) {
     height: 6.6rem;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.25;
   }
 }
 .p-price-plan__list th span {
@@ -2076,6 +2076,11 @@ main {
   text-align: left;
   align-items: initial;
   padding-left: 2rem;
+}
+@media (max-width: 767px) {
+  .p-price-plan__list td.service-title {
+    padding-left: 1rem;
+  }
 }
 .p-price-plan__list td.price {
   font-size: 2.2rem;
@@ -2117,12 +2122,18 @@ main {
 }
 @media (max-width: 767px) {
   .p-price-plan__option {
-    margin-top: 1.7rem;
+    margin-top: 1.4rem;
   }
 }
 .p-price-plan__option p {
   font-size: 1.7rem;
   line-height: 1.4705882353;
+}
+@media (max-width: 767px) {
+  .p-price-plan__option p {
+    font-size: 1.6rem;
+    line-height: 1.875;
+  }
 }
 
 .p-result-details {

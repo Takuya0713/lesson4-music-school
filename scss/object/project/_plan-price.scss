@@ -92,7 +92,7 @@
   &-plan {
     padding: 5.7rem 0 22.5rem 0;
     @include sp {
-      padding: 3.8rem 0 20rem 0;
+      padding: 3.8rem 0 18.8rem 0;
     }
     &__title {
       h2 {
@@ -122,7 +122,9 @@
         }
 
         &::-webkit-scrollbar-button {
-          width: 100%;
+          // width: 100%;
+          // border-right: 5.55rem solid transparent;
+
         }
         /* スクロールバーの背景色デザイン */
         &::-webkit-scrollbar-track {
@@ -136,8 +138,9 @@
           background-clip: padding-box;
           border-left: 1.2rem solid transparent;
           // 左から1.2rem分削除して調整（表示から削除する間隔）
-          border-right: 5.55rem solid transparent;
+          // border-right: 5.55rem solid transparent;
           // 右から5.55rem分削除(335px-12px-223px=100px=10rem)
+          // background-clip: padding-box;
         }
       }
       table {
@@ -190,6 +193,7 @@
           line-height: calc(25 / 20);
           text-align: center;
           font-size: 1.6rem;
+          font-weight: bold;
         }
         &:first-of-type {
           padding: initial;
@@ -208,6 +212,9 @@
           height: 5rem;
           @include sp {
             height: 6.6rem;
+            font-weight: bold;
+            font-size: 2rem;
+            line-height: calc(25 / 20);
           }
         }
         span {
@@ -231,7 +238,6 @@
         flex-direction: column;
         // ↑縦並びにする
         height: 100%;
-
         @include sp {
           width: 16.75rem;
         }
@@ -240,6 +246,9 @@
           text-align: left;
           align-items: initial;
           padding-left: 2rem;
+          @include sp {
+            padding-left: 1rem;
+          }
         }
         // 料金
         &.price {
@@ -261,7 +270,7 @@
         span {
           width: 100%;
           text-align: center;
-          // 横線「-」無しの意味合い
+          // 横線「-」無しを表示
           &.none {
             position: relative;
             &::before {
@@ -282,11 +291,15 @@
     &__option {
       margin-top: 2.6rem;
       @include sp {
-        margin-top: 1.7rem;
+        margin-top: 1.4rem;
       }
       p {
         font-size: 1.7rem;
         line-height: calc(25 / 17);
+        @include sp {
+          font-size: 1.6rem;
+          line-height: calc(30 / 16);
+        }
       }
     }
   }
