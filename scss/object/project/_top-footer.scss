@@ -14,6 +14,9 @@
       justify-content: center;
       align-items: center;
       column-gap: 3.3rem;
+      @include sp {
+        column-gap: 2.9rem;
+      }
       li {
         color: $color-white;
         a {
@@ -51,6 +54,10 @@
   &__copyright {
     p {
       text-align: center;
+      @include sp {
+        font-size: 1.5rem;
+        line-height: calc(20 / 15);
+      }
     }
   }
   &__logo {
@@ -61,6 +68,9 @@
   }
   &__sns-links {
     margin-top: 0.7rem;
+    @include sp {
+      margin-top: 1.6rem;
+    }
     ul {
       display: flex;
       justify-content: center;

@@ -124,12 +124,12 @@
         &::-webkit-scrollbar-button {
           // width: 100%;
           // border-right: 5.55rem solid transparent;
-
         }
         /* スクロールバーの背景色デザイン */
         &::-webkit-scrollbar-track {
           background-color: rgba(80, 80, 80, 0.149);
           // background-clip: padding-box;
+          width: 100%;
         }
 
         /* スクロールバーのボタンデザイン */
@@ -141,6 +141,7 @@
           // border-right: 5.55rem solid transparent;
           // 右から5.55rem分削除(335px-12px-223px=100px=10rem)
           // background-clip: padding-box;
+          width: 5rem;
         }
       }
       table {

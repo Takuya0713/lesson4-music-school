@@ -1965,11 +1965,13 @@ main {
   }
   .p-price-plan__list::-webkit-scrollbar-track {
     background-color: rgba(80, 80, 80, 0.149);
+    width: 100%;
   }
   .p-price-plan__list::-webkit-scrollbar-thumb {
     background-color: rgba(80, 80, 80, 0.251);
     background-clip: padding-box;
     border-left: 1.2rem solid transparent;
+    width: 5rem;
   }
 }
 .p-price-plan__list table {
@@ -2638,7 +2640,7 @@ main {
 }
 @media (max-width: 767px) {
   .p-concept {
-    padding: 4.2rem 0 0;
+    padding: 3.9rem 0 0;
   }
 }
 .p-concept__title h2 {
@@ -2664,7 +2666,7 @@ main {
   .p-concept__title p {
     margin-top: 0.7rem;
     margin-bottom: 2rem;
-    font-size: 1.7rem;
+    text-align: initial;
   }
 }
 @media (max-width: 767px) {
@@ -2949,6 +2951,12 @@ main {
   -moz-column-gap: 3.3rem;
        column-gap: 3.3rem;
 }
+@media (max-width: 767px) {
+  .footer__nav ul {
+    -moz-column-gap: 2.9rem;
+         column-gap: 2.9rem;
+  }
+}
 .footer__nav ul li {
   color: #ffffff;
 }
@@ -2978,6 +2986,12 @@ main {
 .footer__copyright p {
   text-align: center;
 }
+@media (max-width: 767px) {
+  .footer__copyright p {
+    font-size: 1.5rem;
+    line-height: 1.3333333333;
+  }
+}
 .footer__logo {
   display: flex;
   justify-content: center;
@@ -2986,6 +3000,11 @@ main {
 }
 .footer__sns-links {
   margin-top: 0.7rem;
+}
+@media (max-width: 767px) {
+  .footer__sns-links {
+    margin-top: 1.6rem;
+  }
 }
 .footer__sns-links ul {
   display: flex;
