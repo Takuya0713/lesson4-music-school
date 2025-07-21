@@ -35,15 +35,26 @@
     line-height: calc(60 / 25);
     font-weight: bold;
     @include sp {
-      width: 30rem;
-      font-size: 3rem;
-      line-height: calc(50 / 30);
+      font-size: 2.5rem;
+      line-height: calc(60 / 25);
     }
   }
 }
 
 .p-blog-list {
-  padding: 6.5rem 0 21rem 0;
+  padding: 6.5rem 0 21.2rem 0;
+  @include sp {
+    padding: 4.5rem 0 19.5rem 0;
+  }
+  &__title {
+    h2 {
+      font-size: 2.5rem;
+      line-height: calc(38 / 25);
+      @include sp {
+        line-height: calc(40 / 25);
+      }
+    }
+  }
   &__items {
     margin-top: 4rem;
     display: grid;
@@ -72,6 +83,26 @@
       width: 100%;
       height: 20rem;
     }
+    &::before {
+      background-color: rgb(203, 0, 0);
+      color: #ffffff;
+      width: 8rem;
+      height: 3rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      line-height: calc(25 / 15);
+      // font-weight: bold;
+      z-index: 1; // ラベルを画像の上に表示
+      @include sp {
+        width: 9rem;
+      }
+    }
 
     picture {
       width: 100%;
@@ -88,20 +119,6 @@
     &.guitar {
       &::before {
         content: "ギター";
-        background-color: rgb(203, 0, 0);
-        color: #ffffff;
-        width: 8rem;
-        height: 3rem;
-        position: absolute;
-        left: 0;
-        top: 0;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5rem;
-        line-height: calc(25 / 15);
-        // font-weight: bold;
         z-index: 1; // ラベルを画像の上に表示
       }
     }
@@ -109,20 +126,6 @@
     &.attracting-customers {
       &::before {
         content: "集客方法";
-        background-color: rgb(203, 0, 0);
-        color: #ffffff;
-        width: 8rem;
-        height: 3rem;
-        position: absolute;
-        left: 0;
-        top: 0;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5rem;
-        line-height: calc(25 / 15);
-        // font-weight: bold;
         z-index: 1; // ラベルを画像の上に表示
       }
     }
@@ -130,20 +133,6 @@
     &.sns {
       &::before {
         content: "SNS";
-        background-color: rgb(203, 0, 0);
-        color: #ffffff;
-        width: 8rem;
-        height: 3rem;
-        position: absolute;
-        left: 0;
-        top: 0;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5rem;
-        line-height: calc(25 / 15);
-        // font-weight: bold;
         z-index: 1; // ラベルを画像の上に表示
       }
     }
@@ -156,28 +145,45 @@
       font-weight: bold;
       @include sp {
         margin: 3rem 0 0.6rem;
+        margin: 3rem 0 1.4rem;
       }
     }
     time {
       display: inline-block;
       line-height: calc(30 / 17);
       font-size: 1.7rem;
+      @include sp {
+        text-align: right;
+      }
     }
     p {
-      // font-size: 1.8rem;
       line-height: calc(30 / 18);
       font-size: 1.8rem;
       width: 57rem;
       margin-top: 0.7rem;
       @include sp {
         width: initial;
-        margin-top: 0.8rem;
+        // margin-top: 0.8rem;
+        line-height: calc(30 / 16);
+        font-size: 1.6rem;
       }
     }
   }
+  &__date {
+    @include sp {
+      text-align: right;
+    }
+  }
+}
 
-  &__label {
-    width: 8rem;
-    height: 3rem;
+// ページボタンの位置修正
+.c-pager {
+  @include sp {
+    margin-top: initial;
+  }
+}
+.p-pager {
+  @include sp {
+    margin-top: 6.6rem;
   }
 }
