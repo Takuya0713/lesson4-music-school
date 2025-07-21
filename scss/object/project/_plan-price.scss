@@ -109,8 +109,8 @@
     &__list {
       margin-top: 4.8rem;
       @include sp {
-        margin-top: 3.6rem;
-        // margin-top: 2.3rem;
+        // margin-top: 3.6rem;
+        margin-top: 2.3rem;
       }
       @include sp {
         overflow-x: scroll;
