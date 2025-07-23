@@ -490,6 +490,13 @@ img {
   line-height: 2.0625;
   height: 100%;
 }
+.l-header__breadcrumb p {
+  background-color: rgb(232, 232, 232);
+  margin-top: -1rem;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2.0625;
+}
 
 main {
   position: relative;
@@ -908,6 +915,17 @@ main {
   line-height: 1.6;
   font-weight: bold;
 }
+@media (max-width: 767px) {
+  .p-blog-details-habit__title h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 767px) {
+  .p-blog-details-habit__date {
+    margin-top: 1rem;
+  }
+}
 .p-blog-details-habit__sns {
   display: flex;
   flex-wrap: wrap;
@@ -918,6 +936,7 @@ main {
 @media (max-width: 767px) {
   .p-blog-details-habit__sns {
     flex-wrap: nowrap;
+    margin-top: 2.1rem;
   }
 }
 .p-blog-details-habit__sns-link {
