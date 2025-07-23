@@ -2,6 +2,49 @@
 @use "../../foundation/variables" as *;
 // パンくずの矢印部分
 .p-header__breadcrumb {
+  background-color: rgb(232, 232, 232);
+  height: 5rem;
+  @include sp {
+    height: 3.6rem;
+    // height: 100%;
+  }
+  ol {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    column-gap: 5rem;
+    li {
+      position: relative;
+      // height: 100%;
+      &:not(:first-of-type)::before {
+        content: ">";
+        color: $color-black;
+        position: absolute;
+        left: -3rem;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      a {
+        display: inline-block;
+        font-size: 1.6rem;
+        line-height: calc(33 / 16);
+        height: 100%;
+      }
+      span {
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+        line-height: calc(33 / 16);
+        height: 100%;
+      }
+    }
+  }
+
+  @include sp {
+    // height: 3.6rem;
+    height: 100%;
+  }
+
   ol {
     position: relative;
     display: flex;
@@ -12,28 +55,60 @@
       height: 3.5rem;
     }
   }
-  li:first-of-type {
-    // 矢印「>」部分
-    &::before {
-      content: ">";
-      position: absolute;
-      left: 8%;
-      @include sp {
-        left: 20%;
+  li {
+    &:first-of-type {
+      // 矢印「>」部分
+      &::before {
+        content: ">";
+        position: absolute;
+        left: 8%;
+        @include sp {
+          left: 20%;
+        }
+      }
+    }
+    &:nth-last-of-type(2) {
+      // 矢印「>」部分
+      &::before {
+        content: ">";
+        position: absolute;
+        left: 19%;
+        @include sp {
+          left: 52%;
+        }
+      }
+    }
+    a {
+      .break {
+        display: inline;
+        @include sp {
+          display: block;
+        }
       }
     }
   }
-  li:nth-last-of-type(2) {
-    // 矢印「>」部分
-    &::before {
-      content: ">";
-      position: absolute;
-      left: 19%;
-      @include sp {
-        left: 52%;
-      }
-    }
-  }
+  // li:first-of-type {
+  //   // 矢印「>」部分
+  //   &::before {
+  //     content: ">";
+  //     position: absolute;
+  //     left: 8%;
+  //     @include sp {
+  //       left: 20%;
+  //     }
+  //   }
+  // }
+  // li:nth-last-of-type(2) {
+  //   // 矢印「>」部分
+  //   &::before {
+  //     content: ">";
+  //     position: absolute;
+  //     left: 19%;
+  //     @include sp {
+  //       left: 52%;
+  //     }
+  //   }
+  // }
 }
 
 .p-blog-details {
@@ -89,7 +164,7 @@
           justify-content: center;
           column-gap: 0.7rem;
           height: 4rem;
-          padding: 0.8rem 1rem;
+          // padding: 0.8rem 1rem;
           span {
             font-size: 1.2rem;
             line-height: 1.4;
