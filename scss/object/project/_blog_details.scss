@@ -133,7 +133,7 @@
     &__title {
       margin-top: 4.5rem;
       @include sp {
-        margin-top: 3rem;
+        margin-top: 2.6rem;
       }
       & h1 {
         font-size: 2.5rem;
@@ -148,6 +148,12 @@
     &__date {
       @include sp {
         margin-top: 1rem;
+        time {
+          @include sp {
+            font-size: 1.7rem;
+            line-height: calc(30 / 17);
+          }
+        }
       }
     }
     // ulタグ部分
@@ -215,12 +221,36 @@
           line-height: calc(30 / 16);
         }
       }
+      .sp-none {
+        @include sp {
+          display: none;
+        }
+      }
+      &.pc-none {
+        display: none;
+        @include sp {
+          display: initial;
+        }
+        p {
+          @include sp {
+            margin-top: 2rem;
+          }
+        }
+      }
     }
     &__section-title2 {
       margin-top: 3.3rem;
-      font-size: 2rem;
-      line-height: calc(40 / 20);
-      font-weight: bold;
+      @include sp {
+        margin-top: 3.5rem;
+      }
+      h2 {
+        font-size: 2rem;
+        line-height: calc(40 / 20);
+        font-weight: bold;
+        @include sp {
+          line-height: calc(30 / 20);
+        }
+      }
     }
     &-img__half {
       width: 50%;

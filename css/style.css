@@ -912,7 +912,7 @@ main {
 }
 @media (max-width: 767px) {
   .p-blog-details-habit__title {
-    margin-top: 3rem;
+    margin-top: 2.6rem;
   }
 }
 .p-blog-details-habit__title h1 {
@@ -929,6 +929,12 @@ main {
 @media (max-width: 767px) {
   .p-blog-details-habit__date {
     margin-top: 1rem;
+  }
+}
+@media (max-width: 767px) and (max-width: 767px) {
+  .p-blog-details-habit__date time {
+    font-size: 1.7rem;
+    line-height: 1.7647058824;
   }
 }
 .p-blog-details-habit__sns {
@@ -1006,11 +1012,41 @@ main {
     line-height: 1.875;
   }
 }
+@media (max-width: 767px) {
+  .p-blog-details-habit__desc .sp-none {
+    display: none;
+  }
+}
+.p-blog-details-habit__desc.pc-none {
+  display: none;
+}
+@media (max-width: 767px) {
+  .p-blog-details-habit__desc.pc-none {
+    display: initial;
+  }
+}
+@media (max-width: 767px) {
+  .p-blog-details-habit__desc.pc-none p {
+    margin-top: 2rem;
+  }
+}
 .p-blog-details-habit__section-title2 {
   margin-top: 3.3rem;
+}
+@media (max-width: 767px) {
+  .p-blog-details-habit__section-title2 {
+    margin-top: 3.5rem;
+  }
+}
+.p-blog-details-habit__section-title2 h2 {
   font-size: 2rem;
   line-height: 2;
   font-weight: bold;
+}
+@media (max-width: 767px) {
+  .p-blog-details-habit__section-title2 h2 {
+    line-height: 1.5;
+  }
 }
 .p-blog-details-habit-img__half {
   width: 50%;
