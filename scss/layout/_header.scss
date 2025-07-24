@@ -243,9 +243,14 @@
       align-items: center;
       height: 100%;
       column-gap: 5rem;
+      flex-wrap: wrap; //改行を許可
       li {
         position: relative;
         // height: 100%;
+        &:last {
+          flex-basis: 100%; /* 改行して次の行へ */
+          margin-top: 4px;
+        }
         &:not(:first-of-type)::before {
           content: ">";
           color: $color-black;

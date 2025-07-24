@@ -343,6 +343,8 @@
     margin-top: 9.7rem;
     @include sp {
       margin-top: 7rem;
+      display: flex;
+      flex-direction: column;
     }
     &__title {
       display: flex;
@@ -355,6 +357,10 @@
         width: 100%;
         @include sp {
           padding-inline-start: initial;
+        }
+        &__inner {
+          display: flex;
+          flex-direction: column;
         }
       }
       h4 {
@@ -370,6 +376,7 @@
       column-gap: 3rem;
       @include sp {
         column-gap: 2rem;
+        flex-direction: column;
       }
     }
     &__image {
