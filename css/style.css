@@ -456,7 +456,7 @@ img {
 }
 @media (max-width: 767px) {
   .l-header__breadcrumb {
-    height: 3.6rem;
+    height: 100%;
   }
 }
 .l-header__breadcrumb ol {
@@ -806,7 +806,7 @@ main {
 }
 @media (max-width: 767px) {
   .p-header__breadcrumb {
-    height: 3.6rem;
+    height: 100%;
   }
 }
 .p-header__breadcrumb ol {
