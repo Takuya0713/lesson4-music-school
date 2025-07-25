@@ -146,21 +146,20 @@
       }
     }
     &__date {
+      margin-top: 0.5rem;
       @include sp {
         margin-top: 1rem;
-        time {
-          @include sp {
-            font-size: 1.7rem;
-            line-height: calc(30 / 17);
-          }
-        }
+      }
+      time {
+        font-size: 1.7rem;
+        line-height: calc(30 / 17);
       }
     }
     // ulタグ部分
     &__sns {
       display: flex;
       flex-wrap: wrap;
-      margin-top: 3.1rem;
+      margin-top: 2.1rem;
       column-gap: 0.4rem;
       @include sp {
         flex-wrap: nowrap;
@@ -209,7 +208,10 @@
       }
     }
     &__desc {
-      margin-top: 4.8rem;
+      margin-top: 1.5rem;
+      &.first {
+        margin-top: 4.8rem;
+      }
       @include sp {
         margin-top: 2.7rem;
       }
@@ -254,7 +256,7 @@
     }
     &-img__half {
       width: 50%;
-      margin-top: 12.2rem;
+      margin-top: 1.7rem;
       @include sp {
         width: 100%;
         margin-top: 3.9rem;
@@ -279,7 +281,9 @@
       }
     }
     &__section-title3 {
-      margin-top: 4.35rem;
+      margin-top: 4.25rem;
+      padding-left: 0.95rem;
+      position: relative;
       @include sp {
         margin-top: 5rem;
       }
@@ -287,6 +291,14 @@
         font-size: 2rem;
         line-height: calc(40 / 20);
         font-weight: bold;
+        &::before {
+          position: absolute;
+          content: "";
+          border: 0.3rem solid $color-black;
+          height: 2rem;
+          top: 20%;
+          left: 0;
+        }
       }
     }
     &__note-comment {
@@ -315,21 +327,36 @@
       }
     }
     &__text-link {
-      margin-top: 2.4rem;
+      margin-top: 2.8rem;
+      position: relative;
       a {
-        text-decoration: underline;
         font-size: 2rem;
         line-height: calc(33 / 20);
         font-weight: bold;
+        text-decoration: underline;
+        // position: absolute;
+        // content: "";
+        // border-bottom: .1rem solid rgb(0, 0, 0);
+        // height: 3rem;
+        // top: 20%;
+        // left: 0;
         &:hover {
           color: $color-red;
           opacity: 1;
         }
+        // &::before {
+        //   position: absolute;
+        //   content: "";
+        //   border-bottom: 0.1rem solid rgb(0, 0, 0);
+        //   height: 3rem;
+        //   top: 20%;
+        //   left: 0;
+        // }
       }
     }
   }
   &-main__articles {
-    margin-top: 5.7rem;
+    margin-top: 5.5rem;
     column-gap: 8rem;
     display: flex;
     align-items: center;
@@ -370,7 +397,7 @@
     }
   }
   .page-relation {
-    margin-top: 9.7rem;
+    margin-top: 9.2rem;
     @include sp {
       margin-top: 7rem;
       display: flex;
