@@ -118,7 +118,7 @@
     display: initial;
   }
   &__article {
-    padding: 7rem 0 18.5rem 0;
+    padding: 7rem 0 18.8rem 0;
     width: 60rem;
     @include sp {
       width: initial;
@@ -127,6 +127,51 @@
       padding-top: 5rem;
     }
   }
+  // FV画像部分
+  &__mv-image {
+    position: relative;
+    @include sp {
+      width: 9rem;
+    }
+    &.guitar {
+      &::before {
+        content: "ギター";
+        z-index: 1; // ラベルを画像の上に表示
+      }
+    }
+
+    &::before {
+      background-color: rgb(203, 0, 0);
+      color: #ffffff;
+      width: 8rem;
+      height: 3rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: calc(25 / 15);
+      // font-weight: bold;
+      z-index: 1; // ラベルを画像の上に表示
+      // 集客方法（attracting-customers）・SNS（sns）
+    }
+
+    picture {
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // ☆画像のアスペクト比を保ちながら指定サイズに収める
+    }
+  }
+
   // SNSリンクセクション部分
   &-habit {
     // 件名部分
@@ -396,6 +441,7 @@
       flex: 1;
     }
   }
+  // 関連記事の子要素部分（blog_details部分のみ変更を加える部分）
   .page-relation {
     margin-top: 9.2rem;
     @include sp {
@@ -439,6 +485,8 @@
     &__image {
       width: 32rem;
       height: 14rem;
+      justify-content: initial;
+      flex-shrink: initial;
     }
     &__title-inner {
       p {
@@ -451,11 +499,17 @@
           line-height: calc(28 / 17);
           margin-bottom: 0.4rem;
         }
-        .sp-none {
-          @include sp {
-            display: none;
-          }
-        }
+        // .sp-none {
+        //   @include sp {
+        //     display: none;
+        //   }
+        // }
+      }
+      time {
+        display: inline-block;
+        padding-left: 0.4rem;
+        font-size: 1.7rem;
+        line-height: calc(30 / 17);
       }
     }
   }

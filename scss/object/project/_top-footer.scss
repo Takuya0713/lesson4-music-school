@@ -6,7 +6,7 @@
   &__wrapper {
     background-color: $color-red;
     // height: 27.4rem;
-    padding: 4.3rem 0 3rem 0;
+    padding: 4.3rem 0 5rem 0;
   }
   &__nav {
     ul {
@@ -51,23 +51,25 @@
       }
     }
   }
-  &__copyright {
-    p {
-      text-align: center;
-      @include sp {
-        font-size: 1.5rem;
-        line-height: calc(20 / 15);
-      }
-    }
-  }
   &__logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2.5rem 0 2.3rem 0;
+    margin: 2.5rem 0 1.9rem 0;
   }
+  &__copyright {
+    text-align: center;
+    p {
+      font-size: 1.5rem;
+      line-height: calc(33 / 15);
+
+      @include sp {
+        line-height: calc(20 / 15);
+      }
+    }
+  }
+
   &__sns-links {
-    margin-top: 0.7rem;
     @include sp {
       margin-top: 1.6rem;
     }

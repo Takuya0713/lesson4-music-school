@@ -83,7 +83,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 3.3rem;
   }
 
   // ナビゲーション部分のお問い合わせボタン
@@ -121,7 +120,6 @@
     display: flex;
     align-items: center;
     column-gap: 3.3rem;
-    column-gap: 4.1rem;
     margin-left: auto;
     @include sp {
       position: fixed;
@@ -152,6 +150,8 @@
         cursor: pointer;
         position: relative;
         transition: 0.3s all;
+        font-size: 1.7rem;
+        line-height: calc(33 / 17);
         font-weight: bold;
         // ホバーした時に全部表示する
         &:hover::before {
