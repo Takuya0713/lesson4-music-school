@@ -455,6 +455,7 @@ img {
 @media (max-width: 767px) {
   .l-header__breadcrumb {
     height: 5.9rem;
+    height: 100%;
   }
 }
 .l-header__breadcrumb ol {
@@ -1626,7 +1627,7 @@ main {
 }
 @media (max-width: 767px) {
   .p-contact-form {
-    padding: 4.7rem 0 10.8rem 0;
+    padding: 4.7rem 0 11rem 0;
   }
 }
 .p-contact-form__description p {
@@ -1649,7 +1650,7 @@ main {
 @media (max-width: 767px) {
   .p-contact-form form {
     margin-top: 3.2rem;
-    row-gap: 1.4rem;
+    row-gap: 0.8rem;
   }
 }
 .p-contact-form dl {
@@ -1682,16 +1683,25 @@ main {
   line-height: 1.65;
   height: 4rem;
 }
+@media (max-width: 767px) {
+  .p-contact-form dt label {
+    font-size: 1.6rem;
+    line-height: 2.0625;
+  }
+}
 .p-contact-form dd {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  row-gap: 2rem;
 }
-@media (max-width: 767px) {
-  .p-contact-form dd {
-    row-gap: 1rem;
-  }
+.p-contact-form dd.check-box__wrapper {
+  display: flex;
+  margin-top: 1rem;
+}
+.p-contact-form dd label {
+  margin-top: -1.1rem;
 }
 .p-contact-form dd .form-control {
   background-color: #ffffff;
@@ -1722,6 +1732,13 @@ main {
   line-height: 1.6666666667;
   cursor: pointer;
   padding-left: 4rem;
+}
+@media (max-width: 767px) {
+  .p-contact-form .check-box__wrapper input[type=checkbox] + span {
+    padding-left: 3rem;
+    font-size: 1.6rem;
+    line-height: 1.875;
+  }
 }
 .p-contact-form .check-box__wrapper input[type=checkbox] + span::before {
   content: "";
@@ -1763,10 +1780,17 @@ main {
 @media (max-width: 767px) {
   .p-contact-form textarea {
     width: 100%;
+    height: 19rem;
   }
 }
 .p-contact-form .form-btn {
-  margin-top: 4rem;
+  margin-top: 1.4rem;
+}
+@media (max-width: 767px) {
+  .p-contact-form .form-btn {
+    margin-top: 4.1rem;
+    width: 100%;
+  }
 }
 .p-contact-form .form-btn-inner {
   width: 25rem;
@@ -1774,6 +1798,11 @@ main {
   font-size: 2.5rem;
   line-height: 1.32;
   font-weight: bold;
+}
+@media (max-width: 767px) {
+  .p-contact-form .form-btn-inner {
+    width: 100%;
+  }
 }
 .p-contact-form .form-btn button {
   width: 100%;
@@ -1880,6 +1909,7 @@ main {
 @media (max-width: 767px) {
   .p-sended__message {
     text-align: left;
+    margin-bottom: 4.2rem;
   }
 }
 .p-sended__message p {
@@ -1930,7 +1960,7 @@ main {
 }
 @media (max-width: 767px) {
   .p-error {
-    padding: 4.7rem 0 5rem 0;
+    padding: 4.1rem 0 5rem 0;
   }
 }
 
@@ -2676,6 +2706,11 @@ main {
 .p-search__text-inner {
   width: 57rem;
 }
+@media (max-width: 767px) {
+  .p-search__text-inner {
+    width: 100%;
+  }
+}
 .p-search__text-inner h3 {
   font-size: 2rem;
   line-height: 1.25;
@@ -3194,7 +3229,7 @@ main {
 }
 @media (max-width: 767px) {
   .footer__sns-links {
-    margin-top: 1.6rem;
+    margin-top: 2rem;
   }
 }
 .footer__sns-links ul {

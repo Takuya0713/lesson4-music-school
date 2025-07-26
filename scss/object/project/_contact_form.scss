@@ -3,7 +3,7 @@
 .p-contact-form {
   padding: 6.4rem 0 10rem 0;
   @include sp {
-    padding: 4.7rem 0 10.8rem 0;
+    padding: 4.7rem 0 11rem 0;
   }
 
   // 説明部分
@@ -26,7 +26,7 @@
     margin-top: 7rem;
     @include sp {
       margin-top: 3.2rem;
-      row-gap: 1.4rem;
+      row-gap: 0.8rem;
     }
   }
   dl {
@@ -54,6 +54,10 @@
       vertical-align: top;
       line-height: 1.65;
       height: 4rem;
+      @include sp {
+        font-size: 1.6rem;
+        line-height: calc(33 / 16);
+      }
     }
   }
   dd {
@@ -61,8 +65,15 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    @include sp {
-      row-gap: 1rem;
+    row-gap: 2rem;
+
+    // チェックボックス（目的部分）親要素
+    &.check-box__wrapper {
+      display: flex;
+      margin-top: 1rem;
+    }
+    label {
+      margin-top: -1.1rem;
     }
     // 入力フォーム部分
     .form-control {
@@ -94,6 +105,11 @@
         line-height: calc(30 / 18);
         cursor: pointer;
         padding-left: 4rem;
+        @include sp {
+          padding-left: 3rem;
+          font-size: 1.6rem;
+          line-height: calc(30 / 16);
+        }
         // チェックボックス部分
         &::before {
           content: "";
@@ -142,16 +158,24 @@
     color: rgb(178, 178, 178);
     @include sp {
       width: 100%;
+      height: 19rem;
     }
   }
   .form-btn {
-    margin-top: 4rem;
+    margin-top: 1.4rem;
+    @include sp {
+      margin-top: 4.1rem;
+      width: 100%;
+    }
     &-inner {
       width: 25rem;
       height: 5rem;
       font-size: 2.5rem;
       line-height: calc(33 / 25);
       font-weight: bold;
+      @include sp {
+        width: 100%;
+      }
     }
     button {
       width: 100%;

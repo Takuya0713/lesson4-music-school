@@ -128,6 +128,9 @@
   &__text-inner {
     // height: 18rem;
     width: 57rem;
+    @include sp {
+      width: 100%;
+    }
     h3 {
       font-size: 2rem;
       line-height: calc(25 / 20);
