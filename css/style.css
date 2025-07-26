@@ -2584,6 +2584,11 @@ main {
 .p-search {
   padding: 6.6rem 0 21rem 0;
 }
+@media (max-width: 767px) {
+  .p-search {
+    padding: 3.6rem 0 19.5rem 0;
+  }
+}
 .p-search__result {
   display: flex;
 }
@@ -2591,7 +2596,6 @@ main {
   .p-search__result {
     -moz-column-gap: 8rem;
          column-gap: 8rem;
-    margin-top: 3.6rem;
   }
 }
 .p-search__result span {
