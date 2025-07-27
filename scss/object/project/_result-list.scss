@@ -6,6 +6,10 @@
   @include sp {
     padding: 4.5rem 0 20rem 0;
   }
+  h2 {
+    font-size: 2.5rem;
+    line-height: calc(38 / 25);
+  }
   &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -37,10 +41,10 @@
       line-height: calc(25 / 15);
       font-weight: bold;
     }
-    // ホップ
+    // ホップス
     &.hops {
       &::before {
-        content: "ホップ";
+        content: "ホップス";
       }
     }
     // ロック

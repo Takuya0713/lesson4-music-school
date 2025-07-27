@@ -1,9 +1,10 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
+// 0728修正の続きを行う
 .p-search {
   padding: 6.6rem 0 21rem 0;
   @include sp {
-    padding: 3.6rem 0 19.5rem 0;
+    padding: 3.6rem 0 19.7rem 0;
   }
   &__result {
     display: flex;
@@ -20,7 +21,6 @@
   &__inner {
     display: flex;
     @include sp {
-      // margin-top: 4rem;
     }
   }
   &__items {
@@ -34,7 +34,7 @@
     display: grid;
     row-gap: 7rem;
     @include sp {
-      row-gap: 4rem;
+      row-gap: 3.9rem;
     }
   }
   &__item {
@@ -67,23 +67,26 @@
       object-fit: cover;
     }
 
+    &::before {
+      background-color: rgb(203, 0, 0);
+      color: #ffffff;
+      width: 9rem;
+      height: 3rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      line-height: calc(25 / 15);
+      font-weight: bold;
+    }
     // 集客方法（attracting-customers）・SNS（sns）
     &.guitar {
       &::before {
         content: "ギター";
-        background-color: rgb(203, 0, 0);
-        color: #ffffff;
-        width: 8rem;
-        height: 3rem;
-        position: absolute;
-        left: 0;
-        top: 0;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5rem;
-        line-height: calc(25 / 15);
         // font-weight: bold;
       }
     }
@@ -91,40 +94,12 @@
     &.attracting-customers {
       &::before {
         content: "集客方法";
-        background-color: rgb(203, 0, 0);
-        color: #ffffff;
-        width: 8rem;
-        height: 3rem;
-        position: absolute;
-        left: 0;
-        top: 0;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5rem;
-        line-height: calc(25 / 15);
-        // font-weight: bold;
       }
     }
     // SNS（sns）
     &.sns {
       &::before {
         content: "SNS";
-        background-color: rgb(203, 0, 0);
-        color: #ffffff;
-        width: 8rem;
-        height: 3rem;
-        position: absolute;
-        left: 0;
-        top: 0;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5rem;
-        line-height: calc(25 / 15);
-        // font-weight: bold;
       }
     }
   }
@@ -139,7 +114,7 @@
     @include sp {
       width: 100%;
       @include sp {
-        margin-top: 3rem;
+        margin-top: 2.8rem;
       }
     }
 
@@ -148,7 +123,6 @@
       line-height: calc(25 / 20);
       font-weight: bold;
       @include sp {
-        margin-bottom: 0.6rem;
         line-height: calc(30 / 20);
       }
     }
@@ -160,6 +134,7 @@
       @include sp {
         display: flex;
         justify-content: right;
+        margin-top: 0.6rem;
       }
     }
     p {
@@ -170,10 +145,15 @@
       line-height: calc(30 / 18);
       @include sp {
         width: initial;
-        margin-top: 0.4rem;
+        margin-top: 0.8rem;
         font-size: 1.6rem;
         line-height: calc(30 / 16);
       }
+    }
+  }
+  .c-pager {
+    @include sp {
+      margin-top: 5.9rem;
     }
   }
 }
