@@ -9,6 +9,8 @@
     display: flex;
     @include sp {
       column-gap: 8rem;
+      font-size: 1.8rem;
+      line-height: calc(30 / 18);
     }
     span {
       font-weight: bold;
@@ -18,7 +20,7 @@
   &__inner {
     display: flex;
     @include sp {
-      margin-top: 4rem;
+      // margin-top: 4rem;
     }
   }
   &__items {
@@ -50,6 +52,10 @@
     width: 26rem;
     height: 18.4rem;
     flex-shrink: 0;
+    @include sp {
+      width: 100%;
+      height: 20rem;
+    }
     picture {
       width: 100%;
       height: 100%;
@@ -132,13 +138,18 @@
     width: 57rem;
     @include sp {
       width: 100%;
+      @include sp {
+        margin-top: 3rem;
+      }
     }
+
     h3 {
       font-size: 2rem;
       line-height: calc(25 / 20);
       font-weight: bold;
       @include sp {
-        margin: 3rem 0 0.6rem;
+        margin-bottom: 0.6rem;
+        line-height: calc(30 / 20);
       }
     }
     time {
@@ -146,16 +157,22 @@
       // margin: 0.3rem 0 1.1rem 0;
       line-height: calc(30 / 17);
       font-size: 1.7rem;
+      @include sp {
+        display: flex;
+        justify-content: right;
+      }
     }
     p {
       // font-size: 1.8rem;
-      line-height: calc(30 / 18);
       width: 57rem;
       margin-top: 1rem;
       font-size: 1.8rem;
+      line-height: calc(30 / 18);
       @include sp {
         width: initial;
-        margin-top: 0.8rem;
+        margin-top: 0.4rem;
+        font-size: 1.6rem;
+        line-height: calc(30 / 16);
       }
     }
   }
