@@ -1,14 +1,16 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
 .p-result-list {
-  // padding: 6.4rem 0 21rem 0;
-  padding: 6.4rem 0 20.2rem 0;
+  padding: 6.7rem 0 20.7rem 0;
   @include sp {
-    padding: 4.5rem 0 20rem 0;
+    padding: 4.6rem 0 19.6rem 0;
   }
   h2 {
     font-size: 2.5rem;
     line-height: calc(38 / 25);
+    @include sp {
+      line-height: calc(40 / 25);
+    }
   }
   &__items {
     display: grid;
@@ -18,7 +20,8 @@
     column-gap: 10.6rem;
     @include sp {
       grid-template-columns: initial;
-      row-gap: 4rem;
+      row-gap: 4.1rem;
+      margin-top: 5.2rem;
     }
   }
   // 画像部分のラベル（ホップス）
@@ -76,6 +79,9 @@
   &__title {
     margin: 3rem 0 1rem 0;
     // 1つ目の要素のmargin
+    @include sp {
+      margin: 2rem 0 1rem 0;
+    }
     &.first {
       margin: 2rem 0 1rem 0;
     }
@@ -91,6 +97,12 @@
     time {
       font-size: 1.8rem;
       line-height: calc(32 / 18);
+    }
+  }
+  .p-pager {
+    margin-top: 6.4rem;
+    @include sp {
+      margin-top: 6.1rem;
     }
   }
 }
