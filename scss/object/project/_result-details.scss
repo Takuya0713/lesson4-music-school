@@ -80,6 +80,9 @@
         font-size: 1.8rem;
         line-height: calc(30 / 18);
         padding: 0.8rem 2rem 0;
+        @include sp {
+          padding: 0.8rem 1rem 0;
+        }
       }
       td {
         border-top: 0.1rem solid rgba(112, 112, 112, 1);
@@ -99,8 +102,9 @@
   }
   &__profile-comment {
     width: 44rem;
-    @include sp{
+    @include sp {
       width: 100%;
+      margin-top: 2.2rem;
     }
     p {
       font-size: 1.8rem;
@@ -109,6 +113,16 @@
   }
   &-main__articles {
     margin-top: 6rem;
+    &.c-paging {
+      display: initial;
+      column-gap: initial;
+    }
+    &.p-paging {
+      @include sp {
+        display: flex;
+        column-gap: 2rem;
+      }
+    }
   }
 }
 
@@ -131,10 +145,19 @@
       line-height: calc(33 / 18);
     }
   }
+  &__items {
+    @include sp {
+      display: flex;
+      flex-direction: column;
+    }
+  }
   &__item {
     display: flex;
     column-gap: 3rem;
     margin-top: 2.9rem;
+    @include sp {
+      flex-direction: column;
+    }
   }
   &__image {
     display: flex;
