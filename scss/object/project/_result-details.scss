@@ -1,9 +1,16 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
 .p-result-details {
-  padding: 7rem 0 15.7rem 0;
+  padding: 7rem 0 15.6rem 0;
+  @include sp {
+    padding: 5rem 0 15.6rem 0;
+  }
   &__image {
     position: relative;
+    height: 40rem;
+    @include sp {
+      height: initial;
+    }
     &.hops {
       &::before {
         content: "ホップス";
@@ -25,27 +32,40 @@
     }
   }
   &__title {
-    // margin-top: 5rem;
-    margin-top: 3.5rem;
+    margin-top: 5rem;
+    margin-top: 4.3rem;
+    @include sp {
+      margin-top: 2.7rem;
+    }
     h2 {
       font-size: 2.5rem;
       line-height: calc(40 / 25);
       font-weight: bold;
+      @include sp {
+        font-size: 2rem;
+        line-height: calc(30 / 20);
+      }
     }
   }
   &__date {
     display: inline-block;
     margin-top: 1.5rem;
+    @include sp {
+      margin-top: 0.6rem;
+    }
     time {
       font-size: 1.7rem;
       line-height: calc(30 / 17);
     }
   }
   &__profile-inner {
-    // margin-top: 5.7rem;
     margin-top: 6rem;
     display: flex;
     column-gap: 4rem;
+    @include sp {
+      flex-direction: column;
+      margin-top: 2.1rem;
+    }
   }
   &__profile-data {
     table {
@@ -79,10 +99,16 @@
   }
   &__profile-comment {
     width: 44rem;
+    @include sp{
+      width: 100%;
+    }
     p {
       font-size: 1.8rem;
       line-height: calc(30 / 18);
     }
+  }
+  &-main__articles {
+    margin-top: 6rem;
   }
 }
 
@@ -91,7 +117,7 @@
 // }
 .page-relation {
   // margin-top: 10rem;
-  margin-top: 10.1rem;
+  margin-top: 10rem;
   display: grid;
   // 関連記事タイトル
   &__title {
@@ -108,7 +134,7 @@
   &__item {
     display: flex;
     column-gap: 3rem;
-    margin-top: 3rem;
+    margin-top: 2.9rem;
   }
   &__image {
     display: flex;

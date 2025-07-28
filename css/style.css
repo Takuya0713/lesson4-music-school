@@ -495,6 +495,13 @@ img {
   line-height: 2.0625;
   height: 100%;
 }
+@media (max-width: 767px) {
+  .l-header__breadcrumb ol li span {
+    line-height: 1.25;
+    width: 100%;
+    padding-bottom: 0.4rem;
+  }
+}
 .l-header__breadcrumb p {
   background-color: rgb(232, 232, 232);
   margin-top: -1rem;
@@ -2359,10 +2366,21 @@ main {
 }
 
 .p-result-details {
-  padding: 7rem 0 15.7rem 0;
+  padding: 7rem 0 15.6rem 0;
+}
+@media (max-width: 767px) {
+  .p-result-details {
+    padding: 5rem 0 15.6rem 0;
+  }
 }
 .p-result-details__image {
   position: relative;
+  height: 40rem;
+}
+@media (max-width: 767px) {
+  .p-result-details__image {
+    height: initial;
+  }
 }
 .p-result-details__image.hops::before {
   content: "ホップス";
@@ -2382,16 +2400,33 @@ main {
   font-weight: bold;
 }
 .p-result-details__title {
-  margin-top: 3.5rem;
+  margin-top: 5rem;
+  margin-top: 4.3rem;
+}
+@media (max-width: 767px) {
+  .p-result-details__title {
+    margin-top: 2.7rem;
+  }
 }
 .p-result-details__title h2 {
   font-size: 2.5rem;
   line-height: 1.6;
   font-weight: bold;
 }
+@media (max-width: 767px) {
+  .p-result-details__title h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
 .p-result-details__date {
   display: inline-block;
   margin-top: 1.5rem;
+}
+@media (max-width: 767px) {
+  .p-result-details__date {
+    margin-top: 0.6rem;
+  }
 }
 .p-result-details__date time {
   font-size: 1.7rem;
@@ -2402,6 +2437,12 @@ main {
   display: flex;
   -moz-column-gap: 4rem;
        column-gap: 4rem;
+}
+@media (max-width: 767px) {
+  .p-result-details__profile-inner {
+    flex-direction: column;
+    margin-top: 2.1rem;
+  }
 }
 .p-result-details__profile-data table th {
   background: rgb(229, 229, 229);
@@ -2432,13 +2473,21 @@ main {
 .p-result-details__profile-comment {
   width: 44rem;
 }
+@media (max-width: 767px) {
+  .p-result-details__profile-comment {
+    width: 100%;
+  }
+}
 .p-result-details__profile-comment p {
   font-size: 1.8rem;
   line-height: 1.6666666667;
 }
+.p-result-details-main__articles {
+  margin-top: 6rem;
+}
 
 .page-relation {
-  margin-top: 10.1rem;
+  margin-top: 10rem;
   display: grid;
 }
 .page-relation__title {
@@ -2456,7 +2505,7 @@ main {
   display: flex;
   -moz-column-gap: 3rem;
        column-gap: 3rem;
-  margin-top: 3rem;
+  margin-top: 2.9rem;
 }
 .page-relation__image {
   display: flex;

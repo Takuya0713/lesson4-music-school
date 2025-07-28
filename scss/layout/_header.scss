@@ -272,6 +272,11 @@
           font-size: 1.6rem;
           line-height: calc(33 / 16);
           height: 100%;
+          @include sp {
+            line-height: calc(20 / 16);
+            width: 100%;
+            padding-bottom: .4rem;
+          }
         }
       }
       // 形を整えたら以下のCSSは削除する
