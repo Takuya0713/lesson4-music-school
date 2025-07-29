@@ -775,6 +775,7 @@ main {
   flex: 1;
   font-size: 1.6rem;
   line-height: 1.5625;
+  font-weight: bold;
 }
 .c-paging--blog {
   justify-content: space-between;
@@ -2491,13 +2492,18 @@ main {
 .p-result-details-main__articles {
   margin-top: 6rem;
 }
-.p-result-details-main__articles.c-paging {
+@media (max-width: 767px) {
+  .p-result-details-main__articles {
+    margin-top: 4.3rem;
+  }
+}
+.p-result-details-main__articles .c-paging {
   display: initial;
   -moz-column-gap: initial;
        column-gap: initial;
 }
 @media (max-width: 767px) {
-  .p-result-details-main__articles.p-paging {
+  .p-result-details-main__articles .c-paging {
     display: flex;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
@@ -2508,11 +2514,21 @@ main {
   margin-top: 10rem;
   display: grid;
 }
+@media (max-width: 767px) {
+  .page-relation {
+    margin-top: 6.3rem;
+  }
+}
 .page-relation__title {
   display: flex;
   align-items: center;
   padding-inline-start: 3rem;
   height: 5rem;
+}
+@media (max-width: 767px) {
+  .page-relation__title {
+    padding-inline-start: initial;
+  }
 }
 .page-relation__title h4 {
   font-weight: bold;
@@ -2520,9 +2536,19 @@ main {
   line-height: 1.8333333333;
 }
 @media (max-width: 767px) {
+  .page-relation__title h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
   .page-relation__items {
     display: flex;
     flex-direction: column;
+    margin-top: -0.9rem;
   }
 }
 .page-relation__item {
@@ -2533,7 +2559,7 @@ main {
 }
 @media (max-width: 767px) {
   .page-relation__item {
-    flex-direction: column;
+    margin-top: initial;
   }
 }
 .page-relation__image {
@@ -2543,6 +2569,12 @@ main {
   width: 26rem;
   height: 18.4rem;
   flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .page-relation__image {
+    width: 16rem;
+    height: 11.3rem;
+  }
 }
 .page-relation__image::before {
   position: absolute;
@@ -2577,6 +2609,12 @@ main {
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.25;
+}
+@media (max-width: 767px) {
+  .page-relation__text-inner p {
+    font-size: 1.7rem;
+    line-height: 1.6470588235;
+  }
 }
 .page-relation__text-inner time {
   display: block;
