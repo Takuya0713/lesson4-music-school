@@ -3,7 +3,7 @@
 .p-result-details {
   padding: 7rem 0 15.6rem 0;
   @include sp {
-    padding: 5rem 0 15.6rem 0;
+    padding: 5rem 0 19.6rem 0;
   }
   &__image {
     position: relative;
@@ -117,9 +117,8 @@
       margin-top: 4.3rem;
     }
     .c-paging {
-      display: initial;
-      column-gap: initial;
       @include sp {
+        column-gap: initial;
         display: flex;
         column-gap: 2rem;
       }
@@ -163,14 +162,17 @@
     @include sp {
       display: flex;
       flex-direction: column;
-      margin-top: -0.9rem;
     }
+    // & a {
+    //   display: inline-block;
+    // }
   }
   &__item {
     display: flex;
     column-gap: 3rem;
     margin-top: 2.9rem;
     @include sp {
+      column-gap: 2rem;
       margin-top: initial;
     }
   }
@@ -184,6 +186,7 @@
     @include sp {
       width: 16rem;
       height: 11.3rem;
+      margin-top: 2rem;
     }
     &::before {
       position: absolute;
@@ -200,6 +203,9 @@
       font-size: 1.5rem;
       font-weight: bold;
       line-height: calc(25 / 15);
+      @include sp {
+        width: 8rem;
+      }
     }
     // ロック
     &.rock {
@@ -223,6 +229,9 @@
   &__text-inner {
     display: flex;
     flex-direction: column;
+    @include sp {
+      margin-top: 1.6rem;
+    }
     p {
       font-weight: bold;
       font-size: 2rem;
@@ -234,7 +243,13 @@
     }
     time {
       display: block;
-      margin-top: 1.3rem;
+      margin-top: 3.6rem;
+      padding-left: 0.3rem;
+      font-size: 1.7rem;
+      line-height: calc(30 / 17);
+      @include sp {
+        margin-top: 0.6rem;
+      }
     }
   }
 }

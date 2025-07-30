@@ -2371,7 +2371,7 @@ main {
 }
 @media (max-width: 767px) {
   .p-result-details {
-    padding: 5rem 0 15.6rem 0;
+    padding: 5rem 0 19.6rem 0;
   }
 }
 .p-result-details__image {
@@ -2497,13 +2497,10 @@ main {
     margin-top: 4.3rem;
   }
 }
-.p-result-details-main__articles .c-paging {
-  display: initial;
-  -moz-column-gap: initial;
-       column-gap: initial;
-}
 @media (max-width: 767px) {
   .p-result-details-main__articles .c-paging {
+    -moz-column-gap: initial;
+         column-gap: initial;
     display: flex;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
@@ -2548,7 +2545,6 @@ main {
   .page-relation__items {
     display: flex;
     flex-direction: column;
-    margin-top: -0.9rem;
   }
 }
 .page-relation__item {
@@ -2559,6 +2555,8 @@ main {
 }
 @media (max-width: 767px) {
   .page-relation__item {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
     margin-top: initial;
   }
 }
@@ -2574,6 +2572,7 @@ main {
   .page-relation__image {
     width: 16rem;
     height: 11.3rem;
+    margin-top: 2rem;
   }
 }
 .page-relation__image::before {
@@ -2592,6 +2591,11 @@ main {
   font-weight: bold;
   line-height: 1.6666666667;
 }
+@media (max-width: 767px) {
+  .page-relation__image::before {
+    width: 8rem;
+  }
+}
 .page-relation__image.rock::before {
   content: "ロック";
 }
@@ -2604,6 +2608,11 @@ main {
 .page-relation__text-inner {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 767px) {
+  .page-relation__text-inner {
+    margin-top: 1.6rem;
+  }
 }
 .page-relation__text-inner p {
   font-weight: bold;
@@ -2618,7 +2627,15 @@ main {
 }
 .page-relation__text-inner time {
   display: block;
-  margin-top: 1.3rem;
+  margin-top: 3.6rem;
+  padding-left: 0.3rem;
+  font-size: 1.7rem;
+  line-height: 1.7647058824;
+}
+@media (max-width: 767px) {
+  .page-relation__text-inner time {
+    margin-top: 0.6rem;
+  }
 }
 
 .p-result-list {
