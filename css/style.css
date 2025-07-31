@@ -2774,7 +2774,7 @@ main {
 }
 @media (max-width: 767px) {
   .p-search__items {
-    row-gap: 3.9rem;
+    row-gap: 4rem;
   }
 }
 .p-search__item {

@@ -34,7 +34,7 @@
     display: grid;
     row-gap: 7rem;
     @include sp {
-      row-gap: 3.9rem;
+      row-gap: 4rem;
     }
   }
   &__item {
