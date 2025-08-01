@@ -2760,22 +2760,29 @@ main {
 }
 .p-search__inner {
   display: flex;
-}
-.p-search__items {
-  display: grid;
-}
-.p-search__item {
-  display: flex;
-}
-.p-search__items {
   margin-top: 4.5rem;
+}
+@media (max-width: 767px) {
+  .p-search__inner {
+    margin-top: 4.2rem;
+  }
+}
+.p-search__items {
   display: grid;
   row-gap: 7rem;
 }
 @media (max-width: 767px) {
   .p-search__items {
-    row-gap: 4rem;
+    row-gap: 3.9rem;
   }
+}
+@media (max-width: 767px) {
+  .p-search__items a {
+    margin-top: 0.2rem;
+  }
+}
+.p-search__item {
+  display: flex;
 }
 .p-search__item {
   display: flex;

@@ -20,22 +20,25 @@
 
   &__inner {
     display: flex;
+    margin-top: 4.5rem;
     @include sp {
+      margin-top: 4.2rem;
     }
   }
   &__items {
-    display: grid;
-  }
-  &__item {
-    display: flex;
-  }
-  &__items {
-    margin-top: 4.5rem;
     display: grid;
     row-gap: 7rem;
     @include sp {
-      row-gap: 4rem;
+      row-gap: 3.9rem;
     }
+    a {
+      @include sp {
+        margin-top: 0.2rem;
+      }
+    }
+  }
+  &__item {
+    display: flex;
   }
   &__item {
     display: flex;
