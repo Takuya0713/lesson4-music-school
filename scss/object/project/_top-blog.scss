@@ -3,8 +3,7 @@
 
 // よくあるご質問
 .p-blog {
-  // padding: 7rem 0 27.2rem 0;
-  padding: 9.5rem 0 20.8rem 0;
+  padding: 9.5rem 0 20.5rem 0;
   @include sp {
     padding: 4.5rem 0 19.5rem 0;
   }
@@ -15,18 +14,15 @@
     }
     h2 {
       font-size: 3rem;
-      line-height: calc(45 / 30);
-      @include sp {
-        font-size: 2.5rem;
-        line-height: calc(40 / 25);
-      }
+      font-size: 2.5rem;
+      line-height: calc(40 / 25);
     }
   }
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 5rem;
-    margin-top: 3.5rem;
+    margin-top: 4rem;
     @include sp {
       margin-top: 3.9rem;
       grid-template-columns: repeat(1, 1fr);
@@ -111,10 +107,8 @@
     span {
       border-bottom: 0.1rem solid #000;
       a {
-        @include sp {
-          font-size: 1.8rem;
-          line-height: calc(30 / 18);
-        }
+        font-size: 1.8rem;
+        line-height: calc(30 / 18);
       }
     }
   }

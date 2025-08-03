@@ -1,10 +1,10 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
 .p-price {
-  padding: 6.4rem 0 22.5rem 0;
+  // padding: 6.4rem 0 22.5rem 0;
+  padding-top: 6.4rem;
   @include sp {
-    padding: 4.6rem 0 0 0;
-    // padding: 4.3rem 0 0 0;
+    padding-top: 4.6rem;
   }
   &__title {
     h2 {
@@ -19,9 +19,6 @@
 
   &__fee {
     margin-top: 4.15rem;
-    @include sp {
-      margin-top: 4rem;
-    }
   }
   &__items {
     column-gap: 3rem;
@@ -75,7 +72,7 @@
   &__text {
     margin-top: 4.5rem;
     @include sp {
-      margin-top: 4rem;
+      margin-top: 4.2rem;
     }
     p {
       font-size: 1.8rem;
@@ -87,7 +84,8 @@
     }
   }
   &-plan {
-    padding-top: 5.7rem;
+    // padding-top: 5.7rem;
+    padding: 5.7rem 0 22.5rem;
     @include sp {
       padding: 3.8rem 0 18.8rem 0;
     }

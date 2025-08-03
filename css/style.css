@@ -2065,11 +2065,11 @@ main {
   font-weight: bold;
 }
 .p-price {
-  padding: 6.4rem 0 22.5rem 0;
+  padding-top: 6.4rem;
 }
 @media (max-width: 767px) {
   .p-price {
-    padding: 4.6rem 0 0 0;
+    padding-top: 4.6rem;
   }
 }
 .p-price__title h2 {
@@ -2084,11 +2084,6 @@ main {
 }
 .p-price__fee {
   margin-top: 4.15rem;
-}
-@media (max-width: 767px) {
-  .p-price__fee {
-    margin-top: 4rem;
-  }
 }
 .p-price__items {
   -moz-column-gap: 3rem;
@@ -2142,7 +2137,7 @@ main {
 }
 @media (max-width: 767px) {
   .p-price__text {
-    margin-top: 4rem;
+    margin-top: 4.2rem;
   }
 }
 .p-price__text p {
@@ -2156,7 +2151,7 @@ main {
   }
 }
 .p-price-plan {
-  padding-top: 5.7rem;
+  padding: 5.7rem 0 22.5rem;
 }
 @media (max-width: 767px) {
   .p-price-plan {
@@ -2904,7 +2899,7 @@ main {
 }
 
 .p-blog {
-  padding: 9.5rem 0 20.8rem 0;
+  padding: 9.5rem 0 20.5rem 0;
 }
 @media (max-width: 767px) {
   .p-blog {
@@ -2918,20 +2913,15 @@ main {
 }
 .p-blog__title h2 {
   font-size: 3rem;
-  line-height: 1.5;
-}
-@media (max-width: 767px) {
-  .p-blog__title h2 {
-    font-size: 2.5rem;
-    line-height: 1.6;
-  }
+  font-size: 2.5rem;
+  line-height: 1.6;
 }
 .p-blog__items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   -moz-column-gap: 5rem;
        column-gap: 5rem;
-  margin-top: 3.5rem;
+  margin-top: 4rem;
 }
 @media (max-width: 767px) {
   .p-blog__items {
@@ -3017,11 +3007,9 @@ main {
 .p-blog__link span {
   border-bottom: 0.1rem solid #000;
 }
-@media (max-width: 767px) {
-  .p-blog__link span a {
-    font-size: 1.8rem;
-    line-height: 1.6666666667;
-  }
+.p-blog__link span a {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
 }
 
 .p-concept {
