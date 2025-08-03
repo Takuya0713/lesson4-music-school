@@ -2065,7 +2065,7 @@ main {
   font-weight: bold;
 }
 .p-price {
-  padding: 6.7rem 0 0 0;
+  padding: 6.4rem 0 22.5rem 0;
 }
 @media (max-width: 767px) {
   .p-price {
@@ -2083,11 +2083,11 @@ main {
   }
 }
 .p-price__fee {
-  margin-top: 4.2rem;
+  margin-top: 4.15rem;
 }
 @media (max-width: 767px) {
   .p-price__fee {
-    margin-top: 3.9rem;
+    margin-top: 4rem;
   }
 }
 .p-price__items {
@@ -2156,7 +2156,7 @@ main {
   }
 }
 .p-price-plan {
-  padding: 5.7rem 0 22.5rem 0;
+  padding-top: 5.7rem;
 }
 @media (max-width: 767px) {
   .p-price-plan {
