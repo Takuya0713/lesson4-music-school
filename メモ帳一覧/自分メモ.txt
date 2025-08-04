@@ -53,3 +53,9 @@ https://chatgpt.com/c/6860a96d-2690-8010-b4fb-2ac4186077a3
 
 【6/29　chatGPTを用いてコーディング学習する場合の注意点】
 https://chatgpt.com/c/6860a654-b4a4-8010-89c5-3fb237ee3f13
+
+【ハンバーガーメニューが動作しないHTML】
+contact_form.html
+contact_send.html
+error_404.html
+search.html
