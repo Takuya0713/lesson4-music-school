@@ -18,13 +18,13 @@
     text-align: center;
     z-index: 99;
     color: $color-white;
-    font-size: vw(40);
-    line-height: calc(60 / 40);
+    font-size: vw(25);
+    line-height: calc(60 / 25);
     font-weight: bold;
     @include sp {
       width: 30rem;
-      font-size: 3rem;
-      line-height: calc(50 / 30);
+      font-size: 2.5rem;
+      line-height: calc(60 / 25);
     }
   }
   // 背景画像に影を付ける

@@ -1,10 +1,56 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
 
+.p-error-mv {
+  position: relative;
+  &__title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-content: center;
+  }
+
+  &__image {
+    height: 20rem;
+    @include sp {
+      height: 30rem;
+    }
+  }
+  &__titleInner {
+    text-align: center;
+    z-index: 99;
+    color: $color-white;
+    font-size: vw(25);
+    line-height: calc(60 / 25);
+    font-weight: bold;
+    @include sp {
+      width: 30rem;
+      font-size: 2.5rem;
+      line-height: calc(60 / 25);
+    }
+  }
+  // 背景画像に影を付ける
+  &__image {
+    &::after {
+      background-color: rgba(80, 80, 80, 0.502);
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+  }
+}
+
 .p-error {
-  padding: 6rem 0 9rem 0;
+  padding: 6.8rem 0 9rem 0;
   @include sp {
-    padding: 4.1rem 0 5rem 0;
+    padding: 4.6rem 0 5rem 0;
   }
 }
 .error {
@@ -53,6 +99,10 @@
         font-weight: bold;
         font-size: 2.5rem;
         line-height: calc(33 / 25);
+        @include sp {
+          font-size: 2rem;
+          line-height: calc(26 / 20);
+        }
         &:hover {
           background-color: #ffffff;
           color: rgb(203, 0, 0);

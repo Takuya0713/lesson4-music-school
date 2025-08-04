@@ -20,7 +20,7 @@
     font-weight: bold;
     @include sp {
       width: 30rem;
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   }
   // 背景画像に影を付ける
@@ -85,6 +85,10 @@
         font-size: 2.5rem;
         line-height: calc(30 / 25);
         font-weight: bold;
+        @include sp {
+          font-size: 2rem;
+          line-height: calc(26 / 20);
+        }
       }
     }
   }
