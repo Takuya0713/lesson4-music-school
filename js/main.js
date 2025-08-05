@@ -92,22 +92,26 @@ $(".p-faq__accordion-question, .p-faq__accordion-answer").click(function () {
 // https://www.genius-web.co.jp/blog/web-programming/how-to-use-slick-js-to-apply-sliders-on-a-smartphone-to-the-rest-of-the-picture-on-a-pc.html
 $(function () {
   function sliderSetting() {
-    $(".slick-next").not(".slick-initialized").slick({
-      autoplay: true,
-      autoplaySpeed: 4000,
-      speed: 1000,
-      infinite: true,
-      arrows: false,
-      slidesToShow: 3,
-      responsive: [
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1,
+    $(".slick-next")
+      .not(".slick-initialized")
+      .slick({
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 1000,
+        infinite: true,
+        arrows: true,
+        prevArrow: $(".p-voice__arrow--prev"),
+        nextArrow: $(".p-voice__arrow--next"),
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+            },
           },
-        },
-      ],
-    });
+        ],
+      });
   }
   // 上述の関数を実行
   sliderSetting();
@@ -116,7 +120,6 @@ $(function () {
     sliderSetting();
   });
 });
-
 
 // トップへ戻るボタン
 var scrollTopBtn = $(".c-button__wrapper");
