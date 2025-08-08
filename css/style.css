@@ -3888,7 +3888,12 @@ main {
   }
 }
 .p-voice__item {
-  width: 100%;
+  width: 27rem;
+}
+@media (max-width: 767px) {
+  .p-voice__item {
+    width: 100%;
+  }
 }
 .p-voice__image {
   width: 27rem;
@@ -3932,16 +3937,13 @@ main {
   transform: translateY(-50%);
   width: 4rem;
   height: 4rem;
-  background: rgba(200, 200, 200, 0.8);
   border: none;
-  border-radius: 50%;
   cursor: pointer;
   z-index: 10;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 .p-voice__arrow:hover {
   background: rgb(200, 200, 200);
@@ -3950,6 +3952,8 @@ main {
 }
 .p-voice__arrow--prev {
   left: -2rem;
+  background-image: url(/images/common/1.top/4.voice/arrow-l.svg);
+  background-repeat: no-repeat;
 }
 @media (max-width: 767px) {
   .p-voice__arrow--prev {
@@ -3958,6 +3962,8 @@ main {
 }
 .p-voice__arrow--next {
   right: -2rem;
+  background-image: url(/images/common/1.top/4.voice/arrow-r.svg);
+  background-repeat: no-repeat;
 }
 @media (max-width: 767px) {
   .p-voice__arrow--next {
@@ -3984,7 +3990,6 @@ main {
 }
 .p-voice__wrapper {
   position: relative;
-  padding: 0 4rem;
 }
 @media (max-width: 767px) {
   .p-voice__wrapper {
