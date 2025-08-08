@@ -88,14 +88,14 @@
     // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
     &:hover {
-      background: rgba(200, 200, 200, 1);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      transform: translateY(-50%) scale(1.05);
+      // background: rgba(200, 200, 200, 1);
+      // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      // transform: translateY(-50%) scale(1.05);
     }
 
 
     &--prev {
-      left: -2rem;
+      left: -4.8rem;
       background-image: url(/images/common/1.top/4.voice/arrow-l.svg);
       background-repeat: no-repeat;
       @include sp {
@@ -104,7 +104,7 @@
     }
 
     &--next {
-      right: -2rem;
+      right: -4.8rem;
       background-image: url(/images/common/1.top/4.voice/arrow-r.svg);
       background-repeat: no-repeat;
       @include sp {
