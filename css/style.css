@@ -3088,8 +3088,8 @@ main {
 
 .p-concept {
   position: relative;
-  padding-top: 6.6rem;
-  padding-bottom: 0.7rem;
+  padding-top: 6.3rem;
+  padding-bottom: 0.9rem;
 }
 @media (max-width: 767px) {
   .p-concept {
@@ -3890,6 +3890,9 @@ main {
     margin-top: 4.3rem;
   }
 }
+.p-voice__items a {
+  display: inline-block;
+}
 .p-voice__item {
   width: 27rem;
 }
@@ -3936,7 +3939,7 @@ main {
 }
 .p-voice__arrow {
   position: absolute;
-  top: 50%;
+  top: 42%;
   transform: translateY(-50%);
   width: 4rem;
   height: 4rem;
@@ -3949,7 +3952,7 @@ main {
   justify-content: center;
 }
 .p-voice__arrow--prev {
-  left: -4.8rem;
+  left: -4.3rem;
   background-image: url(/images/common/1.top/4.voice/arrow-l.svg);
   background-repeat: no-repeat;
 }
@@ -3959,7 +3962,7 @@ main {
   }
 }
 .p-voice__arrow--next {
-  right: -4.8rem;
+  right: -5.5rem;
   background-image: url(/images/common/1.top/4.voice/arrow-r.svg);
   background-repeat: no-repeat;
 }

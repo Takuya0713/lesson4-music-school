@@ -24,15 +24,16 @@
     @include sp {
       margin-top: 4.3rem;
     }
-    // a{
-    //   display: inline-block;
-    //   // margin: 0 1.75rem;
-    //   // margin-inline: 3.5rem;
-    //   margin: 0 1.75rem;
-    // }
+    a {
+      display: inline-block;
+      // margin: 0 1.75rem;
+      // margin-inline: 3.5rem;
+      // margin-inline: 1.75rem;
+    }
   }
   &__item {
     width: 27rem;
+
     @include sp {
       width: 100%;
     }
@@ -72,7 +73,7 @@
   // スライダー矢印ボタン
   &__arrow {
     position: absolute;
-    top: 50%;
+    top: 42%;
     transform: translateY(-50%);
     width: 4rem;
     height: 4rem;
@@ -93,9 +94,8 @@
       // transform: translateY(-50%) scale(1.05);
     }
 
-
     &--prev {
-      left: -4.8rem;
+      left: -4.3rem;
       background-image: url(/images/common/1.top/4.voice/arrow-l.svg);
       background-repeat: no-repeat;
       @include sp {
@@ -104,7 +104,7 @@
     }
 
     &--next {
-      right: -4.8rem;
+      right: -5.5rem;
       background-image: url(/images/common/1.top/4.voice/arrow-r.svg);
       background-repeat: no-repeat;
       @include sp {
