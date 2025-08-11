@@ -116,11 +116,25 @@
     @include sp {
       margin-top: 4.3rem;
     }
-    .c-paging {
+    .p-paging {
       @include sp {
         column-gap: initial;
         display: flex;
         column-gap: 2rem;
+      }
+      // ページ部分
+      &-item__heading {
+        // 前のページ
+        &-prev {
+          padding-left: 2rem;
+        }
+        // 前のページ
+        &-next {
+          padding-left: 15rem;
+          @include sp {
+            padding-left: 4.6rem;
+          }
+        }
       }
     }
   }
@@ -134,7 +148,7 @@
   margin-top: 10rem;
   display: grid;
   @include sp {
-    margin-top: 6.3rem;
+    margin-top: 6.7rem;
   }
   // 関連記事タイトル
   &__title {

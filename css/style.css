@@ -2659,12 +2659,23 @@ main {
   }
 }
 @media (max-width: 767px) {
-  .p-result-details-main__articles .c-paging {
+  .p-result-details-main__articles .p-paging {
     -moz-column-gap: initial;
          column-gap: initial;
     display: flex;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
+  }
+}
+.p-result-details-main__articles .p-paging-item__heading-prev {
+  padding-left: 2rem;
+}
+.p-result-details-main__articles .p-paging-item__heading-next {
+  padding-left: 15rem;
+}
+@media (max-width: 767px) {
+  .p-result-details-main__articles .p-paging-item__heading-next {
+    padding-left: 4.6rem;
   }
 }
 
@@ -2674,7 +2685,7 @@ main {
 }
 @media (max-width: 767px) {
   .page-relation {
-    margin-top: 6.3rem;
+    margin-top: 6.7rem;
   }
 }
 .page-relation__title {
