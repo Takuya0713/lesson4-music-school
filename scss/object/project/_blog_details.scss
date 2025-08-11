@@ -15,6 +15,7 @@
     column-gap: 5rem;
     li {
       position: relative;
+      padding-right: 0.3rem;
       // height: 100%;
       &:last-of-type {
         flex-basis: 100%; /* 改行して次の行へ */
@@ -128,7 +129,7 @@
       width: initial;
       // padding: 5rem 0 19.7rem 0;
       padding: initial;
-      padding-top: 5rem;
+      padding-top: 5.2rem;
     }
   }
   // FV画像部分
@@ -159,6 +160,9 @@
       // font-weight: bold;
       z-index: 1; // ラベルを画像の上に表示
       // 集客方法（attracting-customers）・SNS（sns）
+      @include sp {
+        width: 9rem;
+      }
     }
 
     picture {
@@ -259,11 +263,14 @@
     }
     &__desc {
       margin-top: 1.5rem;
+      @include sp {
+        margin-top: 1.8rem;
+      }
       &.first {
         margin-top: 4.8rem;
-      }
-      @include sp {
-        margin-top: 2.7rem;
+        @include sp {
+          margin-top: 2.3rem;
+        }
       }
       p {
         font-size: 1.8rem;
@@ -293,7 +300,7 @@
     &__section-title2 {
       margin-top: 3.3rem;
       @include sp {
-        margin-top: 3.5rem;
+        margin-top: 3.9rem;
       }
       h2 {
         font-size: 2rem;
@@ -309,11 +316,14 @@
       margin-top: 1.7rem;
       @include sp {
         width: 100%;
-        margin-top: 3.9rem;
+        margin-top: 4.1rem;
       }
     }
     &__list {
       margin-top: 2.8rem;
+      @include sp {
+        margin-top: 2.6rem;
+      }
       li {
         font-size: 1.8rem;
         line-height: calc(30 / 18);
@@ -335,12 +345,15 @@
       padding-left: 0.95rem;
       position: relative;
       @include sp {
-        margin-top: 5rem;
+        margin-top: 4.8rem;
       }
       h3 {
         font-size: 2rem;
         line-height: calc(40 / 20);
         font-weight: bold;
+        @include sp {
+          line-height: calc(30 / 20);
+        }
         &::before {
           position: absolute;
           content: "";
@@ -348,6 +361,11 @@
           height: 2rem;
           top: 20%;
           left: 0;
+          @include sp {
+            height: 5rem;
+            top: 5%;
+            left: -0.7%;
+          }
         }
       }
     }
@@ -358,8 +376,8 @@
       padding: 1.8rem 3rem 1rem 6.7rem;
       position: relative;
       @include sp {
-        margin-top: 1.95rem;
-        padding: 1.7rem 2rem 1.1rem 1.7rem;
+        margin-top: 2rem;
+        padding: initial;
       }
       span {
         position: absolute;
@@ -413,6 +431,20 @@
     @include sp {
       margin-top: 4.5rem;
     }
+    // ページ部分
+    .p-paging-item__heading {
+      // 前のページ
+      &-prev {
+        padding-left: 2rem;
+      }
+      // 前のページ
+      &-next {
+        padding-left: 15rem;
+        @include sp {
+          padding-left: 4.6rem;
+        }
+      }
+    }
   }
   &-main__article-item-01 {
     padding-inline: 2rem;
@@ -450,10 +482,15 @@
   .page-relation {
     margin-top: 9.2rem;
     @include sp {
-      margin-top: 7rem;
+      margin-top: 6.7rem;
       display: flex;
       flex-direction: column;
     }
+    &__items {
+      display: flex;
+      flex-direction: column;
+    }
+
     &__title {
       display: flex;
       align-items: center;
@@ -484,16 +521,26 @@
       column-gap: 3rem;
       @include sp {
         column-gap: 2rem;
-        flex-direction: column;
+        // flex-direction: column;
       }
     }
+
     &__image {
       width: 32rem;
       height: 14rem;
       justify-content: initial;
       flex-shrink: initial;
+      @include sp {
+        width: 16rem;
+        margin-top: -1rem;
+        height: initial;
+      }
     }
     &__title-inner {
+      @include sp {
+        width: 15.5rem;
+        margin-top: -0.7rem;
+      }
       p {
         margin-bottom: 1.4rem;
         font-weight: bold;
@@ -504,17 +551,19 @@
           line-height: calc(28 / 17);
           margin-bottom: 0.4rem;
         }
-        // .sp-none {
-        //   @include sp {
-        //     display: none;
-        //   }
-        // }
       }
-      time {
-        display: inline-block;
-        padding-left: 0.4rem;
-        font-size: 1.7rem;
-        line-height: calc(30 / 17);
+      & .p-blog__date {
+        text-align: initial;
+        time {
+          display: inline-block;
+          padding-left: 0.4rem;
+          font-size: 1.7rem;
+          line-height: calc(30 / 17);
+          @include sp {
+            padding-left: initial;
+            padding-top: 0.4rem;
+          }
+        }
       }
     }
   }
@@ -530,6 +579,9 @@
     display: flex;
     row-gap: 3rem;
     flex-direction: column;
+    @include sp {
+      row-gap: 2.9rem;
+    }
   }
 }
 
@@ -569,7 +621,7 @@
     font-size: 1.8rem;
     line-height: calc(33 / 18);
     @include sp {
-      width: 27.5rem;
+      width: 29.5rem;
       height: 22.8rem;
     }
   }
@@ -591,6 +643,9 @@
     display: flex;
     padding: 1.5rem;
     border: 0.1rem solid $color-black;
+    @include sp {
+      padding: 2rem;
+    }
   }
   img {
     aspect-ratio: 2.332/1.98;
@@ -620,12 +675,26 @@
     // margin-block: 1.5rem;
     margin-top: 1.5rem;
     column-gap: 1.5rem;
+    @include sp {
+      column-gap: 2rem;
+      margin-top: 2rem;
+    }
     .image {
       width: 9.5rem;
       height: 7.5rem;
       background-color: rgba(232, 232, 232, 1);
       display: flex;
       aspect-ratio: 95/75;
+      @include sp {
+        width: 16rem;
+        height: 11rem;
+      }
+    }
+    .text {
+      @include sp {
+        width: 15.5rem;
+        margin-top: 0.5rem;
+      }
     }
     p {
       font-size: 1.7rem;

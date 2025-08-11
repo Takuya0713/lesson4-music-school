@@ -54,22 +54,19 @@
       height: 3.7rem;
       background-color: #000;
       color: $color-white;
-      @include sp {
-        // width: 15.6rem;
-        justify-content: space-between;
-      }
 
       p {
         font-size: 1.7rem;
         line-height: calc(30 / 17);
-        padding-left: 2rem;
       }
     }
     &__content {
       display: flex;
-      // align-items: center;
       margin-top: 1.6rem;
       column-gap: 1.6rem;
+      @include sp{
+        margin-top: 1.3rem;
+      }
     }
     &__image {
       width: 9.8rem;
