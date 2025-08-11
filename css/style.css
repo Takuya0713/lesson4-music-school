@@ -3865,7 +3865,7 @@ main {
   }
 }
 .p-voice {
-  padding: 6.5rem 0 6rem;
+  padding: 6.5rem 0 4.1rem;
 }
 @media (max-width: 767px) {
   .p-voice {
@@ -3892,9 +3892,7 @@ main {
 }
 .p-voice__items a {
   display: inline-block;
-}
-.p-voice__item {
-  width: 27rem;
+  margin-inline: 1.75rem;
 }
 @media (max-width: 767px) {
   .p-voice__item {

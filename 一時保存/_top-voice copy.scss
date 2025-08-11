@@ -3,8 +3,7 @@
 
 // 生徒さんたちの声
 .p-voice {
-  // padding: 6.5rem 0 6rem;
-  padding: 6.5rem 0 4.1rem;
+  padding: 6.5rem 0 6rem;
   // position: relative;
   @include sp {
     padding: 4.5rem 0 5.1rem;
@@ -27,11 +26,14 @@
     }
     a {
       display: inline-block;
-      margin-inline: 1.75rem;
+      // margin: 0 1.75rem;
+      // margin-inline: 3.5rem;
+      // margin-inline: 1.75rem;
     }
   }
   &__item {
-    // width: 27rem;
+    width: 27rem;
+
     @include sp {
       width: 100%;
     }
