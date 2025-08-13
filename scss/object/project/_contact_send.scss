@@ -79,6 +79,8 @@
         width: initial;
       }
       a {
+        width: 100%;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -88,6 +90,12 @@
         @include sp {
           font-size: 2rem;
           line-height: calc(26 / 20);
+        }
+        &:hover {
+          background-color: $color-white;
+          color: $color-red;
+          border: 0.1rem solid $color-red;
+          opacity: 1;
         }
       }
     }

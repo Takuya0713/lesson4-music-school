@@ -186,19 +186,19 @@
       @include sp {
         width: 100%;
       }
-    }
-    button {
-      width: 100%;
-      height: 100%;
-      font-size: 2.5rem;
-      line-height: calc(33 / 25);
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s;
-      &:hover {
-        background-color: $color-white;
-        color: $color-red;
-        border: 0.1rem solid $color-red;
+      button {
+        width: 100%;
+        height: 100%;
+        font-size: 2.5rem;
+        line-height: calc(33 / 25);
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          background-color: $color-white;
+          color: $color-red;
+          border: 0.1rem solid $color-red;
+        }
       }
     }
   }
