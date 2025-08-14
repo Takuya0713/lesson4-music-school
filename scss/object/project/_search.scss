@@ -73,7 +73,7 @@
     &::before {
       background-color: rgb(203, 0, 0);
       color: #ffffff;
-      width: 9rem;
+      width: 8rem;
       height: 3rem;
       position: absolute;
       left: 0;
@@ -85,6 +85,9 @@
       font-size: 1.5rem;
       line-height: calc(25 / 15);
       font-weight: bold;
+      @include sp {
+        width: 9rem;
+      }
     }
     // 集客方法（attracting-customers）・SNS（sns）
     &.guitar {

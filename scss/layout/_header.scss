@@ -247,7 +247,9 @@
         font-size: 1.6rem;
         line-height: calc(33 / 16);
         position: relative;
-        // height: 100%;
+        @include sp {
+          line-height: initial;
+        }
         &:last {
           flex-basis: 100%; /* 改行して次の行へ */
           margin-top: 4px;
@@ -267,15 +269,13 @@
           height: 100%;
         }
         span {
-          display: flex;
-          align-items: center;
           font-size: 1.6rem;
           line-height: calc(33 / 16);
           height: 100%;
           @include sp {
             line-height: calc(20 / 16);
             width: 100%;
-            padding-bottom: .4rem;
+            padding-bottom: 0.4rem;
           }
         }
       }

@@ -470,6 +470,11 @@ img {
   line-height: 2.0625;
   position: relative;
 }
+@media (max-width: 767px) {
+  .l-header__breadcrumb ol li {
+    line-height: initial;
+  }
+}
 .l-header__breadcrumb ol li:last {
   flex-basis: 100%; /* 改行して次の行へ */
   margin-top: 4px;
@@ -489,8 +494,6 @@ img {
   height: 100%;
 }
 .l-header__breadcrumb ol li span {
-  display: flex;
-  align-items: center;
   font-size: 1.6rem;
   line-height: 2.0625;
   height: 100%;
@@ -916,7 +919,7 @@ main {
   .p-blog-details__article {
     width: initial;
     padding: initial;
-    padding-top: 5.2rem;
+    padding-top: 5rem;
   }
 }
 .p-blog-details__mv-image {
@@ -2540,7 +2543,7 @@ main {
 }
 @media (max-width: 767px) {
   .p-result-details {
-    padding: 5rem 0 19.6rem 0;
+    padding: 4.2rem 0 19.6rem 0;
   }
 }
 .p-result-details__image {
@@ -3003,7 +3006,7 @@ main {
 .p-search__image::before {
   background-color: rgb(203, 0, 0);
   color: #ffffff;
-  width: 9rem;
+  width: 8rem;
   height: 3rem;
   position: absolute;
   left: 0;
@@ -3015,6 +3018,11 @@ main {
   font-size: 1.5rem;
   line-height: 1.6666666667;
   font-weight: bold;
+}
+@media (max-width: 767px) {
+  .p-search__image::before {
+    width: 9rem;
+  }
 }
 .p-search__image.guitar::before {
   content: "ギター";
