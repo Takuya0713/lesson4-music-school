@@ -80,8 +80,11 @@ main {
       justify-content: center;
       transition: all 0.3s;
       pointer-events: auto;
+      border: 0.1rem solid rgb(203, 0, 0);
       &:hover {
-        opacity: 0.75;
+        background-color: #ffffff;
+        color: rgb(203, 0, 0);
+        opacity: 1;
       }
     }
   }

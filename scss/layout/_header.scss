@@ -108,10 +108,10 @@
       background-color: $color-red;
       color: $color-white;
       transition: all 0.3s;
+      border: 0.1rem solid rgb(203, 0, 0);
       &:hover {
         background-color: #ffffff;
         color: rgb(203, 0, 0);
-        border: 0.1rem solid rgb(203, 0, 0);
       }
     }
   }
