@@ -80,16 +80,18 @@
       </section>
 
       <!-- パンくずリストを追加 -->
-      <div class="l-header__breadcrumb l-header__breadcrumb">
+      <div class="l-header__breadcrumb">
         <div class="inner">
-          <ol>
-            <li>
-              <a href="index.html"><span>ホーム</span></a>
-            </li>
-            <li>
-              <span>プラン・料金</span>
-            </li>
-          </ol>
+          <div class="l-header__breadcrumb-wrapper">
+            <ol>
+              <li>
+                <a href="index.html"><span>ホーム</span></a>
+              </li>
+              <li>
+                <span>プラン・料金</span>
+              </li>
+            </ol>
+          </div>
         </div>
       </div>
 
@@ -242,10 +244,9 @@
             </ul>
           </div>
           <div class="footer__logo">
-            <picture>
-              <source srcset="images/common/1.top/7.footer/footer__logo.svg" media="(max-width: 768px)" />
-              <img src="images/common/1.top/7.footer/footer__logo.svg" alt="footer-icon" />
-            </picture>
+            <a href="index.html" class="footer__logo-link">
+              <img src="images/common/1.top/1.header/footer_logo-white.svg" alt="ロゴマーク" />
+            </a>
           </div>
           <div class="footer__copyright">
             <p>

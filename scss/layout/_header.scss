@@ -237,6 +237,9 @@
     @include sp {
       height: 100%;
     }
+    &-wrapper {
+      height: 100%;
+    }
     ol {
       display: flex;
       align-items: center;
