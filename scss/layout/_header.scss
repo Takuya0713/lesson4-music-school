@@ -108,6 +108,7 @@
       background-color: $color-red;
       color: $color-white;
       transition: all 0.3s;
+      // transition: all 1s;
       border: 0.1rem solid rgb(203, 0, 0);
       &:hover {
         background-color: #ffffff;
@@ -212,18 +213,17 @@
         top: 5rem;
         right: -110%; // ← 初期状態（隠す）
         align-items: initial;
-        transition: all 0.3s;
+        transition: all 0.5s;
+        color: $color-white;
       }
       &.active {
         @include sp {
           right: 0; // ← 表示状態
           background-color: $color-red;
-          color: $color-white;
         }
       }
     }
   }
-
   .inner {
     @include sp {
       width: 100%;
@@ -279,7 +279,6 @@
           }
         }
       }
-      // 形を整えたら以下のCSSは削除する
     }
     p {
       background-color: rgb(232, 232, 232);

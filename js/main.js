@@ -44,7 +44,7 @@ function closeMenu() {
       $(".l-header__nav").removeClass("active");
       $(".l-header__nav-wrapper").removeClass("active");
       $(".l-header__nav-wrapper").css("right", "");
-    }, 300);
+    }, 500);
   }
 }
 // ハンバーガーメニュー以外のところをクリックしても閉じるようにする
@@ -122,9 +122,9 @@ $(function () {
 });
 
 // トップへ戻るボタン
-var scrollTopBtn = $(".c-button__wrapper");
 // 少しスクロールしたら現れる
 // 最初は非表示、特定の位置までスクロールしたらスクロールボタンを表示する
+var scrollTopBtn = $(".c-button__wrapper");
 scrollTopBtn.hide();
 $(window).scroll(function () {
   if ($(this).scrollTop() > 100) {
