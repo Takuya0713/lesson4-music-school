@@ -69,6 +69,10 @@
   }
   &__profile-data {
     table {
+      tr {
+        // display: flex;
+        // align-items: center;
+      }
       th {
         background: rgba(229, 229, 229, 1);
         border-top: 0.1rem solid rgba(112, 112, 112, 1);
@@ -79,7 +83,10 @@
         font-weight: bold;
         font-size: 1.8rem;
         line-height: calc(30 / 18);
-        padding: 0.8rem 2rem 0;
+        padding-left: 2rem;
+        vertical-align: middle;
+        // padding: 0.8rem 2rem 0;.
+
         @include sp {
           padding: 0.8rem 1rem 0;
         }
@@ -93,7 +100,10 @@
         font-weight: 400;
         font-size: 1.8rem;
         line-height: calc(30 / 18);
-        padding: 0.8rem 8rem 0 2rem;
+        padding-left: 2rem;
+        vertical-align: middle;
+        // padding: 0.8rem 8rem 0 2rem;
+
         &:last-child {
           border-bottom: 0.1rem solid rgba(112, 112, 112, 1);
         }

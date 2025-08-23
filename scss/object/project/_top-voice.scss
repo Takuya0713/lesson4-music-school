@@ -100,6 +100,7 @@
     &--prev {
       left: -4.3rem;
       background-image: url(/images/common/1.top/4.voice/arrow-l.svg);
+      // background-image: url(images/common/1.top/4.voice/arrow-l.svg);
       background-repeat: no-repeat;
       @include sp {
         left: -1rem;
@@ -110,6 +111,7 @@
     &--next {
       right: -5.5rem;
       background-image: url(/images/common/1.top/4.voice/arrow-r.svg);
+      // background-image: url(images/common/1.top/4.voice/arrow-r.svg);
       background-repeat: no-repeat;
       @include sp {
         right: -1rem;

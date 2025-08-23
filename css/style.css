@@ -97,7 +97,6 @@ meter {
   -moz-user-modify: read-write;
   -webkit-user-modify: read-write;
   overflow-wrap: break-word;
-  -webkit-line-break: after-white-space;
   -webkit-user-select: auto;
 }
 
@@ -1820,6 +1819,12 @@ main {
   align-items: flex-start;
   row-gap: 2rem;
 }
+.p-contact-form dd ::-moz-placeholder {
+  color: rgb(178, 178, 178);
+}
+.p-contact-form dd ::placeholder {
+  color: rgb(178, 178, 178);
+}
 .p-contact-form dd.check-box__wrapper {
   display: flex;
   margin-top: 0.5rem;
@@ -1840,6 +1845,7 @@ main {
   font-size: 1.5rem;
   border: 0.1rem solid #000;
   color: rgb(178, 178, 178);
+  color: #000000;
 }
 @media (max-width: 767px) {
   .p-contact-form dd .form-control {
@@ -1905,6 +1911,7 @@ main {
   scrollbar-width: none;
   border: 0.1rem solid #000;
   color: rgb(178, 178, 178);
+  color: #000000;
 }
 @media (max-width: 767px) {
   .p-contact-form textarea {
@@ -2638,7 +2645,8 @@ main {
   font-weight: bold;
   font-size: 1.8rem;
   line-height: 1.6666666667;
-  padding: 0.8rem 2rem 0;
+  padding-left: 2rem;
+  vertical-align: middle;
 }
 @media (max-width: 767px) {
   .p-result-details__profile-data table th {
@@ -2654,7 +2662,8 @@ main {
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 1.6666666667;
-  padding: 0.8rem 8rem 0 2rem;
+  padding-left: 2rem;
+  vertical-align: middle;
 }
 .p-result-details__profile-data table td:last-child {
   border-bottom: 0.1rem solid rgb(112, 112, 112);
@@ -2951,6 +2960,9 @@ main {
 }
 .p-search__result span {
   font-weight: bold;
+}
+.p-search__result p {
+  margin-left: auto;
 }
 .p-search__inner {
   display: flex;
@@ -3461,6 +3473,7 @@ main {
   display: none;
   padding: 2rem 2.8rem 1.7rem 1.9rem;
   padding: 0rem 2.8rem 0rem 1.9rem;
+  background-color: rgba(203, 0, 0, 0.098);
 }
 .p-faq__accordion-answer:hover {
   cursor: pointer;
@@ -3485,6 +3498,7 @@ main {
   line-height: 6.5rem;
   display: flex;
   align-items: center;
+  position: relative;
 }
 @media (max-width: 767px) {
   .p-faq__accordion-answer .answer-inner {
@@ -3510,6 +3524,7 @@ main {
   padding-left: 4.5rem;
   font-size: 1.7rem;
   line-height: 1.7647058824;
+  text-align: initial;
 }
 @media (max-width: 767px) {
   .p-faq__accordion-answer span {
