@@ -71,10 +71,16 @@
         font-size: 1.3rem;
       }
     }
+    p {
+      font-weight: bold;
+      @include sp {
+        font-size: 1.4rem;
+      }
+    }
     span {
       font-size: 2rem;
       @include sp {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
       }
     }
   }

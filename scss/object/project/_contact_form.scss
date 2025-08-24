@@ -200,10 +200,10 @@
         font-weight: bold;
         cursor: pointer;
         transition: all 0.3s;
+        border: 0.1rem solid $color-red;
         &:hover {
           background-color: $color-white;
           color: $color-red;
-          border: 0.1rem solid $color-red;
         }
       }
     }

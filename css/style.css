@@ -292,12 +292,20 @@ img {
     font-size: 1.3rem;
   }
 }
+.l-header__item p {
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .l-header__item p {
+    font-size: 1.4rem;
+  }
+}
 .l-header__item span {
   font-size: 2rem;
 }
 @media (max-width: 767px) {
   .l-header__item span {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 .l-header__nav-wrapper {
@@ -727,6 +735,7 @@ main {
 .c-pager__list span {
   background-color: #000;
   color: #fff;
+  cursor: initial;
 }
 .c-pager__ellipsis {
   margin-inline: 1rem;
@@ -1956,11 +1965,11 @@ main {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s;
+  border: 0.1rem solid rgb(203, 0, 0);
 }
 .p-contact-form .form-btn-inner button:hover {
   background-color: #ffffff;
   color: rgb(203, 0, 0);
-  border: 0.1rem solid rgb(203, 0, 0);
 }
 
 .p-contact-form__mv {
