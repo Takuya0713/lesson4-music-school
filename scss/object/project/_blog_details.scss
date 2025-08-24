@@ -648,11 +648,17 @@
     }
   }
   img {
-    aspect-ratio: 2.332/1.98;
     aspect-ratio: 16/9;
     background-color: $color-black;
   }
-  button {
+  .search-btn {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    &:hover {
+      opacity: 0.85;
+      pointer-events: visible;
+    }
     span {
       background-color: $color-black;
       height: 4rem;
