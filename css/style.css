@@ -1470,6 +1470,7 @@ main {
   background-color: rgb(232, 232, 232);
   width: 18rem;
   height: 4rem;
+  padding-inline: 1rem;
 }
 @media (max-width: 767px) {
   .blog__search input {
@@ -2960,6 +2961,7 @@ main {
 }
 .p-search__result {
   display: flex;
+  flex-wrap: wrap;
 }
 @media (max-width: 767px) {
   .p-search__result {
@@ -3435,6 +3437,9 @@ main {
   border-radius: 50%;
   background-color: #000;
   color: #ffffff;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: bold;
 }
 .p-faq__accordion-question::after {
   position: absolute;
@@ -3473,9 +3478,6 @@ main {
     width: 23.3rem;
     line-height: 1.875;
   }
-}
-.p-faq__accordion-question.active {
-  border-bottom: 0.1rem solid #000;
 }
 .p-faq__accordion-question.active::after {
   transform: rotate(-135deg);
@@ -3529,6 +3531,9 @@ main {
   border-radius: 50%;
   background-color: rgb(203, 0, 0);
   color: #ffffff;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: bold;
 }
 .p-faq__accordion-answer span {
   display: inline-block;

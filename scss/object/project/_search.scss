@@ -8,6 +8,7 @@
   }
   &__result {
     display: flex;
+    flex-wrap: wrap;
     @include sp {
       column-gap: 8rem;
       font-size: 1.8rem;

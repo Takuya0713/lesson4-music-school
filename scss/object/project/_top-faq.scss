@@ -59,6 +59,9 @@
         border-radius: 50%;
         background-color: #000;
         color: $color-white;
+        font-size: 2rem;
+        line-height: calc(30 / 20);
+        font-weight: bold;
       }
       &::after {
         position: absolute;
@@ -99,7 +102,7 @@
       }
       // 回答部分が表示されたときに下線を表示する
       &.active {
-        border-bottom: 0.1rem solid #000;
+        // border-bottom: 0.1rem solid #000;
         // 0614追加中
         &::after {
           transform: rotate(-135deg);
@@ -151,6 +154,9 @@
           border-radius: 50%;
           background-color: $color-red;
           color: $color-white;
+          font-size: 2rem;
+          line-height: calc(30 / 20);
+          font-weight: bold;
         }
       }
       & span {
