@@ -68,6 +68,7 @@
     }
     span {
       font-weight: bold;
+      display: inline-block;
       @include sp {
         font-size: 1.3rem;
       }
@@ -81,6 +82,12 @@
   }
   &__image {
     margin-right: 0.7rem;
+    @include sp {
+      display: inline-block;
+      display: flex;
+      width: 2rem;
+      height: 3.1rem;
+    }
   }
 
   &__nav-wrapper {
@@ -260,6 +267,8 @@
         font-size: 1.6rem;
         line-height: calc(33 / 16);
         position: relative;
+        display: flex;
+        align-items: center;
         height: 100%;
         @include sp {
           height: initial;
@@ -280,6 +289,8 @@
           display: inline-block;
           font-size: 1.6rem;
           line-height: calc(33 / 16);
+          display: flex;
+          align-items: center;
           height: 100%;
         }
         span {

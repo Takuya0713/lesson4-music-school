@@ -140,9 +140,13 @@
         }
         // 前のページ
         &-next {
-          padding-left: 15rem;
+          padding-right: 1.8rem;
           @include sp {
             padding-left: 4.6rem;
+          }
+          p {
+            text-align: right;
+            width: 100%;
           }
         }
       }

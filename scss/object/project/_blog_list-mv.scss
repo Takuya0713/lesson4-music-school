@@ -39,6 +39,18 @@
       line-height: calc(60 / 25);
     }
   }
+  &__image {
+    &::after {
+      background-color: rgba(80, 80, 80, 0.502);
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+  }
 }
 
 .p-blog-list {
