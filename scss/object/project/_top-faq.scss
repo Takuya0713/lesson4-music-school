@@ -30,15 +30,15 @@
     &-question {
       display: flex;
       align-items: center;
-      // padding: 2rem 2.8rem 1.7rem 1.9rem;
-      // padding: 0rem 2.8rem 0rem 1.9rem;
       padding-left: 2rem;
-      height: 6.5rem;
+      padding-block: 1.75rem;
+      // height: 6.5rem;
       position: relative;
       background-color: $color-white;
       @include sp {
         padding: initial;
-        height: 8.6rem;
+        padding-block: 1.3rem;
+        // height: 8.6rem;
       }
       &.last {
         @include sp {
@@ -87,7 +87,7 @@
       }
       // 文字サイズ
       & span {
-        padding-left: 4.1rem;
+        padding-left: 4.3rem;
         font-size: 1.7rem;
         line-height: calc(30 / 17);
         @include sp {
@@ -133,12 +133,12 @@
         }
       }
       .answer-inner {
-        height: 6.5rem;
-        line-height: 6.5rem;
+        padding-block: 1.75rem;
         display: flex;
         align-items: center;
         position: relative;
         @include sp {
+          padding-block: 1.3rem;
           display: flex;
           align-items: center;
           height: 100%;

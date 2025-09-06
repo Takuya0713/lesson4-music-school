@@ -432,6 +432,7 @@ img {
     font-size: 1.8rem;
     height: initial;
     width: 30rem;
+    transition: 0.3s;
   }
 }
 .l-header__nav.active li:hover {
@@ -3433,14 +3434,14 @@ main {
   display: flex;
   align-items: center;
   padding-left: 2rem;
-  height: 6.5rem;
+  padding-block: 1.75rem;
   position: relative;
   background-color: #ffffff;
 }
 @media (max-width: 767px) {
   .p-faq__accordion-question {
     padding: initial;
-    height: 8.6rem;
+    padding-block: 1.3rem;
   }
 }
 @media (max-width: 767px) {
@@ -3489,7 +3490,7 @@ main {
   border-bottom: 0.1rem solid #000;
 }
 .p-faq__accordion-question span {
-  padding-left: 4.1rem;
+  padding-left: 4.3rem;
   font-size: 1.7rem;
   line-height: 1.7647058824;
 }
@@ -3532,14 +3533,14 @@ main {
   }
 }
 .p-faq__accordion-answer .answer-inner {
-  height: 6.5rem;
-  line-height: 6.5rem;
+  padding-block: 1.75rem;
   display: flex;
   align-items: center;
   position: relative;
 }
 @media (max-width: 767px) {
   .p-faq__accordion-answer .answer-inner {
+    padding-block: 1.3rem;
     display: flex;
     align-items: center;
     height: 100%;
