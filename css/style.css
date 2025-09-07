@@ -123,6 +123,8 @@ input {
           appearance: revert;
 }
 
+/* h1タグのマージンをリセット
+→0907　index.htmlのハンバーガーメニュー部分に不自然な余白があったため、その部分のリセットを実施 */
 html {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -234,6 +236,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .l-header {
@@ -273,30 +276,36 @@ img {
   color: inherit;
   height: 100%;
 }
-.l-header__item {
+.l-header__item,
+.l-header h1 {
   display: flex;
   align-items: center;
   height: 100%;
 }
 @media (max-width: 767px) {
-  .l-header__item {
+  .l-header__item,
+  .l-header h1 {
     padding-block: 1rem;
   }
 }
-.l-header__item span {
+.l-header__item span,
+.l-header h1 span {
   font-weight: bold;
   display: inline-block;
 }
 @media (max-width: 767px) {
-  .l-header__item span {
+  .l-header__item span,
+  .l-header h1 span {
     font-size: 1.3rem;
   }
 }
-.l-header__item .ib-span {
+.l-header__item .ib-span,
+.l-header h1 .ib-span {
   font-size: 2rem;
 }
 @media (max-width: 767px) {
-  .l-header__item .ib-span {
+  .l-header__item .ib-span,
+  .l-header h1 .ib-span {
     font-size: 1.3rem;
   }
 }
@@ -3737,6 +3746,7 @@ main {
 
 .p-top-mv {
   position: relative;
+  overflow: hidden;
 }
 .p-top-mv__title {
   position: absolute;
