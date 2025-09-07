@@ -4,6 +4,7 @@
 .p-top-mv {
   position: relative;
   overflow: hidden;
+  // 0907slick表示で横スクロールができないようする。
 
   &__title {
     position: absolute;

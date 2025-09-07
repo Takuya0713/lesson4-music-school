@@ -123,8 +123,6 @@ input {
           appearance: revert;
 }
 
-/* h1タグのマージンをリセット
-→0907　index.htmlのハンバーガーメニュー部分に不自然な余白があったため、その部分のリセットを実施 */
 html {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -236,7 +234,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
 }
 @media (max-width: 767px) {
   .l-header {
