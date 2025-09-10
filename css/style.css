@@ -420,6 +420,11 @@ img {
   transition: 0.3s all;
 }
 @media (max-width: 767px) {
+  .l-header__nav ul a::before {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
   .l-header__nav ul a {
     padding-left: 2rem;
   }
@@ -4166,7 +4171,7 @@ main {
 }
 @media (max-width: 767px) {
   .p-voice__arrow--next {
-    right: -1rem;
+    right: 0;
   }
 }
 .p-voice__arrow-icon {
