@@ -2492,6 +2492,7 @@ main {
 }
 .p-price-plan__list th {
   font-size: 2rem;
+  font-weight: bold;
   line-height: 1.65;
   width: 22rem;
 }
@@ -3266,8 +3267,8 @@ main {
   }
 }
 .p-blog__comment {
-  padding: 2rem 0 1.1rem 0;
   font-weight: bold;
+  margin-top: 2rem;
 }
 @media (max-width: 767px) {
   .p-blog__comment {
@@ -3278,6 +3279,7 @@ main {
 }
 .p-blog__date {
   text-align: right;
+  margin-top: 1.1rem;
 }
 .p-blog__date time {
   font-size: 1.7rem;
