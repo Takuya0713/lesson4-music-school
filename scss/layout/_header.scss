@@ -61,9 +61,9 @@
     display: flex;
     align-items: center;
     height: 100%;
-    @include sp {
-      padding-block: 1rem;
-    }
+    // @include sp {
+    //   padding-block: 1rem;
+    // }
     span {
       font-weight: bold;
       display: inline-block;
@@ -105,6 +105,7 @@
       display: none;
     }
     a {
+      font-weight: bold;
       line-height: calc(33 / 15);
       font-size: 1.5rem;
       // 親要素に対して、子要素の横幅100%（横幅）

@@ -74,6 +74,11 @@
         content: "クラシック";
       }
     }
+    img{
+      aspect-ratio: 129 / 91;
+      object-fit: cover;
+
+    }
   }
   // タイトル部分
   &__title {

@@ -3,12 +3,11 @@
 
 .p-concept {
   position: relative;
-  padding-top: 6.3rem;
-  padding-bottom: 0.9rem;
-  // 全人類、 ミュージシャン計画。
+  padding-top: 7rem;
+  padding-bottom: 5.7rem;
+   // 全人類、 ミュージシャン計画。
   @include sp {
     padding: 3.9rem 0 0;
-    // padding-top: 3.9rem;
   }
   &__title {
     h2 {
@@ -24,7 +23,7 @@
     p {
       font-size: 1.8rem;
       margin-top: 1.7rem;
-      margin-bottom: 3.4rem;
+      // margin-bottom: 3.4rem;
       text-align: center;
       line-height: calc(30 / 18);
       @include sp {
@@ -33,6 +32,10 @@
         text-align: initial;
       }
     }
+  }
+  &__contents {
+    // margin-top: 3.4rem;
+    margin-top: 0.5rem;
   }
   &__topIcon {
     @include sp {
@@ -44,7 +47,7 @@
     position: relative;
     display: grid;
     row-gap: 1.7rem;
-    margin: -3rem 0 5rem 0;
+    // margin: -3rem 0 5rem 0;
     @include sp {
       // margin: 3.2rem 0 5rem 0;
       margin: 3.2rem 0 4.1rem 0;

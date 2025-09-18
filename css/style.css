@@ -150,6 +150,7 @@ body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   font-size: 1.6rem;
   padding-top: 8rem;
+  overflow-x: hidden;
 }
 @media (max-width: 767px) {
   body {
@@ -279,12 +280,6 @@ img {
   align-items: center;
   height: 100%;
 }
-@media (max-width: 767px) {
-  .l-header__item,
-  .l-header h1 {
-    padding-block: 1rem;
-  }
-}
 .l-header__item span,
 .l-header h1 span {
   font-weight: bold;
@@ -335,6 +330,7 @@ img {
   }
 }
 .l-header__button a {
+  font-weight: bold;
   line-height: 2.2;
   font-size: 1.5rem;
   width: 100%;
@@ -632,6 +628,7 @@ main {
   pointer-events: auto;
   border: 0.1rem solid rgb(203, 0, 0);
   padding-top: 0.5rem;
+  opacity: 1;
 }
 .c-button__wrapper .c-form-btn a:hover {
   background-color: #ffffff;
@@ -744,13 +741,20 @@ main {
   border: 1px solid #000;
   margin: -0.1rem -0.2rem 0rem 0rem;
 }
-.c-pager__list:hover {
+.c-pager__list a {
+  transition: 0.3s all;
+}
+.c-pager__list a:hover {
   background-color: #000;
   color: #fff;
   cursor: pointer;
 }
+.c-pager__list a:hover:not(:first-child) {
+  opacity: 0.7;
+}
 .c-pager__list a,
 .c-pager__list span {
+  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1685,7 +1689,6 @@ main {
   justify-content: center;
   position: relative;
   width: 26rem;
-  height: 18.4rem;
   flex-shrink: 0;
 }
 @media (max-width: 767px) {
@@ -1720,10 +1723,9 @@ main {
   height: 100%;
 }
 .p-blog-list__image img {
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  aspect-ratio: 65/46;
 }
 .p-blog-list__image.guitar::before {
   content: "ギター";
@@ -2971,6 +2973,11 @@ main {
 .p-result-list__image.classic::before {
   content: "クラシック";
 }
+.p-result-list__image img {
+  aspect-ratio: 129/91;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .p-result-list__title {
   margin: 3rem 0 1rem 0;
 }
@@ -3295,8 +3302,8 @@ main {
 
 .p-concept {
   position: relative;
-  padding-top: 6.3rem;
-  padding-bottom: 0.9rem;
+  padding-top: 7rem;
+  padding-bottom: 5.7rem;
 }
 @media (max-width: 767px) {
   .p-concept {
@@ -3318,7 +3325,6 @@ main {
 .p-concept__title p {
   font-size: 1.8rem;
   margin-top: 1.7rem;
-  margin-bottom: 3.4rem;
   text-align: center;
   line-height: 1.6666666667;
 }
@@ -3329,6 +3335,9 @@ main {
     text-align: initial;
   }
 }
+.p-concept__contents {
+  margin-top: 0.5rem;
+}
 @media (max-width: 767px) {
   .p-concept__topIcon {
     padding-top: 0.7rem;
@@ -3338,7 +3347,6 @@ main {
   position: relative;
   display: grid;
   row-gap: 1.7rem;
-  margin: -3rem 0 5rem 0;
 }
 @media (max-width: 767px) {
   .p-concept__flow {
@@ -4049,6 +4057,11 @@ main {
   line-height: 1.5;
   margin-right: 3.8rem;
 }
+@media (max-width: 767px) {
+  .p-use__flow-detail__title {
+    margin-right: initial;
+  }
+}
 .p-use__flow-detail__circle {
   display: flex;
   align-items: center;
@@ -4120,14 +4133,16 @@ main {
     width: 100%;
   }
 }
-.p-voice__image {
-  width: 27rem;
-}
 @media (max-width: 767px) {
   .p-voice__image {
     width: 33.5rem;
     height: 20rem;
   }
+}
+.p-voice__image img {
+  aspect-ratio: 27/19;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-voice__name {
   margin-top: 1.4rem;
@@ -4173,16 +4188,16 @@ main {
   justify-content: center;
 }
 .p-voice__arrow--prev {
-  left: -4.3rem;
+  left: -5.5%;
 }
 @media (max-width: 767px) {
   .p-voice__arrow--prev {
-    left: -1rem;
     left: 0;
   }
 }
 .p-voice__arrow--next {
   right: -5.5rem;
+  right: -5.5%;
 }
 @media (max-width: 767px) {
   .p-voice__arrow--next {

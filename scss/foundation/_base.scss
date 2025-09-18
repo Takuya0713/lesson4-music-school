@@ -32,6 +32,8 @@ body {
   @include sp {
     padding-top: 5rem; // SPの時はヘッダーの高さ分の余白を追加
   }
+  overflow-x: hidden;
+
 }
 
 #main {
