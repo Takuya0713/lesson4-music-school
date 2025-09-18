@@ -608,6 +608,10 @@ main {
   height: 6rem;
   background-color: rgb(203, 0, 0);
   color: #ffffff;
+  transition: all 0.3s;
+}
+.c-button__wrapper .c-form-btn:hover {
+  background-color: #ffffff;
 }
 @media (max-width: 767px) {
   .c-button__wrapper .c-form-btn {
@@ -627,11 +631,11 @@ main {
   transition: all 0.3s;
   pointer-events: auto;
   border: 0.1rem solid rgb(203, 0, 0);
+  padding-top: 0.5rem;
 }
 .c-button__wrapper .c-form-btn a:hover {
   background-color: #ffffff;
   color: rgb(203, 0, 0);
-  opacity: 1;
 }
 
 .c-text {
@@ -1524,9 +1528,10 @@ main {
   cursor: pointer;
   height: 100%;
   width: 100%;
+  transition: 0.3s all;
 }
 .blog__search .search-btn:hover {
-  opacity: 0.85;
+  opacity: 0.7;
   pointer-events: visible;
 }
 .blog__search .search-btn span {
@@ -2003,6 +2008,7 @@ main {
 .p-contact-form .form-btn-inner button:hover {
   background-color: #ffffff;
   color: rgb(203, 0, 0);
+  opacity: 0.7;
 }
 
 .p-contact-form__mv {
@@ -2126,6 +2132,12 @@ main {
   height: 5rem;
   width: 25rem;
   margin: 0 auto;
+  background-color: rgb(203, 0, 0);
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.p-sended__return-inner:hover {
+  background-color: initial;
 }
 @media (max-width: 767px) {
   .p-sended__return-inner {
@@ -2152,7 +2164,7 @@ main {
   background-color: #ffffff;
   color: rgb(203, 0, 0);
   border: 0.1rem solid rgb(203, 0, 0);
-  opacity: 1;
+  opacity: 0.7;
 }
 
 .p-error-mv {
@@ -2245,6 +2257,9 @@ main {
   color: #ffffff;
   transition: all 0.3s;
 }
+.error__return-inner:hover {
+  background-color: initial;
+}
 @media (max-width: 767px) {
   .error__return-inner {
     width: initial;
@@ -2271,7 +2286,7 @@ main {
 .error__return-inner a:hover {
   background-color: #ffffff;
   color: rgb(203, 0, 0);
-  opacity: 1;
+  opacity: 0.7;
 }
 
 .p-plan-mv {
@@ -4207,7 +4222,7 @@ a {
 }
 
 a:hover {
-  opacity: 0.75;
+  opacity: 0.7;
 }
 
 .u-df-tbc {

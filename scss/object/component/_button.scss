@@ -61,6 +61,10 @@ main {
     height: 6rem;
     background-color: $color-red;
     color: $color-white;
+    transition: all 0.3s;
+    &:hover {
+      background-color: #ffffff;
+    }
 
     @include sp {
       width: initial;
@@ -81,10 +85,11 @@ main {
       transition: all 0.3s;
       pointer-events: auto;
       border: 0.1rem solid rgb(203, 0, 0);
+      padding-top: 0.5rem;
       &:hover {
         background-color: #ffffff;
         color: rgb(203, 0, 0);
-        opacity: 1;
+        // opacity: 1;
       }
     }
   }
