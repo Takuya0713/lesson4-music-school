@@ -1710,6 +1710,7 @@ main {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+  font-weight: bold;
   line-height: 1.6666666667;
   z-index: 1;
 }
@@ -2484,6 +2485,7 @@ main {
 }
 .p-price-plan__list thead tr:first-of-type {
   align-items: flex-end;
+  height: initial;
 }
 .p-price-plan__list tr {
   display: flex;
