@@ -232,7 +232,7 @@
           // padding: 0.8rem 1rem;
           span {
             font-size: 1.2rem;
-            line-height: 1.4;
+            // line-height: 1.4;
             color: #ffffff;
             column-gap: 1.35rem;
             @include sp {
@@ -261,6 +261,22 @@
         }
       }
     }
+    &__image {
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      // @include sp{
+      //   width: 100%;
+      //   height: 100%;
+      // }
+      // @include sp {
+      //   img {
+      //     aspect-ratio: 13 / 8;
+      //     object-fit: cover;
+      //   }
+      // }
+    }
+
     &__desc {
       margin-top: 1.5rem;
       @include sp {
@@ -357,7 +373,8 @@
         &::before {
           position: absolute;
           content: "";
-          border: 0.3rem solid $color-black;
+          // border: 0.2rem solid $color-black;
+          border-left: 0.3rem solid rgb(0, 0, 0);
           height: 2rem;
           top: 20%;
           left: 0;
@@ -398,6 +415,7 @@
       margin-top: 2.8rem;
       position: relative;
       a {
+        color: $color-red;
         font-size: 2rem;
         line-height: calc(33 / 20);
         font-weight: bold;
@@ -489,6 +507,12 @@
     &__items {
       display: flex;
       flex-direction: column;
+      margin-top: 3rem;
+      row-gap: 3rem;
+      @include sp {
+        margin-top: 2rem;
+        row-gap: 2rem;
+      }
     }
 
     &__title {
@@ -517,7 +541,6 @@
     }
     &__item {
       display: flex;
-      margin-top: 3rem;
       column-gap: 3rem;
       @include sp {
         column-gap: 2rem;
@@ -532,7 +555,6 @@
       flex-shrink: initial;
       @include sp {
         width: 16rem;
-        margin-top: -1rem;
         height: initial;
       }
     }
@@ -561,7 +583,8 @@
           line-height: calc(30 / 17);
           @include sp {
             padding-left: initial;
-            padding-top: 0.4rem;
+            margin-top: 0.4rem;
+
           }
         }
       }
@@ -635,6 +658,7 @@
     width: 18rem;
     height: 4rem;
     padding-inline: 1rem;
+    color: gray;
     @include sp {
       width: 29.5rem;
       height: 5.4rem;
@@ -654,8 +678,8 @@
   }
   .search-btn {
     cursor: pointer;
-    height: 100%;
-    width: 100%;
+    // height: 100%;
+    // width: 100%;
     transition: 0.3s all;
     &:hover {
       opacity: 0.7;
@@ -718,5 +742,11 @@
     border-bottom: 0.05rem solid $color-black;
     display: flex;
     align-items: center;
+    a {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
   }
 }

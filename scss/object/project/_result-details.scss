@@ -152,132 +152,126 @@
       }
     }
   }
-}
-
-// ページ部分
-// .pagenation {
-// }
-.page-relation {
-  // margin-top: 10rem;
-  margin-top: 10rem;
-  display: grid;
-  @include sp {
-    margin-top: 6.7rem;
-  }
-  // 関連記事タイトル
-  &__title {
-    display: flex;
-    align-items: center;
-    padding-inline-start: 3rem;
-    height: 5rem;
+  .page-relation {
+    // margin-top: 10rem;
+    margin-top: 10rem;
+    display: grid;
     @include sp {
-      padding-inline-start: initial;
+      margin-top: 6.7rem;
     }
-    h4 {
-      font-weight: bold;
-      font-size: 1.8rem;
-      line-height: calc(33 / 18);
+    // 関連記事タイトル
+    &__title {
+      display: flex;
+      align-items: center;
+      padding-inline-start: 3rem;
+      height: 5rem;
+      @include sp {
+        padding-inline-start: initial;
+      }
+      h4 {
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: calc(33 / 18);
+        @include sp {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    &__items {
       @include sp {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
+        flex-direction: column;
       }
     }
-  }
-  &__items {
-    @include sp {
+    &__item {
       display: flex;
-      flex-direction: column;
+      column-gap: 3rem;
+      margin-top: 2.9rem;
+      @include sp {
+        column-gap: 2rem;
+        margin-top: initial;
+      }
     }
-    // & a {
-    //   display: inline-block;
-    // }
-  }
-  &__item {
-    display: flex;
-    column-gap: 3rem;
-    margin-top: 2.9rem;
-    @include sp {
-      column-gap: 2rem;
-      margin-top: initial;
-    }
-  }
-  &__image {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 26rem;
-    height: 18.4rem;
-    flex-shrink: 0;
-    @include sp {
-      width: 16rem;
-      height: 11.3rem;
-      margin-top: 2rem;
-    }
-    &::before {
-      position: absolute;
-      left: 0;
-      top: 0;
-      background-color: rgb(203, 0, 0);
-      color: #ffffff;
-      width: 10rem;
-      height: 3rem;
-      text-align: center;
+    &__image {
       display: flex;
       justify-content: center;
-      align-items: center;
-      font-size: 1.5rem;
-      font-weight: bold;
-      line-height: calc(25 / 15);
+      position: relative;
+      width: 26rem;
+      height: 18.4rem;
+      flex-shrink: 0;
       @include sp {
-        width: 8rem;
+        width: 16rem;
+        height: 11.3rem;
+        margin-top: 2rem;
       }
-    }
-    // ロック
-    &.rock {
       &::before {
-        content: "ロック";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgb(203, 0, 0);
+        color: #ffffff;
+        width: 10rem;
+        height: 3rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: calc(25 / 15);
+        @include sp {
+          width: 8rem;
+        }
+      }
+      // ロック
+      &.rock {
+        &::before {
+          content: "ロック";
+        }
+      }
+      // ジャズ
+      &.jazz {
+        &::before {
+          content: "ジャズ";
+        }
+      }
+      // ラテン
+      &.latin {
+        &::before {
+          content: "ラテン";
+        }
       }
     }
-    // ジャズ
-    &.jazz {
-      &::before {
-        content: "ジャズ";
-      }
-    }
-    // ラテン
-    &.latin {
-      &::before {
-        content: "ラテン";
-      }
-    }
-  }
-  &__text-inner {
-    display: flex;
-    flex-direction: column;
-    @include sp {
-      margin-top: 1.6rem;
-    }
-    p {
-      font-weight: bold;
-      font-size: 2rem;
-      line-height: calc(25 / 20);
+    &__text-inner {
+      display: flex;
+      flex-direction: column;
       @include sp {
+        margin-top: 1.6rem;
+      }
+      p {
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: calc(25 / 20);
+        @include sp {
+          font-size: 1.7rem;
+          line-height: calc(28 / 17);
+        }
+      }
+      time {
+        display: block;
+        margin-top: 3.6rem;
+        padding-left: 0.3rem;
         font-size: 1.7rem;
-        line-height: calc(28 / 17);
-      }
-    }
-    time {
-      display: block;
-      margin-top: 3.6rem;
-      padding-left: 0.3rem;
-      font-size: 1.7rem;
-      line-height: calc(30 / 17);
-      @include sp {
-        margin-top: 0.6rem;
+        line-height: calc(30 / 17);
+        @include sp {
+          margin-top: 0.6rem;
+        }
       }
     }
   }
 }
+

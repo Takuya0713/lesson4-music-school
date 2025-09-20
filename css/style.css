@@ -794,7 +794,7 @@ main {
   background-color: #000;
   color: #ffffff;
 }
-.c-paging .c-paging-item__heading p {
+.c-paging .c-paging-item__heading p, .c-paging .c-paging-item__heading h4 {
   font-size: 1.7rem;
   line-height: 1.7647058824;
 }
@@ -1072,7 +1072,6 @@ main {
 }
 .p-blog-details-habit__sns-link a span {
   font-size: 1.2rem;
-  line-height: 1.4;
   color: #ffffff;
   -moz-column-gap: 1.35rem;
        column-gap: 1.35rem;
@@ -1223,7 +1222,7 @@ main {
 .p-blog-details-habit__section-title3 h3::before {
   position: absolute;
   content: "";
-  border: 0.3rem solid rgb(0, 0, 0);
+  border-left: 0.3rem solid rgb(0, 0, 0);
   height: 2rem;
   top: 20%;
   left: 0;
@@ -1269,6 +1268,7 @@ main {
   position: relative;
 }
 .p-blog-details-habit__text-link a {
+  color: rgb(203, 0, 0);
   font-size: 2rem;
   line-height: 1.65;
   font-weight: bold;
@@ -1343,6 +1343,14 @@ main {
 .p-blog-details .page-relation__items {
   display: flex;
   flex-direction: column;
+  margin-top: 3rem;
+  row-gap: 3rem;
+}
+@media (max-width: 767px) {
+  .p-blog-details .page-relation__items {
+    margin-top: 2rem;
+    row-gap: 2rem;
+  }
 }
 .p-blog-details .page-relation__title {
   display: flex;
@@ -1375,7 +1383,6 @@ main {
 }
 .p-blog-details .page-relation__item {
   display: flex;
-  margin-top: 3rem;
   -moz-column-gap: 3rem;
        column-gap: 3rem;
 }
@@ -1394,7 +1401,6 @@ main {
 @media (max-width: 767px) {
   .p-blog-details .page-relation__image {
     width: 16rem;
-    margin-top: -1rem;
     height: initial;
   }
 }
@@ -1429,7 +1435,7 @@ main {
 @media (max-width: 767px) {
   .p-blog-details .page-relation__title-inner .p-blog__date time {
     padding-left: initial;
-    padding-top: 0.4rem;
+    margin-top: 0.4rem;
   }
 }
 .p-blog-details__aside {
@@ -1507,6 +1513,7 @@ main {
   width: 18rem;
   height: 4rem;
   padding-inline: 1rem;
+  color: gray;
 }
 @media (max-width: 767px) {
   .blog__search input {
@@ -1530,8 +1537,6 @@ main {
 }
 .blog__search .search-btn {
   cursor: pointer;
-  height: 100%;
-  width: 100%;
   transition: 0.3s all;
 }
 .blog__search .search-btn:hover {
@@ -1595,6 +1600,12 @@ main {
   border-bottom: 0.05rem solid rgb(0, 0, 0);
   display: flex;
   align-items: center;
+}
+.category__item a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .p-blog-mv {
@@ -2451,7 +2462,6 @@ main {
   .p-price-plan__list::-webkit-scrollbar-thumb {
     background-color: rgba(80, 80, 80, 0.251);
     background-clip: padding-box;
-    border-left: 1.2rem solid transparent;
     width: 5rem;
   }
 }
@@ -2778,34 +2788,33 @@ main {
   text-align: right;
   width: 100%;
 }
-
-.page-relation {
+.p-result-details .page-relation {
   margin-top: 10rem;
   display: grid;
 }
 @media (max-width: 767px) {
-  .page-relation {
+  .p-result-details .page-relation {
     margin-top: 6.7rem;
   }
 }
-.page-relation__title {
+.p-result-details .page-relation__title {
   display: flex;
   align-items: center;
   padding-inline-start: 3rem;
   height: 5rem;
 }
 @media (max-width: 767px) {
-  .page-relation__title {
+  .p-result-details .page-relation__title {
     padding-inline-start: initial;
   }
 }
-.page-relation__title h4 {
+.p-result-details .page-relation__title h4 {
   font-weight: bold;
   font-size: 1.8rem;
   line-height: 1.8333333333;
 }
 @media (max-width: 767px) {
-  .page-relation__title h4 {
+  .p-result-details .page-relation__title h4 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2814,25 +2823,25 @@ main {
   }
 }
 @media (max-width: 767px) {
-  .page-relation__items {
+  .p-result-details .page-relation__items {
     display: flex;
     flex-direction: column;
   }
 }
-.page-relation__item {
+.p-result-details .page-relation__item {
   display: flex;
   -moz-column-gap: 3rem;
        column-gap: 3rem;
   margin-top: 2.9rem;
 }
 @media (max-width: 767px) {
-  .page-relation__item {
+  .p-result-details .page-relation__item {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
     margin-top: initial;
   }
 }
-.page-relation__image {
+.p-result-details .page-relation__image {
   display: flex;
   justify-content: center;
   position: relative;
@@ -2841,13 +2850,13 @@ main {
   flex-shrink: 0;
 }
 @media (max-width: 767px) {
-  .page-relation__image {
+  .p-result-details .page-relation__image {
     width: 16rem;
     height: 11.3rem;
     margin-top: 2rem;
   }
 }
-.page-relation__image::before {
+.p-result-details .page-relation__image::before {
   position: absolute;
   left: 0;
   top: 0;
@@ -2864,40 +2873,40 @@ main {
   line-height: 1.6666666667;
 }
 @media (max-width: 767px) {
-  .page-relation__image::before {
+  .p-result-details .page-relation__image::before {
     width: 8rem;
   }
 }
-.page-relation__image.rock::before {
+.p-result-details .page-relation__image.rock::before {
   content: "ロック";
 }
-.page-relation__image.jazz::before {
+.p-result-details .page-relation__image.jazz::before {
   content: "ジャズ";
 }
-.page-relation__image.latin::before {
+.p-result-details .page-relation__image.latin::before {
   content: "ラテン";
 }
-.page-relation__text-inner {
+.p-result-details .page-relation__text-inner {
   display: flex;
   flex-direction: column;
 }
 @media (max-width: 767px) {
-  .page-relation__text-inner {
+  .p-result-details .page-relation__text-inner {
     margin-top: 1.6rem;
   }
 }
-.page-relation__text-inner p {
+.p-result-details .page-relation__text-inner p {
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.25;
 }
 @media (max-width: 767px) {
-  .page-relation__text-inner p {
+  .p-result-details .page-relation__text-inner p {
     font-size: 1.7rem;
     line-height: 1.6470588235;
   }
 }
-.page-relation__text-inner time {
+.p-result-details .page-relation__text-inner time {
   display: block;
   margin-top: 3.6rem;
   padding-left: 0.3rem;
@@ -2905,7 +2914,7 @@ main {
   line-height: 1.7647058824;
 }
 @media (max-width: 767px) {
-  .page-relation__text-inner time {
+  .p-result-details .page-relation__text-inner time {
     margin-top: 0.6rem;
   }
 }

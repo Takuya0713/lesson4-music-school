@@ -131,12 +131,13 @@
         &::-webkit-scrollbar-thumb {
           background-color: rgba(80, 80, 80, 0.251);
           background-clip: padding-box;
-          border-left: 1.2rem solid transparent;
+          // border-left: 1.2rem solid transparent;
+          // border-left: 0;
+          width: 5rem;
           // 左から1.2rem分削除して調整（表示から削除する間隔）
           // border-right: 5.55rem solid transparent;
           // 右から5.55rem分削除(335px-12px-223px=100px=10rem)
           // background-clip: padding-box;
-          width: 5rem;
         }
       }
       table {
