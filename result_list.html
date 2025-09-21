@@ -1,365 +1,456 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>result_list・卒業実績一覧</title>
-  <link rel="icon" href="images/common/favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="css/slick.css" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <div id="l-container">
-    <header class="l-header" id="header">
-      <div class="inner">
-        <div class="l-header__wrapper">
-          <div class="l-header__logo">
-            <div class="l-header__items">
-              <div class="l-header__item">
-                <a href="index.html" class="l-header__logo-link">
-                  <span class="l-header__image">
-                    <img src="images/common/1.top/1.header/header__logo.svg" alt="ロゴマーク" />
-                  </span>
-                  <span class="l-header__logo-text">
-                    <span class="ib-span">きたむら</span>
-                    <br class="pc" />
-                    ミュージックスクール
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- ハンバーガーボタン SPの時のみ表示する-->
-          <!-- c-hamburgerに変更 -->
-          <div id="hb-block" class="c-hamburger sp">
-            <div class="c-hamburger__hb-btn sp u-bg-red">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <!-- ナビゲーション -->
-          <div class="l-header__nav">
-            <nav class="l-header__nav-wrapper">
-              <ul>
-                <li>
-                  <a href="plan.html">料金</a>
-                </li>
-                <li>
-                  <a href="blog_list.html">ブログ</a>
-                </li>
-                <li>
-                  <a href="result_list.html">卒業実績</a>
-                </li>
-              </ul>
-            </nav>
-            <!-- ナビゲーション部分のお問い合わせボタン -->
-            <div class="l-header__button">
-              <a class="c-button" href="contact_form.html">お問い合わせ </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <!-- FV部分 -->
-      <section class="section p-plan-mv">
-        <div class="p-plan-mv__wrapper">
-          <div class="p-plan-mv__title">
-            <h1 class="p-plan-mv__titleInner">卒業実績</h1>
-          </div>
-          <div class="p-plan-mv__image">
-            <picture>
-              <source srcset="images/common/9.result_list/About.jpg" media="(min-width: 768px)" />
-              <img src="images/common/9.result_list/About-sp.jpg" alt="FV" />
-            </picture>
-          </div>
-        </div>
-      </section>
-
-      <!-- パンくずリストを追加 -->
-      <div class="l-header__breadcrumb l-header__breadcrumb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>result_list・卒業実績一覧</title>
+    <link rel="icon" href="images/common/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="l-container">
+      <header class="l-header" id="header">
         <div class="inner">
-          <ol>
-            <li>
-              <a href="index.html"><span>ホーム</span></a>
-            </li>
-            <li>
-              <span>卒業実績</span>
-            </li>
-          </ol>
-        </div>
-      </div>
-
-      <div class="inner">
-        <section class="section p-result-list">
-          <h2 class="p-result-list__titleInner c-sectionTitle">
-              卒業実績一覧
-            </h2>
-          <div class="p-result-list__items">
-            <a href="result_details.html">
-              <div class="p-result-list__item">
-                <div class="p-result-list__image hops">
-                  <picture>
-                    <source srcset="images/common/9.result_list/result01.jpg" media="(min-width: 768px)" />
-                    <img src="images/common/9.result_list/result01.jpg" alt="FV" />
-                  </picture>
-                </div>
-                <div class="p-result-list__title first">
-                  <p>
-                      タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                    </p>
-                </div>
-                <div class="p-result-list__date">
-                  <time datetime="0000.00.00">0000.00.00</time>
+          <div class="l-header__wrapper">
+            <div class="l-header__logo">
+              <div class="l-header__items">
+                <div class="l-header__item">
+                  <a href="index.html" class="l-header__logo-link">
+                    <span class="l-header__image">
+                      <img
+                        src="images/common/1.top/1.header/header__logo.svg"
+                        alt="ロゴマーク"
+                      />
+                    </span>
+                    <span class="l-header__logo-text">
+                      <span class="ib-span">きたむら</span>
+                      <br class="pc" />
+                      ミュージックスクール
+                    </span>
+                  </a>
                 </div>
               </div>
-            </a>
-            <a href="result_details.html">
-              <div class="p-result-list__item">
-                <div class="p-result-list__image rock">
-                  <picture>
-                    <source srcset="images/common/9.result_list/result02.jpg" media="(min-width: 768px)" />
-                    <img src="images/common/9.result_list/result02-sp.jpg" alt="FV" />
-                  </picture>
-                </div>
-                <div class="p-result-list__title first">
-                  <p>
-                      タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                    </p>
-                </div>
-                <div class="p-result-list__date">
-                  <time datetime="0000.00.00">0000.00.00</time>
-                </div>
+            </div>
+            <!-- ハンバーガーボタン SPの時のみ表示する-->
+            <!-- c-hamburgerに変更 -->
+            <div id="hb-block" class="c-hamburger sp">
+              <div class="c-hamburger__hb-btn sp u-bg-red">
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
-            </a>
-            <a href="result_details.html">
-              <div class="p-result-list__item">
-                <div class="p-result-list__image jazz">
-                  <picture>
-                    <source srcset="images/common/9.result_list/result03.jpg" media="(min-width: 768px)" />
-                    <img src="images/common/9.result_list/result03-sp.jpg" alt="FV" />
-                  </picture>
-                </div>
-                <div class="p-result-list__title">
-                  <p>
-                      タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                    </p>
-                </div>
-                <div class="p-result-list__date">
-                  <time datetime="0000.00.00">0000.00.00</time>
-                </div>
+            </div>
+            <!-- ナビゲーション -->
+            <div class="l-header__nav">
+              <nav class="l-header__nav-wrapper">
+                <ul>
+                  <li>
+                    <a href="plan.html">料金</a>
+                  </li>
+                  <li>
+                    <a href="blog_list.html">ブログ</a>
+                  </li>
+                  <li>
+                    <a href="result_list.html">卒業実績</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- ナビゲーション部分のお問い合わせボタン -->
+              <div class="l-header__button">
+                <a class="c-button" href="contact_form.html">お問い合わせ </a>
               </div>
-            </a>
-            <a href="result_details.html">
-              <div class="p-result-list__item">
-                <div class="p-result-list__image latin">
-                  <picture>
-                    <source srcset="images/common/9.result_list/result04.jpg" media="(min-width: 768px)" />
-                    <img src="images/common/9.result_list/result04-sp.jpg" alt="FV" />
-                  </picture>
-                </div>
-                <div class="p-result-list__title">
-                  <p>
-                      タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                    </p>
-                </div>
-                <div class="p-result-list__date">
-                  <time datetime="0000.00.00">0000.00.00</time>
-                </div>
-              </div>
-            </a>
-            <a href="result_details.html">
-              <div class="p-result-list__item">
-                <div class="p-result-list__image classic">
-                  <picture>
-                    <source srcset="images/common/9.result_list/result05.jpg" media="(min-width: 768px)" />
-                    <img src="images/common/9.result_list/result05-sp.jpg" alt="FV" />
-                  </picture>
-                </div>
-                <div class="p-result-list__title">
-                  <p>
-                      タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                    </p>
-                </div>
-                <div class="p-result-list__date">
-                  <time datetime="0000.00.00">0000.00.00</time>
-                </div>
-              </div>
-            </a>
-            <a href="result_details.html">
-              <div class="p-result-list__item">
-                <div class="p-result-list__image hops">
-                  <picture>
-                    <source srcset="images/common/9.result_list/result06.jpg" media="(min-width: 768px)" />
-                    <img src="images/common/9.result_list/result06-sp.jpg" alt="FV" />
-                  </picture>
-                </div>
-                <div class="p-result-list__title">
-                  <p>
-                      タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                    </p>
-                </div>
-                <div class="p-result-list__date">
-                  <time datetime="0000.00.00">0000.00.00</time>
-                </div>
-              </div>
-            </a>
-            <a href="result_details.html">
-              <div class="p-result-list__item">
-                <div class="p-result-list__image rock">
-                  <picture>
-                    <source srcset="images/common/9.result_list/result07.jpg" media="(min-width: 768px)" />
-                    <img src="images/common/9.result_list/result07-sp.jpg" alt="FV" />
-                  </picture>
-                </div>
-                <div class="p-result-list__title">
-                  <p>
-                      タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                    </p>
-                </div>
-                <div class="p-result-list__date">
-                  <time datetime="0000.00.00">0000.00.00</time>
-                </div>
-              </div>
-            </a>
-            <a href="result_details.html">
-              <div class="p-result-list__item">
-                <div class="p-result-list__image jazz">
-                  <picture>
-                    <source srcset="images/common/9.result_list/result08.jpg" media="(min-width: 768px)" />
-                    <img src="images/common/9.result_list/result08-sp.jpg" alt="FV" />
-                  </picture>
-                </div>
-                <div class="p-result-list__title">
-                  <p>
-                      タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                    </p>
-                </div>
-                <div class="p-result-list__date">
-                  <time datetime="0000.00.00">0000.00.00</time>
-                </div>
-              </div>
-            </a>
-            <a href="result_details.html">
-              <div class="p-result-list__item">
-                <div class="p-result-list__image latin">
-                  <picture>
-                    <source srcset="images/common/9.result_list/result09.jpg" media="(min-width: 768px)" />
-                    <img src="images/common/9.result_list/result09-sp.jpg" alt="FV" />
-                  </picture>
-                </div>
-                <div class="p-result-list__title">
-                  <p>
-                      タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                    </p>
-                </div>
-                <div class="p-result-list__date">
-                  <time datetime="0000.00.00">0000.00.00</time>
-                </div>
-              </div>
-            </a>
-            <a href="result_details.html">
-              <div class="p-result-list__item">
-                <div class="p-result-list__image classic">
-                  <picture>
-                    <source srcset="images/common/9.result_list/result04.jpg" media="(min-width: 768px)" />
-                    <img src="images/common/9.result_list/result04-sp.jpg" alt="FV" />
-                  </picture>
-                </div>
-                <div class="p-result-list__title">
-                  <p>
-                      タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                    </p>
-                </div>
-                <div class="p-result-list__date">
-                  <time datetime="0000.00.00">0000.00.00</time>
-                </div>
-              </div>
-            </a>
+            </div>
           </div>
-          <!-- ページネーション部分・spanタグで色付けし、hover時に色を変えるようにする -->
-          <div class="c-pager p-pager">
-            <ul class="c-pager__lists">
-              <!-- <li class="c-pager__list"><a href="#"><span>1</span></a></li> -->
-              <li class="c-pager__list"><span>1</span></li>
-              <li class="c-pager__list"><a href="">2</a></li>
-              <li class="c-pager__list"><a href="">3</a></li>
-              <li class="c-pager__ellipsis">…</li>
-              <!-- ellipsis→省略部分の事 -->
-              <li class="c-pager__list"><a href="">9</a></li>
-            </ul>
+        </div>
+      </header>
+
+      <main>
+        <!-- FV部分 -->
+        <section class="section p-plan-mv">
+          <div class="p-plan-mv__wrapper">
+            <div class="p-plan-mv__title">
+              <h1 class="p-plan-mv__titleInner">卒業実績</h1>
+            </div>
+            <div class="p-plan-mv__image">
+              <picture>
+                <source
+                  srcset="images/common/9.result_list/About.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img src="images/common/9.result_list/About-sp.jpg" alt="FV" />
+              </picture>
+            </div>
           </div>
         </section>
-      </div>
-      <!-- お問い合わせボタンとTOP画面に戻るボタン -->
-      <div class="c-button__wrapper">
-        <!-- ページトップボタン -->
-        <div class="inner">
-          <div class="c-fix-area l-fix-area u-df-tbc">
-            <a href="#" class="scroll-top-btn">
-              <!-- <a href="#" class="scroll-top-btn" style="display: none"> -->
-              <img src="./images/common/arrow-top.svg" alt="arrow-top" />
-            </a>
-          </div>
-          <!-- お問い合わせボタン -->
-          <div class="c-form-btn u-bg-red u-df-tbc">
-            <a class="c-button c-button--fixed" href="contact_form.html">お問い合わせ</a>
+
+        <!-- パンくずリストを追加 -->
+        <div class="l-header__breadcrumb l-header__breadcrumb">
+          <div class="inner">
+            <ol>
+              <li>
+                <a href="index.html"><span>ホーム</span></a>
+              </li>
+              <li>
+                <span>卒業実績</span>
+              </li>
+            </ol>
           </div>
         </div>
-      </div>
-    </main>
 
-    <footer class="footer">
-      <div class="footer__wrapper u-bg-red">
-        <div class="footer__inner">
-          <div class="footer__nav">
-            <ul>
-              <li><a href="index.html">ホーム</a></li>
-              <li><a href="plan.html">料金</a></li>
-              <li><a href="blog_list.html">ブログ</a></li>
-              <li><a href="result_list.html">卒業実績</a></li>
-            </ul>
+        <section class="section p-result-list">
+          <div class="inner">
+            <h2 class="p-result-list__titleInner c-sectionTitle">
+              卒業実績一覧
+            </h2>
+            <div class="p-result-list__items">
+              <a href="result_details.html">
+                <div class="p-result-list__item">
+                  <div class="p-result-list__image hops">
+                    <picture>
+                      <source
+                        srcset="images/common/9.result_list/result01.jpg"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="images/common/9.result_list/result01.jpg"
+                        alt="FV"
+                      />
+                    </picture>
+                  </div>
+                  <div class="p-result-list__title first">
+                    <p>
+                      タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                    </p>
+                  </div>
+                  <div class="p-result-list__date">
+                    <time datetime="0000.00.00">0000.00.00</time>
+                  </div>
+                </div>
+              </a>
+              <a href="result_details.html">
+                <div class="p-result-list__item">
+                  <div class="p-result-list__image rock">
+                    <picture>
+                      <source
+                        srcset="images/common/9.result_list/result02.jpg"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="images/common/9.result_list/result02-sp.jpg"
+                        alt="FV"
+                      />
+                    </picture>
+                  </div>
+                  <div class="p-result-list__title first">
+                    <p>
+                      タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                    </p>
+                  </div>
+                  <div class="p-result-list__date">
+                    <time datetime="0000.00.00">0000.00.00</time>
+                  </div>
+                </div>
+              </a>
+              <a href="result_details.html">
+                <div class="p-result-list__item">
+                  <div class="p-result-list__image jazz">
+                    <picture>
+                      <source
+                        srcset="images/common/9.result_list/result03.jpg"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="images/common/9.result_list/result03-sp.jpg"
+                        alt="FV"
+                      />
+                    </picture>
+                  </div>
+                  <div class="p-result-list__title">
+                    <p>
+                      タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                    </p>
+                  </div>
+                  <div class="p-result-list__date">
+                    <time datetime="0000.00.00">0000.00.00</time>
+                  </div>
+                </div>
+              </a>
+              <a href="result_details.html">
+                <div class="p-result-list__item">
+                  <div class="p-result-list__image latin">
+                    <picture>
+                      <source
+                        srcset="images/common/9.result_list/result04.jpg"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="images/common/9.result_list/result04-sp.jpg"
+                        alt="FV"
+                      />
+                    </picture>
+                  </div>
+                  <div class="p-result-list__title">
+                    <p>
+                      タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                    </p>
+                  </div>
+                  <div class="p-result-list__date">
+                    <time datetime="0000.00.00">0000.00.00</time>
+                  </div>
+                </div>
+              </a>
+              <a href="result_details.html">
+                <div class="p-result-list__item">
+                  <div class="p-result-list__image classic">
+                    <picture>
+                      <source
+                        srcset="images/common/9.result_list/result05.jpg"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="images/common/9.result_list/result05-sp.jpg"
+                        alt="FV"
+                      />
+                    </picture>
+                  </div>
+                  <div class="p-result-list__title">
+                    <p>
+                      タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                    </p>
+                  </div>
+                  <div class="p-result-list__date">
+                    <time datetime="0000.00.00">0000.00.00</time>
+                  </div>
+                </div>
+              </a>
+              <a href="result_details.html">
+                <div class="p-result-list__item">
+                  <div class="p-result-list__image hops">
+                    <picture>
+                      <source
+                        srcset="images/common/9.result_list/result06.jpg"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="images/common/9.result_list/result06-sp.jpg"
+                        alt="FV"
+                      />
+                    </picture>
+                  </div>
+                  <div class="p-result-list__title">
+                    <p>
+                      タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                    </p>
+                  </div>
+                  <div class="p-result-list__date">
+                    <time datetime="0000.00.00">0000.00.00</time>
+                  </div>
+                </div>
+              </a>
+              <a href="result_details.html">
+                <div class="p-result-list__item">
+                  <div class="p-result-list__image rock">
+                    <picture>
+                      <source
+                        srcset="images/common/9.result_list/result07.jpg"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="images/common/9.result_list/result07-sp.jpg"
+                        alt="FV"
+                      />
+                    </picture>
+                  </div>
+                  <div class="p-result-list__title">
+                    <p>
+                      タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                    </p>
+                  </div>
+                  <div class="p-result-list__date">
+                    <time datetime="0000.00.00">0000.00.00</time>
+                  </div>
+                </div>
+              </a>
+              <a href="result_details.html">
+                <div class="p-result-list__item">
+                  <div class="p-result-list__image jazz">
+                    <picture>
+                      <source
+                        srcset="images/common/9.result_list/result08.jpg"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="images/common/9.result_list/result08-sp.jpg"
+                        alt="FV"
+                      />
+                    </picture>
+                  </div>
+                  <div class="p-result-list__title">
+                    <p>
+                      タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                    </p>
+                  </div>
+                  <div class="p-result-list__date">
+                    <time datetime="0000.00.00">0000.00.00</time>
+                  </div>
+                </div>
+              </a>
+              <a href="result_details.html">
+                <div class="p-result-list__item">
+                  <div class="p-result-list__image latin">
+                    <picture>
+                      <source
+                        srcset="images/common/9.result_list/result09.jpg"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="images/common/9.result_list/result09-sp.jpg"
+                        alt="FV"
+                      />
+                    </picture>
+                  </div>
+                  <div class="p-result-list__title">
+                    <p>
+                      タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                    </p>
+                  </div>
+                  <div class="p-result-list__date">
+                    <time datetime="0000.00.00">0000.00.00</time>
+                  </div>
+                </div>
+              </a>
+              <a href="result_details.html">
+                <div class="p-result-list__item">
+                  <div class="p-result-list__image classic">
+                    <picture>
+                      <source
+                        srcset="images/common/9.result_list/result04.jpg"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="images/common/9.result_list/result04-sp.jpg"
+                        alt="FV"
+                      />
+                    </picture>
+                  </div>
+                  <div class="p-result-list__title">
+                    <p>
+                      タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                    </p>
+                  </div>
+                  <div class="p-result-list__date">
+                    <time datetime="0000.00.00">0000.00.00</time>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- ページネーション部分・spanタグで色付けし、hover時に色を変えるようにする -->
+            <div class="c-pager p-pager">
+              <ul class="c-pager__lists">
+                <!-- <li class="c-pager__list"><a href="#"><span>1</span></a></li> -->
+                <li class="c-pager__list"><span>1</span></li>
+                <li class="c-pager__list"><a href="">2</a></li>
+                <li class="c-pager__list"><a href="">3</a></li>
+                <li class="c-pager__ellipsis">…</li>
+                <!-- ellipsis→省略部分の事 -->
+                <li class="c-pager__list"><a href="">9</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="footer__logo">
-            <a href="index.html" class="footer__logo-link">
-              <img src="images/common/1.top/1.header/footer_logo-white.svg" alt="ロゴマーク" />
-            </a>
+        </section>
+        <!-- お問い合わせボタンとTOP画面に戻るボタン -->
+        <div class="c-button__wrapper">
+          <!-- ページトップボタン -->
+          <div class="inner">
+            <div class="c-fix-area l-fix-area u-df-tbc">
+              <a href="#" class="scroll-top-btn">
+                <!-- <a href="#" class="scroll-top-btn" style="display: none"> -->
+                <img src="./images/common/arrow-top.svg" alt="arrow-top" />
+              </a>
+            </div>
+            <!-- お問い合わせボタン -->
+            <div class="c-form-btn u-bg-red u-df-tbc">
+              <a class="c-button c-button--fixed" href="contact_form.html"
+                >お問い合わせ</a
+              >
+            </div>
           </div>
-          <div class="footer__copyright">
-            <p>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__wrapper u-bg-red">
+          <div class="footer__inner">
+            <div class="footer__nav">
+              <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="plan.html">料金</a></li>
+                <li><a href="blog_list.html">ブログ</a></li>
+                <li><a href="result_list.html">卒業実績</a></li>
+              </ul>
+            </div>
+            <div class="footer__logo">
+              <a href="index.html" class="footer__logo-link">
+                <img
+                  src="images/common/1.top/1.header/footer_logo-white.svg"
+                  alt="ロゴマーク"
+                />
+              </a>
+            </div>
+            <div class="footer__copyright">
+              <p>
                 Copyright © 0000 KITAMURA music school Inc. <br class="sp" />All
                 Rights
               </p>
-          </div>
-          <!-- SNSリンク部分改修中 -->
-          <div class="footer__sns-links">
-            <ul>
-              <li class="link-x">
-                <a href="https://x.com/home?lang=ja"><img src="images/common/1.top/7.footer/icon-twitter.svg" alt="X" /></a>
-              </li>
-              <li class="link-facebook">
-                <a href="https://www.facebook.com/"><img src="images/common/1.top/7.footer/icon-facebook.svg" alt="facebook" /></a>
-              </li>
-              <li class="link-youtube">
-                <a href="https://www.youtube.com/"><img src="images/common/1.top/7.footer/icon-youtube.svg" alt="youtube" /></a>
-              </li>
-              <li class="link-instagram">
-                <a href="https://www.instagram.com/"><img src="images/common/1.top/7.footer/icon-instagram.svg" alt="instagram" /></a>
-              </li>
-            </ul>
+            </div>
+            <!-- SNSリンク部分改修中 -->
+            <div class="footer__sns-links">
+              <ul>
+                <li class="link-x">
+                  <a href="https://x.com/home?lang=ja"
+                    ><img
+                      src="images/common/1.top/7.footer/icon-twitter.svg"
+                      alt="X"
+                  /></a>
+                </li>
+                <li class="link-facebook">
+                  <a href="https://www.facebook.com/"
+                    ><img
+                      src="images/common/1.top/7.footer/icon-facebook.svg"
+                      alt="facebook"
+                  /></a>
+                </li>
+                <li class="link-youtube">
+                  <a href="https://www.youtube.com/"
+                    ><img
+                      src="images/common/1.top/7.footer/icon-youtube.svg"
+                      alt="youtube"
+                  /></a>
+                </li>
+                <li class="link-instagram">
+                  <a href="https://www.instagram.com/"
+                    ><img
+                      src="images/common/1.top/7.footer/icon-instagram.svg"
+                      alt="instagram"
+                  /></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-  </div>
+      </footer>
+    </div>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <!-- slick部分を追加 -->
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <!-- AOSアニメーション -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- slick部分を追加 -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- AOSアニメーション -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
