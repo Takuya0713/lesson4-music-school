@@ -80,7 +80,7 @@
     // チェックボックス（目的部分）親要素
     &.check-box__wrapper {
       display: flex;
-      margin-top: 0.5rem;
+      // margin-top: 0.5rem;
       @include sp {
         margin-top: 1rem;
       }
