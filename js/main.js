@@ -5,14 +5,11 @@ AOS.init();
 $(document).ready(function () {
   $("#hb-block").click(function (event) {
     event.stopPropagation();
-    // ハンバーガーボタンをクリックした時に他のクリックイベントが広がるのを防ぐ
     if ($(".c-hamburger").hasClass("active")) {
       closeMenu();
     } else {
       openMenu();
     }
-    // クラス名「」にactiveが付与されていたら、メニューを閉じて付与されていない状況なら開く。
-    // activeになっていたらクローズ、なっていない場合は逆の動作を行う
   });
 });
 
@@ -39,7 +36,7 @@ function closeMenu() {
     $(".l-header__nav-wrapper").css("right", "-110%");
     $(".c-hamburger").removeClass("active");
 
-    // 以下のナビゲーション部分は0.3秒掛けて元に戻す
+    // 以下のナビゲーション部分は0.5秒掛けて元に戻す
     setTimeout(function () {
       $(".l-header__nav").removeClass("active");
       $(".l-header__nav-wrapper").removeClass("active");
@@ -75,11 +72,12 @@ $(".p-faq__accordion-question, .p-faq__accordion-answer").click(function () {
   var isOpen = $answer.is(":visible");
 
   if (isOpen) {
-    // 閉じる場合：コンテンツを先に閉じてからアイコンを回転
+    // 閉じる場合
     $answer.slideToggle(500);
     setTimeout(function () {
       $question.removeClass("active");
-    }, 500);
+    }, 0);
+    // 0924 疑似要素の矢印が0.5秒待たずに元に戻るよう修正
   } else {
     // 開く場合：アイコンを先に回転してからコンテンツを開く
     $question.addClass("active");

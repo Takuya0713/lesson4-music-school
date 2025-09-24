@@ -1102,6 +1102,10 @@ main {
   background-color: rgb(220, 79, 90);
   width: 9.1rem;
 }
+.p-blog-details-habit__image {
+  width: 33%;
+  height: 50%;
+}
 .p-blog-details-habit__desc {
   margin-top: 1.5rem;
 }

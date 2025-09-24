@@ -73,7 +73,6 @@
         left: 95.2%;
         transform: rotate(45deg);
         // ↑45度回転（下向き）
-
         transition: 0.5s all;
         @include sp {
           left: 90%;
