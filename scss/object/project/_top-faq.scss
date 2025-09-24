@@ -112,8 +112,9 @@
     // 回答・通常
     &-answer {
       display: none;
-      padding: 2rem 2.8rem 1.7rem 1.9rem;
-      padding: 0rem 2.8rem 0rem 1.9rem;
+      // padding: 2rem 2.8rem 1.7rem 1.9rem;
+      // padding: 0rem 2.8rem 0rem 1.9rem;
+      padding: 0rem 2.8rem 0rem 2rem;
       background-color: rgba(203, 0, 0, 0.098);
       &:hover {
         cursor: pointer;
