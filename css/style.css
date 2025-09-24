@@ -954,21 +954,23 @@ main {
 .p-blog-details {
   display: flex;
   justify-content: space-between;
+  padding-block: 7rem;
 }
 @media (max-width: 767px) {
   .p-blog-details {
-    display: initial;
+    display: block;
+    padding-block: 5rem;
   }
 }
 .p-blog-details__article {
-  padding: 7rem 0 18.8rem 0;
+  padding-bottom: 12rem;
   width: 60rem;
 }
 @media (max-width: 767px) {
   .p-blog-details__article {
     width: initial;
-    padding: initial;
-    padding-top: 5rem;
+    display: block;
+    padding-bottom: initial;
   }
 }
 .p-blog-details__mv-image {
@@ -1439,13 +1441,14 @@ main {
   }
 }
 .p-blog-details__aside {
-  padding: 7rem 0 18.5rem 0;
   width: 25rem;
 }
 @media (max-width: 767px) {
   .p-blog-details__aside {
-    padding: 3rem 0 20rem 0;
     width: 100%;
+    display: block;
+    margin-top: 3rem;
+    padding-bottom: 15rem;
   }
 }
 .p-blog-details__side-inner {
@@ -3544,6 +3547,7 @@ main {
 }
 .p-faq__accordion-question.active::after {
   transform: rotate(-135deg);
+  transition: 0.5s all;
 }
 .p-faq__accordion-answer {
   display: none;

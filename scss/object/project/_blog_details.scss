@@ -119,17 +119,25 @@
 .p-blog-details {
   display: flex;
   justify-content: space-between;
+  padding-block: 7rem;
   @include sp {
-    display: initial;
+    display: block;
+    padding-block: 5rem;
+    // padding-block: 7.3rem;
   }
+  // ↓0924修正中
   &__article {
-    padding: 7rem 0 18.8rem 0;
+    // padding: 7rem 0 18.8rem 0;
+    padding-bottom: 12rem;
     width: 60rem;
+
     @include sp {
       width: initial;
+      display: block;
+      padding-bottom: initial;
       // padding: 5rem 0 19.7rem 0;
-      padding: initial;
-      padding-top: 5rem;
+      // padding: initial;
+      // padding-top: 5rem;
     }
   }
   // FV画像部分
@@ -584,18 +592,24 @@
           @include sp {
             padding-left: initial;
             margin-top: 0.4rem;
-
           }
         }
       }
     }
   }
+
+  // ↓0924修正中
   &__aside {
-    padding: 7rem 0 18.5rem 0;
+    // padding: 7rem 0 18.5rem 0;
     width: 25rem;
+    // padding-bottom: 13rem;
     @include sp {
-      padding: 3rem 0 20rem 0;
+      // padding: 3rem 0 20rem 0;
       width: 100%;
+      display: block;
+      margin-top: 3rem;
+      padding-bottom: 15rem;
+      // padding-bottom: 12.6rem;
     }
   }
   &__side-inner {

@@ -70,9 +70,10 @@
         height: 1.36rem;
         border-right: 0.1rem solid #000;
         border-bottom: 0.1rem solid #000;
-        // left: 85.5%;
         left: 95.2%;
         transform: rotate(45deg);
+        // ↑45度回転（下向き）
+
         transition: 0.5s all;
         @include sp {
           left: 90%;
@@ -102,10 +103,10 @@
       }
       // 回答部分が表示されたときに下線を表示する
       &.active {
-        // border-bottom: 0.1rem solid #000;
-        // 0614追加中
         &::after {
           transform: rotate(-135deg);
+          // ↑135度反時計回りで元に戻る
+          transition: 0.5s all;
         }
       }
     }
