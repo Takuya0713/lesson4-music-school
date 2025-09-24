@@ -271,11 +271,14 @@
       }
     }
     &__image {
-      width: 33%;
-      // width: calc(11 / 65) * 100%;
-      height: 50%;
-      // img{
-      //   aspect-ratio: 11/20;
+      @include sp {
+        // width: 33%;
+        width: calc(20 / 65) * 100%;
+        height: 50%;
+      }
+      // img {
+      //   aspect-ratio: 20/65;
+      //   aspect-ratio: 4/13;
       //   object-fit: cover;
       // }
     }
