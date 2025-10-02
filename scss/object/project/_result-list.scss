@@ -1,5 +1,51 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
+// .p-plan-mv {
+//   position: relative;
+.p-result-mv {
+  position: relative;
+
+  &__title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-content: center;
+  }
+  &__titleInner {
+    text-align: center;
+    z-index: 99;
+    color: $color-white;
+    // font-size: vw(25);
+    font-size: 2.5rem;
+    line-height: calc(60 / 25);
+    font-weight: bold;
+  }
+  &__image {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    &--result {
+      &::after {
+        background-color: rgba(255, 255, 255, 1);
+        mix-blend-mode: multiply;
+        @include sp {
+          background-color: rgba(80, 80, 80, 0.4863);
+        }
+      }
+    }
+  }
+}
+
 .p-result-list {
   padding: 6.7rem 0 20.7rem 0;
   @include sp {
@@ -74,10 +120,9 @@
         content: "クラシック";
       }
     }
-    img{
+    img {
       aspect-ratio: 129 / 91;
       object-fit: cover;
-
     }
   }
   // タイトル部分

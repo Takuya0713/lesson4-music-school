@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #000;
+    border: 0.1rem solid #000;
     margin: -0.1rem -0.2rem 0rem 0rem;
     a {
       transition: 0.3s all;
@@ -21,10 +21,11 @@
         background-color: #000;
         color: #fff;
         cursor: pointer;
+        opacity: 1;
         // ↓最初の要素以外を透過させる
-        &:not(:first-child) {
-          opacity: 0.7;
-        }
+        // &:not(:first-child) {
+        //   opacity: 0.7;
+        // }
       }
     }
     a,
@@ -69,7 +70,8 @@
       background-color: #000;
       color: $color-white;
 
-      p,h4 {
+      p,
+      h4 {
         font-size: 1.7rem;
         line-height: calc(30 / 17);
       }

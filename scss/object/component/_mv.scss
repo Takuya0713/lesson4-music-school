@@ -1,6 +1,5 @@
 @use "../../foundation/mixins" as *;
 @use "../../foundation/variables" as *;
-// 6/20→次回こちらを.c-mvに変更して共通スタイルを充てる
 .c-mv {
   position: relative;
   &__title {
