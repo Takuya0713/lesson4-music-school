@@ -5,7 +5,7 @@
   position: relative;
   padding-top: 7rem;
   padding-bottom: 5.7rem;
-   // 全人類、 ミュージシャン計画。
+  // 全人類、 ミュージシャン計画。
   @include sp {
     padding: 3.9rem 0 0;
   }
@@ -34,8 +34,10 @@
     }
   }
   &__contents {
-    // margin-top: 3.4rem;
-    margin-top: 0.5rem;
+    margin-top: 3.4rem;
+    @include sp {
+      margin-top: 2rem;
+    }
   }
   &__topIcon {
     @include sp {
