@@ -29,7 +29,6 @@ body {
     "游ゴシック", "Yu Gothic", sans-serif;
   font-size: 1.6rem;
   padding-top: 8rem; // ヘッダーの高さ分の余白を追加
-  overflow-x: hidden;
   @include sp {
     padding-top: 5rem; // SPの時はヘッダーの高さ分の余白を追加
   }
