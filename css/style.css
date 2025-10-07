@@ -1650,7 +1650,6 @@ main {
   }
 }
 .p-blog-mv__image::after {
-  background-color: rgba(80, 80, 80, 0.502);
   background-color: rgba(80, 80, 80, 0.4863);
   mix-blend-mode: multiply;
   content: "";
@@ -2056,7 +2055,8 @@ main {
   }
 }
 .p-contact-form__image::after {
-  background-color: rgba(80, 80, 80, 0.502);
+  background-color: rgba(80, 80, 80, 0.4863);
+  mix-blend-mode: multiply;
   content: "";
   position: absolute;
   top: 0;
@@ -2208,6 +2208,8 @@ main {
 }
 .p-error-mv__image::after {
   background-color: rgba(80, 80, 80, 0.502);
+  background-color: rgba(80, 80, 80, 0.4863);
+  mix-blend-mode: multiply;
   content: "";
   position: absolute;
   top: 0;
@@ -4087,7 +4089,6 @@ main {
 @media (max-width: 767px) {
   .p-use__flow-detail-inner {
     flex-direction: column;
-    margin-top: -2.5rem;
   }
 }
 .p-use__flow-detail__title {

@@ -41,7 +41,7 @@
   }
   &__image {
     &::after {
-      background-color: rgba(80, 80, 80, 0.502);
+      // background-color: rgba(80, 80, 80, 0.502);
       background-color: rgba(80, 80, 80, 0.4863);
       mix-blend-mode: multiply;
       content: "";
