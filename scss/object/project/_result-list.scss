@@ -38,9 +38,9 @@
       &::after {
         background-color: rgba(255, 255, 255, 1);
         mix-blend-mode: multiply;
-        @include sp {
-          background-color: rgba(80, 80, 80, 0.4863);
-        }
+        // @include sp {
+        //   background-color: rgba(80, 80, 80, 0.4863);
+        // }
       }
     }
   }
