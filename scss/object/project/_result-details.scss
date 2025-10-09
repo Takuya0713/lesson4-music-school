@@ -250,9 +250,6 @@
     &__text-inner {
       display: flex;
       flex-direction: column;
-      @include sp {
-        margin-top: 1.6rem;
-      }
       p {
         font-weight: bold;
         font-size: 2rem;
@@ -262,6 +259,26 @@
           line-height: calc(28 / 17);
         }
       }
+      &__title-text {
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: calc(25 / 20);
+        @include sp {
+          display: none;
+        }
+      }
+      .pc-only {
+        @include sp {
+          display: none;
+        }
+      }
+      .sp-only {
+        display: none;
+        @include sp {
+          display: block;
+        }
+      }
+
       time {
         display: block;
         margin-top: 1.3rem;
