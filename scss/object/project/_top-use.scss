@@ -35,9 +35,9 @@
       justify-content: center;
       column-gap: 5rem;
       @include sp {
-        // display: initial;
-        // column-gap: 2rem;
+        align-items: initial;
         column-gap: 1.3rem;
+        column-gap: 2rem;
       }
       &:first-of-type {
         .p-use__flow-detail__circle {

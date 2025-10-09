@@ -27,6 +27,7 @@
   &__image {
     &::after {
       background-color: rgba(80, 80, 80, 0.502);
+      mix-blend-mode: multiply;
       content: "";
       position: absolute;
       top: 0;
@@ -48,7 +49,8 @@
     @include sp {
       text-align: left;
     }
-    h2,p {
+    h2,
+    p {
       font-size: 1.8rem;
       line-height: calc(30 / 18);
       @include sp {

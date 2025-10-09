@@ -39,11 +39,11 @@
       margin-top: 2rem;
     }
   }
-  &__topIcon {
-    @include sp {
-      padding-top: 0.7rem;
-    }
-  }
+  // &__topIcon {
+  //   @include sp {
+  //     padding-top: 0.7rem;
+  //   }
+  // }
   // 親要素
   &__flow {
     position: relative;

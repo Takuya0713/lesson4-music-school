@@ -2094,6 +2094,7 @@ main {
 }
 .p-contact_send__image::after {
   background-color: rgba(80, 80, 80, 0.502);
+  mix-blend-mode: multiply;
   content: "";
   position: absolute;
   top: 0;
@@ -2119,12 +2120,14 @@ main {
     text-align: left;
   }
 }
-.p-sended__message h2, .p-sended__message p {
+.p-sended__message h2,
+.p-sended__message p {
   font-size: 1.8rem;
   line-height: 1.6666666667;
 }
 @media (max-width: 767px) {
-  .p-sended__message h2, .p-sended__message p {
+  .p-sended__message h2,
+  .p-sended__message p {
     font-size: 1.6rem;
     line-height: 1.875;
     font-weight: 400;
@@ -3379,11 +3382,6 @@ main {
     margin-top: 2rem;
   }
 }
-@media (max-width: 767px) {
-  .p-concept__topIcon {
-    padding-top: 0.7rem;
-  }
-}
 .p-concept__flow {
   position: relative;
   display: grid;
@@ -4034,8 +4032,11 @@ main {
 }
 @media (max-width: 767px) {
   .p-use__flow-detail {
+    align-items: initial;
     -moz-column-gap: 1.3rem;
          column-gap: 1.3rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 }
 .p-use__flow-detail:first-of-type .p-use__flow-detail__circle {
