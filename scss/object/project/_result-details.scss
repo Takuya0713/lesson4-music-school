@@ -250,6 +250,10 @@
     &__text-inner {
       display: flex;
       flex-direction: column;
+      row-gap: 1.3rem;
+      @include sp {
+        row-gap: 0.6rem;
+      }
       p {
         font-weight: bold;
         font-size: 2rem;
@@ -281,13 +285,9 @@
 
       time {
         display: block;
-        margin-top: 1.3rem;
         padding-left: 0.3rem;
         font-size: 1.7rem;
         line-height: calc(30 / 17);
-        @include sp {
-          margin-top: 0.6rem;
-        }
       }
     }
   }

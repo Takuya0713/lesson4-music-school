@@ -421,24 +421,10 @@
         line-height: calc(33 / 20);
         font-weight: bold;
         text-decoration: underline;
-        // position: absolute;
-        // content: "";
-        // border-bottom: .1rem solid rgb(0, 0, 0);
-        // height: 3rem;
-        // top: 20%;
-        // left: 0;
         &:hover {
           color: $color-red;
-          opacity: 1;
+          opacity: 0.7;
         }
-        // &::before {
-        //   position: absolute;
-        //   content: "";
-        //   border-bottom: 0.1rem solid rgb(0, 0, 0);
-        //   height: 3rem;
-        //   top: 20%;
-        //   left: 0;
-        // }
       }
     }
   }
