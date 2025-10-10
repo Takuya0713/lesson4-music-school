@@ -85,10 +85,9 @@
         line-height: calc(30 / 18);
         padding-left: 2rem;
         vertical-align: middle;
-        // padding: 0.8rem 2rem 0;.
-
         @include sp {
-          padding: 0.8rem 1rem 0;
+          // padding: 0.8rem 1rem 0;
+          padding: 0 1rem;
         }
       }
       td {

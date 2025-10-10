@@ -2723,7 +2723,7 @@ main {
 }
 @media (max-width: 767px) {
   .p-result-details__profile-data table th {
-    padding: 0.8rem 1rem 0;
+    padding: 0 1rem;
   }
 }
 .p-result-details__profile-data table td {
