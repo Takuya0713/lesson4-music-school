@@ -7,10 +7,6 @@
   }
   &__image {
     position: relative;
-    height: 40rem;
-    @include sp {
-      height: initial;
-    }
     &.hops {
       &::before {
         content: "ホップス";
@@ -28,6 +24,13 @@
         font-size: 1.5rem;
         line-height: calc(25 / 15);
         font-weight: bold;
+      }
+    }
+    img {
+      aspect-ratio: 11 / 5;
+      object-fit: cover;
+      @include sp {
+        aspect-ratio: 335 / 236;
       }
     }
   }
@@ -202,11 +205,9 @@
       justify-content: center;
       position: relative;
       width: 26rem;
-      height: 18.4rem;
       flex-shrink: 0;
       @include sp {
         width: 16rem;
-        height: 11.3rem;
       }
       &::before {
         position: absolute;
@@ -243,6 +244,13 @@
       &.latin {
         &::before {
           content: "ラテン";
+        }
+      }
+      img {
+        object-fit: cover;
+        aspect-ratio: 260 / 183;
+        @include sp {
+          aspect-ratio: 160 / 113;
         }
       }
     }

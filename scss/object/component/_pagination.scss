@@ -89,8 +89,11 @@
         display: none;
       }
       img {
-        aspect-ratio: 98 / 68;
+        aspect-ratio: 10 / 7;
         object-fit: cover;
+        @include sp{
+          aspect-ratio: 16 / 11;
+        }
       }
     }
     &__text {

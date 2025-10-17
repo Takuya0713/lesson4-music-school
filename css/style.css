@@ -815,9 +815,14 @@ main {
   }
 }
 .c-paging .c-paging-item__image img {
-  aspect-ratio: 98/68;
+  aspect-ratio: 10/7;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 767px) {
+  .c-paging .c-paging-item__image img {
+    aspect-ratio: 16/11;
+  }
 }
 .c-paging .c-paging-item__text {
   flex: 1;
@@ -1004,10 +1009,14 @@ main {
   height: 100%;
 }
 .p-blog-details__mv-image img {
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  aspect-ratio: 12/7;
+}
+@media (max-width: 767px) {
+  .p-blog-details__mv-image img {
+    aspect-ratio: 67/40;
+  }
 }
 .p-blog-details-habit__title {
   margin-top: 4.5rem;
@@ -1175,6 +1184,16 @@ main {
   .p-blog-details-habit-img__half {
     width: 100%;
     margin-top: 4.1rem;
+  }
+}
+.p-blog-details-habit-img__half img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 6/4;
+}
+@media (max-width: 767px) {
+  .p-blog-details-habit-img__half img {
+    aspect-ratio: 67/40;
   }
 }
 .p-blog-details-habit__list {
@@ -1399,14 +1418,22 @@ main {
 }
 .p-blog-details .page-relation__image {
   width: 32rem;
-  height: 14rem;
   justify-content: initial;
   flex-shrink: initial;
 }
 @media (max-width: 767px) {
   .p-blog-details .page-relation__image {
     width: 16rem;
-    height: initial;
+  }
+}
+.p-blog-details .page-relation__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 10/7;
+}
+@media (max-width: 767px) {
+  .p-blog-details .page-relation__image img {
+    aspect-ratio: 16/11;
   }
 }
 @media (max-width: 767px) {
@@ -1711,7 +1738,6 @@ main {
 @media (max-width: 767px) {
   .p-blog-list__image {
     width: 100%;
-    height: 20rem;
   }
 }
 .p-blog-list__image::before {
@@ -1744,6 +1770,11 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
   aspect-ratio: 65/46;
+}
+@media (max-width: 767px) {
+  .p-blog-list__image img {
+    aspect-ratio: 67/40;
+  }
 }
 .p-blog-list__image.guitar::before {
   content: "ギター";
@@ -2639,12 +2670,6 @@ main {
 }
 .p-result-details__image {
   position: relative;
-  height: 40rem;
-}
-@media (max-width: 767px) {
-  .p-result-details__image {
-    height: initial;
-  }
 }
 .p-result-details__image.hops::before {
   content: "ホップス";
@@ -2662,6 +2687,16 @@ main {
   font-size: 1.5rem;
   line-height: 1.6666666667;
   font-weight: bold;
+}
+.p-result-details__image img {
+  aspect-ratio: 11/5;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 767px) {
+  .p-result-details__image img {
+    aspect-ratio: 335/236;
+  }
 }
 .p-result-details__title {
   margin-top: 5rem;
@@ -2848,13 +2883,11 @@ main {
   justify-content: center;
   position: relative;
   width: 26rem;
-  height: 18.4rem;
   flex-shrink: 0;
 }
 @media (max-width: 767px) {
   .p-result-details .page-relation__image {
     width: 16rem;
-    height: 11.3rem;
   }
 }
 .p-result-details .page-relation__image::before {
@@ -2886,6 +2919,16 @@ main {
 }
 .p-result-details .page-relation__image.latin::before {
   content: "ラテン";
+}
+.p-result-details .page-relation__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 260/183;
+}
+@media (max-width: 767px) {
+  .p-result-details .page-relation__image img {
+    aspect-ratio: 160/113;
+  }
 }
 .p-result-details .page-relation__text-inner {
   display: flex;
@@ -3039,9 +3082,14 @@ main {
   content: "クラシック";
 }
 .p-result-list__image img {
-  aspect-ratio: 129/91;
   -o-object-fit: cover;
      object-fit: cover;
+  aspect-ratio: 129/91;
+}
+@media (max-width: 767px) {
+  .p-result-list__image img {
+    aspect-ratio: 335/236;
+  }
 }
 .p-result-list__title {
   margin: 3rem 0 1rem 0;

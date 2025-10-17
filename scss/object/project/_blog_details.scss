@@ -179,9 +179,11 @@
     }
 
     img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; // ☆画像のアスペクト比を保ちながら指定サイズに収める
+      object-fit: cover;
+      aspect-ratio: 12 / 7;
+      @include sp {
+        aspect-ratio: 67 / 40;
+      }
     }
   }
 
@@ -334,6 +336,13 @@
       @include sp {
         width: 100%;
         margin-top: 4.1rem;
+      }
+      & img {
+        object-fit: cover;
+        aspect-ratio: 6 / 4;
+        @include sp {
+          aspect-ratio: 67 / 40;
+        }
       }
     }
     &__list {
@@ -537,13 +546,21 @@
 
     &__image {
       width: 32rem;
-      height: 14rem;
+      // height: 14rem;
       justify-content: initial;
       flex-shrink: initial;
       @include sp {
         width: 16rem;
-        height: initial;
+        // height: initial;
       }
+      img {
+        object-fit: cover;
+        aspect-ratio: 10 / 7;
+        @include sp{
+          aspect-ratio: 16 / 11;
+        }
+      }
+
     }
     &__title-inner {
       @include sp {

@@ -121,8 +121,11 @@
       }
     }
     img {
-      aspect-ratio: 129 / 91;
       object-fit: cover;
+      aspect-ratio: 129 / 91;
+      @include sp {
+        aspect-ratio: 335/236;
+      }
     }
   }
   // タイトル部分

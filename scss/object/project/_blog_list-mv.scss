@@ -91,11 +91,9 @@
     justify-content: center;
     position: relative;
     width: 26rem; // 画像の幅を固定
-    // height: 18.4rem; →heightは使用しない
     flex-shrink: 0; // ☆画像部分が縮まないようにする
     @include sp {
       width: 100%;
-      height: 20rem;
     }
     &::before {
       background-color: rgb(203, 0, 0);
@@ -127,6 +125,9 @@
     img {
       object-fit: cover; // ☆画像のアスペクト比を保ちながら指定サイズに収める
       aspect-ratio: 65 / 46;
+      @include sp {
+        aspect-ratio: 67 / 40;
+      }
     }
 
     // 集客方法（attracting-customers）・SNS（sns）
