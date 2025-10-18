@@ -173,8 +173,6 @@ body {
   }
 }
 img {
-  width: 100%;
-  height: auto;
   display: block;
 }
 
@@ -1346,6 +1344,8 @@ main {
 }
 .p-blog-details .page-relation {
   margin-top: 9.2rem;
+  row-gap: 3rem;
+  display: grid;
 }
 @media (max-width: 767px) {
   .p-blog-details .page-relation {
@@ -1357,7 +1357,6 @@ main {
 .p-blog-details .page-relation__items {
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
   row-gap: 3rem;
 }
 @media (max-width: 767px) {
@@ -1407,7 +1406,6 @@ main {
   }
 }
 .p-blog-details .page-relation__image {
-  width: 20rem;
   justify-content: initial;
   flex-shrink: initial;
 }
@@ -2050,7 +2048,7 @@ main {
 .p-contact-form .form-btn-inner button:hover {
   background-color: #ffffff;
   color: rgb(203, 0, 0);
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .p-contact-form__mv {
@@ -2203,6 +2201,7 @@ main {
 .p-sended__return-inner a:hover {
   background-color: #ffffff;
   color: rgb(203, 0, 0);
+  opacity: 1;
 }
 
 .p-error-mv {
@@ -2265,13 +2264,13 @@ main {
     text-align: left;
   }
 }
-.error__message h2 {
+.error__message p {
   font-size: 1.8rem;
   line-height: 1.6666666667;
   font-weight: 400;
 }
 @media (max-width: 767px) {
-  .error__message h2 {
+  .error__message p {
     font-size: 1.6rem;
     line-height: 1.875;
   }
@@ -2815,6 +2814,7 @@ main {
 @media (max-width: 767px) {
   .p-result-details .page-relation {
     margin-top: 6.7rem;
+    row-gap: 2rem;
   }
 }
 .p-result-details .page-relation__title {
@@ -2850,6 +2850,7 @@ main {
   .p-result-details .page-relation__items {
     display: flex;
     flex-direction: column;
+    row-gap: 2rem;
   }
 }
 .p-result-details .page-relation__item {
@@ -2861,7 +2862,6 @@ main {
   .p-result-details .page-relation__item {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
-    margin-top: 2rem;
   }
 }
 .p-result-details .page-relation__image {
@@ -3178,24 +3178,22 @@ main {
   justify-content: center;
   position: relative;
   width: 26rem;
-  height: 18.4rem;
   flex-shrink: 0;
 }
 @media (max-width: 767px) {
   .p-search__image {
     width: 100%;
-    height: 20rem;
   }
 }
-.p-search__image picture {
-  width: 100%;
-  height: 100%;
-}
 .p-search__image img {
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  aspect-ratio: 65/46;
+}
+@media (max-width: 767px) {
+  .p-search__image img {
+    aspect-ratio: 67/40;
+  }
 }
 .p-search__image::before {
   background-color: rgb(203, 0, 0);

@@ -489,6 +489,8 @@
   // 関連記事の子要素部分（blog_details部分のみ変更を加える部分）
   .page-relation {
     margin-top: 9.2rem;
+    row-gap: 3rem;
+    display: grid;    
     @include sp {
       margin-top: 6.7rem;
       display: flex;
@@ -497,7 +499,6 @@
     &__items {
       display: flex;
       flex-direction: column;
-      margin-top: 3rem;
       row-gap: 3rem;
       @include sp {
         margin-top: 2rem;
@@ -540,7 +541,7 @@
 
     &__image {
       // width: 32rem;
-      width: 20rem;
+      // width: 20rem;
       justify-content: initial;
       flex-shrink: initial;
       @include sp {

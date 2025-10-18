@@ -160,6 +160,7 @@
     row-gap: 3rem;
     @include sp {
       margin-top: 6.7rem;
+      row-gap: 2rem;
     }
     // 関連記事タイトル
     &__title {
@@ -189,15 +190,14 @@
       @include sp {
         display: flex;
         flex-direction: column;
+        row-gap: 2rem;
       }
     }
     &__item {
       display: flex;
       column-gap: 3rem;
-      // margin-top: 3rem;
       @include sp {
         column-gap: 2rem;
-        margin-top: 2rem;
       }
     }
     &__image {
