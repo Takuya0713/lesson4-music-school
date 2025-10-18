@@ -500,11 +500,6 @@ img {
   align-items: center;
   height: 100%;
 }
-@media (max-width: 767px) {
-  .l-header__breadcrumb ol li {
-    height: initial;
-  }
-}
 .l-header__breadcrumb ol li:last {
   flex-basis: 100%; /* 改行して次の行へ */
   margin-top: 4px;
@@ -578,7 +573,6 @@ main {
 .c-button__wrapper .c-fix-area {
   position: relative;
   transition: all 0.5s;
-  padding-left: 3.2rem;
 }
 @media (max-width: 767px) {
   .c-button__wrapper .c-fix-area {
@@ -627,11 +621,11 @@ main {
   pointer-events: auto;
   border: 0.1rem solid rgb(203, 0, 0);
   padding-top: 0.5rem;
-  opacity: 1;
 }
 .c-button__wrapper .c-form-btn a:hover {
   background-color: #ffffff;
   color: rgb(203, 0, 0);
+  opacity: 1;
 }
 
 .c-text {
@@ -1003,10 +997,6 @@ main {
   .p-blog-details__mv-image::before {
     width: 9rem;
   }
-}
-.p-blog-details__mv-image picture {
-  width: 100%;
-  height: 100%;
 }
 .p-blog-details__mv-image img {
   -o-object-fit: cover;
@@ -1417,7 +1407,7 @@ main {
   }
 }
 .p-blog-details .page-relation__image {
-  width: 32rem;
+  width: 20rem;
   justify-content: initial;
   flex-shrink: initial;
 }
@@ -1761,10 +1751,6 @@ main {
   .p-blog-list__image::before {
     width: 9rem;
   }
-}
-.p-blog-list__image picture {
-  width: 100%;
-  height: 100%;
 }
 .p-blog-list__image img {
   -o-object-fit: cover;

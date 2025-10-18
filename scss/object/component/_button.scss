@@ -37,7 +37,7 @@ main {
   .c-fix-area {
     position: relative;
     transition: all 0.5s;
-    padding-left: 3.2rem;
+    // padding-left: 3.2rem;
     @include sp {
       justify-content: flex-end;
     }
@@ -86,11 +86,10 @@ main {
       pointer-events: auto;
       border: 0.1rem solid rgb(203, 0, 0);
       padding-top: 0.5rem;
-      opacity: 1;
       &:hover {
         background-color: #ffffff;
         color: rgb(203, 0, 0);
-        // opacity: 1;
+        opacity: 1;
       }
     }
   }

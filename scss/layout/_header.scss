@@ -61,9 +61,6 @@
     display: flex;
     align-items: center;
     height: 100%;
-    // @include sp {
-    //   padding-block: 1rem;
-    // }
     span {
       font-weight: bold;
       display: inline-block;
@@ -272,9 +269,6 @@
         display: flex;
         align-items: center;
         height: 100%;
-        @include sp {
-          height: initial;
-        }
         &:last {
           flex-basis: 100%; /* 改行して次の行へ */
           margin-top: 4px;
