@@ -490,7 +490,7 @@
   .page-relation {
     margin-top: 9.2rem;
     row-gap: 3rem;
-    display: grid;    
+    display: grid;
     @include sp {
       margin-top: 6.7rem;
       display: flex;
@@ -540,22 +540,40 @@
     }
 
     &__image {
-      // width: 32rem;
-      // width: 20rem;
+      position: relative;
       justify-content: initial;
       flex-shrink: initial;
       @include sp {
         width: 16rem;
-        // height: initial;
       }
-      img {
-        object-fit: cover;
-        aspect-ratio: 10 / 7;
-        @include sp{
-          aspect-ratio: 16 / 11;
+      &::before {
+        content: "ギター";
+        background-color: rgb(203, 0, 0);
+        color: #ffffff;
+        width: 8rem;
+        height: 3rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        line-height: calc(25 / 15);
+        font-weight: bold;
+        @include sp {
+          width: 9rem;
         }
       }
 
+      img {
+        object-fit: cover;
+        aspect-ratio: 10 / 7;
+        @include sp {
+          aspect-ratio: 16 / 11;
+        }
+      }
     }
     &__title-inner {
       @include sp {

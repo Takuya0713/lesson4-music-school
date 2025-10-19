@@ -42,14 +42,12 @@
   }
 
   &__image {
-    // width: 27rem;
-    @include sp {
-      width: 33.5rem;
-      height: 20rem;
-    }
     img {
-      aspect-ratio: 27/19;
+      aspect-ratio: 27 / 19;
       object-fit: cover;
+      @include sp {
+        aspect-ratio: 67 / 40;
+      }
     }
   }
   &__name {
@@ -97,23 +95,16 @@
     // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
     &--prev {
-      // left: -4.3rem;
-      left: -5.5%;
-      // left: -6.1rem;
-      // background-repeat: no-repeat;
+      left: -3rem;
       @include sp {
-        // left: -1rem;
-        left: 0;
+        left: -0.7rem;
       }
     }
 
     &--next {
-      // right: -5.5rem;
-      right: -5.5%;
-      // right: -6.1rem;
-      // right: -5%;
+      right: -3rem;
       @include sp {
-        right: 0;
+        right: -0.7rem;
       }
     }
 
