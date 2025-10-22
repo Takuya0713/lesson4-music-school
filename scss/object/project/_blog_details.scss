@@ -98,7 +98,8 @@
   display: flex;
   justify-content: space-between;
   // padding-block: 7rem;
-  padding: 7rem 0 18.5rem 0;
+  // padding: 7rem 0 18.5rem 0;
+  padding: 7rem 0 6.8rem 0;
   @include sp {
     display: block;
     padding-block: 5rem;
@@ -470,13 +471,14 @@
       margin-top: 6.7rem;
       display: flex;
       flex-direction: column;
+      row-gap: 2rem;
     }
     &__items {
       display: flex;
       flex-direction: column;
       row-gap: 3rem;
       @include sp {
-        margin-top: 2rem;
+        // margin-top: 2rem;
         row-gap: 2rem;
       }
     }
@@ -517,8 +519,8 @@
     &__image {
       position: relative;
       flex-shrink: initial;
-      // justify-content: initial;
       width: 20rem;
+      // justify-content: initial;
       @include sp {
         width: 16rem;
       }
@@ -552,9 +554,10 @@
       }
     }
     &__title-inner {
+      width: 36rem;
       @include sp {
         width: 15.5rem;
-        margin-top: -0.7rem;
+        // margin-top: -0.7rem;
       }
       p {
         font-weight: bold;
