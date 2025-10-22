@@ -26,6 +26,7 @@
     margin-top: 7rem;
     @include sp {
       margin-top: 3.2rem;
+      margin-top: 2.8rem;
       row-gap: 0.8rem;
     }
   }
@@ -35,6 +36,11 @@
     @include sp {
       display: initial;
     }
+    // &.purpose {
+    //   @include sp {
+    //     margin-top: 1rem;
+    //   }
+    // }
   }
 
   dt {
@@ -72,7 +78,7 @@
     margin-top: 3rem;
     display: inline-block;
     @include sp {
-      margin-top: 1.3rem;
+      margin-top: initial;
     }
   }
 
@@ -185,7 +191,8 @@
   .form-btn {
     margin-top: 1.9rem;
     @include sp {
-      margin-top: 4.1rem;
+      // margin-top: 4.1rem;
+      margin-top: 3.8rem;
       width: 100%;
     }
     &-inner {

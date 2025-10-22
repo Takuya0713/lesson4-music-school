@@ -3,11 +3,13 @@
 
 .p-concept {
   position: relative;
-  padding-top: 7rem;
-  padding-bottom: 5.7rem;
+  padding-top: 6.3rem;
+  padding-bottom: 5.9rem;
   // 全人類、 ミュージシャン計画。
   @include sp {
-    padding: 3.9rem 0 0;
+    // padding-top: 3.9rem;
+    padding-top: 4.4rem;
+    padding-bottom: initial;
   }
   &__title {
     h2 {
@@ -35,16 +37,11 @@
   }
   &__contents {
     margin-top: 3.4rem;
+    margin-top: 7.4rem;
     @include sp {
       margin-top: 2rem;
     }
   }
-  // &__topIcon {
-  //   @include sp {
-  //     padding-top: 0.7rem;
-  //   }
-  // }
-  // 親要素
   &__flow {
     position: relative;
     display: grid;

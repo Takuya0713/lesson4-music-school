@@ -4,7 +4,8 @@
   // padding: 6.4rem 0 22.5rem 0;
   padding-top: 6.4rem;
   @include sp {
-    padding-top: 4.6rem;
+    // padding-top: 4.6rem;
+    padding-top: 4.3rem;
   }
   &__title {
     h2 {
@@ -102,10 +103,9 @@
 
     // 料金表部分
     &__list {
-      margin-top: 4.8rem;
+      margin-top: 5rem;
       @include sp {
-        // margin-top: 3.6rem;
-        margin-top: 2.3rem;
+        margin-top: 2rem;
       }
       @include sp {
         // 横軸方向にスクロールをつける

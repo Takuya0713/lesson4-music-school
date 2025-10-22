@@ -3,7 +3,7 @@
 
 // 生徒さんたちの声
 .p-voice {
-  padding: 6.5rem 0 6.4rem;
+  padding: 6.1rem 0;
   overflow-x: hidden;
   // position: relative;
   @include sp {
@@ -22,7 +22,8 @@
   }
 
   &__items {
-    margin-top: 3.6rem;
+    // margin-top: 3.6rem;
+    margin-top: 3.9rem;
     @include sp {
       margin-top: 4.3rem;
     }
@@ -52,6 +53,7 @@
   }
   &__name {
     margin-top: 1.4rem;
+    margin-top: 2.4rem;
     text-align: center;
     @include sp {
       margin-top: 2.3rem;

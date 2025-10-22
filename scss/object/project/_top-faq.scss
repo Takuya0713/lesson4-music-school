@@ -24,7 +24,8 @@
     margin-top: 3.8rem;
     border-bottom: 0.05rem solid #000000;
     @include sp {
-      margin-top: 4.1rem;
+      // margin-top: 4.1rem;
+      margin-top: 4.4rem;
     }
     // 質問
     &-question {
@@ -32,13 +33,12 @@
       align-items: center;
       padding-left: 2rem;
       padding-block: 1.75rem;
-      // height: 6.5rem;
       position: relative;
       background-color: $color-white;
       @include sp {
-        padding: initial;
-        padding-block: 1.3rem;
-        // height: 8.6rem;
+        padding-left: initial;
+        // padding-block: 1.3rem;
+        padding-block: 0.7rem;
       }
       &.last {
         @include sp {
@@ -92,7 +92,9 @@
         line-height: calc(30 / 17);
         @include sp {
           display: inline-block;
-          padding: 1rem 0;
+          // padding: 1rem 0;
+          padding-left: initial;
+          padding-top: 1rem;
           font-size: 1.6rem;
           font-weight: 400;
           margin-left: 5.5rem;
@@ -139,7 +141,8 @@
         align-items: center;
         position: relative;
         @include sp {
-          padding-block: 1.3rem;
+          // padding-block: 1.3rem;
+          padding-block: 0.2rem;
           display: flex;
           align-items: center;
           height: 100%;
