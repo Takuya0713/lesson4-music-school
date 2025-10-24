@@ -343,6 +343,7 @@ img {
 .l-header__button a:hover {
   background-color: #ffffff;
   color: rgb(203, 0, 0);
+  opacity: 1;
 }
 .l-header__nav {
   display: flex;

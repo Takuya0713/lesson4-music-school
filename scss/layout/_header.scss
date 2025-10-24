@@ -120,6 +120,7 @@
       &:hover {
         background-color: #ffffff;
         color: rgb(203, 0, 0);
+        opacity: 1;
       }
     }
   }
@@ -184,13 +185,12 @@
           clip-path: inset(0 100% 0 0);
           // 上・右・下・左の順番。今回は右から左に線を消す。
           transition: 0.3s all;
-          @include sp{
+          @include sp {
             display: none;
           }
         }
         @include sp {
           padding-left: 2rem;
-          
         }
       }
     }
