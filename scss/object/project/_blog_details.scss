@@ -97,13 +97,10 @@
 .p-blog-details {
   display: flex;
   justify-content: space-between;
-  // padding-block: 7rem;
-  // padding: 7rem 0 18.5rem 0;
   padding: 7rem 0 6.8rem 0;
   @include sp {
     display: block;
-    padding-block: 5rem;
-    // padding-block: 7.3rem;
+    padding: 7.3rem 0 4.7rem 0;
   }
   // ↓0924修正中
   &__article {
@@ -509,6 +506,7 @@
     }
     &__item {
       display: flex;
+      // justify-content: space-between;
       column-gap: 3rem;
       @include sp {
         column-gap: 2rem;
@@ -520,7 +518,6 @@
       position: relative;
       flex-shrink: initial;
       width: 20rem;
-      // justify-content: initial;
       @include sp {
         width: 16rem;
       }
@@ -554,11 +551,7 @@
       }
     }
     &__title-inner {
-      width: 36rem;
-      @include sp {
-        width: 15.5rem;
-        // margin-top: -0.7rem;
-      }
+      flex: 1;
       p {
         font-weight: bold;
         font-size: 2rem;
@@ -603,9 +596,6 @@
     display: flex;
     row-gap: 3rem;
     flex-direction: column;
-    @include sp {
-      row-gap: 2.9rem;
-    }
   }
 }
 

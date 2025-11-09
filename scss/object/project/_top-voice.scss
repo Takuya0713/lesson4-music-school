@@ -5,10 +5,8 @@
 .p-voice {
   padding: 6.1rem 0;
   overflow-x: hidden;
-  // position: relative;
   @include sp {
-    // padding: 4.5rem 0 5.1rem;
-    padding: 4.5rem 0 5.3rem;
+    padding: 4.5rem 0 5rem;
   }
   &__title {
     h2 {

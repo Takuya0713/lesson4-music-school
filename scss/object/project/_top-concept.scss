@@ -4,8 +4,8 @@
 .p-concept {
   position: relative;
   padding-top: 6.3rem;
-  padding-bottom: 5.9rem;
-  // 全人類、 ミュージシャン計画。
+  padding-bottom: 6.4rem;
+   // 全人類、 ミュージシャン計画。
   @include sp {
     // padding-top: 3.9rem;
     padding-top: 4.4rem;
@@ -25,7 +25,6 @@
     p {
       font-size: 1.8rem;
       margin-top: 1.7rem;
-      // margin-bottom: 3.4rem;
       text-align: center;
       line-height: calc(30 / 18);
       @include sp {
@@ -36,8 +35,8 @@
     }
   }
   &__contents {
-    margin-top: 3.4rem;
-    margin-top: 7.4rem;
+    // margin-top: 3.4rem;
+    // margin-top: 7.4rem;
     @include sp {
       margin-top: 2rem;
     }
@@ -46,9 +45,7 @@
     position: relative;
     display: grid;
     row-gap: 1.7rem;
-    // margin: -3rem 0 5rem 0;
     @include sp {
-      // margin: 3.2rem 0 5rem 0;
       margin: 3.2rem 0 4.1rem 0;
     }
     // 子要素（英語・●・日本語）
