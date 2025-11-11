@@ -5,8 +5,10 @@
   position: relative;
   &__wrapper {
     background-color: $color-red;
-    // height: 27.4rem;
-    padding: 4.3rem 0 5rem 0;
+    padding: 4rem 0 5rem 0;
+    @include sp {
+      padding: 4.2rem 0 5.2rem 0;
+    }
   }
   &__nav {
     ul {

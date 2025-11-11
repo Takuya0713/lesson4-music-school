@@ -24,7 +24,6 @@
   form {
     display: grid;
     row-gap: 3rem;
-    row-gap: 3.1rem;
     margin-top: 7rem;
     @include sp {
       margin-top: 3.2rem;
@@ -41,7 +40,7 @@
     &.purpose {
       // margin-top: -1.1rem;
       @include sp {
-        margin-top: 1rem;
+        // margin-top: 1rem;
       }
     }
   }
@@ -79,6 +78,7 @@
   }
   .text-mt {
     display: inline-block;
+    margin-top: 3rem;
     @include sp {
       margin-top: initial;
     }
@@ -212,6 +212,10 @@
         cursor: pointer;
         transition: all 0.3s;
         border: 0.1rem solid $color-red;
+        @include sp {
+          font-size: 2rem;
+          line-height: calc(26 / 20);
+        }
         &:hover {
           background-color: $color-white;
           color: $color-red;
