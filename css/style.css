@@ -3149,6 +3149,9 @@ main {
     line-height: 1.6666666667;
   }
 }
+.p-search__result h2 {
+  font-size: 1.8rem;
+}
 .p-search__result span {
   font-weight: bold;
 }
