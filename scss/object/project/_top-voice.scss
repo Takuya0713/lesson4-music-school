@@ -19,13 +19,13 @@
     }
   }
 
-  &__items {
-    // margin-top: 3.6rem;
+  &__wrapper {
     margin-top: 3.9rem;
     @include sp {
       margin-top: 4.3rem;
     }
-    a {
+  }
+  &__items {    a {
       display: inline-block;
       margin-inline: 1.75rem;
       @include sp {

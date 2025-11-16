@@ -21,9 +21,9 @@
     }
   }
   &__contents {
-    padding-top: 2.8rem;
+    margin-top: 2.8rem;
     @include sp {
-      padding-top: initial;
+      margin-top: initial;
       margin: 4.3rem 0 0 0;
     }
   }

@@ -3468,6 +3468,9 @@ main {
     text-align: initial;
   }
 }
+.p-concept__contents {
+  margin-top: 3.4rem;
+}
 @media (max-width: 767px) {
   .p-concept__contents {
     margin-top: 2rem;
@@ -3969,11 +3972,11 @@ main {
   }
 }
 .p-reason__contents {
-  padding-top: 2.8rem;
+  margin-top: 2.8rem;
 }
 @media (max-width: 767px) {
   .p-reason__contents {
-    padding-top: initial;
+    margin-top: initial;
     margin: 4.3rem 0 0 0;
   }
 }
@@ -4252,11 +4255,11 @@ main {
     line-height: 1.6;
   }
 }
-.p-voice__items {
+.p-voice__wrapper {
   margin-top: 3.9rem;
 }
 @media (max-width: 767px) {
-  .p-voice__items {
+  .p-voice__wrapper {
     margin-top: 4.3rem;
   }
 }
