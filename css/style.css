@@ -3435,7 +3435,7 @@ main {
 .p-concept {
   position: relative;
   padding-top: 6.3rem;
-  padding-bottom: 6.4rem;
+  padding-bottom: 5.8rem;
 }
 @media (max-width: 767px) {
   .p-concept {
@@ -3468,11 +3468,11 @@ main {
     text-align: initial;
   }
 }
-.p-concept__contents {
-  margin-top: 3.4rem;
+.p-concept__topIcon {
+  margin-top: 3.7rem;
 }
 @media (max-width: 767px) {
-  .p-concept__contents {
+  .p-concept__topIcon {
     margin-top: 2rem;
   }
 }
@@ -3480,6 +3480,7 @@ main {
   position: relative;
   display: grid;
   row-gap: 1.7rem;
+  margin-top: 1.8rem;
 }
 @media (max-width: 767px) {
   .p-concept__flow {
