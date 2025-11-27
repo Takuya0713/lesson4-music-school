@@ -1569,19 +1569,9 @@ main {
     padding: 2rem;
   }
 }
-.blog__search img {
-  aspect-ratio: 16/9;
-  background-color: rgb(0, 0, 0);
-}
 .blog__search .search-btn {
   cursor: pointer;
   transition: 0.3s all;
-}
-.blog__search .search-btn:hover {
-  opacity: 0.7;
-  pointer-events: visible;
-}
-.blog__search .search-btn span {
   background-color: rgb(0, 0, 0);
   height: 4rem;
   width: 4rem;
@@ -1590,10 +1580,18 @@ main {
   justify-content: center;
 }
 @media (max-width: 767px) {
-  .blog__search .search-btn span {
+  .blog__search .search-btn {
     width: 5.4rem;
     height: 5.4rem;
   }
+}
+.blog__search .search-btn:hover {
+  opacity: 0.7;
+  pointer-events: visible;
+}
+.blog__search .search-btn span {
+  display: block;
+  width: 1.98rem;
 }
 
 .news__items .news__item {

@@ -663,30 +663,28 @@
       padding: 2rem;
     }
   }
-  img {
-    aspect-ratio: 16/9;
-    background-color: $color-black;
-  }
+
+  // buttonタグ
   .search-btn {
     cursor: pointer;
-    // height: 100%;
-    // width: 100%;
     transition: 0.3s all;
+    background-color: $color-black;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include sp {
+      width: 5.4rem;
+      height: 5.4rem;
+    }
     &:hover {
       opacity: 0.7;
       pointer-events: visible;
     }
     span {
-      background-color: $color-black;
-      height: 4rem;
-      width: 4rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      @include sp {
-        width: 5.4rem;
-        height: 5.4rem;
-      }
+      display: block;
+      width: 1.98rem;
     }
   }
 }
