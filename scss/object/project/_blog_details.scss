@@ -685,6 +685,9 @@
     span {
       display: block;
       width: 1.98rem;
+      @include sp {
+        width: 2.623rem;
+      }
     }
   }
 }

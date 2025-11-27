@@ -1593,6 +1593,11 @@ main {
   display: block;
   width: 1.98rem;
 }
+@media (max-width: 767px) {
+  .blog__search .search-btn span {
+    width: 2.623rem;
+  }
+}
 
 .news__items .news__item {
   display: flex;
