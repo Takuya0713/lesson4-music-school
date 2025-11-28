@@ -1598,6 +1598,9 @@ main {
     width: 2.623rem;
   }
 }
+.blog__search .search-btn span img {
+  width: 100%;
+}
 
 .news__items .news__item {
   display: flex;
