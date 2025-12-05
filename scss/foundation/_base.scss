@@ -25,10 +25,14 @@ html {
 
 body {
   color: #000000;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
-    "游ゴシック", "Yu Gothic", sans-serif;
+  // font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+  //   "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: "游ゴシック体", Noto Sans JP, YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   font-size: 1.6rem;
   padding-top: 8rem; // ヘッダーの高さ分の余白を追加
+  letter-spacing: 0;
+  line-height: 0;
   @include sp {
     padding-top: 5rem; // SPの時はヘッダーの高さ分の余白を追加
   }
@@ -54,10 +58,9 @@ body {
 
 // 画像の自動調整部分を追記
 img {
-  // ↓1018一旦、削除
-  // width: 100%;
-  // height: auto;
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 #container {

@@ -1,0 +1,66 @@
+@use "../../foundation/mixins" as *; //spやpcでの表示サイズを読み込む
+@use "../../foundation/variables" as *; //min関数を読み込む
+
+// パンくずナビゲーションのレイアウト部分
+.c-breadcrumb {
+  background-color: rgb(232, 232, 232);
+  height: 5rem;
+  white-space: nowrap;
+  @include sp {
+    // height: 100%;
+    height: 3.6rem;
+  }
+  ol {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    column-gap: 5rem;
+    flex-wrap: nowrap;
+    @include sp {
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    li {
+      font-size: 1.6rem;
+      line-height: calc(33 / 16);
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      &:last {
+        flex-basis: 100%; /* 改行して次の行へ */
+        margin-top: 4px;
+      }
+      &:not(:first-of-type)::before {
+        content: ">";
+        color: $color-black;
+        position: absolute;
+        left: -3rem;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      a {
+        display: inline-block;
+        font-size: 1.6rem;
+        line-height: calc(33 / 16);
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+      span {
+        font-size: 1.6rem;
+        line-height: calc(33 / 16);
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  p {
+    background-color: rgb(232, 232, 232);
+    margin-top: -1rem;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: calc(33 / 16);
+  }
+}

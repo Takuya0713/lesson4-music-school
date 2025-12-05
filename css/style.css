@@ -147,9 +147,11 @@ html {
 
 body {
   color: #000000;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: "游ゴシック体", Noto Sans JP, YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   font-size: 1.6rem;
   padding-top: 8rem;
+  letter-spacing: 0;
+  line-height: 0;
 }
 @media (max-width: 767px) {
   body {
@@ -174,6 +176,8 @@ body {
 }
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 #container {
@@ -694,7 +698,7 @@ main {
   text-align: center;
   z-index: 99;
   color: #ffffff;
-  font-size: 3.7037037037vw;
+  font-size: 4rem;
   line-height: 1.5;
   font-weight: bold;
 }
@@ -854,6 +858,73 @@ main {
 .c-sectionTitle {
   font-weight: bold;
   text-align: center;
+}
+
+.c-breadcrumb {
+  background-color: rgb(232, 232, 232);
+  height: 5rem;
+  white-space: nowrap;
+}
+@media (max-width: 767px) {
+  .c-breadcrumb {
+    height: 3.6rem;
+  }
+}
+.c-breadcrumb ol {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+  flex-wrap: nowrap;
+}
+@media (max-width: 767px) {
+  .c-breadcrumb ol {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+}
+.c-breadcrumb ol li {
+  font-size: 1.6rem;
+  line-height: 2.0625;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.c-breadcrumb ol li:last {
+  flex-basis: 100%; /* 改行して次の行へ */
+  margin-top: 4px;
+}
+.c-breadcrumb ol li:not(:first-of-type)::before {
+  content: ">";
+  color: rgb(0, 0, 0);
+  position: absolute;
+  left: -3rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.c-breadcrumb ol li a {
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 2.0625;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.c-breadcrumb ol li span {
+  font-size: 1.6rem;
+  line-height: 2.0625;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.c-breadcrumb p {
+  background-color: rgb(232, 232, 232);
+  margin-top: -1rem;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2.0625;
 }
 
 .p-header__breadcrumb {
@@ -1678,7 +1749,7 @@ main {
   text-align: center;
   z-index: 99;
   color: #ffffff;
-  font-size: 2.3148148148vw;
+  font-size: 2.5rem;
   line-height: 2.4;
   font-weight: bold;
 }
@@ -2093,7 +2164,7 @@ main {
   text-align: center;
   z-index: 99;
   color: #ffffff;
-  font-size: 2.3148148148vw;
+  font-size: 2.5rem;
   line-height: 2.4;
   font-weight: bold;
 }
@@ -2132,7 +2203,7 @@ main {
   text-align: center;
   z-index: 99;
   color: #ffffff;
-  font-size: 2.3148148148vw;
+  font-size: 2.5rem;
   line-height: 2.4;
   font-weight: bold;
 }
@@ -2249,7 +2320,7 @@ main {
   text-align: center;
   z-index: 99;
   color: #ffffff;
-  font-size: 2.3148148148vw;
+  font-size: 2.5rem;
   line-height: 2.4;
   font-weight: bold;
 }

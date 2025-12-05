@@ -20,7 +20,7 @@
     text-align: center;
     z-index: 99;
     color: $color-white;
-    font-size: vw(25);
+    font-size: 2.5rem;
     line-height: calc(60 / 25);
     font-weight: bold;
     @include sp {
@@ -67,15 +67,6 @@
         line-height: calc(30 / 16);
       }
     }
-    // h2 {
-    //   font-size: 1.8rem;
-    //   line-height: calc(30 / 18);
-    //   font-weight: 400;
-    //   @include sp {
-    //     font-size: 1.6rem;
-    //     line-height: calc(30 / 16);
-    //   }
-    // }
   }
   &__return {
     margin-top: 4rem;
@@ -84,19 +75,6 @@
     @include sp {
       margin-top: 1rem;
     }
-    // &-inner {
-    //   display: flex;
-    //   align-items: center;
-    //   justify-content: center;
-    //   height: 5rem;
-    //   width: 25rem;
-    //   margin: 0 auto;
-    //   background-color: rgb(203, 0, 0);
-    //   color: #ffffff;
-    //   transition: all 0.3s;
-    //   &:hover {
-    //     background-color: initial;
-    //   }
     a {
       display: flex;
       align-items: center;
