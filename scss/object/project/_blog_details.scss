@@ -97,14 +97,16 @@
 .p-blog-details {
   display: flex;
   justify-content: space-between;
-  padding: 7rem 0 6.8rem 0;
+  // padding: 7rem 0 6.8rem 0;
+  padding-top: 7rem;
+  padding-bottom: 18.8rem;
   @include sp {
     display: block;
-    padding: 7.3rem 0 4.7rem 0;
+    padding-top: 7.3rem;
+    padding-bottom: 4.7rem;
   }
-  // ↓0924修正中
   &__article {
-    padding-bottom: 12rem;
+    // padding-bottom: 12rem;
     width: 60rem;
 
     @include sp {
@@ -487,10 +489,16 @@
       width: 60rem;
       height: 5rem;
       @include sp {
-        // width: 33.5rem;
         width: 100%;
-        @include sp {
-          padding-inline-start: initial;
+        padding-inline-start: initial;
+        // width: 33.5rem;
+        h2 {
+          font-size: 1.8rem;
+          line-height: calc(33 / 18);
+          font-family: YuGothic;
+          @include sp {
+            margin: 0 auto;
+          }
         }
         &__inner {
           display: flex;
