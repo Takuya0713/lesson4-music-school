@@ -32,7 +32,8 @@ body {
   font-size: 1.6rem;
   padding-top: 8rem; // ヘッダーの高さ分の余白を追加
   letter-spacing: 0;
-  line-height: 0;
+  line-height: 1.5;
+  // line-height: 0;から変更
   @include sp {
     padding-top: 5rem; // SPの時はヘッダーの高さ分の余白を追加
   }

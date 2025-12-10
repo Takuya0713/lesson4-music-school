@@ -151,7 +151,7 @@ body {
   font-size: 1.6rem;
   padding-top: 8rem;
   letter-spacing: 0;
-  line-height: 0;
+  line-height: 1.5;
 }
 @media (max-width: 767px) {
   body {
@@ -1602,7 +1602,7 @@ main {
     height: 26.8rem;
   }
 }
-.mail__banner p {
+.mail__banner a {
   color: rgb(0, 0, 0);
   background-color: rgb(232, 232, 232);
   width: 22rem;
@@ -1615,7 +1615,7 @@ main {
   line-height: 1.8333333333;
 }
 @media (max-width: 767px) {
-  .mail__banner p {
+  .mail__banner a {
     width: 29.5rem;
     height: 22.8rem;
   }
@@ -1629,13 +1629,18 @@ main {
   width: 18rem;
   height: 4rem;
   padding-inline: 1rem;
-  color: gray;
 }
 @media (max-width: 767px) {
   .blog__search input {
     width: 29.5rem;
     height: 5.4rem;
   }
+}
+.blog__search input::-moz-placeholder {
+  color: gray;
+}
+.blog__search input::placeholder {
+  color: gray;
 }
 .blog__search form {
   display: flex;
@@ -2676,7 +2681,6 @@ main {
   align-items: center;
   justify-content: center;
   width: 22rem;
-  text-align: center;
   flex-direction: column;
   height: 100%;
 }
