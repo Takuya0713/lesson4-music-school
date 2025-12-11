@@ -492,18 +492,18 @@
         width: 100%;
         padding-inline-start: initial;
         // width: 33.5rem;
-        h2 {
-          font-size: 1.8rem;
-          line-height: calc(33 / 18);
-          font-family: YuGothic;
-          @include sp {
-            margin: 0 auto;
-          }
+      }
+      h2 {
+        font-size: 1.8rem;
+        line-height: calc(33 / 18);
+        font-family: YuGothic;
+        @include sp {
+          margin: 0 auto;
         }
-        &__inner {
-          display: flex;
-          flex-direction: column;
-        }
+      }
+      &__inner {
+        display: flex;
+        flex-direction: column;
       }
       h4 {
         @include sp {
@@ -664,7 +664,7 @@
     }
     &::placeholder {
       color: gray;
-   }
+    }
   }
   form {
     display: flex;

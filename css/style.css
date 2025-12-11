@@ -1452,22 +1452,20 @@ main {
     width: 100%;
     padding-inline-start: initial;
   }
-  .p-blog-details .page-relation__title h2 {
-    font-size: 1.8rem;
-    line-height: 1.8333333333;
-    font-family: YuGothic;
-  }
 }
-@media (max-width: 767px) and (max-width: 767px) {
+.p-blog-details .page-relation__title h2 {
+  font-size: 1.8rem;
+  line-height: 1.8333333333;
+  font-family: YuGothic;
+}
+@media (max-width: 767px) {
   .p-blog-details .page-relation__title h2 {
     margin: 0 auto;
   }
 }
-@media (max-width: 767px) {
-  .p-blog-details .page-relation__title__inner {
-    display: flex;
-    flex-direction: column;
-  }
+.p-blog-details .page-relation__title__inner {
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 767px) {
   .p-blog-details .page-relation__title h4 {
