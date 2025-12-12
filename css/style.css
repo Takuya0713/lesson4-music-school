@@ -1457,6 +1457,7 @@ main {
   font-size: 1.8rem;
   line-height: 1.8333333333;
   font-family: YuGothic;
+  font-weight: bold;
 }
 @media (max-width: 767px) {
   .p-blog-details .page-relation__title h2 {
