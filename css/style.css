@@ -147,7 +147,7 @@ html {
 
 body {
   color: #000000;
-  font-family: "游ゴシック体", Noto Sans JP, YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: "Yu Gothic Medium", "Yu Gothic", "游ゴシック", "YuGothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   padding-top: 8rem;
   letter-spacing: 0;
@@ -1029,7 +1029,7 @@ main {
   .p-blog-details {
     display: block;
     padding-top: 7.3rem;
-    padding-bottom: 4.7rem;
+    padding-bottom: 19.7rem;
   }
 }
 .p-blog-details__article {
@@ -1565,7 +1565,6 @@ main {
     width: 100%;
     display: block;
     margin-top: 3rem;
-    padding-bottom: 15rem;
   }
 }
 .p-blog-details__side-inner {
@@ -2697,6 +2696,9 @@ main {
   .p-price-plan__list td.service-title {
     padding-left: 1rem;
   }
+}
+.p-price-plan__list td.service-title.first {
+  font-weight: bold;
 }
 .p-price-plan__list td.price {
   font-size: 2.2rem;
@@ -3890,6 +3892,10 @@ main {
   align-items: center;
   margin: 2.5rem 0 1.9rem 0;
   width: 100%;
+}
+.footer__logo picture {
+  display: block;
+  width: 3.2rem;
 }
 .footer__copyright {
   text-align: center;

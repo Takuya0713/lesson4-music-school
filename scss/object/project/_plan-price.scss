@@ -248,6 +248,9 @@
           @include sp {
             padding-left: 1rem;
           }
+          &.first{
+            font-weight: bold;
+          }
         }
         // 料金
         &.price {

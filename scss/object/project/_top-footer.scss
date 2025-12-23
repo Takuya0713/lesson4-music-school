@@ -59,6 +59,10 @@
     align-items: center;
     margin: 2.5rem 0 1.9rem 0;
     width: 100%;
+    picture {
+      display: block;
+      width: 3.2rem;
+    }
   }
   &__copyright {
     text-align: center;
