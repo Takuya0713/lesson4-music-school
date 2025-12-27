@@ -3893,7 +3893,7 @@ main {
   margin: 2.5rem 0 1.9rem 0;
   width: 100%;
 }
-.footer__logo picture {
+.footer__logo a {
   display: block;
   width: 3.2rem;
 }
