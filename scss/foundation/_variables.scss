@@ -1,9 +1,8 @@
 $color-red: rgba(203, 0, 0, 1);
 $color-white: #ffffff;
 $color-black: rgba(0, 0, 0, 1);
-// $main_font: "Noto Sans JP";
-$main_font: "Yu Gothic Medium", "Yu Gothic", "游ゴシック", "YuGothic",
-  "Noto Sans JP", sans-serif;
+$main_font: "Noto Sans JP";
+// $main_font: "Yu Gothic Medium", "Yu Gothic", "游ゴシック", "YuGothic","Noto Sans JP", sans-serif;
 
 // min関数を使用した可変表示（vw）
 @function vw($pixelSize, $baseWidth: 1080) {
