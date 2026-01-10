@@ -1,0 +1,11 @@
+// // commonフォルダ内を読み込む
+@use "../scss/foundation/reset";
+@use "../scss/foundation/base";
+// layout
+@use "../scss/layout";
+// component
+@use "../scss/object/component";
+// project
+@use "../scss/object/project";
+// object-utility
+@use "../scss/object/utility/utility";

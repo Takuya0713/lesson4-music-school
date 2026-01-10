@@ -2,9 +2,6 @@
 @use "../foundation/variables" as *;
 // @use "mixins";
 // @use "variables";
-// Googleフォントの読み込み
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
-
 
 html {
   -webkit-appearance: none;
@@ -32,7 +29,7 @@ body {
   color: #000000;
   // font-family: "Yu Gothic Medium", "Yu Gothic", "游ゴシック","YuGothic",variables.$main_font,sans-serif;
   // font-family: $main_font;
-  font-family: "Yu Gothic Medium", "Yu Gothic", "游ゴシック","YuGothic",$main_font,sans-serif;
+  font-family: $main_font;
   font-size: 1.6rem;
   padding-top: 8rem; // ヘッダーの高さ分の余白を追加
   letter-spacing: 0;
