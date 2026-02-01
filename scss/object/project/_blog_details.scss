@@ -681,7 +681,8 @@
   // buttonタグ
   .search-btn {
     cursor: pointer;
-    transition: 0.3s all;
+    // transition: 0.3s all;
+    transition: 0.3s opacity;
     background-color: $color-black;
     height: 4rem;
     width: 4rem;

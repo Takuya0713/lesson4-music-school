@@ -74,7 +74,7 @@
       margin: 0 auto;
       background-color: $color-red;
       color: $color-white;
-      transition: all 0.3s;
+      // transition: all 0.3s;
       &:hover {
         background-color: initial;
       }
@@ -91,6 +91,11 @@
         line-height: calc(30 / 25);
         font-weight: bold;
         border: 0.1rem solid $color-red;
+        transition:
+          0.3s background-color,
+          0.3s color;
+          background-color: $color-red;
+          color: $color-white;
 
         @include sp {
           font-size: 2rem;

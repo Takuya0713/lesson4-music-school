@@ -87,7 +87,7 @@
       height: 5rem;
       line-height: calc(33 / 25);
       margin: 0 auto;
-      transition: all 0.3s;
+      transition: 0.3s background-color, 0.3s color;
       width: 25rem;
       &:hover {
         background-color: #ffffff;

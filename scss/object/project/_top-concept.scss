@@ -75,6 +75,8 @@
         border-top: 0.3rem solid rgb(203, 0, 0);
         border-left: 0.3rem solid rgb(203, 0, 0);
         transform-origin: left top;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
       }
       // 矢印の縦線部分
       :nth-of-type(1) &::after {

@@ -36,7 +36,8 @@ main {
   // ページトップボタン
   .c-fix-area {
     position: relative;
-    transition: all 0.5s;
+    // transition: all 0.5s;
+    transition: 0.5s opacity;
     // padding-left: 3.2rem;
     @include sp {
       justify-content: flex-end;
@@ -61,11 +62,15 @@ main {
     height: 6rem;
     background-color: $color-red;
     color: $color-white;
-    transition: all 0.3s;
+    transition:
+    0.3s color,
+    0.3s background-color,
+    0.3s opacity;
+
+    // transition: all 0.3s;
     &:hover {
       background-color: #ffffff;
     }
-
     @include sp {
       width: initial;
     }
@@ -82,7 +87,11 @@ main {
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: all 0.3s;
+      // transition: all 0.3s;
+      transition:
+        0.3s color,
+        0.3s background-color,
+        0.3s opacity;
       pointer-events: auto;
       border: 0.1rem solid rgb(203, 0, 0);
       padding-top: 0.5rem;
