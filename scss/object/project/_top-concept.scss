@@ -63,9 +63,9 @@
       }
       // 矢印の上部（屋根部分）
       // 最初の子要素にbefore擬似要素
-      :nth-of-type(1) &::before {
-        top: -38%;
-        top: -16%;
+      &::before {
+        // top: -38%;
+        top: -15%;
         left: 50%;
         content: "";
         position: absolute;
@@ -75,20 +75,10 @@
         border-top: 0.3rem solid rgb(203, 0, 0);
         border-left: 0.3rem solid rgb(203, 0, 0);
         transform-origin: left top;
-        border-bottom-left-radius: 3px;
-        border-bottom-right-radius: 3px;
+        border-radius: 5px;
       }
       // 矢印の縦線部分
-      :nth-of-type(1) &::after {
-        // content: "";
-        // position: absolute;
-        // top: -2.5rem;
-        // transform: translateX(-50%);
-        // width: 0.3rem; //太さ3px
-        // height: 15.8rem;
-        // background-color: $color-red;
-        // transform-origin: left top;
-        // left: 44rem;
+      &::after {
         content: "";
         position: absolute;
         top: -2.5rem;
