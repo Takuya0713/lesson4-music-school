@@ -148,6 +148,7 @@
           @include sp {
             left: 50%;
           }
+          // 左右矢印共通部分
           &::before,
           &::after {
             content: "";
@@ -158,12 +159,14 @@
             top: 0;
             border-radius: 0 0 0.2rem 0.2rem;
           }
-          &::before {
+            // 矢印左上
+            &::before {
             transform: rotate(45deg);
             transform-origin: right top;
             left: 0.05rem;
           }
-          &::after {
+            // 矢印右上
+            &::after {
             transform: rotate(-45deg);
             transform-origin: left top;
             right: 0.05rem;
