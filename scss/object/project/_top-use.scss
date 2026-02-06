@@ -66,7 +66,6 @@
               width: 0.3rem;
               height: 2.5rem;
               position: absolute;
-              border-radius: 0.2rem;
             }
             // 矢印左上
             &::before {
@@ -75,27 +74,27 @@
               transform: rotate(-45deg);
               border-left: 0.3rem solid rgb(203, 0, 0);
               transform-origin: left top;
+              border-radius: 0.2rem 0.2rem 0 0;
               @include sp {
-                left: 0;
-                top: 65rem;
+                left: 0.1rem;
+                top: 65.1rem;
                 bottom: 0;
                 transform: rotate(-45deg);
-                transform-origin: left bottom;
+                transform-origin: left bottom; 
               }
             }
             // 矢印右上
             &::after {
-              right: 0;
+              left: 1.6rem;
               top: 39.3rem;
               transform: rotate(45deg);
               border-right: 0.3rem solid rgb(203, 0, 0);
               transform-origin: right top;
+              border-radius: 0.2rem 0.2rem 0 0;
               @include sp {
                 left: initial;
-                right: initial;
-                top: initial;
+                left: -0.1rem;
                 top: 64.9rem;
-                bottom: 0.1rem;
                 transform: rotate(45deg);
                 transform-origin: left bottom;
               }

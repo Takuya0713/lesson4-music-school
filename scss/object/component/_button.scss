@@ -36,9 +36,7 @@ main {
   // ページトップボタン
   .c-fix-area {
     position: relative;
-    // transition: all 0.5s;
     transition: 0.5s opacity;
-    // padding-left: 3.2rem;
     @include sp {
       justify-content: flex-end;
     }
@@ -66,8 +64,6 @@ main {
     0.3s color,
     0.3s background-color,
     0.3s opacity;
-
-    // transition: all 0.3s;
     &:hover {
       background-color: #ffffff;
     }
@@ -87,7 +83,6 @@ main {
       display: flex;
       align-items: center;
       justify-content: center;
-      // transition: all 0.3s;
       transition:
         0.3s color,
         0.3s background-color,
