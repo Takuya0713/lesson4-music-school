@@ -440,7 +440,6 @@ img {
     font-size: 1.8rem;
     height: initial;
     width: 30rem;
-    transition: 0.3s;
   }
 }
 .l-header__nav.active li:hover {
@@ -456,6 +455,7 @@ img {
     right: -110%;
     align-items: initial;
     color: #ffffff;
+    transition: 0.3s ease-in-out;
   }
 }
 @media (max-width: 767px) {

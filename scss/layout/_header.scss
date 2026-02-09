@@ -126,6 +126,7 @@
     }
   }
 
+  //
   &__nav {
     display: flex;
     align-items: center;
@@ -134,6 +135,8 @@
     @include sp {
       position: fixed;
       top: 5rem;
+      // transition: 0.3s ease-in-out;
+      // transition: 2.3s ease-in-out;
     }
     ul {
       display: flex;
@@ -211,7 +214,6 @@
           font-size: 1.8rem;
           height: initial;
           width: 30rem;
-          transition: 0.3s;
         }
         &:hover {
           background-color: rgb(0, 0, 0);
@@ -228,6 +230,8 @@
         right: -110%; // ← 初期状態（隠す）
         align-items: initial;
         color: $color-white;
+        // ハンバーガーメニューが非表示から表示に切り替わる速度
+        transition: 0.3s ease-in-out;
       }
       &.active {
         @include sp {
