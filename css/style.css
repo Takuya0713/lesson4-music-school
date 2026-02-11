@@ -2276,6 +2276,7 @@ main {
   margin: 0 auto;
   background-color: rgb(203, 0, 0);
   color: #ffffff;
+  transition: all 0.3s;
 }
 .p-sended__return-inner:hover {
   background-color: initial;
@@ -2295,9 +2296,6 @@ main {
   line-height: 1.2;
   font-weight: bold;
   border: 0.1rem solid rgb(203, 0, 0);
-  transition: 0.3s background-color, 0.3s color;
-  background-color: rgb(203, 0, 0);
-  color: #ffffff;
 }
 @media (max-width: 767px) {
   .p-sended__return-inner a {
@@ -4381,10 +4379,6 @@ main {
     margin-top: 4.3rem;
   }
 }
-.p-voice__items a {
-  display: inline-block;
-  margin-inline: 1.75rem;
-}
 @media (max-width: 767px) {
   .p-voice__items a {
     margin-inline: initial;
@@ -4432,8 +4426,8 @@ main {
   }
 }
 .p-voice__comment p {
-  font-size: 1.7rem;
-  line-height: 1.7647058824;
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
 }
 .p-voice__arrow {
   position: absolute;
@@ -4444,6 +4438,7 @@ main {
   border: none;
   cursor: pointer;
   z-index: 10;
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;

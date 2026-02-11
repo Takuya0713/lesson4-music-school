@@ -27,8 +27,8 @@
   }
   &__items {
     a {
-      display: inline-block;
-      margin-inline: 1.75rem;
+      // display: inline-block;
+      // margin-inline: 1.75rem;
       @include sp {
         margin-inline: initial;
       }
@@ -72,8 +72,8 @@
       width: 100%;
     }
     & p {
-      font-size: 1.7rem;
-      line-height: calc(30 / 17);
+      font-size: 1.8rem;
+      line-height: calc(30 / 18);
     }
   }
 
@@ -89,6 +89,7 @@
     // border-radius: 50%;
     cursor: pointer;
     z-index: 10;
+    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,14 +119,16 @@
 
       .p-voice__arrow--prev & {
         border-width: 0.8rem 0.8rem 0.8rem 0;
-        border-color: transparent rgba(100, 100, 100, 0.8) transparent transparent;
+        border-color: transparent rgba(100, 100, 100, 0.8) transparent
+          transparent;
       }
 
       .p-voice__arrow:hover & {
         border-color: transparent transparent transparent rgba(100, 100, 100, 1);
 
         .p-voice__arrow--prev & {
-          border-color: transparent rgba(100, 100, 100, 1) transparent transparent;
+          border-color: transparent rgba(100, 100, 100, 1) transparent
+            transparent;
         }
       }
     }
